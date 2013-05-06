@@ -2413,6 +2413,7 @@ dialog{
   text = [[
 Veux-tu mettre de
 l'eau dans ton
+
 Flacon Magique ?
 Oui
 Non
@@ -2453,6 +2454,7 @@ dialog{
   text = [[
 Ton Flacon Magique
 contient de l'eau.
+
 Que veux-tu faire ?
 Vider l'eau
 La conserver
@@ -2484,6 +2486,7 @@ dialog{
   text = [[
 Un Pain au Chocolat
 te redonne 3 Coeurs.
+
 Que veux-tu faire ?
 En manger un
 Ne rien faire

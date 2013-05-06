@@ -2346,6 +2346,7 @@ dialog{
   text = [[
 Do you want to fill
 your Magic Bottle
+
 with water?
 Yes
 No
@@ -2386,6 +2387,7 @@ dialog{
   text = [[
 Your Magic Bottle is
 full of water.
+
 What's your action?
 Empty it
 Keep it
@@ -2416,6 +2418,7 @@ dialog{
   question = true,
   text = [[
 A French Pain au
+Chocolat recovers
 3 Hearts.
 What's your action?
 Eat one
@@ -2432,6 +2435,7 @@ dialog{
   text = [[
 A French Croissant
 recovers 7 Hearts.
+
 What's your action?
 Eat one
 Nothing
