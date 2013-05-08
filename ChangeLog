@@ -8,7 +8,8 @@ zsxd-1.5.3 (under development)
 * Dungeon 2: the piece of heart could be obtained very easily with the sword
 * Change the English website url in the credits dialogs
 * Fix missing lines in dialogs
-* Fix the CMake script that creates the zip archive (#1).
+* Fix the CMake script that creates the zip archive.
+* Make creepers appear earlier in the game (#1).
 
 zsxd-1.5.2 (2012-03-31)
 
