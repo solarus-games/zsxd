@@ -141,7 +141,7 @@
 0	0	488	736	16	48	364
 0	0	408	736	16	48	364
 9	0	408	133	block_2	-1	entities/statue	1	1	2
-7	0	592	605	ennemy_1	3	red_bullblin	0	-1	_random	1	-1
+7	0	592	605	ennemy_1	3	creeper	0	-1	_random	1	-1
 13	0	416	757	96	16	sensor_close_trap_door	0
 2	0	448	848	16	16	teletransporter	0	2	38	_side
 19	0	304	376	stairs	1	4
@@ -149,7 +149,7 @@
 8	0	424	725	panel	3	0	entities/sign	dialog#freaking_cave_indic1
 13	0	472	589	48	48	make_appear_c1	0
 13	0	360	589	16	48	make_appear_c2	0
-7	0	184	605	ennemy_2	3	red_bullblin	0	-1	_random	1	-1
+7	0	184	605	ennemy_2	3	creeper	0	-1	_random	1	-1
 13	0	312	589	48	48	make_appear_c3	0
 8	0	472	133	interactive_entity	3	0	entities/sign	dialog#freaking_cave_indic2
 9	0	400	149	block	-1	entities/statue	1	1	2
