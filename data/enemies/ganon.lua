@@ -24,12 +24,12 @@ function event_movement_changed()
 
   if not being_pushed then
     local m = sol.enemy.get_movement()
-    local direction4 = sol.main.movement_get_property(m, "displayed_direction")
+    local direction4 = m:get_property("displayed_direction")
     local sprite = sol.enemy.get_sprite()
     if direction4 == 1 then
-      sol.main.sprite_set_direction(sprite, 1)
+      sprite:set_direction(1)
     else
-      sol.main.sprite_set_direction(sprite, 0)
+      sprite:set_direction(0)
     end
   end
 end
@@ -41,7 +41,7 @@ function event_update()
     sol.enemy.set_position(x, y, 0) -- go to low layer
     sol.enemy.set_life(0)
     local sprite = sol.enemy.get_sprite()
-    sol.main.sprite_set_animation(sprite, "hurt")
+    sprite:set_animation("hurt")
     sol.main.play_sound("boss_killed")
   elseif x > 1176 and not being_pushed then
     event_restart()
@@ -57,7 +57,7 @@ function event_custom_attack_received(attack, sprite)
     local hero_x, hero_y = sol.map.hero_get_position()
     local angle = sol.main.get_angle(hero_x, hero_y, x, y)
     local m = sol.main.straight_movement_create(128, angle)
-    sol.main.movement_set_property(m, "max_distance", 26)
+    m:set_property("max_distance", 26)
     sol.enemy.start_movement(m)
   end
 end

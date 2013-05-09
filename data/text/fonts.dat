@@ -1,20 +1,23 @@
-# This file defines the fonts available to the game engine.
-# The engine relies on 3 fonts named 'dialog', 'dialog_big' and 'fixed'.
-# The main purpose of this file is to make the engine independant from the font file names.
+-- This is a Lua fonts list file for solarus 1.0.0 or greater.
+-- This file was converted from the 0.9.2 ini syntax using the script
+-- tools/data_files_conversion/0.9.2_to_1.0.0/convert_font_list.lua.
 
-[dialog]
-# the font used in dialog boxes
-file = text/la.ttf
-size = 11
-default = true
+font{
+  id = "dialog",
+  file = "text/la.ttf",
+  size = 11,
+  default = true
+}
 
-[dialog_big]
-# same as 'dialog' but bigger
-file = text/la.ttf
-size = 18
+font{
+  id = "dialog_big",
+  file = "text/la.ttf",
+  size = 18,
+}
 
-[fixed]
-# fixed-width font used in the menus
-file = text/fixed8.fon
-size = 11
+font{
+  id = "fixed",
+  file = "text/fixed8.fon",
+  size = 11,
+}
 
