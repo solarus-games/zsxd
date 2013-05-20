@@ -1,7 +1,7 @@
 local submenu = require("menus/pause_submenu")
 local map_submenu = submenu:new()
 
-local outside_world_size = { width = 2080, height = 3584 }
+local outside_world_size = { width = 1024, height = 1024 }
 local outside_world_minimap_size = { width = 225, height = 388 }
 
 function map_submenu:on_started()
