@@ -4,6 +4,7 @@ local map = ...
 -- Crazy House 2FA (south)      --
 ----------------------------------
 
+local game = map:get_game()
 local locked_door_A_value = 0
 
 function map:on_started(destination_point)
@@ -16,58 +17,58 @@ function map:on_started(destination_point)
 end
 
 -- Vieillard --------------------------------------------------
-function vieillard()
+local function vieillard()
 
-  if sol.game.savegame_get_integer(1411) >= 1 then
-    if sol.game.savegame_get_boolean(124) == false then
+  if game:get_value("i1411") >= 1 then
+    if not game:get_value("b124") then
       -- Première rencontre
-      sol.map.dialog_start("crazy_house.vieillard")
-      sol.game.savegame_set_boolean(124, true)
+      map:start_dialog("crazy_house.vieillard")
+      game:set_value("b124", true)
     else
-      if sol.game.savegame_get_boolean(125) == false then
+      if not game:get_value("b125") then
         -- Vieillard n'a pas encore changé d'avis
-        if sol.game.get_item_amount("poivron_counter") < 1 then
+        if not game:get_item("poivron_counter"):has_amount(1) then
           -- N'a pas encore de poivron
-          sol.map.dialog_start("crazy_house.vieillard")
+          map:start_dialog("crazy_house.vieillard")
         else
           -- A le poivron
-          sol.map.dialog_start("crazy_house.vieillard_poivron")
+          map:start_dialog("crazy_house.vieillard_poivron")
           -- Changement d'avis
-          sol.game.savegame_set_boolean(125, true)
+          game:set_value("b125", true)
         end
         -- Incrémentation branche 1411
-        local branche1411 = sol.game.savegame_get_integer(1411)
+        local branche1411 = game:get_value("i1411")
         if branche1411 > 0 and branche1411 <= 1 then
-          sol.game.savegame_set_integer(1411, 2)
+          game:set_value("i1411", 2)
         end
       else
         -- Vieillard veut du riz maintenant !
-        if sol.game.get_item_amount("sac_riz_counter") < 1 then
-          sol.map.dialog_start("crazy_house.vieillard_riz_quantite")
+        if not game:get_item("sac_riz_counter"):has_amount(1) then
+          map:start_dialog("crazy_house.vieillard_riz_quantite")
         else
           -- A le sac de riz
-          sol.map.dialog_start("crazy_house.vieillard_riz_ok")
+          map:start_dialog("crazy_house.vieillard_riz_ok")
         end
         -- Incrémentation branche 1411
-        local branche1411 = sol.game.savegame_get_integer(1411)
+        local branche1411 = game:get_value("i1411")
         if branche1411 > 0 and branche1411 <= 8 then
-          sol.game.savegame_set_integer(1411, 9)
+          game:set_value("i1411", 9)
         end
       end
     end
   else
-    sol.map.dialog_start("crazy_house.vieillard_ronfl")
+    map:start_dialog("crazy_house.vieillard_ronfl")
   end
 end
 
 -- Guichet 21 -------------------------------------------------
-function guichet_21()
+local function guichet_21()
 
-  if sol.game.savegame_get_integer(1410) == 1 then
-    sol.map.dialog_start("crazy_house.guichet_21_ech_eq_1")
-    sol.game.savegame_set_integer(1410, 2)
+  if game:get_value("i1410") == 1 then
+    map:start_dialog("crazy_house.guichet_21_ech_eq_1")
+    game:set_value("i1410", 2)
   else
-    sol.map.dialog_start("crazy_house.guichet_21_ech_ne_1")
+    map:start_dialog("crazy_house.guichet_21_ech_ne_1")
   end
 end
 
