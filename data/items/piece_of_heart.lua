@@ -1,4 +1,6 @@
-message_id = {
+local item = ...
+
+local message_id = {
   "found_piece_of_heart.first",
   "found_piece_of_heart.second",
   "found_piece_of_heart.third",
