@@ -21,3 +21,23 @@ font{
   size = 11,
 }
 
+font{
+  id = "white_digits",
+  file = "text/white_digits.png",
+}
+
+font{
+  id = "green_digits",
+  file = "text/green_digits.png",
+}
+
+font{
+  id = "small_white_digits",
+  file = "text/small_white_digits.png",
+}
+
+font{
+  id = "small_green_digits",
+  file = "text/small_green_digits.png",
+}
+
