@@ -1,38 +1,45 @@
-function event_use()
+local item = ...
 
-  if sol.item.get_amount() == 0 then
-    sol.main.play_sound("wrong")
-  else
-    sol.main.timer_start(remove_arrow, 300)
-    sol.map.hero_start_bow()
-  end
-  sol.item.set_finished()
+function item:on_created()
+
+  self:set_savegame_variable("i1102")
+  self:set_amount_savegame_variable("i1025")
+  self:set_assignable(true)
 end
 
-function event_amount_changed(amount)
+function item:on_using()
 
-  if sol.item.get_variant() ~= 0 then
+  if self:get_amount() == 0 then
+    sol.audio.play_sound("wrong")
+  else
+    -- we remove the arrow from the equipemnt after a small delay because the hero
+    -- does not shoot immediately
+    sol.timer.start(300, function()
+      self:remove_amount(1)
+    end)
+    self:get_map():get_entity("hero"):start_bow()
+  end
+  self:set_finished()
+end
+
+function item:on_amount_changed(amount)
+
+  if self:get_variant() ~= 0 then
     -- update the icon (with or without arrow)
     if amount == 0 then
-      sol.item.set_variant(1)
+      self:set_variant(1)
     else
-      sol.item.set_variant(2)
+      self:set_variant(2)
     end
   end
 end
 
-function event_obtaining(variant, savegame_variable)
+function item:on_obtaining(variant, savegame_variable)
 
-  if variant == 1 then
-    -- the player just obtained the bow in its variant without arrows:
-    -- we need to set the arrows to zero manually because they are set to their maximum by default
-    sol.item.set_amount(0)
+  local quiver = self:get_game():get_item("quiver")
+  if not quiver:has_variant() then
+    -- Give the first quiver automatically with the bow.
+    quiver:set_variant(1)
   end
-end
-
-function remove_arrow()
-  -- we remove the arrow from the equipemnt after a small delay because the hero
-  -- does not shoot immediately
-  sol.item.remove_amount(1)
 end
 

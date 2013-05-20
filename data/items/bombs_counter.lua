@@ -1,21 +1,30 @@
--- Called when the player uses the bombs of his inventory by pressing the corresponding item key
-function event_use()
+local item = ...
 
-  if sol.item.get_amount() == 0 then
-    sol.main.play_sound("wrong")
-  else
-    sol.item.remove_amount(1)
-    local x, y, layer = get_bomb_position_from_hero(x, y)
-    sol.map.bomb_create(x, y, layer)
-    sol.main.play_sound("bomb")
-  end
-  sol.item.set_finished()
+function item:on_created()
+
+  self:set_savegame_variable("i1101")
+  self:set_amount_savegame_variable("i1024")
+  self:set_assignable(true)
 end
 
-function get_bomb_position_from_hero()
+-- Called when the player uses the bombs of his inventory by pressing the corresponding item key.
+function item:on_using()
 
-  local x, y, layer = sol.map.hero_get_position()
-  local direction = sol.map.hero_get_direction()
+  if self:get_amount() == 0 then
+    sol.audio.play_sound("wrong")
+  else
+    self:remove_amount(1)
+    local x, y, layer = self:create_bomb()
+    sol.audio.play_sound("bomb")
+  end
+  self:set_finished()
+end
+
+function item:create_bomb()
+
+  local hero = self:get_map():get_entity("hero")
+  local x, y, layer = hero:get_position()
+  local direction = hero:get_direction()
   if direction == 0 then
     x = x + 16
   elseif direction == 1 then
@@ -26,6 +35,10 @@ function get_bomb_position_from_hero()
     y = y + 16
   end
 
-  return x, y, layer
+  self:get_map():create_bomb{
+    x = x,
+    y = y,
+    layer = layer
+  }
 end
 

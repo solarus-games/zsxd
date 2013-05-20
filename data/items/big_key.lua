@@ -1,4 +1,13 @@
-function event_obtained(variant, savegame_variable)
-  -- obtaining the big key gives the built-in ability "open_dungeon_big_locks"
-  sol.game.set_ability("open_dungeon_big_locks", 1)
+local item = ...
+
+function item:on_obtaining(variant, savegame_variable)
+
+  -- Save the possession of the big key in the current dungeon.
+  local game = self:get_game()
+  local dungeon = game:get_dungeon_index()
+  if dungeon == nil then
+    error("This map is not in a dungeon")
+  end
+  game:set_value("dungeon_" .. dungeon .. "_big_key", true)
 end
+

@@ -1,4 +1,13 @@
-function event_obtained(variant, savegame_variable)
-  -- obtaining the map gives the built-in ability "see_dungeon_minimap_rooms"
-  sol.game.set_ability("see_dungeon_minimap_elements", 1)
+local item = ...
+
+function item:on_obtaining(variant, savegame_variable)
+
+  -- Save the possession of the compass in the current dungeon.
+  local game = self:get_game()
+  local dungeon = game:get_dungeon_index()
+  if dungeon == nil then
+    error("This map is not in a dungeon")
+  end
+  game:set_value("dungeon_" .. dungeon .. "_compass", true)
 end
+
