@@ -2,14 +2,14 @@ local map = ...
 
 -- Temple of Stupidities 2F NW
 
-function map:on_map_started(destination_point)
+function map:on_started(destination_point)
 
   sol.map.light_set(0)
 end
 
 function map:on_switch_activated(switch_name)
 
-  sol.main.play_sound("secret")
+  sol.audio.play_sound("secret")
   sol.map.door_open("creeper_door")
 end
 

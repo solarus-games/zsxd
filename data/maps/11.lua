@@ -2,7 +2,7 @@ local map = ...
 
 -- Shop
 
-function map:on_map_started(destination_point)
+function map:on_started(destination_point)
    -- make the NPCs walk
    random_walk("lady_a")
 end

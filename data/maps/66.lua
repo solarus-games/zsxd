@@ -2,7 +2,7 @@ local map = ...
 
 -- Temple of Stupidities 2F SW
 
-function map:on_map_started(destination_point)
+function map:on_started(destination_point)
 
   -- water removed
   if game:get_value("b283") then
@@ -42,7 +42,7 @@ function map:on_enemy_dead(enemy_name)
   if string.find(enemy_name, "^fight")
       and sol.map.enemy_is_group_dead("fight") then
 
-    sol.main.play_sound("chest_appears")
+    sol.audio.play_sound("chest_appears")
     sol.map.chest_set_enabled("fight_chest", true)
     sol.map.door_open("fight_door")
   end

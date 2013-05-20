@@ -9,7 +9,7 @@ local map = ...
 local torch1 = sol.map.npc_get_sprite("fc_torch_1")
 local torch2 = sol.map.npc_get_sprite("fc_torch_2")
 
-function map:on_map_started(destination_point)
+function map:on_started(destination_point)
 
   torch1 = sol.map.npc_get_sprite("fc_torch_1")
   torch2 = sol.map.npc_get_sprite("fc_torch_2")

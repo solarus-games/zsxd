@@ -4,7 +4,7 @@ local map = ...
 
 local will_remove_water = false
 
-function map:on_map_started(destination_point)
+function map:on_started(destination_point)
 
   -- switches of stairs of the central room
   for i = 1, 7 do
@@ -40,7 +40,7 @@ function map:on_switch_activated(switch_name)
   local i = string.match(switch_name, "^stairs_([1-7])_switch$")
   if (i ~= nil) then
     sol.map.stairs_set_enabled("stairs_" .. i, true)
-    sol.main.play_sound("secret")
+    sol.audio.play_sound("secret")
     game:set_value("b292" + i, true)
   elseif switch_name == "switch_torch_1_on" then
     sol.map.tile_set_enabled("torch_1", true)
@@ -118,12 +118,12 @@ function map:on_enemy_dead(enemy_name)
   if string.find(enemy_name, '^fight_room')
       and sol.map.enemy_is_group_dead("fight_room") then
 
-    sol.main.play_sound("secret")
+    sol.audio.play_sound("secret")
     sol.map.door_open("fight_room_door")
   elseif enemy_name == "boss" then
     sol.map.tile_set_enabled("boss_gate", true) 
     game:set_value("b62", true) -- open the door of Link's cave
-    sol.main.play_sound("secret")
+    sol.audio.play_sound("secret")
   end
 end
 
@@ -147,8 +147,8 @@ end
 
 function remove_2f_sw_water()
 
-  sol.main.play_sound("water_drain_begin")
-  sol.main.play_sound("water_drain")
+  sol.audio.play_sound("water_drain_begin")
+  sol.audio.play_sound("water_drain")
   map:start_dialog("dungeon_1.2f_sw_water_removed")
   game:set_value("b283", true)
 end
@@ -200,7 +200,7 @@ end
 
 function leave_dungeon()
 
-  sol.main.play_sound("warp")
+  sol.audio.play_sound("warp")
   sol.map.hero_set_map(4, "from_temple_of_stupidities", 1)
 end
 

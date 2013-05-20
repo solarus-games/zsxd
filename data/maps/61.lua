@@ -8,7 +8,7 @@ local remove_water_delay = 500 -- delay between each step when some water is dis
 local fighting_miniboss = false
 
 -- initialization
-function map:on_map_started(destination_point)
+function map:on_started(destination_point)
 
   -- miniboss door
   sol.map.door_set_open("miniboss_door", true)
@@ -29,7 +29,7 @@ function map:on_door_open(door_name)
 
   if door_name == "weak_wall_compass"
       or door_name == "weak_wall_red_tunic" then
-    sol.main.play_sound("secret")
+    sol.audio.play_sound("secret")
   end
 end
 
@@ -91,7 +91,7 @@ function map:on_enemy_dead(enemy_name)
       and sol.map.enemy_is_group_dead("wtf_room_enemy")
       and not sol.map.door_is_open("wtf_door") then
     sol.map.door_open("wtf_door")
-    sol.main.play_sound("secret")
+    sol.audio.play_sound("secret")
   end
 end
 
@@ -107,8 +107,8 @@ end
 
 function remove_c_water()
 
-  sol.main.play_sound("water_drain_begin")
-  sol.main.play_sound("water_drain")
+  sol.audio.play_sound("water_drain_begin")
+  sol.audio.play_sound("water_drain")
   sol.map.tile_set_enabled("c_water_exit", true)
   sol.map.tile_set_enabled("c_water_source", false)
   sol.main.timer_start(remove_c_water_2, remove_water_delay)
@@ -145,7 +145,7 @@ function remove_c_water_6()
 
   sol.map.tile_set_group_enabled("c_water_less_c", false)
   game:set_value("b303", true)
-  sol.main.play_sound("secret")
+  sol.audio.play_sound("secret")
   sol.map.hero_unfreeze()
 end
 

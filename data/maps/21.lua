@@ -6,7 +6,7 @@ local map = ...
 
 local guichet43_sprite
 
-function map:on_map_started(destination_point)
+function map:on_started(destination_point)
 
   guichet43_sprite = sol.map.npc_get_sprite("GC43S")
 end
@@ -64,7 +64,7 @@ function map:on_npc_interaction(npc_name)
 
   if npc_name == "mario_message_2" then
     -- Tableau de mario qui parle ---------------------------------
-    sol.main.play_sound("sm64_heehee")
+    sol.audio.play_sound("sm64_heehee")
   elseif npc_name == "GC41" then
     guichet_41()
   elseif npc_name == "GC43" then
@@ -93,7 +93,7 @@ function map:on_dialog_finished(dialog_id, answer)
       if sol.game.get_item_amount("cuillere_counter") >= 1 then
         map:start_dialog("crazy_house.guichet_45_ech_ok")
       else
-        sol.main.play_sound("wrong")
+        sol.audio.play_sound("wrong")
         map:start_dialog("crazy_house.guichet_45_ech_un")
       end
     end

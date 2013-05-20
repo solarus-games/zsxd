@@ -2,7 +2,7 @@ local map = ...
 
 -- Link's cave
 
-function map:on_map_started(destination_point)
+function map:on_started(destination_point)
 
   sol.map.enemy_set_enabled("zelda_enemy", false)
   sol.map.door_set_open("door", true)

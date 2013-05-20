@@ -6,7 +6,7 @@ local map = ...
 
 local guichet_11_error = false
 
-function map:on_map_started(destination_point)
+function map:on_started(destination_point)
 
   if game:get_value("b101") then
     sol.map.switch_set_activated("CS3", true)
@@ -36,7 +36,7 @@ function map:on_switch_activated(switch_name)
     -- Bouton qui fait apparaitre un coffre contenant la carte (CV3)
     sol.map.chest_set_enabled("CK3", true)
     game:set_value("b101", true)
-    sol.main.play_sound("chest_appears")
+    sol.audio.play_sound("chest_appears")
   end
 end
 
@@ -208,7 +208,7 @@ function map:on_npc_interaction(npc_name)
 
   -- Tableau de mario qui parle ---------------------------------
   if npc_name == "mario_message_1" then
-    sol.main.play_sound("sm64_memario")
+    sol.audio.play_sound("sm64_memario")
     map:start_dialog("crazy_house.mario_message_1")
   elseif npc_name == "AccueilFront" then
     accueil()
@@ -295,7 +295,7 @@ end
 function map:on_door_open(door_name)
 
   if door_name == "weak_wall_A" then
-    sol.main.play_sound("secret")
+    sol.audio.play_sound("secret")
   elseif door_name == "DK1" then
     -- Opening the locked door: never give the final small key
     game:set_value("b128", true)
@@ -314,7 +314,7 @@ function map:on_chest_empty(chest_name)
     end
   else
     -- Coffre vide classique
-    sol.main.play_sound("wrong")
+    sol.audio.play_sound("wrong")
     map:start_dialog("_empty_chest")
     sol.map.hero_unfreeze()
   end

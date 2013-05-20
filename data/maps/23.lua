@@ -6,7 +6,7 @@ local map = ...
 
 local guichet82_sprite
 
-function map:on_map_started(destination_point)
+function map:on_started(destination_point)
 
   guichet82_sprite = sol.map.npc_get_sprite("GC82")
 end
@@ -54,7 +54,7 @@ function map:on_dialog_finished(dialog_id, answer)
     if answer == 0 then
       -- Contrôle de la quantité
       if sol.game.get_item_amount("sac_olive_counter") < 1 then
-        sol.main.play_sound("wrong")
+        sol.audio.play_sound("wrong")
         map:start_dialog("crazy_house.guichet_82_un")
       else
         map:start_dialog("crazy_house.guichet_82_ok")
@@ -69,7 +69,7 @@ function map:on_dialog_finished(dialog_id, answer)
     if answer == 0 then
       -- Contrôle de la quantité
       if sol.game.get_item_amount("hache_counter") < 1 then
-        sol.main.play_sound("wrong")
+        sol.audio.play_sound("wrong")
         map:start_dialog("crazy_house.guichet_84_ech_ne_3_un")
       else
         sol.map.treasure_give("poivron", 1, -1)

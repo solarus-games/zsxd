@@ -4,7 +4,7 @@ local map = ...
 
 local bed_sprite = nil
 
-function map:on_map_started(destination_point)
+function map:on_started(destination_point)
 
   local bed_sprite = sol.map.npc_get_sprite("bed")
   if destination_point:get_name() == "start_position" then
@@ -50,7 +50,7 @@ function jump_from_bed()
   sol.map.hero_start_jumping(0, 8, true)
   sol.map.hud_set_pause_enabled(true)
   bed_sprite:set_animation("empty_open")
-  sol.main.play_sound("hero_lands")
+  sol.audio.play_sound("hero_lands")
   sol.map.npc_set_position("bed", 56, 101)
 end
 

@@ -4,7 +4,7 @@ local map = ...
 -- FREAKING CAVE 2 OMFG         --
 ----------------------------------
 
-function map:on_map_started(destination_point)
+function map:on_started(destination_point)
 
   -- No light inside the cave at start
   sol.map.light_set(0)         
