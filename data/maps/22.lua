@@ -47,7 +47,15 @@ local function vieillard()
           map:start_dialog("crazy_house.vieillard_riz_quantite")
         else
           -- A le sac de riz
-          map:start_dialog("crazy_house.vieillard_riz_ok")
+          map:start_dialog("crazy_house.vieillard_riz_ok", function()
+            hero:start_treasure("bocal_epice")
+            game:get_item("sac_riz_counter"):remove_amount(1)
+            -- branche 1411 finie
+            if game:get_item("balai_counter"):has_amount(1) then
+              game:set_value("i1410", 9)
+            end
+            game:set_value("i1411", 10)
+          end)
         end
         -- Incrémentation branche 1411
         local branche1411 = game:get_value("i1411")
@@ -75,127 +83,104 @@ end
 -- Guichet 22A -------------------------------------------------
 local function guichet_22A()
 
-  map:start_dialog("crazy_house.guichet_22A")
   -- Incrémentation branche 1412
   local branche1412 = game:get_value("i1412")
   if branche1412 > 0 and branche1412 <= 1 then
     game:set_value("i1412", 2)
   end
+
+  map:start_dialog("crazy_house.guichet_22A", function()
+    if answer == 0 then
+      if not game.get_item("roc_magma_counter"):has_amount(1) then
+        sol.audio.play_sound("wrong")
+        map:start_dialog("crazy_house.guichet_22_rm_un")
+      else
+        map:start_dialog("crazy_house.guichet_22_rm_ok", function()
+          hero:start_treasure("balai")
+          game:get_item("roc_magma_counter"):remove_amount(1)
+          -- branche 1412 finie
+          if game:get_item("bocal_epice_counter"):has_amount(1) then
+            game:set_value("i1410", 9)
+          end
+        end)
+      end
+    end
+  end)
 end
 
 -- Guichet 22B -------------------------------------------------
-function guichet_22B()
+local function guichet_22B()
 
-  map:start_dialog("crazy_house.guichet_22B")
   -- Incrémentation branche 1411
   local branche1411 = game:get_value("i1411")
   if branche1411 > 0 and branche1411 <= 3 then
     game:set_value("i1411", 4)
   end
+
   -- Incrémentation branche 1412
   local branche1412 = game:get_value("i1412")
   if branche1412 == 6 then
     game:set_value("i1412", 7)
   end
+
+  map:start_dialog("crazy_house.guichet_22B", function()
+    if answer == 0 then
+      if not game:get_item("sac_riz_counter"):has_amount(1) then
+        sol.audio.play_sound("wrong")
+        map:start_dialog("crazy_house.guichet_22_sr_un")
+      else
+        map:start_dialog("crazy_house.guichet_22_sr_ok", function()
+          hero:start_treasure("tapisserie")
+          game:get_item("sac_riz_counter"):remove_amount(1)
+          -- Incrémentation branche 1411
+          local branche1411 = game:get_value("i1411")
+          if branche1411 > 0 and branche1411 <= 5 then
+            game:set_value("i1411", 6)
+          end
+          -- Incrémentation branche 1412
+          local branche1412 = game:get_value("i1412")
+          if branche1412 >= 6 and branche1412 <= 8 then
+            game:set_value("i1412", 9)
+          end
+        end)
+      end
+    end
+  end)
 end
 
 -- Interactions avec capteur pour guichet (devanture) ou NPC
-function map:on_npc_interaction(npc_name)
+GC21front.on_interaction = guichet_21
+GC22A.on_interaction = guichet_22A
+GC22B.on_interaction = guichet_22B
+Vieillard.on_interaction = vieillard
+GC21.on_interaction = guichet_21
 
-  if npc_name == "GC21front" then
-    guichet_21()
-  elseif npc_name == "GC22A" then
-    guichet_22A()
-  elseif npc_name == "GC22B" then
-    guichet_22B()
-  elseif npc_name == "Vieillard" then
-    vieillard()
-  elseif npc_name == "GC21" then
-    guichet_21()
-  end
+-- Mécanisme du coffre farceur dans la salle aux trois portes        
+function prankster_sensor_top:on_activated()
+  prankster_chest:set_position(440, 509)
+end
+prankster_sensor_bottom.on_activated = prankster_sensor_top.on_activated
+
+function prankster_sensor_middle:on_activated()
+  prankster_chest:set_position(360, 509)
 end
 
-function map:on_dialog_finished(dialog_id, answer)
+-- Mécanisme de la porte qui s'ouvre grâce à deux boutons
+-- dans la salle aux trois portes
+function locked_door_switch_A:on_activated()
 
-  if dialog_id == "crazy_house.vieillard_riz_ok" then
-    sol.map.treasure_give("bocal_epice", 1, -1)
-    sol.game.remove_item_amount("sac_riz_counter", 1)
-    -- branche 1411 finie
-    if sol.game.get_item_amount("balai_counter") > 0 then
-      game:set_value("i1410", 9)
-    end
-    game:set_value("i1411", 10)
-  elseif dialog_id == "crazy_house.guichet_22A" then
-    if answer == 0 then
-      if sol.game.get_item_amount("roc_magma_counter") < 1 then
-        sol.main.play_sound("wrong")
-        map:start_dialog("crazy_house.guichet_22_rm_un")
-      else
-        map:start_dialog("crazy_house.guichet_22_rm_ok")
-      end
-    end
-  elseif dialog_id == "crazy_house.guichet_22B" then
-    if answer == 0 then
-      if sol.game.get_item_amount("sac_riz_counter") < 1 then
-        sol.main.play_sound("wrong")
-        map:start_dialog("crazy_house.guichet_22_sr_un")
-      else
-        map:start_dialog("crazy_house.guichet_22_sr_ok")
-      end
-    end
-  elseif dialog_id == "crazy_house.guichet_22_rm_ok" then
-    sol.map.treasure_give("balai", 1, -1)
-    sol.game.remove_item_amount("roc_magma_counter", 1)
-    -- branche 1412 finie
-    if sol.game.get_item_amount("bocal_epice_counter") > 0 then
-      game:set_value("i1410", 9)
-    end
-  elseif dialog_id == "crazy_house.guichet_22_sr_ok" then
-    sol.map.treasure_give("tapisserie", 1, -1)
-    sol.game.remove_item_amount("sac_riz_counter", 1)
-    -- Incrémentation branche 1411
-    local branche1411 = game:get_value("i1411")
-    if branche1411 > 0 and branche1411 <= 5 then
-      game:set_value("i1411", 6)
-    end
-    -- Incrémentation branche 1412
-    local branche1412 = game:get_value("i1412")
-    if branche1412 >= 6 and branche1412 <= 8 then
-      game:set_value("i1412", 9)
+  if locked_door_A_value < 2 then
+    locked_door_A_value = locked_door_A_value + 1
+    if locked_door_A_value == 2 and LD1:is_closed() then
+      map:open_doors("LD1")
+      sol.audio.play_sound("secret")
     end
   end
 end
+locked_door_switch_B.on_activated = locked_door_switch_A.on_activated
 
-function map:on_hero_on_sensor(sensor_name)
+function WW2:on_open()
 
-  -- Mécanisme du coffre farceur dans la salle aux trois portes        
-  if sensor_name == "prankster_sensor_top" or sensor_name == "prankster_sensor_bottom" then
-    sol.map.npc_set_position("prankster_chest", 440, 509)
-  elseif sensor_name == "prankster_sensor_middle" then
-    sol.map.npc_set_position("prankster_chest", 360, 509)
-  end
-end
-
-function map:on_switch_activated(switch_name)
-
-  -- Mécanisme de la porte qui s'ouvre grâce à deux boutons
-  -- dans la salle aux trois portes
-  if switch_name == "locked_door_switch_A"
-    or switch_name == "locked_door_switch_B" then
-    if locked_door_A_value < 2 then
-      locked_door_A_value = locked_door_A_value + 1
-      if locked_door_A_value == 2 and not sol.map.door_is_open("LD1") then
-        sol.map.door_open("LD1")
-        sol.main.play_sound("secret")
-      end
-    end
-  end
-end
-
-function map:on_door_open(door_name)
-
-  if door_name == "WW2" then
-    sol.main.play_sound("secret")
-  end
+  sol.audio.play_sound("secret")
 end
 
