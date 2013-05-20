@@ -37,7 +37,7 @@ end
 function map:on_treasure_obtained(item_name, variant, savegame_variable)
 
   if savegame_variable == 248 then
-    sol.map.dialog_start("dungeon_1.small_key_danger_east")
+    map:start_dialog("dungeon_1.small_key_danger_east")
   end
 end
 

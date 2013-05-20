@@ -26,14 +26,14 @@ function map:on_npc_interaction(npc_name)
       sol.game.savegame_set_boolean(65, true)
     else
       sol.main.play_sound("wrong")
-      sol.map.dialog_start("outside_fields_SE.temple_door_closed")
+      map:start_dialog("outside_fields_SE.temple_door_closed")
     end
 
   elseif npc_name == "yoda" then
     if not sol.game.savegame_get_boolean(66) then
-      sol.map.dialog_start("outside_fields_SE.yoda_give_sword")
+      map:start_dialog("outside_fields_SE.yoda_give_sword")
     else
-      sol.map.dialog_start("outside_fields_SE.yoda_finished")
+      map:start_dialog("outside_fields_SE.yoda_finished")
     end
   end
 end
@@ -47,7 +47,7 @@ function map:on_hero_on_sensor(sensor_name)
     repeat -- make sure the same quote is not picked again
       index = math.random(11)
     until index ~= last_yoda_quote
-    sol.map.dialog_start("outside_fields_SE.yoda_quote_" .. index)
+    map:start_dialog("outside_fields_SE.yoda_quote_" .. index)
     last_yoda_quote = index
   end
 end

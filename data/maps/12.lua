@@ -21,7 +21,7 @@ end
 
 function angry_zelda()
 
-  sol.map.dialog_start("link_cave.angry_zelda")
+  map:start_dialog("link_cave.angry_zelda")
 end
 
 function map:on_dialog_finished(dialog_id)

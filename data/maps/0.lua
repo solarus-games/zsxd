@@ -24,7 +24,7 @@ function map:on_map_started(destination_point)
 end
 
 function intro()
-  sol.map.dialog_start("link_house.intro")
+  map:start_dialog("link_house.intro")
 end
 
 function map:on_dialog_finished(dialog_id)

@@ -14,7 +14,7 @@ end
 -- Guichet 82 -------------------------------------------------
 function guichet_82()
 
-  sol.map.dialog_start("crazy_house.guichet_82")
+  map:start_dialog("crazy_house.guichet_82")
   -- Incrémentation branche 1412
   local branche1412 = sol.game.savegame_get_integer(1412)
   if branche1412 > 0 and branche1412 <= 2 then
@@ -26,12 +26,12 @@ end
 function guichet_84()
 
   if sol.game.savegame_get_integer(1410) == 3 then
-    sol.map.dialog_start("crazy_house.guichet_84_ech_eq_3")
+    map:start_dialog("crazy_house.guichet_84_ech_eq_3")
   else
     if sol.game.get_item_amount("hache_counter") >= 1 then
-      sol.map.dialog_start("crazy_house.guichet_84_ech_ne_3_hh")
+      map:start_dialog("crazy_house.guichet_84_ech_ne_3_hh")
     else
-      sol.map.dialog_start("crazy_house.guichet_84_ech_ne_3_nh")
+      map:start_dialog("crazy_house.guichet_84_ech_ne_3_nh")
     end
   end
 end
@@ -55,9 +55,9 @@ function map:on_dialog_finished(dialog_id, answer)
       -- Contrôle de la quantité
       if sol.game.get_item_amount("sac_olive_counter") < 1 then
         sol.main.play_sound("wrong")
-        sol.map.dialog_start("crazy_house.guichet_82_un")
+        map:start_dialog("crazy_house.guichet_82_un")
       else
-        sol.map.dialog_start("crazy_house.guichet_82_ok")
+        map:start_dialog("crazy_house.guichet_82_ok")
       end
     end
   elseif dialog_id == "crazy_house.guichet_82_ok" then
@@ -70,7 +70,7 @@ function map:on_dialog_finished(dialog_id, answer)
       -- Contrôle de la quantité
       if sol.game.get_item_amount("hache_counter") < 1 then
         sol.main.play_sound("wrong")
-        sol.map.dialog_start("crazy_house.guichet_84_ech_ne_3_un")
+        map:start_dialog("crazy_house.guichet_84_ech_ne_3_un")
       else
         sol.map.treasure_give("poivron", 1, -1)
         sol.game.remove_item_amount("hache_counter", 1)

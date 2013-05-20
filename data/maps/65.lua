@@ -149,7 +149,7 @@ function remove_2f_sw_water()
 
   sol.main.play_sound("water_drain_begin")
   sol.main.play_sound("water_drain")
-  sol.map.dialog_start("dungeon_1.2f_sw_water_removed")
+  map:start_dialog("dungeon_1.2f_sw_water_removed")
   sol.game.savegame_set_boolean(283, true)
 end
 
@@ -163,7 +163,7 @@ end
 
 function ganon_dialog()
 
-  sol.map.dialog_start("dungeon_1.ganon")
+  map:start_dialog("dungeon_1.ganon")
 end
 
 function map:on_npc_interaction(npc_name)
@@ -178,7 +178,7 @@ end
 
 function another_castle()
 
-  sol.map.dialog_start("dungeon_1.boss_hint_stone")
+  map:start_dialog("dungeon_1.boss_hint_stone")
   sol.map.dialog_set_variable("dungeon_1.boss_hint_stone",
     sol.game.savegame_get_name())
 end

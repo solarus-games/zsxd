@@ -27,18 +27,18 @@ end
 function map:on_npc_interaction(npc_name)
   if npc_name == "guard" then
     if sol.map.hero_get_direction() == 0 then
-      sol.map.dialog_start("outside_fields_SO.guard_ok")
+      map:start_dialog("outside_fields_SO.guard_ok")
     else
-      sol.map.dialog_start("outside_fields_SO.guard_nok")
+      map:start_dialog("outside_fields_SO.guard_nok")
     end
   elseif npc_name == "forest_monkey" then
     sol.main.play_sound("monkey")
     if sol.game.savegame_get_boolean(48) then -- has boots
-      sol.map.dialog_start("outside_fields_SO.forest_monkey_end")
+      map:start_dialog("outside_fields_SO.forest_monkey_end")
     elseif sol.game.get_item_amount("apple_pie_counter") > 0 then -- has apple pie
-      sol.map.dialog_start("outside_fields_SO.forest_monkey_give_boots")
+      map:start_dialog("outside_fields_SO.forest_monkey_give_boots")
     else
-      sol.map.dialog_start("outside_fields_SO.forest_monkey_start")
+      map:start_dialog("outside_fields_SO.forest_monkey_start")
     end
   end
 end
@@ -63,7 +63,7 @@ end
 
 function map:on_chest_empty(chest_name)
    if chest_name == "chest_link_house" then
-    sol.map.dialog_start("outside_fields_SO.chest_link_house")
+    map:start_dialog("outside_fields_SO.chest_link_house")
     sol.map.hero_unfreeze()
   end
 end

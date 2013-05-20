@@ -22,9 +22,9 @@ function map:on_switch_activated(switch_name)
     end
 
     if next_switch_index == 5 and not sol.map.door_is_open("code_door") then
-      sol.map.dialog_start("dungeon_1.big_code_ok")
+      map:start_dialog("dungeon_1.big_code_ok")
     elseif next_switch_index > #switches_good_order then
-      sol.map.dialog_start("dungeon_1.big_code_completed")
+      map:start_dialog("dungeon_1.big_code_completed")
     end
 
     sol.map.switch_set_activated(switch_name, false)

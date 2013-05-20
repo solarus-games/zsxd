@@ -18,7 +18,7 @@ function map:on_map_opening_transition_finished(destination_point)
 
   -- show the welcome message
   if destination_point:get_name() == "from_outside" then
-    sol.map.dialog_start("dungeon_1.welcome")
+    map:start_dialog("dungeon_1.welcome")
   end
 end
 

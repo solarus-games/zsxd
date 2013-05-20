@@ -73,9 +73,9 @@ local function guichet_21()
 end
 
 -- Guichet 22A -------------------------------------------------
-function guichet_22A()
+local function guichet_22A()
 
-  sol.map.dialog_start("crazy_house.guichet_22A")
+  map:start_dialog("crazy_house.guichet_22A")
   -- Incrémentation branche 1412
   local branche1412 = sol.game.savegame_get_integer(1412)
   if branche1412 > 0 and branche1412 <= 1 then
@@ -86,7 +86,7 @@ end
 -- Guichet 22B -------------------------------------------------
 function guichet_22B()
 
-  sol.map.dialog_start("crazy_house.guichet_22B")
+  map:start_dialog("crazy_house.guichet_22B")
   -- Incrémentation branche 1411
   local branche1411 = sol.game.savegame_get_integer(1411)
   if branche1411 > 0 and branche1411 <= 3 then
@@ -129,18 +129,18 @@ function map:on_dialog_finished(dialog_id, answer)
     if answer == 0 then
       if sol.game.get_item_amount("roc_magma_counter") < 1 then
         sol.main.play_sound("wrong")
-        sol.map.dialog_start("crazy_house.guichet_22_rm_un")
+        map:start_dialog("crazy_house.guichet_22_rm_un")
       else
-        sol.map.dialog_start("crazy_house.guichet_22_rm_ok")
+        map:start_dialog("crazy_house.guichet_22_rm_ok")
       end
     end
   elseif dialog_id == "crazy_house.guichet_22B" then
     if answer == 0 then
       if sol.game.get_item_amount("sac_riz_counter") < 1 then
         sol.main.play_sound("wrong")
-        sol.map.dialog_start("crazy_house.guichet_22_sr_un")
+        map:start_dialog("crazy_house.guichet_22_sr_un")
       else
-        sol.map.dialog_start("crazy_house.guichet_22_sr_ok")
+        map:start_dialog("crazy_house.guichet_22_sr_ok")
       end
     end
   elseif dialog_id == "crazy_house.guichet_22_rm_ok" then

@@ -57,7 +57,7 @@ end
 function map:on_treasure_obtained(item_name, variant, savegame_variable)
 
   if item_name == "map" then
-    sol.map.dialog_start("dungeon_1.after_map_treasure")
+    map:start_dialog("dungeon_1.after_map_treasure")
   end
 end
 

@@ -15,26 +15,26 @@ end
 function guichet_41()
 
   if sol.game.savegame_get_integer(1410) == 3 then
-    sol.map.dialog_start("crazy_house.guichet_41_ech_eq_3")
+    map:start_dialog("crazy_house.guichet_41_ech_eq_3")
     sol.game.savegame_set_integer(1410, 4)
   else
-    sol.map.dialog_start("crazy_house.guichet_41_ech_ne_3")
+    map:start_dialog("crazy_house.guichet_41_ech_ne_3")
   end
 end
 
 -- Guichet 43 -------------------------------------------------
 function guichet_43()
 
-  sol.map.dialog_start("crazy_house.guichet_43")
+  map:start_dialog("crazy_house.guichet_43")
 end
 
 -- Guichet 45 -------------------------------------------------
 function guichet_45()
 
   if sol.game.savegame_get_integer(1410) == 3 then
-    sol.map.dialog_start("crazy_house.guichet_45_ech_eq_3")
+    map:start_dialog("crazy_house.guichet_45_ech_eq_3")
   else
-    sol.map.dialog_start("crazy_house.guichet_45_ech_ne_3")
+    map:start_dialog("crazy_house.guichet_45_ech_ne_3")
   end
 
   -- Incrémentation branche 1412
@@ -48,16 +48,16 @@ end
 function guichet_47()
 
   if sol.game.savegame_get_integer(1410) == 3 then
-    sol.map.dialog_start("crazy_house.guichet_47_ech_eq_3")
+    map:start_dialog("crazy_house.guichet_47_ech_eq_3")
   else
-    sol.map.dialog_start("crazy_house.guichet_47_ech_ne_3")
+    map:start_dialog("crazy_house.guichet_47_ech_ne_3")
   end
 end
 
 -- Guichet 49 -------------------------------------------------
 function guichet_49()
 
-  sol.map.dialog_start("crazy_house.guichet_49")
+  map:start_dialog("crazy_house.guichet_49")
 end
 
 function map:on_npc_interaction(npc_name)
@@ -83,18 +83,18 @@ function map:on_dialog_finished(dialog_id, answer)
   if dialog_id == "crazy_house.guichet_43" then
     -- Pipelette (guichet 43) qui se tourne vers Link, énervée
     guichet43_sprite:set_direction(3)
-    sol.map.dialog_start("crazy_house.guichet_43n")
+    map:start_dialog("crazy_house.guichet_43n")
   elseif dialog_id == "crazy_house.guichet_43n" then
     -- Pipelette reprend sa conversation
     guichet43_sprite:set_direction(2)
-    sol.map.dialog_start("crazy_house.guichet_43f")
+    map:start_dialog("crazy_house.guichet_43f")
   elseif dialog_id == "crazy_house.guichet_45_ech_ne_3" then
     if answer == 0 then
       if sol.game.get_item_amount("cuillere_counter") >= 1 then
-        sol.map.dialog_start("crazy_house.guichet_45_ech_ok")
+        map:start_dialog("crazy_house.guichet_45_ech_ok")
       else
         sol.main.play_sound("wrong")
-        sol.map.dialog_start("crazy_house.guichet_45_ech_un")
+        map:start_dialog("crazy_house.guichet_45_ech_un")
       end
     end
   elseif dialog_id == "crazy_house.guichet_45_ech_ok" then

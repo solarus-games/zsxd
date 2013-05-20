@@ -35,7 +35,7 @@ function map:on_hero_on_sensor(sensor_name)
     -- Teleporter at the end
   elseif sensor_name == "sensor_teleporter" then
     if not sol.game.savegame_get_boolean(56) then
-      sol.map.dialog_start("freaking_cave_teleporter")
+      map:start_dialog("freaking_cave_teleporter")
       sol.map.hero_start_jumping(6, 64, true)
     end
   end

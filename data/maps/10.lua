@@ -3,9 +3,9 @@ local map = ...
 function map:on_npc_interaction(npc_name)
 
   if not sol.game.savegame_get_boolean(61) then
-    sol.map.dialog_start("water_house.give_bottle")
+    map:start_dialog("water_house.give_bottle")
   else
-    sol.map.dialog_start("water_house.after")
+    map:start_dialog("water_house.after")
   end
 end
 

@@ -14,7 +14,7 @@ end
 
 function credits()
 
-  sol.map.dialog_start("the_end.credits")
+  map:start_dialog("the_end.credits")
 end
 
 function map:on_dialog_finished(dialog_id)
