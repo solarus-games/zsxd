@@ -1,3 +1,5 @@
+local map = ...
+
 -- Temple of Stupidities 1F NW
 
 local switches_good_order = {

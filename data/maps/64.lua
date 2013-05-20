@@ -1,3 +1,5 @@
+local map = ...
+
 -- Temple of Stupidities 2F NW
 
 function event_map_started(destination_point_name)

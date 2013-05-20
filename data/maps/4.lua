@@ -1,3 +1,5 @@
+local map = ...
+
 -- Outside SE
 
 local last_yoda_quote = 0

@@ -1,3 +1,5 @@
+local map = ...
+
 -- Link's house
 
 local bed_sprite = nil

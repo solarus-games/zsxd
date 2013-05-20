@@ -1,3 +1,5 @@
+local map = ...
+
 -- Desert east house
 
 function event_npc_interaction(npc_name)

@@ -1,3 +1,5 @@
+local map = ...
+
 -- The end
 
 function event_map_started(destination_point_name)

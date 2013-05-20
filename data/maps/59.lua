@@ -1,3 +1,5 @@
+local map = ...
+
 -- Caverne maudite -16
 
 function event_map_started()

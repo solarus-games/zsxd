@@ -1,3 +1,5 @@
+local map = ...
+
 function event_npc_interaction(npc_name)
 
   if not sol.game.savegame_get_boolean(61) then

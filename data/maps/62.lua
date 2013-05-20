@@ -1,3 +1,5 @@
+local map = ...
+
 -- Temple of Stupidities 1F NW
 
 -- stupid run between switches and doors

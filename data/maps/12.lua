@@ -1,3 +1,5 @@
+local map = ...
+
 -- Link's cave
 
 function event_map_started(destination_point_name)

@@ -1,3 +1,5 @@
+local map = ...
+
 -- Dungeon 1 1F SE (Temple of Stupidities)
 
 local remove_water_delay = 500 -- delay between each step when some water is disappearing

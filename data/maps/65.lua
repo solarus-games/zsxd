@@ -1,3 +1,5 @@
+local map = ...
+
 -- Temple of Stupidities 1F NE
 
 local will_remove_water = false
