@@ -1,11 +1,13 @@
+local enemy = ...
+
 -- Generic script for an enemy with a sword
 -- that goes towards the hero if he sees him
 -- and walks randomly otherwise.
 
 -- Example of use from an enemy script:
 
--- sol.main.include("enemies/generic_soldier")
--- set_properties({
+-- sol.main.load_file("enemies/generic_soldier")(enemy)
+-- enemy:set_properties({
 --   main_sprite = "enemies/green_knight_soldier",
 --   sword_sprite = "enemies/green_knight_soldier_sword",
 --   life = 4,
@@ -20,17 +22,16 @@
 -- Its values are all optional except main_sprite
 -- and sword_sprite.
 
-properties = {}
-going_hero = false
-being_pushed = false
-movement = nil
-main_sprite = nil
-sword_sprite = nil
+local properties = {}
+local going_hero = false
+local being_pushed = false
+local main_sprite = nil
+local sword_sprite = nil
 
-function set_properties(prop)
+function enemy:set_properties(prop)
 
   properties = prop
-  -- set default values
+  -- Set default values.
   if properties.life == nil then
     properties.life = 2
   end
@@ -51,99 +52,102 @@ function set_properties(prop)
   end
 end
 
-function event_appear()
+function enemy:on_created()
 
-  sol.enemy.set_life(properties.life)
-  sol.enemy.set_damage(properties.damage)
-  sol.enemy.set_hurt_style(properties.hurt_style)
-  sword_sprite = sol.enemy.create_sprite(properties.sword_sprite)
-  main_sprite = sol.enemy.create_sprite(properties.main_sprite)
-  sol.enemy.set_size(16, 16)
-  sol.enemy.set_origin(8, 13)
+  self:set_life(properties.life)
+  self:set_damage(properties.damage)
+  self:set_hurt_style(properties.hurt_style)
+  sword_sprite = self:create_sprite(properties.sword_sprite)
+  main_sprite = self:create_sprite(properties.main_sprite)
+  self:set_size(16, 16)
+  self:set_origin(8, 13)
 
-  sol.enemy.set_invincible_sprite(sword_sprite)
-  sol.enemy.set_attack_consequence_sprite(sword_sprite, "sword", "custom")
+  self:set_invincible_sprite(sword_sprite)
+  self:set_attack_consequence_sprite(sword_sprite, "sword", "custom")
 end
 
-function event_restart()
+function enemy:on_restarted()
 
   if not being_pushed then
     if going_hero then
-      go_hero()
+      self:go_hero()
     else
-      go_random()
-      check_hero()
+      self:go_random()
+      self:check_hero()
     end
   end
 end
 
-function event_hurt()
-  sol.main.timer_stop_all()
-end
+function enemy:check_hero()
 
-function check_hero()
+  local hero = self:get_map():get_entity("hero")
+  local _, _, layer = self:get_position()
+  local _, _, hero_layer = hero:get_position()
+  local near_hero = layer == hero_layer
+    and self:get_distance(hero) < 100
 
-  local near_hero = sol.enemy.get_distance_to_hero() < 100
   if near_hero and not going_hero then
     if properties.play_hero_seen_sound then
-      sol.main.play_sound("hero_seen")
+      sol.audio.play_sound("hero_seen")
     end
-    go_hero()
+    self:go_hero()
   elseif not near_hero and going_hero then
-    go_random()
+    self:go_random()
   end
-  sol.main.timer_start(check_hero, 1000)
+  sol.timer.start(self, 1000, function() self:check_hero() end)
 end
 
-function event_movement_changed()
+function enemy:on_movement_changed(movement)
 
   if not being_pushed then
-    movement = sol.enemy.get_movement()
-    local direction4 = movement:get_property("displayed_direction")
+    local direction4 = movement:get_direction4()
     main_sprite:set_direction(direction4)
     sword_sprite:set_direction(direction4)
   end
 end
 
-function event_movement_finished(movement)
+function enemy:on_movement_finished(movement)
 
   if being_pushed then
-    go_hero()
+    self:go_hero()
   end
 end
 
-function event_obstacle_reached(movement)
+function enemy:on_obstacle_reached(movement)
 
   if being_pushed then
-    go_hero()
+    self:go_hero()
   end
 end
 
-function event_custom_attack_received(attack, sprite)
+function enemy:on_custom_attack_received(attack, sprite)
 
   if attack == "sword" and sprite == sword_sprite then
-    sol.main.play_sound("sword_tapping")
+    sol.audio.play_sound("sword_tapping")
     being_pushed = true
-    local x, y = sol.enemy.get_position()
-    local hero_x, hero_y = sol.map.hero_get_position()
-    local angle = sol.main.get_angle(hero_x, hero_y, x, y)
-    movement = sol.main.straight_movement_create(128, angle)
-    movement:set_property("max_distance", 26)
-    movement:set_property("smooth", true)
-    sol.enemy.start_movement(movement)
+    local x, y = self:get_position()
+    local angle = self:get_angle(self:get_map():get_entity("hero")) + math.pi
+    local movement = sol.movement.create("straight")
+    movement:set_speed(128)
+    movement:set_angle(angle)
+    movement:set_max_distance(26)
+    movement:set_smooth(true)
+    movement:start(self)
   end
 end
 
-function go_random()
-  movement = sol.main.random_path_movement_create(properties.normal_speed)
-  sol.enemy.start_movement(movement)
+function enemy:go_random()
+  local movement = sol.movement.create("random_path")
+  movement:set_speed(properties.normal_speed)
+  movement:start(self)
   being_pushed = false
   going_hero = false
 end
 
-function go_hero()
-  movement = sol.main.target_movement_create(properties.faster_speed)
-  sol.enemy.start_movement(movement)
+function enemy:go_hero()
+  local movement = sol.movement.create("target")
+  movement:set_speed(properties.faster_speed)
+  movement:start(self)
   being_pushed = false
   going_hero = true
 end

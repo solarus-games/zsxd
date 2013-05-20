@@ -1,10 +1,12 @@
--- Mandible
+local enemy = ...
 
-sol.main.include("enemies/generic_towards_hero")
-set_properties({
+-- Mandible.
+
+sol.main.load_file("enemies/generic_towards_hero")(enemy)
+enemy:set_properties({
   sprite = "enemies/mandible",
-  life = 5,
-  damage = 4,
+  life = 3,
+  damage = 2,
   hurt_style = "monster"
 })
 

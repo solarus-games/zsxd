@@ -1,18 +1,20 @@
--- Tentacle: a basic enemy that follows the hero
+local enemy = ...
 
--- The enemy appears: set its properties
-function event_appear()
+-- Tentacle: a basic enemy that follows the hero.
 
-  sol.enemy.set_life(1)
-  sol.enemy.set_damage(2)
-  sol.enemy.create_sprite("enemies/tentacle")
-  sol.enemy.set_size(16, 16)
-  sol.enemy.set_origin(8, 13)
+function enemy:on_created()
+
+  self:set_life(1)
+  self:set_damage(2)
+  self:create_sprite("enemies/tentacle")
+  self:set_size(16, 16)
+  self:set_origin(8, 13)
 end
 
-function event_restart()
+function enemy:on_restarted()
 
-  local m = sol.main.path_finding_movement_create(32)
-  sol.enemy.start_movement(m)
+  local m = sol.movement.create("path_finding")
+  m:set_speed(32)
+  m:start(self)
 end
 

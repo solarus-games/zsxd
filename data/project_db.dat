@@ -300,18 +300,19 @@
 5	piece_of_heart	Piece of heart
 5	fairy	Fairy
 5	zelda	Zelda
-6	simple_green_soldier	Simple green soldier
-6	bubble	Bubble
-6	tentacle	Tentacle
-6	skeletor	Skeletor
-6	globul	Globul
-6	mandible	Mandible
 6	bee_guard	Bee Guard
 6	blue_bullblin	Blue Bullblin
-6	red_bullblin	Red Bullblin
-6	creeper	Creeper
+6	bubble	Bubble
 6	cannonball	Random Cannonball
+6	creeper	Creeper
+6	ganon	Ganon
+6	globul	Globul
 6	lizarmen	Lizarmen
+6	mandible	Mandible
+6	red_bullblin	Red Bullblin
+6	skeletor	Skeletor
+6	simple_green_soldier	Simple green soldier
+6	tentacle	Tentacle
 6	zelda	Zelda
 7	fr/text/dialogs.dat	French dialogs
 7	en/text/dialogs.dat	English dialogs

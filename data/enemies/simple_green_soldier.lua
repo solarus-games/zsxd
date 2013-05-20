@@ -1,76 +1,71 @@
+local enemy = ...
+
 -- Simple green soldier: a stupid soldier with a small sword
 -- who goes in a random direction.
 -- Unlike the normal green soldier, he cannot see or follow the hero.
 
--- The enemy appears: set its properties
-function event_appear()
+enemy:set_life(2)
+enemy:set_damage(2)
+enemy:set_size(16, 16)
+enemy:set_origin(8, 13)
 
-  sol.enemy.set_life(2)
-  sol.enemy.set_damage(2)
-  sol.enemy.create_sprite("enemies/simple_green_soldier")
-  sol.enemy.set_size(16, 16)
-  sol.enemy.set_origin(8, 13)
+local sprite = enemy:create_sprite("enemies/simple_green_soldier")
+function sprite:on_animation_finished(animation)
+
+  -- If the enemy was stopped and looking to a direction, go to that direction.
+  local direction = self:get_direction()
+  if animation == "stopped_watching_left" then
+    enemy:go((direction + 1) % 4)
+  elseif animation == "stopped_watching_right" then
+    enemy:go((direction + 3) % 4)
+  end
 end
 
--- The enemy was stopped for some reason and should restart
-function event_restart()
+-- The enemy was stopped for some reason and should restart.
+function enemy:on_restarted()
 
-  local m = sol.main.straight_movement_create(0, 0)
-  sol.enemy.start_movement(m)
+  local m = sol.movement.create("straight")
+  m:set_speed(0)
+  m:start(self)
   local direction4 = math.random(4) - 1
-  go(direction4)
+  self:go(direction4)
 end
 
--- An obstacle is reached: stop for a while, looking to a next direction
-function event_obstacle_reached()
+-- An obstacle is reached: stop for a while, looking to a next direction.
+function enemy:on_obstacle_reached(movement)
 
-  -- look to the left or to the right
-  local sprite = sol.enemy.get_sprite()
+  -- Look to the left or to the right.
   local animation = sprite:get_animation()
   if animation == "walking" then
-    look_left_or_right()
+    self:look_left_or_right()
   end
 end
 
--- The movement is finished: stop for a while, looking to a next direction
-function event_movement_finished(movement)
-  -- same thing as when an obstacle is reached
-  event_obstacle_reached()
+-- The movement is finished: stop for a while, looking to a next direction.
+function enemy:on_movement_finished(movement)
+  -- Same thing as when an obstacle is reached.
+  self:on_obstacle_reached(movement)
 end
 
---  The animation of a sprite is finished
-function event_sprite_animation_finished(sprite, animation)
+-- Makes the soldier walk towards a direction.
+function enemy:go(direction4)
 
-  -- if the enemy was stopped and looking to a direction, go to that direction
-  local direction = sprite:get_direction()
-  if animation == "stopped_watching_left" then
-    go((direction + 1) % 4)
-  elseif animation == "stopped_watching_right" then
-    go((direction + 3) % 4)
-  end
-end
-
--- Makes the soldier walk towards a direction
-function go(direction4)
-
-  -- set the sprite
-  local sprite = sol.enemy.get_sprite()
+  -- Set the sprite.
   sprite:set_animation("walking")
   sprite:set_direction(direction4)
 
-  -- set the movement
-  local m = sol.enemy.get_movement()
+  -- Set the movement.
+  local m = self:get_movement()
   local max_distance = 40 + math.random(120)
-  m:set_property("max_distance", max_distance)
-  m:set_property("smooth", true)
-  m:set_property("speed", 40)
-  m:set_property("angle", direction4 * math.pi / 2)
+  m:set_max_distance(max_distance)
+  m:set_smooth(true)
+  m:set_speed(40)
+  m:set_angle(direction4 * math.pi / 2)
 end
 
--- Makes the soldier look to its left or to its right (random choice)
-function look_left_or_right()
+-- Makes the soldier look to its left or to its right (random choice).
+function enemy:look_left_or_right()
 
-  local sprite = sol.enemy.get_sprite()
   if math.random(2) == 1 then
     sprite:set_animation("stopped_watching_left")
   else
