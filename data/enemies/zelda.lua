@@ -1,26 +1,27 @@
+local enemy = ..
 -- Zelda
 
-function event_appear()
+local sprite
 
-  sol.enemy.set_life(100)
-  sol.enemy.set_damage(8)
-  sol.enemy.create_sprite("enemies/zelda")
-  sol.enemy.set_size(16, 16)
-  sol.enemy.set_origin(8, 13)
-  sol.enemy.set_invincible()
+function enemy:on_created()
+
+  self:set_life(100)
+  self:set_damage(8)
+  self:set_size(16, 16)
+  self:set_origin(8, 13)
+  self:set_invincible()
+  sprite = self:create_sprite("enemies/zelda")
 end
 
-function event_restart()
+function enemy:on_restarted()
 
-  local m = sol.main.path_finding_movement_create(64)
-  sol.enemy.start_movement(m)
-end
+  local movement = sol.movement.create("path_finding")
 
-function event_movement_changed()
+  function movement:on_changed()
+    sprite:set_direction(self:get_displayed_direction())
+  end
 
-  local m = sol.enemy.get_movement()
-  local direction4 = m:get_property("displayed_direction")
-  local sprite = sol.enemy.get_sprite()
-  sprite:set_direction(direction4)
+  movement:set_speed(64)
+  movement:start(self)
 end
 

@@ -1,3 +1,5 @@
+local enemy = ...
+
 -- Cannonball or random sprite
 -- made for the ALTTP room in Temple of Stupidities 1F NE
 
@@ -114,11 +116,11 @@ local random_balls = {
   }
 }
 
-function event_appear()
+function enemy:on_created()
 
-  sol.enemy.set_life(1)
-  sol.enemy.set_damage(0)
-  sol.enemy.set_invincible()
+  self:set_life(1)
+  self:set_damage(0)
+  self:set_invincible()
 
   local index
   if math.random(4) == 4 then
@@ -130,22 +132,23 @@ function event_appear()
   end
   local props = random_balls[index]
 
-  sol.enemy.create_sprite(props.sprite)
-  sol.enemy.set_size(props.width, props.height)
-  sol.enemy.set_origin(props.origin_x, props.origin_y)
-  local x, y = sol.enemy.get_position()
-  sol.enemy.set_position(x + props.dx, y + props.dy)
-  sol.main.play_sound(props.sound)
+  self:create_sprite(props.sprite)
+  self:set_size(props.width, props.height)
+  self:set_origin(props.origin_x, props.origin_y)
+  local x, y = self:get_position()
+  self:set_position(x + props.dx, y + props.dy)
+  sol.audio.play_sound(props.sound)
 end
 
-function event_restart()
+function enemy:on_restarted()
 
-  local m = sol.main.straight_movement_create(48, math.pi * 3 / 2)
-  sol.enemy.start_movement(m)
-end
+  local movement = sol.movement.create("straight")
 
-function event_obstacle_reached()
-
-  sol.map.enemy_remove(sol.enemy.get_name())
+  function movement:on_obstacle_reached()
+    enemy:remove()
+  end
+  movement:set_speed(48)
+  movement:set_angle(3 * math.pi / 2)
+  movement:start(self)
 end
 
