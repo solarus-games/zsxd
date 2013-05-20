@@ -9,29 +9,29 @@ function map:on_started(destination_point)
   -- switches of stairs of the central room
   for i = 1, 7 do
     if not game:get_value("b292" + i) then
-      sol.map.stairs_set_enabled("stairs_" .. i, false)
-      sol.map.switch_set_activated("stairs_".. i .. "_switch", false)
+      map:get_entity("stairs_" .. i):set_enabled(false)
+      map:get_entity("stairs_".. i .. "_switch"):set_activated(false)
     else
-      sol.map.switch_set_activated("stairs_" .. i .. "_switch", true)
+      map:get_entity("stairs_".. i .. "_switch"):set_activated(true)
     end
   end
 
   -- room with enemies to fight
   if game:get_value("b301") then
-    sol.map.enemy_remove_group("fight_room")
+    map:remove_entities("fight_room_enemy")
   end
 
   -- block pushed to remove the water of 2F SW
   if game:get_value("b283") then
-    sol.map.block_set_enabled("remove_water_block", false)
+    remove_water_block:set_enabled(false)
   else
-    sol.map.block_set_enabled("fake_remove_water_block", false)
+    fake_remove_water_block:set_enabled(false)
   end
 
   -- boss
-  sol.map.door_set_open("boss_door", true)
+  boss_door:set_open(true)
   if game:get_value("b306") then
-    sol.map.tile_set_enabled("boss_gate", true)
+    boss_gate:set_enabled(true)
   end
 end
 

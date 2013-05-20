@@ -260,7 +260,7 @@ function map:on_dialog_finished(dialog_id, answer)
     end
   elseif dialog_id == "crazy_house.guichet_12B_ech_eq_7_ok" then
     -- Obtention du parfum (guichet 12B)
-    sol.map.treasure_give("parfum", 1, -1)
+    hero:start_treasure("parfum", 1, -1)
     sol.game.remove_item_amount("bocal_epice_counter", 1)
     sol.game.remove_item_amount("balai_counter", 1)
     game:set_value("i1410", 10)
@@ -268,7 +268,7 @@ function map:on_dialog_finished(dialog_id, answer)
     if answer == 0 then
       if sol.game.get_item_amount("tapisserie_counter") >= 1 then
         -- Obtention de la hache (guichet 11)
-        sol.map.treasure_give("hache", 1, -1)
+        hero:start_treasure("hache", 1, -1)
         sol.game.remove_item_amount("tapisserie_counter", 1)
         -- Incrémentation branche 1411
         local branche1411 = game:get_value("i1411")
@@ -282,7 +282,7 @@ function map:on_dialog_finished(dialog_id, answer)
       if sol.game.get_item_amount("tapisserie_counter") >= 1 then
         -- Obtention du roc magma (guichet 11)
         guichet_11_error = true
-        sol.map.treasure_give("roc_magma", 1, -1)
+        hero:start_treasure("roc_magma", 1, -1)
         sol.game.remove_item_amount("tapisserie_counter", 1)
         -- Incrémentation branche 1412
         local branche1412 = game:get_value("i1412")
@@ -307,10 +307,10 @@ function map:on_chest_empty(chest_name)
   if chest_name == "CK3" then
     if game:get_value("b141") then
       -- The locked door in 3F is already open
-      sol.map.treasure_give("rupee", 4, -1)
+      hero:start_treasure("rupee", 4, -1)
     else
       -- Normal case: give a small key
-      sol.map.treasure_give("small_key", 1, -1)
+      hero:start_treasure("small_key", 1, -1)
     end
   else
     -- Coffre vide classique

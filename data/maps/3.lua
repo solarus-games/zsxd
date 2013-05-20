@@ -56,7 +56,7 @@ function map:on_dialog_finished(dialog_id, answer)
       sol.map.npc_start_movement("guard", m)
     end
   elseif dialog_id == "outside_fields_SO.forest_monkey_give_boots" then
-    sol.map.treasure_give("pegasus_shoes", 1, 48)
+    hero:start_treasure("pegasus_shoes", 1, 48)
     sol.game.remove_item_amount("apple_pie_counter", 1)
   end
 end

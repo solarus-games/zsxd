@@ -98,7 +98,7 @@ function map:on_dialog_finished(dialog_id, answer)
       end
     end
   elseif dialog_id == "crazy_house.guichet_45_ech_ok" then
-    sol.map.treasure_give("sac_olive", 1, -1)
+    hero:start_treasure("sac_olive", 1, -1)
     sol.game.remove_item_amount("cuillere_counter", 1)
   end
 end

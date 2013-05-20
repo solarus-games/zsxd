@@ -12,7 +12,7 @@ end
 function map:on_dialog_finished(dialog_id)
 
   if dialog_id == "water_house.give_bottle" then
-    sol.map.treasure_give("bottle_2", 2, 61)
+    hero:start_treasure("bottle_2", 2, 61)
   end
 end
 
