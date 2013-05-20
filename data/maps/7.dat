@@ -1,0 +1,335 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 320,
+  height = 288,
+  world = "inside_world",
+  tileset = "0",
+  music = "same",
+}
+
+tile{
+  layer = 1,
+  x = 16,
+  y = 16,
+  width = 24,
+  height = 24,
+  pattern = 45,
+}
+
+tile{
+  layer = 1,
+  x = 40,
+  y = 16,
+  width = 240,
+  height = 24,
+  pattern = 49,
+}
+
+tile{
+  layer = 1,
+  x = 280,
+  y = 16,
+  width = 24,
+  height = 24,
+  pattern = 46,
+}
+
+tile{
+  layer = 1,
+  x = 16,
+  y = 40,
+  width = 24,
+  height = 208,
+  pattern = 51,
+}
+
+tile{
+  layer = 1,
+  x = 16,
+  y = 248,
+  width = 24,
+  height = 24,
+  pattern = 47,
+}
+
+tile{
+  layer = 1,
+  x = 40,
+  y = 248,
+  width = 240,
+  height = 24,
+  pattern = 52,
+}
+
+tile{
+  layer = 1,
+  x = 280,
+  y = 248,
+  width = 24,
+  height = 24,
+  pattern = 48,
+}
+
+tile{
+  layer = 1,
+  x = 280,
+  y = 40,
+  width = 24,
+  height = 208,
+  pattern = 50,
+}
+
+tile{
+  layer = 1,
+  x = 40,
+  y = 40,
+  width = 8,
+  height = 8,
+  pattern = 14,
+}
+
+tile{
+  layer = 1,
+  x = 48,
+  y = 40,
+  width = 224,
+  height = 8,
+  pattern = 18,
+}
+
+tile{
+  layer = 1,
+  x = 272,
+  y = 40,
+  width = 8,
+  height = 8,
+  pattern = 15,
+}
+
+tile{
+  layer = 1,
+  x = 272,
+  y = 48,
+  width = 8,
+  height = 192,
+  pattern = 19,
+}
+
+tile{
+  layer = 1,
+  x = 272,
+  y = 240,
+  width = 8,
+  height = 8,
+  pattern = 17,
+}
+
+tile{
+  layer = 1,
+  x = 40,
+  y = 240,
+  width = 8,
+  height = 8,
+  pattern = 16,
+}
+
+tile{
+  layer = 1,
+  x = 48,
+  y = 240,
+  width = 224,
+  height = 8,
+  pattern = 21,
+}
+
+tile{
+  layer = 1,
+  x = 40,
+  y = 48,
+  width = 8,
+  height = 192,
+  pattern = 20,
+}
+
+tile{
+  layer = 1,
+  x = 48,
+  y = 48,
+  width = 224,
+  height = 192,
+  pattern = 2,
+}
+
+tile{
+  layer = 1,
+  x = 152,
+  y = 248,
+  width = 16,
+  height = 16,
+  pattern = 77,
+}
+
+tile{
+  layer = 1,
+  x = 144,
+  y = 248,
+  width = 8,
+  height = 16,
+  pattern = 74,
+}
+
+tile{
+  layer = 1,
+  x = 168,
+  y = 248,
+  width = 8,
+  height = 16,
+  pattern = 75,
+}
+
+tile{
+  layer = 1,
+  x = 64,
+  y = 104,
+  width = 8,
+  height = 8,
+  pattern = 4,
+}
+
+tile{
+  layer = 1,
+  x = 72,
+  y = 104,
+  width = 176,
+  height = 8,
+  pattern = 8,
+}
+
+tile{
+  layer = 1,
+  x = 248,
+  y = 104,
+  width = 8,
+  height = 8,
+  pattern = 5,
+}
+
+tile{
+  layer = 1,
+  x = 72,
+  y = 112,
+  width = 176,
+  height = 24,
+  pattern = 173,
+}
+
+tile{
+  layer = 1,
+  x = 248,
+  y = 112,
+  width = 8,
+  height = 24,
+  pattern = 9,
+}
+
+tile{
+  layer = 1,
+  x = 248,
+  y = 136,
+  width = 8,
+  height = 8,
+  pattern = 7,
+}
+
+tile{
+  layer = 1,
+  x = 72,
+  y = 136,
+  width = 176,
+  height = 8,
+  pattern = 11,
+}
+
+tile{
+  layer = 1,
+  x = 64,
+  y = 136,
+  width = 8,
+  height = 8,
+  pattern = 6,
+}
+
+tile{
+  layer = 1,
+  x = 64,
+  y = 112,
+  width = 8,
+  height = 24,
+  pattern = 10,
+}
+
+npc{
+  layer = 1,
+  x = 160,
+  y = 85,
+  name = "interactive_entity",
+  direction = 3,
+  subtype = "1",
+  sprite = "npc/newlink6",
+  behavior = "map",
+}
+
+destination{
+  layer = 1,
+  x = 160,
+  y = 261,
+  name = "start_position",
+  direction = 3,
+}
+
+tile{
+  layer = 2,
+  x = 0,
+  y = 0,
+  width = 320,
+  height = 16,
+  pattern = 170,
+}
+
+tile{
+  layer = 2,
+  x = 0,
+  y = 16,
+  width = 16,
+  height = 272,
+  pattern = 170,
+}
+
+tile{
+  layer = 2,
+  x = 16,
+  y = 272,
+  width = 304,
+  height = 16,
+  pattern = 170,
+}
+
+tile{
+  layer = 2,
+  x = 304,
+  y = 16,
+  width = 16,
+  height = 256,
+  pattern = 170,
+}
+
+tile{
+  layer = 2,
+  x = 144,
+  y = 264,
+  width = 32,
+  height = 8,
+  pattern = 153,
+}
+
