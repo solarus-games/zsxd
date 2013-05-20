@@ -5,23 +5,17 @@ message_id = {
   "found_piece_of_heart.fourth"
 }
 
-function event_obtained(variant)
+function item:on_obtained(variant)
 
-  local nb_pieces_of_heart = sol.game.savegame_get_integer(1030)
-  sol.map.dialog_start(message_id[nb_pieces_of_heart + 1])
-end
+  local game = self:get_game()
+  local nb_pieces_of_heart = game:get_value("i1030") or 0
+  self:get_map():start_dialog(message_id[nb_pieces_of_heart + 1], function()
 
-function event_dialog_finished(dialog_id, answer)
-
-  local nb_pieces_of_heart = sol.game.savegame_get_integer(1030)
-
-  if dialog_id == message_id[nb_pieces_of_heart + 1] then
-
-    sol.game.savegame_set_integer(1030, (nb_pieces_of_heart + 1) % 4)
-    if (nb_pieces_of_heart == 3) then
-      sol.game.add_max_life(4)
+    game:set_value("i1030", (nb_pieces_of_heart + 1) % 4)
+    if nb_pieces_of_heart == 3 then
+      game:add_max_life(4)
     end
-    sol.game.add_life(sol.game.get_max_life())
-  end
+    game:add_life(game:get_max_life())
+  end)
 end
 

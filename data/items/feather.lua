@@ -1,17 +1,26 @@
-function event_use()
+local item = ...
 
-  sol.main.play_sound("jump")
-  local direction4 = sol.map.hero_get_direction()
-  local randdirection = math.random(1,4)
-  local diagonale = 0  
+function item:on_created()
+  self:set_savegame_variable("i1100")
+  self:set_assignable(true)
+end
+
+function item:on_using()
+
+  sol.audio.play_sound("jump")
+  local hero = self:get_map():get_entity("hero")
+  local direction4 = hero:get_direction()
+  local randdirection = math.random(4)
+  local diagonal = 0
 
   if randdirection == 1 then
-    diagonale = 1
+    diagonal = 1
   elseif randdirection == 4 then
-    diagonale = -1
+    diagonal = -1
   end
 
-  sol.map.hero_start_jumping((direction4 * 2 + diagonale ) % 8, math.random(16,100), false)
-  sol.item.set_finished()
+  hero:start_jumping((direction4 * 2 + diagonal) % 8,
+      math.random(16, 100), false)
+  self:set_finished()
 end
 
