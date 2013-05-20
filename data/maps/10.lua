@@ -2,7 +2,7 @@ local map = ...
 
 function map:on_npc_interaction(npc_name)
 
-  if not sol.game.savegame_get_boolean(61) then
+  if not game:get_value("b61") then
     map:start_dialog("water_house.give_bottle")
   else
     map:start_dialog("water_house.after")

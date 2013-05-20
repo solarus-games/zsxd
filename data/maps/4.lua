@@ -6,7 +6,7 @@ local last_yoda_quote = 0
 
 function map:on_map_started(destination_point)
 
-  if sol.game.savegame_get_boolean(65) then
+  if game:get_value("b65") then
     sol.map.tile_set_enabled("temple_door_tile", false)
     sol.map.npc_remove("temple_door")
   end
@@ -23,14 +23,14 @@ function map:on_npc_interaction(npc_name)
       sol.main.play_sound("secret")
       sol.map.tile_set_enabled("temple_door_tile", false)
       sol.map.npc_remove("temple_door")
-      sol.game.savegame_set_boolean(65, true)
+      game:set_value("b65", true)
     else
       sol.main.play_sound("wrong")
       map:start_dialog("outside_fields_SE.temple_door_closed")
     end
 
   elseif npc_name == "yoda" then
-    if not sol.game.savegame_get_boolean(66) then
+    if not game:get_value("b66") then
       map:start_dialog("outside_fields_SE.yoda_give_sword")
     else
       map:start_dialog("outside_fields_SE.yoda_finished")

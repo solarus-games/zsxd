@@ -8,7 +8,7 @@ function map:on_map_started(destination_point)
 
   -- switches of stairs of the central room
   for i = 1, 7 do
-    if not sol.game.savegame_get_boolean(292 + i) then
+    if not game:get_value("b292" + i) then
       sol.map.stairs_set_enabled("stairs_" .. i, false)
       sol.map.switch_set_activated("stairs_".. i .. "_switch", false)
     else
@@ -17,12 +17,12 @@ function map:on_map_started(destination_point)
   end
 
   -- room with enemies to fight
-  if sol.game.savegame_get_boolean(301) then
+  if game:get_value("b301") then
     sol.map.enemy_remove_group("fight_room")
   end
 
   -- block pushed to remove the water of 2F SW
-  if sol.game.savegame_get_boolean(283) then
+  if game:get_value("b283") then
     sol.map.block_set_enabled("remove_water_block", false)
   else
     sol.map.block_set_enabled("fake_remove_water_block", false)
@@ -30,7 +30,7 @@ function map:on_map_started(destination_point)
 
   -- boss
   sol.map.door_set_open("boss_door", true)
-  if sol.game.savegame_get_boolean(306) then
+  if game:get_value("b306") then
     sol.map.tile_set_enabled("boss_gate", true)
   end
 end
@@ -41,7 +41,7 @@ function map:on_switch_activated(switch_name)
   if (i ~= nil) then
     sol.map.stairs_set_enabled("stairs_" .. i, true)
     sol.main.play_sound("secret")
-    sol.game.savegame_set_boolean(292 + i, true)
+    game:set_value("b292" + i, true)
   elseif switch_name == "switch_torch_1_on" then
     sol.map.tile_set_enabled("torch_1", true)
     sol.map.switch_set_activated("switch_torch_1_off", false)
@@ -122,7 +122,7 @@ function map:on_enemy_dead(enemy_name)
     sol.map.door_open("fight_room_door")
   elseif enemy_name == "boss" then
     sol.map.tile_set_enabled("boss_gate", true) 
-    sol.game.savegame_set_boolean(62, true) -- open the door of Link's cave
+    game:set_value("b62", true) -- open the door of Link's cave
     sol.main.play_sound("secret")
   end
 end
@@ -130,14 +130,14 @@ end
 function map:on_hero_on_sensor(sensor_name)
 
   if sensor_name == "remove_water_sensor"
-      and not sol.game.savegame_get_boolean(283)
+      and not game:get_value("b283")
       and not will_remove_water then
 
     sol.main.timer_start(remove_2f_sw_water, 500)
     will_remove_water = true
   elseif sensor_name == "start_boss_sensor" then
     if sol.map.door_is_open("boss_door")
-        and not sol.game.savegame_get_boolean(306) then
+        and not game:get_value("b306") then
       sol.map.door_close("boss_door")
       sol.map.hero_freeze()
       sol.main.timer_start(start_boss, 1000)
@@ -150,7 +150,7 @@ function remove_2f_sw_water()
   sol.main.play_sound("water_drain_begin")
   sol.main.play_sound("water_drain")
   map:start_dialog("dungeon_1.2f_sw_water_removed")
-  sol.game.savegame_set_boolean(283, true)
+  game:set_value("b283", true)
 end
 
 function start_boss()

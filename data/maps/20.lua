@@ -8,15 +8,15 @@ local guichet_11_error = false
 
 function map:on_map_started(destination_point)
 
-  if sol.game.savegame_get_boolean(101) then
+  if game:get_value("b101") then
     sol.map.switch_set_activated("CS3", true)
   else
     sol.map.chest_set_enabled("CK3", false)
   end
 
   -- Guichetière 12B partie en pause
-  if sol.game.savegame_get_integer(1410) == 5
-      or sol.game.savegame_get_integer(1410) == 6 then
+  if game:get_value("i1410") == 5
+      or game:get_value("i1410") == 6 then
     sol.map.npc_remove("GC12BPerson")
     sol.map.npc_remove("GC12B")
   end
@@ -35,57 +35,57 @@ function map:on_switch_activated(switch_name)
   if switch_name == "CS3" then
     -- Bouton qui fait apparaitre un coffre contenant la carte (CV3)
     sol.map.chest_set_enabled("CK3", true)
-    sol.game.savegame_set_boolean(101, true)
+    game:set_value("b101", true)
     sol.main.play_sound("chest_appears")
   end
 end
 
 function accueil_branche1()
 
-  if sol.game.savegame_get_integer(1411) == 1 then
+  if game:get_value("i1411") == 1 then
     map:start_dialog("crazy_house.accueil_epi_eo_1-7")
-  elseif sol.game.savegame_get_integer(1411) == 2 then
+  elseif game:get_value("i1411") == 2 then
     map:start_dialog("crazy_house.accueil_epi_eo_2-6")
-  elseif sol.game.savegame_get_integer(1411) == 3 then
+  elseif game:get_value("i1411") == 3 then
     map:start_dialog("crazy_house.accueil_epi_eo_3-5")
-  elseif sol.game.savegame_get_integer(1411) == 4 then
+  elseif game:get_value("i1411") == 4 then
     map:start_dialog("crazy_house.accueil_epi_eo_4-9")
-  elseif sol.game.savegame_get_integer(1411) == 5 then
+  elseif game:get_value("i1411") == 5 then
     map:start_dialog("crazy_house.accueil_epi_eo_3-5")
-  elseif sol.game.savegame_get_integer(1411) == 6 then
+  elseif game:get_value("i1411") == 6 then
     map:start_dialog("crazy_house.accueil_epi_eo_2-6")
-  elseif sol.game.savegame_get_integer(1411) == 7 then
+  elseif game:get_value("i1411") == 7 then
     map:start_dialog("crazy_house.accueil_epi_eo_1-7")
-  elseif sol.game.savegame_get_integer(1411) == 8 then
+  elseif game:get_value("i1411") == 8 then
     map:start_dialog("crazy_house.accueil_epi_eo_8-10")
-  elseif sol.game.savegame_get_integer(1411) == 9 then
+  elseif game:get_value("i1411") == 9 then
     map:start_dialog("crazy_house.accueil_epi_eo_4-9")
-  elseif sol.game.savegame_get_integer(1411) == 10 then
+  elseif game:get_value("i1411") == 10 then
     map:start_dialog("crazy_house.accueil_epi_eo_8-10")
   end
 end
 
 function accueil_branche2()
 
-  if sol.game.savegame_get_integer(1412) == 1 then
+  if game:get_value("i1412") == 1 then
     map:start_dialog("crazy_house.accueil_bal_eo_1-6-8-10")
-  elseif sol.game.savegame_get_integer(1412) == 2 then
+  elseif game:get_value("i1412") == 2 then
     map:start_dialog("crazy_house.accueil_bal_eq_2")
-  elseif sol.game.savegame_get_integer(1412) == 3 then
+  elseif game:get_value("i1412") == 3 then
     map:start_dialog("crazy_house.accueil_bal_eq_3")
-  elseif sol.game.savegame_get_integer(1412) == 4 then
+  elseif game:get_value("i1412") == 4 then
     map:start_dialog("crazy_house.accueil_bal_eq_4")
-  elseif sol.game.savegame_get_integer(1412) == 5 then
+  elseif game:get_value("i1412") == 5 then
     map:start_dialog("crazy_house.accueil_bal_eo_5-9")
-  elseif sol.game.savegame_get_integer(1412) == 6 then
+  elseif game:get_value("i1412") == 6 then
     map:start_dialog("crazy_house.accueil_bal_eo_1-6-8-10")
-  elseif sol.game.savegame_get_integer(1412) == 7 then
+  elseif game:get_value("i1412") == 7 then
     map:start_dialog("crazy_house.accueil_bal_eq_7")
-  elseif sol.game.savegame_get_integer(1412) == 8 then
+  elseif game:get_value("i1412") == 8 then
     map:start_dialog("crazy_house.accueil_bal_eo_1-6-8-10")
-  elseif sol.game.savegame_get_integer(1412) == 9 then
+  elseif game:get_value("i1412") == 9 then
     map:start_dialog("crazy_house.accueil_bal_eo_5-9")
-  elseif sol.game.savegame_get_integer(1412) == 10 then
+  elseif game:get_value("i1412") == 10 then
     map:start_dialog("crazy_house.accueil_bal_eo_1-6-8-10")
   end
 end
@@ -93,46 +93,46 @@ end
 -- Hôtesse d'accueil ------------------------------------------
 function accueil()
 
-  if sol.game.savegame_get_boolean(120) then
+  if game:get_value("b120") then
     -- Le joueur a retrouvé ses gants
     map:start_dialog("crazy_house.accueil_fini")
-  elseif sol.game.savegame_get_integer(1410) == 0 then
+  elseif game:get_value("i1410") == 0 then
     map:start_dialog("crazy_house.accueil_ech_eq_0")
-    sol.game.savegame_set_integer(1410, 1)
-  elseif sol.game.savegame_get_integer(1410) == 1 then
+    game:set_value("i1410", 1)
+  elseif game:get_value("i1410") == 1 then
     map:start_dialog("crazy_house.accueil_ech_eq_1")
-  elseif sol.game.savegame_get_integer(1410) == 2 then
+  elseif game:get_value("i1410") == 2 then
     map:start_dialog("crazy_house.accueil_ech_eq_2")
-    sol.game.savegame_set_integer(1410, 3)
-  elseif sol.game.savegame_get_integer(1410) == 3 then
+    game:set_value("i1410", 3)
+  elseif game:get_value("i1410") == 3 then
     map:start_dialog("crazy_house.accueil_ech_eq_3")
-  elseif sol.game.savegame_get_integer(1410) == 4 then
+  elseif game:get_value("i1410") == 4 then
     map:start_dialog("crazy_house.accueil_ech_eq_4")
-  elseif sol.game.savegame_get_integer(1410) == 5 then
+  elseif game:get_value("i1410") == 5 then
     map:start_dialog("crazy_house.accueil_ech_eo_5-7")
-  elseif sol.game.savegame_get_integer(1410) == 6 then
+  elseif game:get_value("i1410") == 6 then
     map:start_dialog("crazy_house.accueil_ech_eq_6")
-  elseif sol.game.savegame_get_integer(1410) == 7 then
+  elseif game:get_value("i1410") == 7 then
     map:start_dialog("crazy_house.accueil_ech_eo_5-7")
-  elseif sol.game.savegame_get_integer(1410) == 8 then
-    if sol.game.savegame_get_integer(1411) < 10 and sol.game.savegame_get_integer(1412) < 10 then        	
-      if sol.game.savegame_get_integer(1411) > sol.game.savegame_get_integer(1412) then
+  elseif game:get_value("i1410") == 8 then
+    if game:get_value("i1411") < 10 and game:get_value("i1412") < 10 then        	
+      if game:get_value("i1411") > game:get_value("i1412") then
         accueil_branche1()
       else
         accueil_branche2()
       end
     else
-      if sol.game.savegame_get_integer(1411) == 10 then
+      if game:get_value("i1411") == 10 then
         accueil_branche2()
-      elseif sol.game.savegame_get_integer(1412) == 10 then
+      elseif game:get_value("i1412") == 10 then
         accueil_branche1()
       end
     end
-  elseif sol.game.savegame_get_integer(1410) == 9 then
+  elseif game:get_value("i1410") == 9 then
     map:start_dialog("crazy_house.accueil_ech_eq_9")
-  elseif sol.game.savegame_get_integer(1410) == 10 then
+  elseif game:get_value("i1410") == 10 then
     map:start_dialog("crazy_house.accueil_ech_eq_10")
-  elseif sol.game.savegame_get_integer(1410) == 11 then
+  elseif game:get_value("i1410") == 11 then
     map:start_dialog("crazy_house.accueil_ech_eq_11")
   end
 end
@@ -140,8 +140,8 @@ end
 -- Guichet 11 -------------------------------------------------
 function guichet_11()
 
-  if sol.game.savegame_get_integer(1410) >= 8 then
-    if sol.game.savegame_get_integer(1412) == 9 then
+  if game:get_value("i1410") >= 8 then
+    if game:get_value("i1412") == 9 then
       -- Chercher des haches (mais future erreur : donné : roc magma)
       if sol.game.get_item_amount("tapisserie_counter") >= 1 then
         map:start_dialog("crazy_house.guichet_11_bal_eq_9")
@@ -156,9 +156,9 @@ function guichet_11()
         map:start_dialog("crazy_house.guichet_11_ech_eq_9")
       end
       -- Incrémentation branche 1411
-      local branche1411 = sol.game.savegame_get_integer(1411)
+      local branche1411 = game:get_value("i1411")
       if branche1411 > 0 and branche1411 <= 2 then
-        sol.game.savegame_set_integer(1411, 3)
+        game:set_value("i1411", 3)
       end
     end
   else
@@ -166,18 +166,18 @@ function guichet_11()
     map:start_dialog("crazy_house.guichet_11_ech_ne_9")
   end
   -- Incrémentation branche 1412
-  local branche1412 = sol.game.savegame_get_integer(1412)
+  local branche1412 = game:get_value("i1412")
   if branche1412 > 0 and branche1412 <= 5 then
-    sol.game.savegame_set_integer(1412, 6)
+    game:set_value("i1412", 6)
   end
 end
 
 -- Guichet 12a ------------------------------------------------
 function guichet_12A()
 
-  if sol.game.savegame_get_integer(1410) == 5 then
+  if game:get_value("i1410") == 5 then
     map:start_dialog("crazy_house.guichet_12A_ech_eq_5")
-    sol.game.savegame_set_integer(1410, 6)
+    game:set_value("i1410", 6)
   else
     map:start_dialog("crazy_house.guichet_12A_ech_ne_5")
   end
@@ -188,16 +188,16 @@ function guichet_12B()
 
   if not sol.map.door_is_open("weak_wall_A") then -- hint for the first weak wall
     map:start_dialog("crazy_house.guichet_12B_ech_eq_3")
-  elseif not sol.game.savegame_get_boolean(130) then -- hint for the second weak wall
+  elseif not game:get_value("b130") then -- hint for the second weak wall
     map:start_dialog("crazy_house.guichet_12B_aw")
-  elseif sol.game.savegame_get_integer(1410) == 3 then
+  elseif game:get_value("i1410") == 3 then
     map:start_dialog("crazy_house.guichet_12B_ech_eq_3")
-  elseif sol.game.savegame_get_integer(1410) >= 7 then
+  elseif game:get_value("i1410") >= 7 then
     map:start_dialog("crazy_house.guichet_12B_ech_eq_7")
-    if sol.game.savegame_get_integer(1410) == 7 then
-      sol.game.savegame_set_integer(1410, 8)
-      sol.game.savegame_set_integer(1411, 1)
-      sol.game.savegame_set_integer(1412, 1)
+    if game:get_value("i1410") == 7 then
+      game:set_value("i1410", 8)
+      game:set_value("i1411", 1)
+      game:set_value("i1412", 1)
     end
   else
     map:start_dialog("crazy_house.guichet_12B_aw")
@@ -263,7 +263,7 @@ function map:on_dialog_finished(dialog_id, answer)
     sol.map.treasure_give("parfum", 1, -1)
     sol.game.remove_item_amount("bocal_epice_counter", 1)
     sol.game.remove_item_amount("balai_counter", 1)
-    sol.game.savegame_set_integer(1410, 10)
+    game:set_value("i1410", 10)
   elseif dialog_id == "crazy_house.guichet_11_ech_eq_9_ht" then
     if answer == 0 then
       if sol.game.get_item_amount("tapisserie_counter") >= 1 then
@@ -271,9 +271,9 @@ function map:on_dialog_finished(dialog_id, answer)
         sol.map.treasure_give("hache", 1, -1)
         sol.game.remove_item_amount("tapisserie_counter", 1)
         -- Incrémentation branche 1411
-        local branche1411 = sol.game.savegame_get_integer(1411)
+        local branche1411 = game:get_value("i1411")
         if branche1411 > 0 and branche1411 <= 6 then
-          sol.game.savegame_set_integer(1411, 7)
+          game:set_value("i1411", 7)
         end
       end
     end
@@ -285,8 +285,8 @@ function map:on_dialog_finished(dialog_id, answer)
         sol.map.treasure_give("roc_magma", 1, -1)
         sol.game.remove_item_amount("tapisserie_counter", 1)
         -- Incrémentation branche 1412
-        local branche1412 = sol.game.savegame_get_integer(1412)
-        sol.game.savegame_set_integer(1412, 10)
+        local branche1412 = game:get_value("i1412")
+        game:set_value("i1412", 10)
       end
     end
   end
@@ -298,14 +298,14 @@ function map:on_door_open(door_name)
     sol.main.play_sound("secret")
   elseif door_name == "DK1" then
     -- Opening the locked door: never give the final small key
-    sol.game.savegame_set_boolean(128, true)
+    game:set_value("b128", true)
   end
 end
 
 function map:on_chest_empty(chest_name)
 
   if chest_name == "CK3" then
-    if sol.game.savegame_get_boolean(141) then
+    if game:get_value("b141") then
       -- The locked door in 3F is already open
       sol.map.treasure_give("rupee", 4, -1)
     else

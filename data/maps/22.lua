@@ -77,9 +77,9 @@ local function guichet_22A()
 
   map:start_dialog("crazy_house.guichet_22A")
   -- Incrémentation branche 1412
-  local branche1412 = sol.game.savegame_get_integer(1412)
+  local branche1412 = game:get_value("i1412")
   if branche1412 > 0 and branche1412 <= 1 then
-    sol.game.savegame_set_integer(1412, 2)
+    game:set_value("i1412", 2)
   end
 end
 
@@ -88,14 +88,14 @@ function guichet_22B()
 
   map:start_dialog("crazy_house.guichet_22B")
   -- Incrémentation branche 1411
-  local branche1411 = sol.game.savegame_get_integer(1411)
+  local branche1411 = game:get_value("i1411")
   if branche1411 > 0 and branche1411 <= 3 then
-    sol.game.savegame_set_integer(1411, 4)
+    game:set_value("i1411", 4)
   end
   -- Incrémentation branche 1412
-  local branche1412 = sol.game.savegame_get_integer(1412)
+  local branche1412 = game:get_value("i1412")
   if branche1412 == 6 then
-    sol.game.savegame_set_integer(1412, 7)
+    game:set_value("i1412", 7)
   end
 end
 
@@ -122,9 +122,9 @@ function map:on_dialog_finished(dialog_id, answer)
     sol.game.remove_item_amount("sac_riz_counter", 1)
     -- branche 1411 finie
     if sol.game.get_item_amount("balai_counter") > 0 then
-      sol.game.savegame_set_integer(1410, 9)
+      game:set_value("i1410", 9)
     end
-    sol.game.savegame_set_integer(1411, 10)
+    game:set_value("i1411", 10)
   elseif dialog_id == "crazy_house.guichet_22A" then
     if answer == 0 then
       if sol.game.get_item_amount("roc_magma_counter") < 1 then
@@ -148,20 +148,20 @@ function map:on_dialog_finished(dialog_id, answer)
     sol.game.remove_item_amount("roc_magma_counter", 1)
     -- branche 1412 finie
     if sol.game.get_item_amount("bocal_epice_counter") > 0 then
-      sol.game.savegame_set_integer(1410, 9)
+      game:set_value("i1410", 9)
     end
   elseif dialog_id == "crazy_house.guichet_22_sr_ok" then
     sol.map.treasure_give("tapisserie", 1, -1)
     sol.game.remove_item_amount("sac_riz_counter", 1)
     -- Incrémentation branche 1411
-    local branche1411 = sol.game.savegame_get_integer(1411)
+    local branche1411 = game:get_value("i1411")
     if branche1411 > 0 and branche1411 <= 5 then
-      sol.game.savegame_set_integer(1411, 6)
+      game:set_value("i1411", 6)
     end
     -- Incrémentation branche 1412
-    local branche1412 = sol.game.savegame_get_integer(1412)
+    local branche1412 = game:get_value("i1412")
     if branche1412 >= 6 and branche1412 <= 8 then
-      sol.game.savegame_set_integer(1412, 9)
+      game:set_value("i1412", 9)
     end
   end
 end

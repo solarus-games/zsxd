@@ -6,7 +6,7 @@ local remove_water_delay = 500 -- delay between each step when some water is dis
 
 function map:on_map_started(destionation_point_name)
 
-  if sol.game.savegame_get_boolean(240) then
+  if game:get_value("b240") then
     -- the water is removed
     sol.map.tile_set_group_enabled("c_water", false)
     sol.map.tile_set_enabled("c_water_exit", true)
@@ -32,7 +32,7 @@ end
 function map:on_switch_activated(switch_name)
 
   if switch_name == "remove_water_switch"
-      and not sol.game.savegame_get_boolean(240) then
+      and not game:get_value("b240") then
     sol.map.hero_freeze()
     remove_c_water()
   elseif switch_name == "ne_door_switch"
@@ -86,7 +86,7 @@ end
 function remove_c_water_6()
 
   sol.map.tile_set_group_enabled("c_water_less_c", false)
-  sol.game.savegame_set_boolean(240, true)
+  game:set_value("b240", true)
   sol.main.play_sound("secret")
   sol.map.hero_unfreeze()
 end

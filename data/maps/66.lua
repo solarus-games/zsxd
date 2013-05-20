@@ -5,13 +5,13 @@ local map = ...
 function map:on_map_started(destination_point)
 
   -- water removed
-  if sol.game.savegame_get_boolean(283) then
+  if game:get_value("b283") then
     sol.map.tile_set_group_enabled("water", false)
   end
 
   -- fight room
   sol.map.door_set_open("fight_door", true)
-  if sol.game.savegame_get_boolean(244) then
+  if game:get_value("b244") then
     sol.map.enemy_remove_group("fight")
   else
     -- TODO sol.map.enemy_set_group_enabled
@@ -26,7 +26,7 @@ end
 function map:on_hero_on_sensor(sensor_name)
 
   if sensor_name == "fight_sensor" 
-      and not sol.game.savegame_get_boolean(244)
+      and not game:get_value("b244")
       and sol.map.door_is_open("fight_door")
       and not sol.map.chest_is_enabled("fight_chest") then
     sol.map.door_close("fight_door")

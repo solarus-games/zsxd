@@ -34,7 +34,7 @@ function map:on_hero_on_sensor(sensor_name)
     sol.map.sensor_set_enabled("make_appear_c3", false)
     -- Teleporter at the end
   elseif sensor_name == "sensor_teleporter" then
-    if not sol.game.savegame_get_boolean(56) then
+    if not game:get_value("b56") then
       map:start_dialog("freaking_cave_teleporter")
       sol.map.hero_start_jumping(6, 64, true)
     end

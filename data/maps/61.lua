@@ -14,7 +14,7 @@ function map:on_map_started(destination_point)
   sol.map.door_set_open("miniboss_door", true)
 
   -- water drained
-  if sol.game.savegame_get_boolean(303) then
+  if game:get_value("b303") then
     sol.map.tile_set_group_enabled("c_water", false)
     sol.map.tile_set_enabled("c_water_exit", true)
     sol.map.switch_set_activated("remove_water_switch", true)
@@ -61,7 +61,7 @@ function map:on_hero_on_sensor(sensor_name)
     sol.main.timer_stop_all()
     cannonballs_enabled = false
   elseif sensor_name == "start_miniboss_sensor"
-      and not sol.game.savegame_get_boolean(302)
+      and not game:get_value("b302")
       and not fighting_miniboss then
     -- the miniboss is alive
     sol.map.door_close("miniboss_door")
@@ -99,7 +99,7 @@ end
 function map:on_switch_activated(switch_name)
 
   if switch_name == "remove_water_switch"
-      and not sol.game.savegame_get_boolean(303) then
+      and not game:get_value("b303") then
     sol.map.hero_freeze()
     remove_c_water()
   end
@@ -144,7 +144,7 @@ end
 function remove_c_water_6()
 
   sol.map.tile_set_group_enabled("c_water_less_c", false)
-  sol.game.savegame_set_boolean(303, true)
+  game:set_value("b303", true)
   sol.main.play_sound("secret")
   sol.map.hero_unfreeze()
 end

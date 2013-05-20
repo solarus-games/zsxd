@@ -16,16 +16,16 @@ function guichet_82()
 
   map:start_dialog("crazy_house.guichet_82")
   -- Incrémentation branche 1412
-  local branche1412 = sol.game.savegame_get_integer(1412)
+  local branche1412 = game:get_value("i1412")
   if branche1412 > 0 and branche1412 <= 2 then
-    sol.game.savegame_set_integer(1412, 3)
+    game:set_value("i1412", 3)
   end
 end
 
 -- Guichet 84 -------------------------------------------------
 function guichet_84()
 
-  if sol.game.savegame_get_integer(1410) == 3 then
+  if game:get_value("i1410") == 3 then
     map:start_dialog("crazy_house.guichet_84_ech_eq_3")
   else
     if sol.game.get_item_amount("hache_counter") >= 1 then
@@ -75,9 +75,9 @@ function map:on_dialog_finished(dialog_id, answer)
         sol.map.treasure_give("poivron", 1, -1)
         sol.game.remove_item_amount("hache_counter", 1)
         -- Incrémentation branche 1411
-        local branche1411 = sol.game.savegame_get_integer(1411)
+        local branche1411 = game:get_value("i1411")
         if branche1411 > 0 and branche1411 <= 7 then
-          sol.game.savegame_set_integer(1411, 8)
+          game:set_value("i1411", 8)
         end
       end
     end

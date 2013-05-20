@@ -5,7 +5,7 @@ local map = ...
 function map:on_map_started(destination_point)
 
   -- water removed
-  if sol.game.savegame_get_boolean(283) then
+  if game:get_value("b283") then
     sol.map.tile_set_group_enabled("water", false)
   end
 end

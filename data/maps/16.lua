@@ -4,10 +4,10 @@ local map = ...
 
 function map:on_npc_interaction(npc_name)
 
-  if sol.game.savegame_get_boolean(59) then
+  if game:get_value("b59") then
     -- door already open
     map:start_dialog("desert.east_house.bone_key")
-  elseif sol.game.savegame_get_boolean(60) then
+  elseif game:get_value("b60") then
     -- died in the cursed cave
     map:start_dialog("desert.east_house.back_from_dead")
   else

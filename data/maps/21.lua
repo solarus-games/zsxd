@@ -14,9 +14,9 @@ end
 -- Guichet 41 -------------------------------------------------
 function guichet_41()
 
-  if sol.game.savegame_get_integer(1410) == 3 then
+  if game:get_value("i1410") == 3 then
     map:start_dialog("crazy_house.guichet_41_ech_eq_3")
-    sol.game.savegame_set_integer(1410, 4)
+    game:set_value("i1410", 4)
   else
     map:start_dialog("crazy_house.guichet_41_ech_ne_3")
   end
@@ -31,23 +31,23 @@ end
 -- Guichet 45 -------------------------------------------------
 function guichet_45()
 
-  if sol.game.savegame_get_integer(1410) == 3 then
+  if game:get_value("i1410") == 3 then
     map:start_dialog("crazy_house.guichet_45_ech_eq_3")
   else
     map:start_dialog("crazy_house.guichet_45_ech_ne_3")
   end
 
   -- Incrémentation branche 1412
-  local branche1412 = sol.game.savegame_get_integer(1412)
+  local branche1412 = game:get_value("i1412")
   if branche1412 > 0 and branche1412 <= 3 then
-    sol.game.savegame_set_integer(1412, 4)
+    game:set_value("i1412", 4)
   end
 end
 
 -- Guichet 47 -------------------------------------------------
 function guichet_47()
 
-  if sol.game.savegame_get_integer(1410) == 3 then
+  if game:get_value("i1410") == 3 then
     map:start_dialog("crazy_house.guichet_47_ech_eq_3")
   else
     map:start_dialog("crazy_house.guichet_47_ech_ne_3")

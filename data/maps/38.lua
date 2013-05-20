@@ -15,7 +15,7 @@ function map:on_map_started(destination_point)
   torch2 = sol.map.npc_get_sprite("fc_torch_2")
 
   -- Few light inside the cave at start
-  if sol.game.savegame_get_boolean(90) == false then
+  if game:get_value("b90") == false then
     sol.map.light_set(1)         
     torch1:set_animation("lit")
     torch2:set_animation("lit")
@@ -38,7 +38,7 @@ function map:on_hero_on_sensor(sensor_name)
     torch1:set_animation("unlit")
     torch2:set_animation("unlit")
     sol.map.sensor_set_enabled("sensor_light_off", false)
-    sol.game.savegame_set_boolean(90, true)
+    game:set_value("b90", true)
   end
 end
 

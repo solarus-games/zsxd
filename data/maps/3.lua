@@ -8,7 +8,7 @@ local map = ...
 -- The NPCs are initialized.
 function map:on_map_started(destination_point)
   -- make the NPCs walk
-  if sol.game.savegame_get_boolean(48) then
+  if game:get_value("b48") then
     random_monkey_run(48) -- the monkey has not the boots anymore
   else
     random_monkey_run(128)
@@ -33,7 +33,7 @@ function map:on_npc_interaction(npc_name)
     end
   elseif npc_name == "forest_monkey" then
     sol.main.play_sound("monkey")
-    if sol.game.savegame_get_boolean(48) then -- has boots
+    if game:get_value("b48") then -- has boots
       map:start_dialog("outside_fields_SO.forest_monkey_end")
     elseif sol.game.get_item_amount("apple_pie_counter") > 0 then -- has apple pie
       map:start_dialog("outside_fields_SO.forest_monkey_give_boots")
