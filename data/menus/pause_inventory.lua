@@ -25,15 +25,6 @@ local item_names = {
   "tapisserie_counter",
   "roc_magma_counter",
   "bottle_3",
-
-  -- Unused.
-  "bottle_4",
-  "bottle_4",
-  "bottle_4",
-  "bottle_4",
-  "bottle_4",
-  "bottle_4",
-  "bottle_4"
 }
 
 function inventory_submenu:on_started()

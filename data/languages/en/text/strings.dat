@@ -41,12 +41,12 @@ quest_status.caption.shield_3		Mirror Shield
 
 # Inventory submenu
 inventory.caption.item.feather.1			Roc Feather
-inventory.caption.item.bombs_counter.1		Bombs
+inventory.caption.item.bombs_counter.1			Bombs
 inventory.caption.item.bow.1				Bow
 inventory.caption.item.bow.2				Bow & Arrows
-inventory.caption.item.boomerang.1			Boomerang
-inventory.caption.item.lamp.1				Lamp
-inventory.caption.item.hookshot.1			Hook
+inventory.caption.item.croissants_counter.1		French Croissants
+inventory.caption.item.pegasus_shoes.1			Pegasus Shoes
+inventory.caption.item.bone_key.1			Bone Key
 inventory.caption.item.bottle_1.1			Magic Bottle$(Empty)
 inventory.caption.item.bottle_1.2			Magic Bottle$(Water)
 inventory.caption.item.bottle_1.3			Magic Bottle$(Red Potion)
@@ -54,12 +54,12 @@ inventory.caption.item.bottle_1.4			Magic Bottle$(Green Potion)
 inventory.caption.item.bottle_1.5			Magic Bottle$(Blue Potion)
 inventory.caption.item.bottle_1.6			Magic Bottle$(Fairy)
 
-inventory.caption.item.pegasus_shoes.1			Pegasus Shoes
-inventory.caption.item.mystic_mirror.1			Mystic Mirror
-inventory.caption.item.cane_of_somaria.1		Cane of Somaria
-inventory.caption.item.apples_counter.1			Apples
-inventory.caption.item.pains_au_chocolat_counter.1	French Pains au Chocolat
-inventory.caption.item.croissants_counter.1		French Croissants
+inventory.caption.item.sac_riz_counter.1		Bags of rice
+inventory.caption.item.sac_olive_counter.1		Sacks of olives
+inventory.caption.item.bocal_epice_counter.1		Spice jars
+inventory.caption.item.hache_counter.1			Axe
+inventory.caption.item.parfum_counter.1			Perfume
+inventory.caption.item.glove.1				Iron Glove
 inventory.caption.item.bottle_2.1			Magic Bottle$(Empty)
 inventory.caption.item.bottle_2.2			Magic Bottle$(Water)
 inventory.caption.item.bottle_2.3			Magic Bottle$(Red Potion)
@@ -67,12 +67,12 @@ inventory.caption.item.bottle_2.4			Magic Bottle$(Green Potion)
 inventory.caption.item.bottle_2.5			Magic Bottle$(Blue Potion)
 inventory.caption.item.bottle_2.6			Magic Bottle$(Fairy)
 
-inventory.caption.item.rock_key.1			Rock Key
-inventory.caption.item.bone_key.1			Bone Key
-inventory.caption.item.clay_key.1			Earth Key
+inventory.caption.item.poivron_counter.1		Peppers
+inventory.caption.item.balai_counter.1			Brooms
+inventory.caption.item.cuillere_counter.1		Spoons
 inventory.caption.item.apple_pie_counter.1		Apple Pie
-inventory.caption.item.flippers.1			Flippers
-inventory.caption.item.magic_cape.1			Magic Cape
+inventory.caption.item.tapisserie_counter.1		Tapestries
+inventory.caption.item.roc_magma_counter.1		Magma rocks
 inventory.caption.item.bottle_3.1			Magic Bottle$(Empty)
 inventory.caption.item.bottle_3.2			Magic Bottle$(Water)
 inventory.caption.item.bottle_3.3			Magic Bottle$(Red Potion)
@@ -80,60 +80,33 @@ inventory.caption.item.bottle_3.4			Magic Bottle$(Green Potion)
 inventory.caption.item.bottle_3.5			Magic Bottle$(Blue Potion)
 inventory.caption.item.bottle_3.6			Magic Bottle$(Fairy)
 
-inventory.caption.item.iron_key.1			Iron Key
-inventory.caption.item.stone_key.1			Stone Key
-inventory.caption.item.wooden_key.1			Wooden Key
-inventory.caption.item.ice_key.1			Ice Key
-inventory.caption.item.glove.1				Iron Glove
-inventory.caption.item.glove.2				Gold Glove
-inventory.caption.item.fire_stones_counter.1		Fire Stones
-inventory.caption.item.bottle_4.1			Magic Bottle$(Empty)
-inventory.caption.item.bottle_4.2			Magic Bottle$(Water)
-inventory.caption.item.bottle_4.3			Magic Bottle$(Red Potion)
-inventory.caption.item.bottle_4.4			Magic Bottle$(Green Potion)
-inventory.caption.item.bottle_4.5			Magic Bottle$(Blue Potion)
-inventory.caption.item.bottle_4.6			Magic Bottle$(Fairy)
-
-inventory.caption.item.poivron_counter.1		Peppers
-inventory.caption.item.balai_counter.1			Brooms
-inventory.caption.item.cuillere_counter.1		Spoons
-inventory.caption.item.tapisserie_counter.1		Tapestries
-inventory.caption.item.roc_magma_counter.1		Magma rocks
-inventory.caption.item.sac_riz_counter.1		Bags of rice
-inventory.caption.item.sac_olive_counter.1		Sacks of olives
-inventory.caption.item.bocal_epice_counter.1	Spice jars
-inventory.caption.item.hache_counter.1			Axe
-inventory.caption.item.parfum_counter.1			Perfume
-
 # Options submenu
 options.caption.press_action_change_mode	Press Action to$switch video mode
 options.caption.press_action_customize_key	Press Action to$configure this key
 options.caption.press_key			Press any key on$the keyboard or joypad
 # names of video modes (maximum 26 characters)
-options.video_mode_0				Windowed 640x480
-options.video_mode_1				Windowed 640x480 smoothed
-options.video_mode_2				Windowed 320x240
-options.video_mode_3				Fullscreen stretched
-options.video_mode_4				Fullscreen stretched (large)
-options.video_mode_5				Fullscreen smoothed
-options.video_mode_6				Fullscreen smoothed (large)
-options.video_mode_7				Fullscreen centered
-options.video_mode_8				Fullscreen centered (large)
+options.video_mode.windowed_stretched		Windowed 640x480
+options.video_mode.windowed_scale2x		Windowed 640x480 smoothed
+options.video_mode.windowed_normal		Windowed 320x240
+options.video_mode.fullscreen_normal		Fullscreen stretched
+options.video_mode.fullscreen_wide		Fullscreen stretched (large)
+options.video_mode.fullscreen_scale2x		Fullscreen smoothed
+options.video_mode.fullscreen_scale2x_wide	Fullscreen smoothed (large)
 # column headers of the keyboard/joypad customization table (maximum 10 characters)
 options.commands_column				Controls
 options.keyboard_column				Keyboard
 options.joypad_column				Joypad
 
 # Game controls customization (maximum 10 characters)
-controls.game_key_1		Action
-controls.game_key_2		Sword
-controls.game_key_3		Left Item
-controls.game_key_4		Right Item
-controls.game_key_5		Pause
-controls.game_key_6		Right
-controls.game_key_7		Up
-controls.game_key_8		Left
-controls.game_key_9		Down
+options.command.action		Action
+options.command.attack		Sword
+options.command.item_1		Left Item
+options.command.item_2		Right Item
+options.command.pause		Pause
+options.command.right		Right
+options.command.up		Up
+options.command.left		Left
+options.command.down		Down
 
 # Dialog to save the game
 save_dialog.yes			Yes
