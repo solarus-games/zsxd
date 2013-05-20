@@ -70,13 +70,10 @@ function quest_status_submenu:on_started()
   end
 
   -- World map.
-  local world_map = self.game:get_item("world_map"):get_variant()
-  if world_map > 0 then
-    item_sprite:set_animation("world_map")
-    item_sprite:set_direction(world_map - 1)
-    item_sprite:draw(self.quest_items_surface, 68, 177)
-    self.caption_text_keys[3] = "quest_status.caption.world_map"
-  end
+  item_sprite:set_animation("world_map")
+  item_sprite:set_direction(0)
+  item_sprite:draw(self.quest_items_surface, 68, 177)
+  self.caption_text_keys[3] = "quest_status.caption.world_map"
 
   -- Pieces of heart.
   local pieces_of_heart_img = sol.surface.create("menus/quest_status_pieces_of_heart.png")
