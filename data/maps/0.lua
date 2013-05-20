@@ -4,10 +4,10 @@ local map = ...
 
 local bed_sprite = nil
 
-function event_map_started(destination_point_name)
+function map:on_map_started(destination_point)
 
   local bed_sprite = sol.map.npc_get_sprite("bed")
-  if destination_point_name == "start_position" then
+  if destination_point:get_name() == "start_position" then
     -- intro
     local snores_sprite = sol.map.npc_get_sprite("snores")
     snores_sprite:set_ignore_suspend(true)
@@ -27,7 +27,7 @@ function intro()
   sol.map.dialog_start("link_house.intro")
 end
 
-function event_dialog_finished(dialog_id)
+function map:on_dialog_finished(dialog_id)
 
   if dialog_id == "link_house.intro" then
     sol.main.timer_start(wake_up, 2000)

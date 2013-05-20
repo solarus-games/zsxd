@@ -8,7 +8,7 @@ local remove_water_delay = 500 -- delay between each step when some water is dis
 local fighting_miniboss = false
 
 -- initialization
-function event_map_started(destination_point_name)
+function map:on_map_started(destination_point)
 
   -- miniboss door
   sol.map.door_set_open("miniboss_door", true)
@@ -25,7 +25,7 @@ function event_map_started(destination_point_name)
 end
 
 -- weak walls: play the secret sound
-function event_door_open(door_name)
+function map:on_door_open(door_name)
 
   if door_name == "weak_wall_compass"
       or door_name == "weak_wall_red_tunic" then
@@ -34,7 +34,7 @@ function event_door_open(door_name)
 end
 
 -- dialog near the WTF room
-function event_treasure_obtained(item_name, variant, savegame_variable)
+function map:on_treasure_obtained(item_name, variant, savegame_variable)
 
   if savegame_variable == 248 then
     sol.map.dialog_start("dungeon_1.small_key_danger_east")
@@ -50,7 +50,7 @@ function launch_cannonball()
 end
 
 -- miniboss
-function event_hero_on_sensor(sensor_name)
+function map:on_hero_on_sensor(sensor_name)
 
   if string.find(sensor_name, "^cannonballs_start_sensor")
       and not cannonballs_enabled then
@@ -82,7 +82,7 @@ function miniboss_timer()
   sol.map.hero_unfreeze()
 end
 
-function event_enemy_dead(enemy_name)
+function map:on_enemy_dead(enemy_name)
 
   if enemy_name == "miniboss" then
     sol.main.play_music("dark_world_dungeon.spc")
@@ -96,7 +96,7 @@ function event_enemy_dead(enemy_name)
 end
 
 -- draining the water
-function event_switch_activated(switch_name)
+function map:on_switch_activated(switch_name)
 
   if switch_name == "remove_water_switch"
       and not sol.game.savegame_get_boolean(303) then

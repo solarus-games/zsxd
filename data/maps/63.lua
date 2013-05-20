@@ -4,7 +4,7 @@ local map = ...
 
 local remove_water_delay = 500 -- delay between each step when some water is disappearing
 
-function event_map_started(destionation_point_name)
+function map:on_map_started(destionation_point_name)
 
   if sol.game.savegame_get_boolean(240) then
     -- the water is removed
@@ -14,22 +14,22 @@ function event_map_started(destionation_point_name)
   end
 end
 
-function event_map_opening_transition_finished(destination_point_name)
+function map:on_map_opening_transition_finished(destination_point)
 
   -- show the welcome message
-  if destination_point_name == "from_outside" then
+  if destination_point:get_name() == "from_outside" then
     sol.map.dialog_start("dungeon_1.welcome")
   end
 end
 
-function event_door_open(door_name)
+function map:on_door_open(door_name)
 
   if door_name == "weak_wall_red_tunic" then
     sol.main.play_sound("secret")
   end
 end
 
-function event_switch_activated(switch_name)
+function map:on_switch_activated(switch_name)
 
   if switch_name == "remove_water_switch"
       and not sol.game.savegame_get_boolean(240) then

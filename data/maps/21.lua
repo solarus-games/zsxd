@@ -6,7 +6,7 @@ local map = ...
 
 local guichet43_sprite
 
-function event_map_started(destination_point_name)
+function map:on_map_started(destination_point)
 
   guichet43_sprite = sol.map.npc_get_sprite("GC43S")
 end
@@ -60,7 +60,7 @@ function guichet_49()
   sol.map.dialog_start("crazy_house.guichet_49")
 end
 
-function event_npc_interaction(npc_name)
+function map:on_npc_interaction(npc_name)
 
   if npc_name == "mario_message_2" then
     -- Tableau de mario qui parle ---------------------------------
@@ -78,7 +78,7 @@ function event_npc_interaction(npc_name)
   end
 end
 
-function event_dialog_finished(dialog_id, answer)
+function map:on_dialog_finished(dialog_id, answer)
 
   if dialog_id == "crazy_house.guichet_43" then
     -- Pipelette (guichet 43) qui se tourne vers Link, énervée

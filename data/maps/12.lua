@@ -2,13 +2,13 @@ local map = ...
 
 -- Link's cave
 
-function event_map_started(destination_point_name)
+function map:on_map_started(destination_point)
 
   sol.map.enemy_set_enabled("zelda_enemy", false)
   sol.map.door_set_open("door", true)
 end
 
-function event_treasure_obtained(item_name, variant, savegame_variable)
+function map:on_treasure_obtained(item_name, variant, savegame_variable)
 
   if item_name == "zelda" then
     sol.main.play_music("boss.spc")
@@ -24,7 +24,7 @@ function angry_zelda()
   sol.map.dialog_start("link_cave.angry_zelda")
 end
 
-function event_dialog_finished(dialog_id)
+function map:on_dialog_finished(dialog_id)
 
   if dialog_id == "link_cave.angry_zelda" then
 
@@ -40,7 +40,7 @@ function event_dialog_finished(dialog_id)
   end
 end
 
-function event_npc_movement_finished(npc_name)
+function map:on_npc_movement_finished(npc_name)
 
   if npc_name == "zelda" then
     sol.map.npc_set_position("zelda", -100, -100) -- disable the NPC
@@ -50,7 +50,7 @@ function event_npc_movement_finished(npc_name)
   end
 end
 
-function event_update()
+function map:on_update()
 
   if not sol.map.door_is_open("door") and sol.game.get_life() <= 4 then
     -- go to the end screen

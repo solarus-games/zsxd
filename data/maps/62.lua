@@ -9,7 +9,7 @@ local door_a_passed = false
 local door_b_passed = false
 local door_c_passed = false
 
-function event_switch_activated(switch_name)
+function map:on_switch_activated(switch_name)
 
   -- when pressing a switch, move the camera and open a door
   if switch_name == "stupid_run_switch_a" then
@@ -21,12 +21,12 @@ function event_switch_activated(switch_name)
   end
 end
 
-function event_camera_back()
+function map:on_camera_back()
   -- start the door timer once the camera is back
   sol.main.timer_start(timer, timer_delay, true)
 end
 
-function event_hero_on_sensor(sensor_name)
+function map:on_hero_on_sensor(sensor_name)
 
   -- sensors that close doors
   if sensor_name == "close_door_b_sensor"
@@ -54,7 +54,7 @@ function event_hero_on_sensor(sensor_name)
   end
 end
 
-function event_treasure_obtained(item_name, variant, savegame_variable)
+function map:on_treasure_obtained(item_name, variant, savegame_variable)
 
   if item_name == "map" then
     sol.map.dialog_start("dungeon_1.after_map_treasure")

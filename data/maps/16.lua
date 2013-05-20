@@ -2,7 +2,7 @@ local map = ...
 
 -- Desert east house
 
-function event_npc_interaction(npc_name)
+function map:on_npc_interaction(npc_name)
 
   if sol.game.savegame_get_boolean(59) then
     -- door already open
@@ -15,7 +15,7 @@ function event_npc_interaction(npc_name)
   end
 end
 
-function event_dialog_finished(dialog_id)
+function map:on_dialog_finished(dialog_id)
 
   if dialog_id == "desert.east_house.back_from_dead" then
     sol.map.door_open("door")

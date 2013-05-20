@@ -6,7 +6,7 @@ local map = ...
 
 local guichet82_sprite
 
-function event_map_started(destination_point_name)
+function map:on_map_started(destination_point)
 
   guichet82_sprite = sol.map.npc_get_sprite("GC82")
 end
@@ -36,7 +36,7 @@ function guichet_84()
   end
 end
 
-function event_npc_interaction(npc_name)
+function map:on_npc_interaction(npc_name)
   if npc_name == "GC82" then
     guichet_82()
   elseif npc_name == "GC82Front" then
@@ -47,7 +47,7 @@ function event_npc_interaction(npc_name)
   end
 end
 
-function event_dialog_finished(dialog_id, answer)
+function map:on_dialog_finished(dialog_id, answer)
 
   if dialog_id == "crazy_house.guichet_82" then
     -- Choix de réponse au guichet 82

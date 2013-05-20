@@ -4,7 +4,7 @@ local map = ...
 -- FREAKING CAVE 2 OMFG         --
 ----------------------------------
 
-function event_map_started(destination_point_name)
+function map:on_map_started(destination_point)
 
   -- No light inside the cave at start
   sol.map.light_set(0)         
@@ -15,7 +15,7 @@ function event_map_started(destination_point_name)
   sol.map.enemy_set_enabled("ennemy_2", false)
 end
 
-function event_hero_on_sensor(sensor_name)
+function map:on_hero_on_sensor(sensor_name)
 
   -- Closing trap door        
   if sensor_name == "sensor_close_trap_door" then

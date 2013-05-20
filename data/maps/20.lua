@@ -6,7 +6,7 @@ local map = ...
 
 local guichet_11_error = false
 
-function event_map_started(destination_point_name)
+function map:on_map_started(destination_point)
 
   if sol.game.savegame_get_boolean(101) then
     sol.map.switch_set_activated("CS3", true)
@@ -22,15 +22,15 @@ function event_map_started(destination_point_name)
   end
 end
 
-function event_map_opening_transition_finished(destination_point_name)
+function map:on_map_opening_transition_finished(destination_point)
 
   -- Affichage du nom du donjon quand on entre  
-  if destination_point_name == "start_position" then
+  if destination_point:get_name() == "start_position" then
     sol.map.dialog_start("crazy_house.title")
   end
 end
 
-function event_switch_activated(switch_name)
+function map:on_switch_activated(switch_name)
 
   if switch_name == "CS3" then
     -- Bouton qui fait apparaitre un coffre contenant la carte (CV3)
@@ -204,7 +204,7 @@ function guichet_12B()
   end
 end
 
-function event_npc_interaction(npc_name)
+function map:on_npc_interaction(npc_name)
 
   -- Tableau de mario qui parle ---------------------------------
   if npc_name == "mario_message_1" then
@@ -229,7 +229,7 @@ function event_npc_interaction(npc_name)
   end
 end
 
-function event_hero_on_sensor(sensor_name)
+function map:on_hero_on_sensor(sensor_name)
 
   -- Fonctionnaire en grève
   if sensor_name == "passage_sensor_A" and not sol.map.crystal_get_state() then
@@ -237,7 +237,7 @@ function event_hero_on_sensor(sensor_name)
   end
 end
 
-function event_dialog_finished(dialog_id, answer)
+function map:on_dialog_finished(dialog_id, answer)
 
   if dialog_id == "crazy_house.guichet_12B_ech_eq_7" then
     -- Echange pour parfum
@@ -292,7 +292,7 @@ function event_dialog_finished(dialog_id, answer)
   end
 end
 
-function event_door_open(door_name)
+function map:on_door_open(door_name)
 
   if door_name == "weak_wall_A" then
     sol.main.play_sound("secret")
@@ -302,7 +302,7 @@ function event_door_open(door_name)
   end
 end
 
-function event_chest_empty(chest_name)
+function map:on_chest_empty(chest_name)
 
   if chest_name == "CK3" then
     if sol.game.savegame_get_boolean(141) then
@@ -320,7 +320,7 @@ function event_chest_empty(chest_name)
   end
 end
 
-function event_treasure_obtained(item_name, variant, savegame_variable)
+function map:on_treasure_obtained(item_name, variant, savegame_variable)
 
   if item_name == "roc_magma" and guichet_11_error then
     sol.map.dialog_start("crazy_house.guichet_11_bal_err")

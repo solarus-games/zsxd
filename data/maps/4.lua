@@ -4,7 +4,7 @@ local map = ...
 
 local last_yoda_quote = 0
 
-function event_map_started(destination_point_name)
+function map:on_map_started(destination_point)
 
   if sol.game.savegame_get_boolean(65) then
     sol.map.tile_set_enabled("temple_door_tile", false)
@@ -15,7 +15,7 @@ function event_map_started(destination_point_name)
   yoda_sprite:set_animation("walking")
 end
 
-function event_npc_interaction(npc_name)
+function map:on_npc_interaction(npc_name)
 
   if npc_name == "temple_door" then
     if sol.game.has_item("bone_key") then
@@ -38,7 +38,7 @@ function event_npc_interaction(npc_name)
   end
 end
 
-function event_hero_on_sensor(sensor_name)
+function map:on_hero_on_sensor(sensor_name)
 
   if string.find(sensor_name, "^yoda_sensor") then
 
@@ -52,7 +52,7 @@ function event_hero_on_sensor(sensor_name)
   end
 end
 
-function event_dialog_finished(dialog_id)
+function map:on_dialog_finished(dialog_id)
 
   if dialog_id == "outside_fields_SE.yoda_give_sword" then
     sol.map.treasure_give("sword", 2, 66)

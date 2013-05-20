@@ -4,7 +4,7 @@ local map = ...
 
 local will_remove_water = false
 
-function event_map_started(destination_point_name)
+function map:on_map_started(destination_point)
 
   -- switches of stairs of the central room
   for i = 1, 7 do
@@ -35,7 +35,7 @@ function event_map_started(destination_point_name)
   end
 end
 
-function event_switch_activated(switch_name)
+function map:on_switch_activated(switch_name)
 
   local i = string.match(switch_name, "^stairs_([1-7])_switch$")
   if (i ~= nil) then
@@ -113,7 +113,7 @@ function event_switch_activated(switch_name)
   end
 end
 
-function event_enemy_dead(enemy_name)
+function map:on_enemy_dead(enemy_name)
 
   if string.find(enemy_name, '^fight_room')
       and sol.map.enemy_is_group_dead("fight_room") then
@@ -127,7 +127,7 @@ function event_enemy_dead(enemy_name)
   end
 end
 
-function event_hero_on_sensor(sensor_name)
+function map:on_hero_on_sensor(sensor_name)
 
   if sensor_name == "remove_water_sensor"
       and not sol.game.savegame_get_boolean(283)
@@ -166,7 +166,7 @@ function ganon_dialog()
   sol.map.dialog_start("dungeon_1.ganon")
 end
 
-function event_npc_interaction(npc_name)
+function map:on_npc_interaction(npc_name)
 
   if npc_name == "boss_hint_stone" then
     sol.main.timer_start(another_castle, 9000)
@@ -183,7 +183,7 @@ function another_castle()
     sol.game.savegame_get_name())
 end
 
-function event_dialog_finished(dialog_id)
+function map:on_dialog_finished(dialog_id)
 
   if dialog_id == "dungeon_1.boss_hint_stone" then
     sol.main.timer_start(victory, 1000)

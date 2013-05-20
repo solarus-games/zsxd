@@ -6,7 +6,7 @@ local map = ...
 
 -- Function called when the map starts.
 -- The NPCs are initialized.
-function event_map_started(destination_point_name)
+function map:on_map_started(destination_point)
   -- make the NPCs walk
   if sol.game.savegame_get_boolean(48) then
     random_monkey_run(48) -- the monkey has not the boots anymore
@@ -24,7 +24,7 @@ end
 
 
 -- Function called when the player wants to talk to a non-playing character.
-function event_npc_interaction(npc_name)
+function map:on_npc_interaction(npc_name)
   if npc_name == "guard" then
     if sol.map.hero_get_direction() == 0 then
       sol.map.dialog_start("outside_fields_SO.guard_ok")
@@ -45,7 +45,7 @@ end
 
 -- Function called when the dialog box is being closed.
 -- If the player was talking to the guard, we do the appropriate action
-function event_dialog_finished(dialog_id, answer)
+function map:on_dialog_finished(dialog_id, answer)
   if dialog_id == "outside_fields_SO.guard_ok" then
 
     local s = sol.map.npc_get_sprite("guard")
@@ -61,14 +61,14 @@ function event_dialog_finished(dialog_id, answer)
   end
 end
 
-function event_chest_empty(chest_name)
+function map:on_chest_empty(chest_name)
    if chest_name == "chest_link_house" then
     sol.map.dialog_start("outside_fields_SO.chest_link_house")
     sol.map.hero_unfreeze()
   end
 end
 
-function event_treasure_obtained(item_name, variant, savegame_variable)
+function map:on_treasure_obtained(item_name, variant, savegame_variable)
 
   if item_name == "pegasus_shoes" then
     random_monkey_run(48) -- reduce the speed

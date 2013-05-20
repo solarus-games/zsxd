@@ -2,7 +2,7 @@ local map = ...
 
 -- The end
 
-function event_map_started(destination_point_name)
+function map:on_map_started(destination_point)
 
   sol.map.hud_set_enabled(false)
   sol.map.hero_freeze()
@@ -17,7 +17,7 @@ function credits()
   sol.map.dialog_start("the_end.credits")
 end
 
-function event_dialog_finished(dialog_id)
+function map:on_dialog_finished(dialog_id)
 
   if dialog_id == "the_end.credits" then
     sol.game.reset()

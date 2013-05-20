@@ -6,12 +6,12 @@ local map = ...
 
 local locked_door_A_value = 0
 
-function event_map_started(destination_point_name)
+function map:on_started(destination_point)
 
   -- Interrupteurs
-  if sol.game.savegame_get_boolean(127) then
-    sol.map.switch_set_activated("locked_door_switch_A", true)
-    sol.map.switch_set_activated("locked_door_switch_B", true)
+  if self:get_game():get_value("b127") then
+    locked_door_switch_A:set_activated()
+    locked_door_switch_B:set_activated()
   end
 end
 
@@ -99,7 +99,7 @@ function guichet_22B()
 end
 
 -- Interactions avec capteur pour guichet (devanture) ou NPC
-function event_npc_interaction(npc_name)
+function map:on_npc_interaction(npc_name)
 
   if npc_name == "GC21front" then
     guichet_21()
@@ -114,7 +114,7 @@ function event_npc_interaction(npc_name)
   end
 end
 
-function event_dialog_finished(dialog_id, answer)
+function map:on_dialog_finished(dialog_id, answer)
 
   if dialog_id == "crazy_house.vieillard_riz_ok" then
     sol.map.treasure_give("bocal_epice", 1, -1)
@@ -165,7 +165,7 @@ function event_dialog_finished(dialog_id, answer)
   end
 end
 
-function event_hero_on_sensor(sensor_name)
+function map:on_hero_on_sensor(sensor_name)
 
   -- Mécanisme du coffre farceur dans la salle aux trois portes        
   if sensor_name == "prankster_sensor_top" or sensor_name == "prankster_sensor_bottom" then
@@ -175,7 +175,7 @@ function event_hero_on_sensor(sensor_name)
   end
 end
 
-function event_switch_activated(switch_name)
+function map:on_switch_activated(switch_name)
 
   -- Mécanisme de la porte qui s'ouvre grâce à deux boutons
   -- dans la salle aux trois portes
@@ -191,7 +191,7 @@ function event_switch_activated(switch_name)
   end
 end
 
-function event_door_open(door_name)
+function map:on_door_open(door_name)
 
   if door_name == "WW2" then
     sol.main.play_sound("secret")

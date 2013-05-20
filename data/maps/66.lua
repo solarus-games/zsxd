@@ -2,7 +2,7 @@ local map = ...
 
 -- Temple of Stupidities 2F SW
 
-function event_map_started(destination_point_name)
+function map:on_map_started(destination_point)
 
   -- water removed
   if sol.game.savegame_get_boolean(283) then
@@ -23,7 +23,7 @@ function event_map_started(destination_point_name)
   end
 end
 
-function event_hero_on_sensor(sensor_name)
+function map:on_hero_on_sensor(sensor_name)
 
   if sensor_name == "fight_sensor" 
       and not sol.game.savegame_get_boolean(244)
@@ -37,7 +37,7 @@ function event_hero_on_sensor(sensor_name)
   end
 end
 
-function event_enemy_dead(enemy_name)
+function map:on_enemy_dead(enemy_name)
 
   if string.find(enemy_name, "^fight")
       and sol.map.enemy_is_group_dead("fight") then

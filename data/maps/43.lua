@@ -4,7 +4,7 @@ local map = ...
 -- Caverne maudite script --
 ----------------------------
 
-function event_npc_interaction(npc_name)
+function map:on_npc_interaction(npc_name)
 
   if npc_name == "sign" then
     sol.map.dialog_start("caverne_maudite.pancarte")

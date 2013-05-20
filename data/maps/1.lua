@@ -6,7 +6,7 @@ local map = ...
 
 -- Function called when the map starts.
 -- The NPCs are initialized.
-function event_map_started(destination_point_name)
+function map:on_map_started(destination_point)
   -- make the NPCs walk
   random_walk("lady_b")
   random_walk("guy_a")

@@ -9,7 +9,7 @@ local map = ...
 local torch1 = sol.map.npc_get_sprite("fc_torch_1")
 local torch2 = sol.map.npc_get_sprite("fc_torch_2")
 
-function event_map_started(destination_point_name)
+function map:on_map_started(destination_point)
 
   torch1 = sol.map.npc_get_sprite("fc_torch_1")
   torch2 = sol.map.npc_get_sprite("fc_torch_2")
@@ -29,7 +29,7 @@ function event_map_started(destination_point_name)
   torch2:set_animation("lit")
 end
 
-function event_hero_on_sensor(sensor_name)
+function map:on_hero_on_sensor(sensor_name)
 
   if sensor_name == "sensor_light_off" then
 

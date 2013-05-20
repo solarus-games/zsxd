@@ -9,7 +9,7 @@ local switches_good_order = {
 }
 local next_switch_index = 1
 
-function event_switch_activated(switch_name)
+function map:on_switch_activated(switch_name)
 
   local switch_index = string.match(switch_name, "^switch_([1-4])$")
   if switch_index ~= nil and next_switch_index <= #switches_good_order then
@@ -31,7 +31,7 @@ function event_switch_activated(switch_name)
   end
 end
 
-function event_dialog_finished(dialog_id, answer)
+function map:on_dialog_finished(dialog_id, answer)
 
   if dialog_id == "dungeon_1.big_code_ok" then
     sol.map.camera_move(1072, 456, 250, function()
@@ -41,7 +41,7 @@ function event_dialog_finished(dialog_id, answer)
   end
 end
 
-function event_hero_on_sensor(sensor_name)
+function map:on_hero_on_sensor(sensor_name)
 
   if sensor_name:find("^save_solid_ground_sensor") then
     sol.map.hero_save_solid_ground()

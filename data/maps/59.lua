@@ -2,17 +2,17 @@ local map = ...
 
 -- Caverne maudite -16
 
-function event_map_started()
+function map:on_started()
   -- before dying, save the fact that the cursed cave vas visited
-  sol.game.savegame_set_boolean(60, 1)
+  self:get_game():set_value("b60", true)
 end
 
-function event_update()
+function map:on_update()
 
   -- make sure the hero will die in the lava
   -- even if a fairy saves him
-  if sol.game.get_life() > 1 then
-    sol.game.remove_life(sol.game.get_life() - 1)
+  if self:get_game():get_life() > 1 then
+    self:get_game():set_life(1)
   end
 end
 
