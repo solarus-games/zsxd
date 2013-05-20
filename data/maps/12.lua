@@ -11,7 +11,7 @@ end
 function map:on_treasure_obtained(item_name, variant, savegame_variable)
 
   if item_name == "zelda" then
-    sol.main.play_music("boss.spc")
+    sol.audio.play_music("boss")
     sol.map.npc_set_position("zelda", 224, 85)
     sol.map.hero_freeze()
     sol.main.timer_start(angry_zelda, 1000)

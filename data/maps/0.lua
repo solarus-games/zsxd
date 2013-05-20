@@ -14,11 +14,11 @@ function map:on_map_started(destination_point)
     bed_sprite:set_animation("hero_sleeping")
     sol.map.hero_freeze()
     sol.map.hero_set_visible(false)
-    sol.main.play_music("triforce.spc")
+    sol.audio.play_music("triforce")
     sol.main.timer_start(intro, 3000)
   else
     sol.map.npc_remove("snores")
-    sol.main.play_music("village.spc")
+    sol.audio.play_music("village")
     sol.map.npc_set_position("bed", 56, 101)
   end
 end
@@ -37,7 +37,7 @@ end
 function wake_up()
 
   local bed_sprite = sol.map.npc_get_sprite("bed")
-  sol.main.play_music("village.spc")
+  sol.audio.play_music("village")
   sol.map.npc_remove("snores")
   bed_sprite:set_animation("hero_waking")
   sol.main.timer_start(jump_from_bed, 500)

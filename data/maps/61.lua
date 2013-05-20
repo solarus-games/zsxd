@@ -77,7 +77,7 @@ end
 
 function miniboss_timer()
 
-  sol.main.play_music("boss.spc")
+  sol.audio.play_music("boss")
   sol.map.enemy_set_enabled("miniboss", true)
   sol.map.hero_unfreeze()
 end
@@ -85,7 +85,7 @@ end
 function map:on_enemy_dead(enemy_name)
 
   if enemy_name == "miniboss" then
-    sol.main.play_music("dark_world_dungeon.spc")
+    sol.audio.play_music("dark_world_dungeon")
     sol.map.door_open("miniboss_door")
   elseif string.match(enemy_name, "wtf_room_enemy")
       and sol.map.enemy_is_group_dead("wtf_room_enemy")
