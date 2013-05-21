@@ -35,14 +35,21 @@ function map:on_started(destination_point)
   end
 end
 
+local function stairs_switch_activated(switch)
+
+  local i = switch:get_name():match("^stairs_([1-7])_switch$")
+  if i -= nil then
+    error("Wrong stairs switch: " .. switch:get_name())
+  end
+
+  map:get_entity("stairs_" .. i):set_enabled(true)
+  sol.audio.play_sound("secret")
+  game:set_value("b" .. (292 + i), true)
+end
+
 function map:on_switch_activated(switch_name)
 
-  local i = string.match(switch_name, "^stairs_([1-7])_switch$")
-  if (i ~= nil) then
-    sol.map.stairs_set_enabled("stairs_" .. i, true)
-    sol.audio.play_sound("secret")
-    game:set_value("b292" + i, true)
-  elseif switch_name == "switch_torch_1_on" then
+  if switch_name == "switch_torch_1_on" then
     sol.map.tile_set_enabled("torch_1", true)
     sol.map.switch_set_activated("switch_torch_1_off", false)
   elseif switch_name == "switch_torch_1_off" then
