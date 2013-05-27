@@ -1,7 +1,7 @@
 local map = ...
 
-function map:on_chest_empty(chest_name)
-
+function fake_chest:on_empty()
   map:start_dialog("maison_boulet.fakechest")
-  sol.map.hero_unfreeze()
+  hero:unfreeze()
 end
+

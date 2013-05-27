@@ -9,9 +9,9 @@ local switches_good_order = {
 }
 local next_switch_index = 1
 
-function map:on_switch_activated(switch_name)
+local function switch_activated(switch)
 
-  local switch_index = string.match(switch_name, "^switch_([1-4])$")
+  local switch_index = switch_name:match("^switch_([1-4])$")
   if switch_index ~= nil and next_switch_index <= #switches_good_order then
  
     switch_index = tonumber(switch_index)
@@ -21,30 +21,31 @@ function map:on_switch_activated(switch_name)
       next_switch_index = 1
     end
 
-    if next_switch_index == 5 and not sol.map.door_is_open("code_door") then
-      map:start_dialog("dungeon_1.big_code_ok")
+    if next_switch_index == 5 and code_door:is_open() then
+      map:start_dialog("dungeon_1.big_code_ok", function()
+        sol.map.camera_move(1072, 456, 250, function()
+          map:open_doors("code_door")
+          sol.audio.play_sound("secret")
+        end)
+      end)
     elseif next_switch_index > #switches_good_order then
       map:start_dialog("dungeon_1.big_code_completed")
     end
 
-    sol.map.switch_set_activated(switch_name, false)
+    switch:set_activated(false)
   end
 end
-
-function map:on_dialog_finished(dialog_id, answer)
-
-  if dialog_id == "dungeon_1.big_code_ok" then
-    sol.map.camera_move(1072, 456, 250, function()
-      sol.map.door_open("code_door")
-      sol.audio.play_sound("secret")
-    end)
-  end
+for i = 1, 4 do
+  map:get_entity("switch_" .. i).on_activated = switch_activated
 end
 
-function map:on_hero_on_sensor(sensor_name)
+local function save_solid_ground_sensor_activated(sensor)
 
   if sensor_name:find("^save_solid_ground_sensor") then
-    sol.map.hero_save_solid_ground()
+    hero:save_solid_ground()
   end
+end
+for _, sensor in ipairs(map:get_entities("save_solid_ground_sensor")) do
+  sensor.on_activated = save_solid_ground_sensor_activated
 end
 

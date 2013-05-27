@@ -1,18 +1,12 @@
 local map = ...
+local game = map:get_game()
 
 ----------------------------------
 -- Crazy House 1FB (north)      --
 ----------------------------------
 
-local guichet43_sprite
-
-function map:on_started(destination_point)
-
-  guichet43_sprite = sol.map.npc_get_sprite("GC43S")
-end
-
 -- Guichet 41 -------------------------------------------------
-function guichet_41()
+local function guichet_41()
 
   if game:get_value("i1410") == 3 then
     map:start_dialog("crazy_house.guichet_41_ech_eq_3")
@@ -23,13 +17,21 @@ function guichet_41()
 end
 
 -- Guichet 43 -------------------------------------------------
-function guichet_43()
+local function guichet_43()
 
-  map:start_dialog("crazy_house.guichet_43")
+  map:start_dialog("crazy_house.guichet_43", function()
+    -- Pipelette qui se tourne vers Link, énervée
+    GC43S:get_sprite():set_direction(3)
+    map:start_dialog("crazy_house.guichet_43n", function()
+      -- Pipelette reprend sa conversation
+      GC43S:get_sprite():set_direction(2)
+      map:start_dialog("crazy_house.guichet_43f")
+    end)
+  end)
 end
 
 -- Guichet 45 -------------------------------------------------
-function guichet_45()
+local function guichet_45()
 
   if game:get_value("i1410") == 3 then
     map:start_dialog("crazy_house.guichet_45_ech_eq_3")
@@ -45,61 +47,55 @@ function guichet_45()
 end
 
 -- Guichet 47 -------------------------------------------------
-function guichet_47()
+local function guichet_47()
 
   if game:get_value("i1410") == 3 then
     map:start_dialog("crazy_house.guichet_47_ech_eq_3")
   else
-    map:start_dialog("crazy_house.guichet_47_ech_ne_3")
+    map:start_dialog("crazy_house.guichet_47_ech_ne_3", function(answer)
+      if answer == 1 then
+        if game:get_item("cuillere_counter"):has_amount(1) then
+          map:start_dialog("crazy_house.guichet_45_ech_ok", function()
+            hero:start_treasure("sac_olive")
+            game.get_item("cuillere_counter"):remove_amount(1)
+          end)
+        else
+          sol.audio.play_sound("wrong")
+          map:start_dialog("crazy_house.guichet_45_ech_un")
+        end
+      end
+    end)
   end
 end
 
 -- Guichet 49 -------------------------------------------------
-function guichet_49()
+local function guichet_49()
 
   map:start_dialog("crazy_house.guichet_49")
 end
 
-function map:on_npc_interaction(npc_name)
-
-  if npc_name == "mario_message_2" then
-    -- Tableau de mario qui parle ---------------------------------
-    sol.audio.play_sound("sm64_heehee")
-  elseif npc_name == "GC41" then
-    guichet_41()
-  elseif npc_name == "GC43" then
-    guichet_43()
-  elseif npc_name == "GC45" then
-    guichet_45()
-  elseif npc_name == "GC47" then
-    guichet_47()
-  elseif npc_name == "GC49" then
-    guichet_49()
-  end
+function mario_message_2:on_interaction()
+  -- Tableau de mario qui parle ---------------------------------
+  sol.audio.play_sound("sm64_heehee")
 end
 
-function map:on_dialog_finished(dialog_id, answer)
+function GC41:on_interaction()
+  guichet_41()
+end
 
-  if dialog_id == "crazy_house.guichet_43" then
-    -- Pipelette (guichet 43) qui se tourne vers Link, énervée
-    guichet43_sprite:set_direction(3)
-    map:start_dialog("crazy_house.guichet_43n")
-  elseif dialog_id == "crazy_house.guichet_43n" then
-    -- Pipelette reprend sa conversation
-    guichet43_sprite:set_direction(2)
-    map:start_dialog("crazy_house.guichet_43f")
-  elseif dialog_id == "crazy_house.guichet_45_ech_ne_3" then
-    if answer == 0 then
-      if sol.game.get_item_amount("cuillere_counter") >= 1 then
-        map:start_dialog("crazy_house.guichet_45_ech_ok")
-      else
-        sol.audio.play_sound("wrong")
-        map:start_dialog("crazy_house.guichet_45_ech_un")
-      end
-    end
-  elseif dialog_id == "crazy_house.guichet_45_ech_ok" then
-    hero:start_treasure("sac_olive", 1, -1)
-    sol.game.remove_item_amount("cuillere_counter", 1)
-  end
+function GC43:on_interaction()
+  guichet_43()
+end
+
+function GC45:on_interaction()
+  guichet_45()
+end
+
+function GC47:on_interaction()
+  guichet_47()
+end
+
+function GC49:on_interaction()
+  guichet_49()
 end
 

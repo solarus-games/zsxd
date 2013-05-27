@@ -3,109 +3,118 @@ local map = ...
 -- Temple of Stupidities 1F NW
 
 -- stupid run between switches and doors
-local timer = nil
+local timer_callback = nil
 local timer_delay = 0
 local door_a_passed = false
 local door_b_passed = false
 local door_c_passed = false
+local close_door_a
+local close_door_b
+local close_door_c
 
-function map:on_switch_activated(switch_name)
+-- when pressing a switch, move the camera and open a door
+function stupid_run_switch_a:on_activated()
+  map:move_camera(1272, 152, 250, function()
+    map:open_doors("stupid_run_door_a")
+    timer_callback = close_door_a
+    timer_delay = 7000
+  end)
+end
 
-  -- when pressing a switch, move the camera and open a door
-  if switch_name == "stupid_run_switch_a" then
-    sol.map.camera_move(1272, 152, 250, open_door_a)
-  elseif switch_name == "stupid_run_switch_b" then
-    sol.map.camera_move(1288, 296, 250, open_door_b)
-  elseif switch_name == "stupid_run_switch_c" then
-    sol.map.camera_move(1456, 320, 250, open_door_c)
-  end
+function stupid_run_switch_b:on_activated()
+  map:move_camera(1288, 296, 250, function()
+    map:open_doors("stupid_run_door_b")
+    timer_callback = close_door_b
+    timer_delay = 3500
+  end)
+end
+
+function stupid_run_switch_c:on_activated()
+  map:move_camera(1456, 320, 250, function()
+    map:open_doors("stupid_run_door_c")
+    timer_callback = close_door_c
+    timer_delay = 4000
+  end)
 end
 
 function map:on_camera_back()
   -- start the door timer once the camera is back
-  sol.main.timer_start(timer, timer_delay, true)
+  local timer = sol.timer.start(map, timer_delay, timer_callback)
+  timer:set_with_sound(true)
 end
 
-function map:on_hero_on_sensor(sensor_name)
+-- sensors that close doors
+function close_door_b_sensor:on_activated()
 
-  -- sensors that close doors
-  if sensor_name == "close_door_b_sensor"
-      and door_b_passed
-      and sol.map.door_is_open("stupid_run_door_b") then
-      door_b_passed = false
+  if door_b_passed and stupid_run_door_b:is_open() then
+    door_b_passed = false
     close_door_b()
-  elseif sensor_name == "close_door_c_sensor"
-      and door_c_passed
-      and sol.map.door_is_open("stupid_run_door_c") then
-    door_c_passed = false
-    close_door_c()
-
-  -- sensors that stop timers (i.e. a door is reached on time)
-  elseif string.find(sensor_name, "^stop_timer_a_sensor") then
-    door_a_passed = true
-  elseif string.find(sensor_name, "^stop_timer_b_sensor") then
-    door_b_passed = true
-  elseif string.find(sensor_name, "^stop_timer_c_sensor") then
-    door_c_passed = true
-
-  -- save the solid ground location
-  elseif sensor_name:find("^save_solid_ground_sensor") then
-    sol.map.hero_save_solid_ground()
   end
 end
 
-function map:on_treasure_obtained(item_name, variant, savegame_variable)
+function close_door_c_sensor:on_activated()
+
+  if door_c_passed and stupid_run_door_c:is_open() then
+    door_c_passed = false
+    close_door_c()
+  end
+end
+
+-- sensors that stop timers (i.e. a door is reached on time)
+function stop_timer_a_sensor:on_activated()
+  door_a_passed = true
+end
+stop_timer_a_sensor_2.on_activated = stop_timer_a_sensor.on_activated
+
+function stop_timer_b_sensor:on_activated()
+  door_a_passed = true
+end
+stop_timer_b_sensor_2.on_activated = stop_timer_b_sensor.on_activated
+
+function stop_timer_c_sensor:on_activated()
+  door_a_passed = true
+end
+stop_timer_c_sensor_2.on_activated = stop_timer_c_sensor.on_activated
+
+-- save the solid ground location
+local function save_solid_ground_sensor_activated(sensor)
+  hero:save_solid_ground()
+end
+for _, sensor in ipairs(map:get_entities("save_solid_ground_sensor")) do
+  sensor.on_activated = save_solid_ground_sensor_activated
+end
+
+function map:on_obtained_treasure(item_name, variant, savegame_variable)
 
   if item_name == "map" then
     map:start_dialog("dungeon_1.after_map_treasure")
   end
 end
 
-function open_door_a()
+local function close_door_a()
 
-  sol.map.door_open("stupid_run_door_a")
-  timer = close_door_a
-  timer_delay = 7000
-end
-
-function open_door_b()
-
-  sol.map.door_open("stupid_run_door_b")
-  timer = close_door_b
-  timer_delay = 3500
-end
-
-function open_door_c()
-
-  sol.map.door_open("stupid_run_door_c")
-  timer = close_door_c
-  timer_delay = 4000
-end
-
-function close_door_a()
-
-  if sol.map.door_is_open("stupid_run_door_a") 
+  if stupid_run_door_a:is_open()
       and not door_a_passed then
-    sol.map.door_close("stupid_run_door_a")
-    sol.map.switch_set_activated("stupid_run_switch_a", false)
+    map:close_doors("stupid_run_door_a")
+    stupid_run_switch_a:set_activated(false)
   end
 end
 
-function close_door_b()
+local function close_door_b()
 
-  if sol.map.door_is_open("stupid_run_door_b") 
+  if stupid_run_door_b:is_open()
       and not door_b_passed then
-    sol.map.door_close("stupid_run_door_b")
-    sol.map.switch_set_activated("stupid_run_switch_b", false)
+    map:close_doors("stupid_run_door_b")
+    stupid_run_switch_b:set_activated(false)
   end
 end
 
-function close_door_c()
+local function close_door_c()
 
-  if sol.map.door_is_open("stupid_run_door_c") 
+  if stupid_run_door_c:is_open()
       and not door_c_passed then
-    sol.map.door_close("stupid_run_door_c")
-    sol.map.switch_set_activated("stupid_run_switch_c", false)
+    map:close_doors("stupid_run_door_c")
+    stupid_run_switch_b:set_activated(false)
   end
 end
 
