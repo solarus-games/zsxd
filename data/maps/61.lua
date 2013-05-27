@@ -1,4 +1,5 @@
 local map = ...
+local game = map:get_game()
 
 -- Temple of Stupidities 1F NE
 
@@ -6,101 +7,131 @@ local cannonballs_enabled = false
 local nb_cannonballs_created = 0
 local remove_water_delay = 500 -- delay between each step when some water is disappearing
 local fighting_miniboss = false
+local remove_c_water
+local remove_c_water_2
+local remove_c_water_3
+local remove_c_water_4
+local remove_c_water_5
+local remove_c_water_6
 
 -- initialization
 function map:on_started(destination_point)
 
   -- miniboss door
-  sol.map.door_set_open("miniboss_door", true)
+  self:set_doors_open("miniboss_door", true)
 
   -- water drained
   if game:get_value("b303") then
-    sol.map.tile_set_group_enabled("c_water", false)
-    sol.map.tile_set_enabled("c_water_exit", true)
-    sol.map.switch_set_activated("remove_water_switch", true)
+    self:set_entities_enabled("c_water", false)
+    c_water_exit:set_enabled(true)
+    remove_water_switch:set_activated(true)
   end
 
   -- WTF room
-  sol.map.door_set_open("wtf_door", true)
+  map:set_doors_open("wtf_door", true)
 end
 
 -- weak walls: play the secret sound
-function map:on_door_open(door_name)
+function weak_wall_compass:on_opened()
+  sol.audio.play_sound("secret")
+end
 
-  if door_name == "weak_wall_compass"
-      or door_name == "weak_wall_red_tunic" then
-    sol.audio.play_sound("secret")
-  end
+function weak_wall_red_tunic:on_opened()
+  sol.audio.play_sound("secret")
 end
 
 -- dialog near the WTF room
-function map:on_treasure_obtained(item_name, variant, savegame_variable)
+function map:on_obtained_treasure(item_name, variant, savegame_variable)
 
-  if savegame_variable == 248 then
+  if savegame_variable == "b248" then
     map:start_dialog("dungeon_1.small_key_danger_east")
   end
 end
 
 -- random cannonballs
-function launch_cannonball()
+local function launch_cannonball()
 
-  sol.main.timer_start(launch_cannonball, 1500)
   nb_cannonballs_created = nb_cannonballs_created + 1
-  sol.map.enemy_create("cannonball_" .. nb_cannonballs_created, "cannonball", 0, 280, 725)
+  map:create_enemy{
+    name = "cannonball_" .. nb_cannonballs_created,
+    breed = "cannonball",
+    x = 280,
+    y = 725,
+    layer = 0
+  }
+  sol.timer.start(map, 1500, launch_cannonball)
 end
 
 -- miniboss
-function map:on_hero_on_sensor(sensor_name)
+local function cannonballs_start_sensor_activated(sensor)
 
-  if string.find(sensor_name, "^cannonballs_start_sensor")
-      and not cannonballs_enabled then
+  if not cannonballs_enabled then
     launch_cannonball()
     cannonballs_enabled = true
-  elseif string.match(sensor_name, "^cannonballs_stop_sensor")
-      and cannonballs_enabled then
-    sol.main.timer_stop_all()
-    cannonballs_enabled = false
-  elseif sensor_name == "start_miniboss_sensor"
-      and not game:get_value("b302")
+  end
+end
+for _, sensor in ipairs(map:get_entities("cannonballs_start_sensor")) do
+  sensor.on_activated = cannonballs_start_sensor_activated
+end
+
+local function cannonballs_stop_sensor_activated(sensor)
+  sol.timer.stop_all(map)
+  cannonballs_enabled = false
+end
+for _, sensor in ipairs(map:get_entities("cannonballs_stop_sensor")) do
+  sensor.on_activated = cannonballs_stop_sensor_activated
+end
+
+function start_miniboss_sensor:on_activated()
+
+  if not game:get_value("b302")
       and not fighting_miniboss then
     -- the miniboss is alive
-    sol.map.door_close("miniboss_door")
-    sol.map.hero_freeze()
-    sol.main.timer_start(miniboss_timer, 1000)
+    map:close_doors("miniboss_door")
+    hero:freeze()
     fighting_miniboss = true
-  elseif string.match(sensor_name, "^wtf_sensor")
-      and sol.map.door_is_open("wtf_door")
-      and not sol.map.enemy_is_group_dead("wtf_room_enemy") then
-    sol.map.door_close("wtf_door")
+    sol.timer.start(map, 1000, function()
+      sol.audio.play_music("boss")
+      miniboss:set_enabled(true)
+      hero:unfreeze()
+    end)
   end
 end
 
-function miniboss_timer()
+local function wft_sensor_activated(sensor)
 
-  sol.audio.play_music("boss")
-  sol.map.enemy_set_enabled("miniboss", true)
-  sol.map.hero_unfreeze()
+  if wtf_door:is_open()
+      and map:has_entities("wtf_room_enemy") then
+    map:close_doors("wtf_door")
+  end
+end
+for _, sensor in ipairs(map:get_entities("wtf_sensor")) do
+  sensor.on_activated = wtf_sensor_activated
 end
 
-function map:on_enemy_dead(enemy_name)
+function miniboss:on_dead()
 
-  if enemy_name == "miniboss" then
-    sol.audio.play_music("dark_world_dungeon")
-    sol.map.door_open("miniboss_door")
-  elseif string.match(enemy_name, "wtf_room_enemy")
-      and sol.map.enemy_is_group_dead("wtf_room_enemy")
-      and not sol.map.door_is_open("wtf_door") then
-    sol.map.door_open("wtf_door")
+  sol.audio.play_music("dark_world_dungeon")
+  map:open_doors("miniboss_door")
+end
+
+local function wtf_room_enemy_dead(enemy)
+
+  if not map:has_entities("wtf_room_enemy")
+      and wtf_door:is_closed() then
+    map:open_doors("wtf_door")
     sol.audio.play_sound("secret")
   end
 end
+for _, enemy in ipairs(map:get_entities("wtf_room_enemy")) do
+  enemy.on_dead = wtf_room_enemy_dead
+end
 
 -- draining the water
-function map:on_switch_activated(switch_name)
+function remove_water_switch:on_activated()
 
-  if switch_name == "remove_water_switch"
-      and not game:get_value("b303") then
-    sol.map.hero_freeze()
+  if not game:get_value("b303") then
+    hero:freeze()
     remove_c_water()
   end
 end
@@ -109,43 +140,43 @@ function remove_c_water()
 
   sol.audio.play_sound("water_drain_begin")
   sol.audio.play_sound("water_drain")
-  sol.map.tile_set_enabled("c_water_exit", true)
-  sol.map.tile_set_enabled("c_water_source", false)
-  sol.main.timer_start(remove_c_water_2, remove_water_delay)
+  c_water_exit:set_enabled(true)
+  c_water_source:set_enabled(false)
+  sol.timer.start(map, remove_water_delay, remove_c_water_2)
 end
 
 function remove_c_water_2()
 
-  sol.map.tile_set_enabled("c_water_middle", false)
-  sol.main.timer_start(remove_c_water_3, remove_water_delay)
+  c_water_middle:set_enabled(false)
+  sol.timer.start(map, remove_water_delay, remove_c_water_3)
 end
 
 function remove_c_water_3()
 
-  sol.map.tile_set_group_enabled("c_water_initial", false)
-  sol.map.tile_set_group_enabled("c_water_less_a", true)
-  sol.main.timer_start(remove_c_water_4, remove_water_delay)
+  c_water_initial:set_enabled(false)
+  c_water_less_a:set_enabled(true)
+  sol.timer.start(map, remove_water_delay, remove_c_water_4)
 end
 
 function remove_c_water_4()
 
-  sol.map.tile_set_group_enabled("c_water_less_a", false)
-  sol.map.tile_set_group_enabled("c_water_less_b", true)
-  sol.main.timer_start(remove_c_water_5, remove_water_delay)
+  c_water_less_a:set_enabled(false)
+  c_water_less_b:set_enabled(true)
+  sol.timer.start(map, remove_water_delay, remove_c_water_5)
 end
 
 function remove_c_water_5()
 
-  sol.map.tile_set_group_enabled("c_water_less_b", false)
-  sol.map.tile_set_group_enabled("c_water_less_c", true)
-  sol.main.timer_start(remove_c_water_6, remove_water_delay)
+  c_water_less_b:set_enabled(false)
+  c_water_less_c:set_enabled(true)
+  sol.timer.start(map, remove_water_delay, remove_c_water_6)
 end
 
 function remove_c_water_6()
 
-  sol.map.tile_set_group_enabled("c_water_less_c", false)
+  c_water_less_c:set_enabled(false)
   game:set_value("b303", true)
   sol.audio.play_sound("secret")
-  sol.map.hero_unfreeze()
+  hero:unfreeze()
 end
 

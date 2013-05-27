@@ -2,6 +2,7 @@ local map = ...
 
 -- Temple of Stupidities 1F NE
 
+local game = map:get_game()
 local will_remove_water = false
 
 function map:on_started(destination_point)
@@ -47,167 +48,96 @@ local function stairs_switch_activated(switch)
   game:set_value("b" .. (292 + i), true)
 end
 
-function map:on_switch_activated(switch_name)
+local function switch_activated_on(switch)
 
-  if switch_name == "switch_torch_1_on" then
-    sol.map.tile_set_enabled("torch_1", true)
-    sol.map.switch_set_activated("switch_torch_1_off", false)
-  elseif switch_name == "switch_torch_1_off" then
-    sol.map.tile_set_enabled("torch_1", false)
-    sol.map.switch_set_activated("switch_torch_1_on", false)
-  elseif switch_name == "switch_torch_2_on" then
-    sol.map.tile_set_enabled("torch_2", true)
-    sol.map.switch_set_activated("switch_torch_2_off", false)
-  elseif switch_name == "switch_torch_2_off" then
-    sol.map.tile_set_enabled("torch_2", false)
-    sol.map.switch_set_activated("switch_torch_2_on", false)
-  elseif switch_name == "switch_torch_3_on" then
-    sol.map.tile_set_enabled("torch_3", true)
-    sol.map.switch_set_activated("switch_torch_3_off", false)
-  elseif switch_name == "switch_torch_3_off" then
-    sol.map.tile_set_enabled("torch_3", false)
-    sol.map.switch_set_activated("switch_torch_3_on", false)
-  elseif switch_name == "switch_torch_4_on" then
-    sol.map.tile_set_enabled("torch_4", true)
-    sol.map.switch_set_activated("switch_torch_4_off", false)
-  elseif switch_name == "switch_torch_4_off" then
-    sol.map.tile_set_enabled("torch_4", false)
-    sol.map.switch_set_activated("switch_torch_4_on", false)
-  elseif switch_name == "switch_torch_5_on" then
-    sol.map.tile_set_enabled("torch_5", true)
-    sol.map.switch_set_activated("switch_torch_5_off", false)
-  elseif switch_name == "switch_torch_5_off" then
-    sol.map.tile_set_enabled("torch_5", false)
-    sol.map.switch_set_activated("switch_torch_5_on", false)
-  elseif switch_name == "switch_torch_6_on" then
-    sol.map.tile_set_enabled("torch_6", true)
-    sol.map.switch_set_activated("switch_torch_6_off", false)
-  elseif switch_name == "switch_torch_6_off" then
-    sol.map.tile_set_enabled("torch_6", false)
-    sol.map.switch_set_activated("switch_torch_6_on", false)
-  elseif switch_name == "switch_torch_7_on" then
-    sol.map.tile_set_enabled("torch_7", true)
-    sol.map.switch_set_activated("switch_torch_7_off", false)
-    sol.map.switch_set_activated("switch_torch_7_off_2", false)
-  elseif switch_name == "switch_torch_7_off"
-      or switch_name == "switch_torch_7_off_2" then
-    sol.map.tile_set_enabled("torch_7", false)
-    sol.map.switch_set_activated("switch_torch_7_on", false)
-  elseif switch_name == "switch_torch_8_on" then
-    sol.map.tile_set_enabled("torch_8", true)
-    sol.map.switch_set_activated("switch_torch_8_off", false)
-  elseif switch_name == "switch_torch_8_off" then
-    sol.map.tile_set_enabled("torch_8", false)
-    sol.map.switch_set_activated("switch_torch_8_on", false)
-  elseif switch_name == "switch_torch_9_on" then
-    sol.map.tile_set_enabled("torch_9", true)
-    sol.map.switch_set_activated("switch_torch_9_off", false)
-  elseif switch_name == "switch_torch_9_off" then
-    sol.map.tile_set_enabled("torch_9", false)
-    sol.map.switch_set_activated("switch_torch_9_on", false)
-  elseif switch_name == "switch_torch_10_on" then
-    sol.map.tile_set_enabled("torch_10", true)
-    sol.map.switch_set_activated("switch_torch_10_off", false)
-  elseif switch_name == "switch_torch_10_off" then
-    sol.map.tile_set_enabled("torch_10", false)
-    sol.map.switch_set_activated("switch_torch_10_on", false)
-  elseif switch_name == "switch_torch_11_on" then
-    sol.map.tile_set_enabled("torch_11", true)
-    sol.map.switch_set_activated("switch_torch_11_off", false)
-  elseif switch_name == "switch_torch_11_off" then
-    sol.map.tile_set_enabled("torch_11", false)
-    sol.map.switch_set_activated("switch_torch_11_on", false)
+  local i = tonumber(switch:get_name():match("switch_torch_([0-9]*)_on"))
+  map:set_entities_enabled("torch_" .. i, true)
+  map:get_entity("switch_torch_" .. i .. "_off"):set_activated(false)
+
+  if i == 7 then
+    -- This one has two off switches.
+    switch_torch_7_off_2:set_activated(false)
   end
 end
 
-function map:on_enemy_dead(enemy_name)
+local function switch_activated_off(switch)
 
-  if string.find(enemy_name, '^fight_room')
-      and sol.map.enemy_is_group_dead("fight_room") then
+  local i = tonumber(switch:get_name():match("switch_torch_([0-9]*)_off"))
+  map:set_entities_enabled("torch_" .. i, false)
+  map:get_entity("switch_torch_" .. i .. "_on"):set_activated(false)
+end
+for i in 1, 11 do
+  map:get_entity("switch_torch_" .. i .. "_on").on_activated = switch_activated_on
+  map:get_entity("switch_torch_" .. i .. "_off").on_activated = switch_activated_off
+end
+switch_torch_7_off_2.on_activated = switch_activated_off
 
+local function fight_room_enemy_dead(enemy)
+
+  if not map:has_entities("fight_room_enemy")
+      and fight_room_door:is_closed() then
     sol.audio.play_sound("secret")
-    sol.map.door_open("fight_room_door")
-  elseif enemy_name == "boss" then
-    sol.map.tile_set_enabled("boss_gate", true) 
-    game:set_value("b62", true) -- open the door of Link's cave
-    sol.audio.play_sound("secret")
+    map:open_doors("fight_room_door")
   end
 end
+for _, enemy in ipairs(map:get_entities("fight_room_enemy")) do
+  enemy.on_dead = fight_room_enemy_dead
+end
 
-function map:on_hero_on_sensor(sensor_name)
+function boss:on_dead()
+  map:set_entities_enabled("boss_gate", true) 
+  game:set_value("b62", true)  -- Open the door of Link's cave.
+  sol.audio.play_sound("secret")
+end
 
-  if sensor_name == "remove_water_sensor"
-      and not game:get_value("b283")
+function remove_water_sensor:on_activated()
+
+  if not game:get_value("b283")
       and not will_remove_water then
-
-    sol.main.timer_start(remove_2f_sw_water, 500)
+    sol.timer.start(map, 500, function()
+      sol.audio.play_sound("water_drain_begin")
+      sol.audio.play_sound("water_drain")
+      map:start_dialog("dungeon_1.2f_sw_water_removed")
+      game:set_value("b283", true)
+    end)
     will_remove_water = true
-  elseif sensor_name == "start_boss_sensor" then
-    if sol.map.door_is_open("boss_door")
-        and not game:get_value("b306") then
-      sol.map.door_close("boss_door")
-      sol.map.hero_freeze()
-      sol.main.timer_start(start_boss, 1000)
-    end
   end
 end
 
-function remove_2f_sw_water()
+function start_boss_sensor:on_activated()
 
-  sol.audio.play_sound("water_drain_begin")
-  sol.audio.play_sound("water_drain")
-  map:start_dialog("dungeon_1.2f_sw_water_removed")
-  game:set_value("b283", true)
-end
-
-function start_boss()
-
-  sol.map.enemy_set_enabled("boss", true)
-  sol.audio.play_music("ganon_theme")
-  sol.main.timer_start(ganon_dialog, 1000)
-  sol.map.hero_unfreeze()
-end
-
-function ganon_dialog()
-
-  map:start_dialog("dungeon_1.ganon")
-end
-
-function map:on_npc_interaction(npc_name)
-
-  if npc_name == "boss_hint_stone" then
-    sol.main.timer_start(another_castle, 9000)
-    sol.audio.play_music("victory")
-    sol.map.hero_set_direction(3)
-    sol.map.hero_freeze()
+  if boss_door:is_open()
+      and not game:get_value("b306") then
+    map:close_doors("boss_door")
+    hero:freeze()
+    sol.timer.start(map, 1000, function()
+      boss:set_enabled(true)
+      sol.audio.play_music("ganon_theme")
+      hero:unfreeze()
+      sol.timer.start(map, 1000, function()
+        map:start_dialog("dungeon_1.ganon", function()
+          sol.audio.play_music("ganon_battle")
+        end)
+      end)
+    end)
   end
 end
 
-function another_castle()
+function boss_hint_stone:on_interaction()
 
-  map:start_dialog("dungeon_1.boss_hint_stone")
-  sol.map.dialog_set_variable("dungeon_1.boss_hint_stone",
-    sol.game.savegame_get_name())
-end
-
-function map:on_dialog_finished(dialog_id)
-
-  if dialog_id == "dungeon_1.boss_hint_stone" then
-    sol.main.timer_start(victory, 1000)
-  elseif dialog_id == "dungeon_1.ganon" then
-    sol.audio.play_music("ganon_battle")
-  end
-end
-
-function victory()
-
-  sol.map.hero_start_victory_sequence()
-  sol.main.timer_start(leave_dungeon, 2000)
-end
-
-function leave_dungeon()
-
-  sol.audio.play_sound("warp")
-  sol.map.hero_set_map(4, "from_temple_of_stupidities", 1)
+  sol.audio.play_music("victory")
+  hero:set_direction(3)
+  hero:freeze()
+  sol.timer.start(map, 9000, function()
+    map:set_dialog_variable("dungeon_1.boss_hint_stone", game:get_player_name())
+    map:start_dialog("dungeon_1.boss_hint_stone", function()
+      sol.timer.start(map, 1000, function()
+        hero:start_victory(function()
+          sol.audio.play_sound("warp")
+          hero:teleport("4", "from_temple_of_stupidities")
+        end)
+      end)
+    end)
+  end)
 end
 
