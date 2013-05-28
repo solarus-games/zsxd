@@ -118,6 +118,7 @@ dialog{
   text = [[
 Ton Flacon Magique
 contient de l'eau.
+
 Tu ferais mieux de
 la vider.
 ]]
@@ -197,6 +198,7 @@ dialog{
   text = [[
 Ton Flacon Magique
 contient de l'eau.
+
 Tu ferais mieux de
 la vider.
 ]]
@@ -276,6 +278,7 @@ dialog{
   text = [[
 Ton Flacon Magique
 contient de l'eau.
+
 Tu ferais mieux de
 la vider.
 ]]
@@ -355,6 +358,7 @@ dialog{
   text = [[
 Ton Flacon Magique
 contient de l'eau.
+
 Tu ferais mieux de
 la vider.
 ]]
@@ -892,6 +896,7 @@ dialog{
   text = [[
 Tu as trouvé un
 Flacon Magique !$0
+
 Ca a sûrement un
 intérêt quelconque !
 ]]
@@ -916,6 +921,7 @@ dialog{
   text = [[
 Tu as trouvé de la
 Potion Rouge !$0
+
 Bois-la pour
 retrouver toute ton
 énergie vitale.
@@ -930,6 +936,7 @@ dialog{
   text = [[
 Tu as trouvé de la
 Potion Verte !$0
+
 Bois-la pour
 retrouver toute ton
 énergie magique.
@@ -944,6 +951,7 @@ dialog{
   text = [[
 Tu as trouvé de la
 Potion Bleue !$0
+
 Bois-la pour
 retrouver toute ta
 vie et ta magie !
@@ -976,6 +984,7 @@ dialog{
   text = [[
 Tu as trouvé un
 Flacon Magique !$0
+
 Ca a sûrement un
 intérêt quelconque !
 ]]
@@ -1000,6 +1009,7 @@ dialog{
   text = [[
 Tu as trouvé de la
 Potion Rouge !$0
+
 Bois-la pour
 retrouver toute ton
 énergie vitale.
@@ -1014,6 +1024,7 @@ dialog{
   text = [[
 Tu as trouvé de la
 Potion Verte !$0
+
 Bois-la pour
 retrouver toute ton
 énergie magique.
@@ -1028,6 +1039,7 @@ dialog{
   text = [[
 Tu as trouvé de la
 Potion Bleue !$0
+
 Bois-la pour
 retrouver toute ta
 vie et ta magie !
@@ -1060,6 +1072,7 @@ dialog{
   text = [[
 Tu as trouvé un
 Flacon Magique !$0
+
 Ca a sûrement un
 intérêt quelconque !
 ]]
@@ -1084,6 +1097,7 @@ dialog{
   text = [[
 Tu as trouvé de la
 Potion Rouge !$0
+
 Bois-la pour
 retrouver toute ton
 énergie vitale.
@@ -1098,6 +1112,7 @@ dialog{
   text = [[
 Tu as trouvé de la
 Potion Verte !$0
+
 Bois-la pour
 retrouver toute ton
 énergie magique.
@@ -1112,6 +1127,7 @@ dialog{
   text = [[
 Tu as trouvé de la
 Potion Bleue !$0
+
 Bois-la pour
 retrouver toute ta
 vie et ta magie !
@@ -1144,6 +1160,7 @@ dialog{
   text = [[
 Tu as trouvé un
 Flacon Magique !$0
+
 Ca a sûrement un
 intérêt quelconque !
 ]]
@@ -1168,6 +1185,7 @@ dialog{
   text = [[
 Tu as trouvé de la
 Potion Rouge !$0
+
 Bois-la pour
 retrouver toute ton
 énergie vitale.
@@ -1182,6 +1200,7 @@ dialog{
   text = [[
 Tu as trouvé de la
 Potion Verte !$0
+
 Bois-la pour
 retrouver toute ton
 énergie magique.
@@ -1196,6 +1215,7 @@ dialog{
   text = [[
 Tu as trouvé de la
 Potion Bleue !$0
+
 Bois-la pour
 retrouver toute ta
 vie et ta magie !
@@ -1259,6 +1279,7 @@ dialog{
   text = [[
 Tu as trouvé la
 Canne de Somaria !$0
+
 Tu peux créer des
 blocs et t'accrocher
 à l'aide du Grappin.
@@ -1273,6 +1294,7 @@ dialog{
   text = [[
 Tu as trouvé 3
 Pommes !$0
+
 Consomme-les plus
 tard pour récupérer
 des Coeurs !
@@ -1287,6 +1309,7 @@ dialog{
   text = [[
 Tu as trouvé un Pain
 au Chocolat !$0
+
 Mange un Pain au
 Chocolat pour
 récupérer 3 Coeurs.
@@ -1327,6 +1350,7 @@ dialog{
   text = [[
 Tu as trouvé la
 Clé d'Os !$0
+
 Tu peux entrer dans
 le répère de Ganon !
 ]]
@@ -1340,6 +1364,7 @@ dialog{
   text = [[
 Tu as trouvé la
 Clé de Terre !$0
+
 Tu peux maintenant
 ouvrir la grotte du
 village !
@@ -1354,6 +1379,7 @@ dialog{
   text = [[
 Tu as trouvé une
 tarte aux pommes !
+
 Elle est moisie,
 mais c'est pas
 grave !
@@ -1368,6 +1394,7 @@ dialog{
   text = [[
 Tu as trouvé les
 Palmes !$0
+
 Tu peux maintenant
 nager en eau
 profonde !
@@ -1382,6 +1409,7 @@ dialog{
   text = [[
 Tu as trouvé la Cape
 Magique !$0
+
 Elle t'avertira si
 tu t'approchees d'un
 mur fragile.
@@ -1396,6 +1424,7 @@ dialog{
   text = [[
 Tu as trouvé la
 Clé de Fer !$0
+
 Il doit bien y
 avoir une porte qui
 va avec !
@@ -1410,6 +1439,7 @@ dialog{
   text = [[
 Tu as trouvé la
 Clé de Pierre !$0
+
 Mais où est la
 serrure qui
 correspond ?
@@ -1424,6 +1454,7 @@ dialog{
   text = [[
 Tu as trouvé la
 Clé de Bois !$0
+
 A toi de voir où
 tu peux l'utiliser !
 ]]
@@ -1437,6 +1468,7 @@ dialog{
   text = [[
 Tu as trouvé la
 Clé de Glace !$0
+
 Elle protège sans
 doute l'entrée d'un
 lieu glacial...
@@ -1451,6 +1483,7 @@ dialog{
   text = [[
 Tu as trouvé la
 Poigne de Fer !$0
+
 Tu peux sûrement
 soulever des trucs,
 maintenant !
@@ -1465,6 +1498,7 @@ dialog{
   text = [[
 Tu as trouvé la
 Poigne d'Or !$0
+
 Tu peux maintenant
 soulever les pierres
 noires !
@@ -1490,6 +1524,7 @@ dialog{
   text = [[
 Tu as trouvé la
 Carte du Monde !$0
+
 Tu peux l'afficher
 dans l'écran Carte.
 ]]
@@ -1503,8 +1538,10 @@ dialog{
   text = [[
 Tu as trouvé le
 Grand Sac de Rubis !$0
+
 Il peut contenir
 jusqu'à 300 rubis !
+
 Dommage que le jeu
 soit fini, ça aurait
 pu être utile !
@@ -1519,6 +1556,7 @@ dialog{
   text = [[
 Tu as trouvé le
 Sac de Rubis Géant !$0
+
 Il peut contenir
 jusqu'à 999 rubis !
 ]]
@@ -1562,6 +1600,7 @@ dialog{
   text = [[
 Tu as trouvé le Sac
 de Bombes Géant !$0
+
 C'est génial !
 Il peut contenir
 jusqu'à 12 Bombes !
@@ -1576,6 +1615,7 @@ dialog{
   text = [[
 Tu as trouvé le
 Grand Carquois !$0
+
 Il peut contenir
 jusqu'à 30 Flèches
 au lieu de 10 !
@@ -1590,6 +1630,7 @@ dialog{
   text = [[
 Tu as trouvé le
 Carquois Géant !$0
+
 Il peut contenir
 jusqu'à 100 Flèches
 au lieu de 30 !
@@ -1634,6 +1675,7 @@ dialog{
   text = [[
 Tu as retrouvé ton
 Bouclier !$0
+
 Mais pourquoi tu
 l'avais laissé
 traîner dehors ?
@@ -1663,6 +1705,7 @@ dialog{
   text = [[
 Tu as trouvé le
 Bouclier Miroir !$0
+
 Tu peux désormais
 contrer les lasers !
 ]]
@@ -1676,6 +1719,7 @@ dialog{
   text = [[
 Tu as retrouvé ton
 épée d’entraînement.
+
 C'est la tienne car
 il y a ton nom
 dessus !
@@ -1692,6 +1736,7 @@ dialog{
   text = [[
 Tu as trouvé le
 Sabre Laser !$0
+
 Tu peux faire appel
 à la Forcetri !
 ]]
@@ -1720,6 +1765,7 @@ dialog{
   text = [[
 Tu as trouvé
 l'Épée Excalibur !$0
+
 Dommage que le jeu
 soit fini, ça aurait
 pu être utile !
@@ -1734,6 +1780,7 @@ dialog{
   text = [[
 Tu as trouvé
 la Carte !
+
 Utilise-la pour
 connaître le plan
 des environs.
@@ -1775,6 +1822,7 @@ dialog{
   text = [[
 Tu as trouvé une
 Petite Clé !
+
 Tu peux ouvrir une
 porte verrouillée
 dans les environs.
@@ -1792,6 +1840,7 @@ Grande Clé ! Tu peux
 désormais ouvrir les
 portes spéciales et
 les grands coffres !
+
 Plus qu'à les
 retrouver,
 maintenant !
@@ -1832,6 +1881,7 @@ dialog{
   text = [[
 Tu as trouvé un
 Réceptacle de Coeur.
+
 Tu obtiens un Coeur
 supplémentaire !
 Ca poutre !
@@ -2052,6 +2102,7 @@ dialog{
   text = [[
 Tu as retrouvé la
 Princesse Zelda !
+
 Apparemment, tu l'avais
 juste enfermée dans ton
 coffre !
@@ -2075,6 +2126,8 @@ dialog{
   icon = 41,
   text = [[
 Tu as le balai !
+
+
 C'est la mère Denis
 qui va être
 contente !
@@ -2362,6 +2415,7 @@ dialog{
   text = [[
 Tu as trouvé quatre
 Fragments de Coeur.
+
 Tu obtiens un Coeur
 supplémentaire !
 ]]
@@ -2642,6 +2696,7 @@ dialog{
   text = [[
 Escalier :
 guichets 22, 12
+
 A gauche :
 guichets 41, 43, 82,
 deuxième étage
@@ -2679,6 +2734,7 @@ dialog{
   text = [[
 Escalier :
 guichets 49, 47, 45
+
 A droite :
 guichets 84, 33
 ]]
@@ -3283,6 +3339,7 @@ dialog{
   text = [[
 A droite : guichet 12
 A gauche : accueil
+
 En haut à droite :
 vers le guichet 22
 (porte condamnée)
@@ -4698,6 +4755,7 @@ dialog{
   text = [[
 Te conduire jusqu'à
 Zelda je puis.
+
 Mais maintenant, nous
 allons manger.
 ]]
@@ -4757,6 +4815,7 @@ et bientôt, la nuit va
 tomber.
 Terminée, ta formation
 est.
+
 Ainsi vont les choses.
 Ainsi va la Forcetri.
 ]]
@@ -4782,11 +4841,13 @@ dialog{
   text = [[
 Sud-est :
 Marais de la Forcetri
+
 Ouest :
 Bureau des Objets
 Trouvés
 Nord : 
 Village
+
 Nord-est : 
 Désert Bakasable
 Mont Tipiton
@@ -4899,6 +4960,8 @@ dialog{
   id = "outside_fields_NE.tipiton_sign",
   text = [[
 Sommet du Mont Tipiton
+
+
 Altitude :
 pas super haut, en fait
 ]]
@@ -4909,9 +4972,14 @@ dialog{
   id = "outside_fields_NE.indic",
   text = [[
 Ouest : Château
+
+
 Nord : Désert Bakasable
 Mont Tipiton
+
 Sud : Bar
+
+
 Est : un peu difficile
 à expliquer. Tu n'as
 qu'à aller voir.
@@ -4924,8 +4992,10 @@ dialog{
   text = [[
 Sud :
 Marais de la Forcetri
+
 Ouest :
 Village
+
 Nord :
 Désert Bakasable
 Mont Tipiton
@@ -4938,6 +5008,7 @@ dialog{
   text = [[
 
            ...
+
 J'interagis socialement
 via mes affiches
 collées sur les murs.
@@ -5078,6 +5149,7 @@ Pourquoi tu me regardes
 comme ça ?
 Qu'est-ce qu'il a mon
 look de sorcier ?
+
 De nos jours, on ne
 peut même pas partager
 sa passion sans
@@ -5151,6 +5223,7 @@ dialog{
   text = [[
 Au nord d'ici se trouve
 la Caverne Maudite.
+
 Personne n'en est
 jamais revenu.
 N'y va surtout pas !
@@ -5163,6 +5236,7 @@ dialog{
   text = [[
 Quoi ? Tu es allé à la
 Caverne Maudite ?
+
 Les jeunes de nos jours
 sont vraiment des
 inconscients !
@@ -5202,6 +5276,7 @@ ont osé pénétrer dans
 la Caverne Maudite.
 On n'a plus jamais
 entendu parler d'eux...
+
 De nos jours, l'accès
 est condamné pour
 protéger les curieux.
@@ -5217,6 +5292,7 @@ suicider, un bon moyen
 d'y parvenir est de te
 rendre à la Caverne
 Maudite au nord.
+
 La douleur et le
 résultat sont garantis.
 ]]
@@ -5231,11 +5307,13 @@ enfermée ici et tu
 m'as oubliée !
 Tu m'as laissée moisir
 dans ta cave !
+
 Toi et tes potes, vous
 n'êtes que des
 alcooliques !
 Je ne trouve pas ça
 drôle du tout !!!
+
 Cette fois-ci, j'en ai
 marre de tes bêtises !
 Ca va chauffer !!!
@@ -5305,7 +5383,10 @@ Geomaster
 HelpTheWretched
 Vincent Jouillat
 JB
+
+
 Nintendo
+
 
 Et bravo à vous d'être
 arrivé jusqu'à la fin !
@@ -5327,6 +5408,7 @@ contrée du nom d'Hyrule.$0$0
 Ce royaume prospérait
 sous la bénédiction de
 trois déesses.
+
 Après la création du
 monde, les trois
 déesses laissèrent un
@@ -5350,7 +5432,10 @@ solennel et dans une
 ambiance de légende,
 donc tu es prié de
 l'accepter.
+
 $3Bon, ok, j'abrège.
+
+
 C'est le matin. Tu te
 réveilles à côté de ton
 lit et tu es amnésique.
@@ -5420,6 +5505,7 @@ dialog{
   text = [[
 Début du code détecté.
 Accès autorisé.
+
 Mais si tu veux mon
 avis, si tu entres le
 reste du code, il ne se
@@ -5519,8 +5605,11 @@ pour finir la soirée
 chez toi en tête à
 tête hier soir !
 Mais elle a accepté !
+
+
 Il faut croire qu'elle
 te trouve du charme...
+
 Tu croyais que je
 l'avais enlevée ?
 Ha ha ha ha ha !
