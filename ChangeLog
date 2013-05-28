@@ -1,6 +1,7 @@
 zsxd-1.6 (under development)
 
-* Use solarus 1.0.0.
+* Use solarus 1.0.
+* Fix all missing empty lines in dialogs.
 
 zsxd-1.5.3 (2013-05-08)
 

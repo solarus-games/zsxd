@@ -116,6 +116,7 @@ dialog{
   text = [[
 Your Magic Bottle is
 filled with water.
+
 You'd better empty
 it.
 ]]
@@ -195,6 +196,7 @@ dialog{
   text = [[
 Your Magic Bottle is
 filled with water.
+
 You'd better empty
 it.
 ]]
@@ -274,6 +276,7 @@ dialog{
   text = [[
 Your Magic Bottle is
 filled with water.
+
 You'd better empty
 it.
 ]]
@@ -353,6 +356,7 @@ dialog{
   text = [[
 Your Magic Bottle is
 filled with water.
+
 You'd better empty
 it.
 ]]
@@ -835,6 +839,7 @@ Boomerang!$0 You
 can stun enemies
 or catch objects
 out of reach.
+
 There are several
 techniques to use
 it, it's up to you
@@ -901,6 +906,7 @@ dialog{
   text = [[
 You found
 Red Potion !$0
+
 Drink it
 to fulfill
 all your Hearts.
@@ -915,6 +921,7 @@ dialog{
   text = [[
 You found
 Green Potion!$0
+
 Drink it
 to replenish
 your Magic.
@@ -929,6 +936,7 @@ dialog{
   text = [[
 You found
 Blue Potion!$0
+
 Drink it
 to recover
 Hearts and Magic!
@@ -981,6 +989,7 @@ dialog{
   text = [[
 You found
 Red Potion!$0
+
 Drink it
 to fulfill
 all your Hearts.
@@ -995,6 +1004,7 @@ dialog{
   text = [[
 You found
 Green Potion!$0
+
 Drink it
 to replenish
 your Magic.
@@ -1009,6 +1019,7 @@ dialog{
   text = [[
 You found
 Blue Potion!$0
+
 Drink it
 to recover
 Hearts and Magic!
@@ -1027,7 +1038,6 @@ you if you're
 in danger.
 Also you can use her
 at any moment to
-
 recover Hearts.
 ]]
 }
@@ -1062,6 +1072,7 @@ dialog{
   text = [[
 You found
 Red Potion!$0
+
 Drink it
 to fulfill
 all your Hearts.
@@ -1076,6 +1087,7 @@ dialog{
   text = [[
 You found
 Green Potion!$0
+
 Drink it
 to replenish
 your Magic.
@@ -1090,6 +1102,7 @@ dialog{
   text = [[
 You found
 Blue Potion!$0
+
 Drink it
 to recover
 Hearts and Magic!
@@ -1142,6 +1155,7 @@ dialog{
   text = [[
 You found
 Red Potion!$0
+
 Drink it
 to fulfill
 all your Hearts.
@@ -1156,6 +1170,7 @@ dialog{
   text = [[
 You found
 Green Potion!$0
+
 Drink it
 to replenish
 your Magic.
@@ -1170,6 +1185,7 @@ dialog{
   text = [[
 You found
 Blue Potion!$0
+
 Drink it
 to recover
 Hearts and Magic!
@@ -1231,6 +1247,7 @@ dialog{
   text = [[
 You found the
 Cane of Somaria!$0
+
 Create blocks
 and use the Hook
 to climb on them.
@@ -1257,6 +1274,7 @@ dialog{
   text = [[
 You found a French
 Pain au Chocolat!$0
+
 Eat a French Pain au
 Chocolat to recover
 3 Hearts.
@@ -1297,6 +1315,7 @@ dialog{
   text = [[
 You found the
 Bone Key!$0
+
 You can now enter
 the Lair of Ganon!
 ]]
@@ -1310,6 +1329,7 @@ dialog{
   text = [[
 You found the
 Earth Key!$0
+
 You can now
 unlock the entry to
 the village cavern.
@@ -1324,6 +1344,7 @@ dialog{
   text = [[
 You found an
 Apple Pie!
+
 It's moldy, but you
 don't really care,
 do you!
@@ -1338,6 +1359,7 @@ dialog{
   text = [[
 You found the
 Flippers!$0
+
 Now you can swim
 in deep waters.
 ]]
@@ -1351,6 +1373,7 @@ dialog{
   text = [[
 You found the
 Magic Cape!$0
+
 You'll be warned
 when you're near of
 a fragile wall.
@@ -1365,6 +1388,7 @@ dialog{
   text = [[
 You found the
 Iron Key!$0
+
 Now find the
 right door to open!
 ]]
@@ -1378,6 +1402,7 @@ dialog{
   text = [[
 You found The
 Stone Key!$0
+
 But where's the
 lock?
 ]]
@@ -1391,6 +1416,7 @@ dialog{
   text = [[
 You found the
 Wooden Key!$0
+
 Find the lock
 and use it!
 ]]
@@ -1404,6 +1430,7 @@ dialog{
   text = [[
 You found The
 Ice Key!$0
+
 A frozen place
 this key shall
 protect...
@@ -1418,6 +1445,7 @@ dialog{
   text = [[
 You found the Iron
 Glove!$0
+
 Now you can lift
 heavy stuff, try it!
 ]]
@@ -1431,6 +1459,7 @@ dialog{
   text = [[
 You found The
 Gold Glove!$0
+
 Now you can lift
 the Black Rocks!
 ]]
@@ -1455,6 +1484,7 @@ dialog{
   text = [[
 You found the
 World Map!$0
+
 You can view it
 in the Map Menu.
 ]]
@@ -1468,8 +1498,10 @@ dialog{
   text = [[
 You found the Big
 Rupee Bag!$0
+
 300 Rupees can be 
 stored within!
+
 It's a shame the
 game is over, you
 could have used it!
@@ -1484,6 +1516,7 @@ dialog{
   text = [[
 You found the Huge
 Rupee Bag!$0
+
 Now you can
 store 999 Rupees!
 ]]
@@ -1510,8 +1543,9 @@ dialog{
   id = "_treasure.bomb_bag.2",
   icon = 55,
   text = [[
-You found Big Bomb
-Bag!$0
+You found the Big
+Bomb Bag!$0
+
 Awesome!
 Now you can store
 11 Bombs!
@@ -1526,6 +1560,7 @@ dialog{
   text = [[
 You found the Huge
 Bomb Bag!$0
+
 It's really cool!
 Now you can store
 12 Bombs!
@@ -1540,6 +1575,7 @@ dialog{
   text = [[
 You found the Big
 Quiver!$0
+
 You can store 30
 Arrows instead of
 10!
@@ -1554,6 +1590,7 @@ dialog{
   text = [[
 You found the Huge
 Quiver!$0
+
 Awesome, you can
 store 100 Arrows
 instead of 30 !
@@ -1598,6 +1635,7 @@ dialog{
   text = [[
 You found your
 Shield!$0
+
 Next time, don't
 leave it outside,
 will you?
@@ -1627,6 +1665,7 @@ dialog{
   text = [[
 You found the
 Mirror Shield !$0
+
 You can now reflect
 laser attacks !
 ]]
@@ -1640,6 +1679,7 @@ dialog{
   text = [[
 You found your
 Training Sword.
+
 You know it's yours
 cause your name is
 carved on it !
@@ -1656,6 +1696,7 @@ dialog{
   text = [[
 You found the
 Laser Sword !$0
+
 May the Triforcizzle
 be with you !
 ]]
@@ -1669,6 +1710,7 @@ dialog{
   text = [[
 You found
 Excalibur!$0
+
 It's a shame the
 game is over, you
 could have used it!
@@ -1683,6 +1725,7 @@ dialog{
   text = [[
 You found
 Excalibur!$0
+
 It's a shame the
 game is over, you
 could have used it!
@@ -1736,6 +1779,7 @@ dialog{
   text = [[
 You found a Small
 Key !
+
 You can use it with
 a nearby locked
 door.
@@ -1790,6 +1834,7 @@ dialog{
   text = [[
 You found a Heart
 Container.
+
 You just gained
 a new Heart !
 It rooocks !
@@ -1991,8 +2036,9 @@ It's ecstasy!
 dialog{
   id = "_treasure.zelda.1",
   text = [[
-You found the Princess
+You found Princess
 Zelda!
+
 It seems you just
 forgot her in your
 chest!
@@ -2016,6 +2062,8 @@ dialog{
   icon = 41,
   text = [[
 You get the broom!
+
+
 Mère Denis will be
 pleased with this ;)
 ]]
@@ -2169,6 +2217,7 @@ dialog{
   text = [[
 This door leads
 to Ganon!
+
 Don't even try to
 open it whithout
 the Master Key!
@@ -2573,6 +2622,7 @@ dialog{
   text = [[
 Stairs:
 counters 22, 12
+
 Left:
 counters 41, 43, 82,
 third floor
@@ -2609,6 +2659,7 @@ dialog{
   text = [[
 Stairs:
 counters 49, 47, 45
+
 Right:
 counters 84, 33
 ]]
@@ -4609,6 +4660,7 @@ and soon, night must
 fall.
 No more training do you
 require.
+
 That is the way of
 things. The way of the
 Triforcizzle.
@@ -4634,10 +4686,13 @@ dialog{
   text = [[
 South-East:
 Triforcizzle Marsh
+
 West:
 Lost and Found Office
+
 North: 
 Village
+
 North-East: 
 Sandpit Desert
 Mount Typython
@@ -4748,6 +4803,8 @@ dialog{
   id = "outside_fields_NE.tipiton_sign",
   text = [[
 Top of Mount Typython
+
+
 Altitude:
 Not really high,
 actually...
@@ -4759,10 +4816,14 @@ dialog{
   id = "outside_fields_NE.indic",
   text = [[
 West: Castle
+
+
 North:
 Sandpit Desert
 Mount Typython
 South: Pub
+
+
 East: a little bit
 difficult to explain.
 Go and see by yourself.
@@ -4775,8 +4836,11 @@ dialog{
   text = [[
 South:
 Triforcizzle Marsh
+
+
 West:
 Village
+
 North:
 Sandpit Desert
 Mount Typython
@@ -4789,6 +4853,7 @@ dialog{
   text = [[
 
            ...
+
 I socially interact
 through my sheets
 pasted on the walls.
@@ -4929,11 +4994,13 @@ Why are you looking at
 me that way?
 Is there a problem with
 my wizard look?
+
 Today, we can't even
 share our passion
 without being taken for
 a fool. I'm a person
 like everyone else!
+
 It's incredible to have
 so many prejudices!
 ]]
@@ -5000,6 +5067,7 @@ dialog{
   text = [[
 To the North is the
 Cursed Cave.
+
 Nobody has ever come
 back. Don't go there!
 ]]
@@ -5011,18 +5079,22 @@ dialog{
   text = [[
 What? You have gone to
 the Cursed Cave?
+
 The youth today is
 really reckless!
+
 We should have more
 insisted on the hazards
 of this place.
 I told you so: you
 mustn't go here.
+
 You're not following
 the game! If you wanna
 see Ganon, nothing
 could be simpler. Take
 the key in my room.
+
 You could tell it right
 away instead of playing
 adventurers.
@@ -5047,6 +5119,7 @@ dared enter the Cursed
 Cave.
 We have never heard of
 them again...
+
 These days, the access
 is barred to protect
 curious people.
@@ -5062,6 +5135,7 @@ yourself, a good way to
 do this is to go to the
 Cursed Cave, to the
 North.
+
 Pain and result are
 guaranteed.
 ]]
@@ -5073,12 +5147,16 @@ dialog{
   text = [[
 You!!! You locked me
 here then forgot me!
+
 You have let me rot in
 your cellar!
+
 You and your buddies
 are just alcoholics!
+
 This is not funny at
 all!!!
+
 This time, I'm tired of
 your buffooneries!
 I'll get angry!!!
@@ -5100,7 +5178,7 @@ with help from some
 pizzas and high doses
 of caffeine.
 
-        CREDITS        
+        CREDITS
 
       Programming:
 Christopho
@@ -5148,10 +5226,14 @@ Geomaster
 HelpTheWretched
 Vincent Jouillat
 JB
+
+
 Nintendo
+
 
 Congratulations on
 reaching the end!
+
 
 
  www.solarus-games.org
@@ -5169,11 +5251,14 @@ named Hyrule.$0$0
 This kingdom flourished
 under the blessing of
 three goddesses.
+
+
 After world creation,
 these three goddesses
 left a symbol of their
 passage in the form of
 the Triforce.$0$0
+
 Seven wise men sealed
 the Triforce on the
 Golden Earth.
@@ -5182,6 +5267,7 @@ very slowly and you
 can't pass it.$0$0
 It's also punctuated
 with boring pauses.$0$0
+
 You really want to
 start playing, but
 this uninteresting text
@@ -5190,7 +5276,10 @@ tone and in an ambiance
 of legend,
 so you're requested to
 accept it.
+
 $3OK I abridge.
+
+
 It's the morning. You
 wake up near your bed
 and you feel amnesic.
@@ -5199,6 +5288,7 @@ yesterday and you don't
 have your equipment!
 Oh I forgot: Princess
 Zelda disappeared.
+
 Your turn!
 ]]
 }
@@ -5346,22 +5436,31 @@ dialog{
   text = [[
 Princess Zelda?
 No, she's not there.
+
 You went with her, we
 all saw you.
+
 Moreover, no one
 expected she would
 accept to end the
 evening in your place
 yesterday!
+
 But she did!
+
+
 We must believe she
 finds you charming...
+
 You thought I kidnapped
 her? Ha ha ha ha ha!
+
 In short, she isn't
 here. Did you look
 everywhere in your
 home?
+
+
 You should think to
 take a look at your
 house, on occasion.
