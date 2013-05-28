@@ -1,95 +1,98 @@
 local map = ...
+local game = map:get_game()
 
 -- Dungeon 1 1F SE (Temple of Stupidities)
 
 local remove_water_delay = 500 -- delay between each step when some water is disappearing
+local remove_c_water
+local remove_c_water_2
+local remove_c_water_3
+local remove_c_water_4
+local remove_c_water_5
+local remove_c_water_6
 
 function map:on_started(destionation_point_name)
 
   if game:get_value("b240") then
     -- the water is removed
-    sol.map.tile_set_group_enabled("c_water", false)
-    sol.map.tile_set_enabled("c_water_exit", true)
-    sol.map.switch_set_activated("remove_water_switch", true)
+    map:set_entities_enabled("c_water", false)
+    c_water_exit:set_enabled(true)
+    remove_water_switch:set_activated(true)
   end
 end
 
-function map:on_map_opening_transition_finished(destination_point)
+function map:on_opening_transition_finished(destination_point)
 
   -- show the welcome message
-  if destination_point:get_name() == "from_outside" then
+  if destination_point ~= nil
+      and destination_point:get_name() == "from_outside" then
     map:start_dialog("dungeon_1.welcome")
   end
 end
 
-function map:on_door_open(door_name)
-
-  if door_name == "weak_wall_red_tunic" then
-    sol.audio.play_sound("secret")
-  end
-end
-
-function map:on_switch_activated(switch_name)
-
-  if switch_name == "remove_water_switch"
-      and not game:get_value("b240") then
-    sol.map.hero_freeze()
-    remove_c_water()
-  elseif switch_name == "ne_door_switch"
-      and not sol.map.door_is_open("ne_door") then
-    sol.map.camera_move(1072, 40, 250, open_ne_door)
-  end
-end
-
-function open_ne_door()
-
+function weak_wall_red_tunic:on_opened()
   sol.audio.play_sound("secret")
-  sol.map.door_open("ne_door")
+end
+
+function remove_water_switch:on_activated()
+
+  if not game:get_value("b240") then
+    hero:freeze()
+    remove_c_water()
+  end
+end
+
+function ne_door_switch:on_activated()
+
+  if ne_door:is_closed() then
+    map:move_camera(1072, 40, 250, function()
+      sol.audio.play_sound("secret")
+      map:open_doors("ne_door")
+    end)
+  end
 end
 
 function remove_c_water()
 
   sol.audio.play_sound("water_drain_begin")
   sol.audio.play_sound("water_drain")
-  sol.map.tile_set_enabled("c_water_exit", true)
-  sol.map.tile_set_enabled("c_water_source", false)
-  sol.main.timer_start(remove_c_water_2, remove_water_delay)
+  c_water_exit:set_enabled(true)
+  c_water_source:set_enabled(false)
+  sol.timer.start(map, remove_water_delay, remove_c_water_2)
 end
 
 function remove_c_water_2()
 
-  sol.map.tile_set_enabled("c_water_middle", false)
-  sol.main.timer_start(remove_c_water_3, remove_water_delay)
+  c_water_middle:set_enabled(false)
+  sol.timer.start(map, remove_water_delay, remove_c_water_3)
 end
 
 function remove_c_water_3()
 
-  sol.map.tile_set_group_enabled("c_water_initial", false)
-  sol.map.tile_set_group_enabled("c_water_less_a", true)
-  sol.main.timer_start(remove_c_water_4, remove_water_delay)
+  map:set_entities_enabled("c_water_initial", false)
+  map:set_entities_enabled("c_water_less_a", true)
+  sol.timer.start(map, remove_water_delay, remove_c_water_4)
 end
 
 function remove_c_water_4()
 
-  sol.map.tile_set_group_enabled("c_water_less_a", false)
-  sol.map.tile_set_group_enabled("c_water_less_b", true)
-  sol.main.timer_start(remove_c_water_5, remove_water_delay)
+  map:set_entities_enabled("c_water_less_a", false)
+  map:set_entities_enabled("c_water_less_b", true)
+  sol.timer.start(map, remove_water_delay, remove_c_water_5)
 end
 
 function remove_c_water_5()
 
-  sol.map.tile_set_group_enabled("c_water_less_b", false)
-  sol.map.tile_set_group_enabled("c_water_less_c", true)
-  sol.main.timer_start(remove_c_water_6, remove_water_delay)
+  map:set_entities_enabled("c_water_less_b", false)
+  map:set_entities_enabled("c_water_less_c", true)
+  sol.timer.start(map, remove_water_delay, remove_c_water_6)
 end
 
 function remove_c_water_6()
 
-  sol.map.tile_set_group_enabled("c_water_less_c", false)
+  map:set_entities_enabled("c_water_less_c", false)
   game:set_value("b240", true)
   sol.audio.play_sound("secret")
-  sol.map.hero_unfreeze()
+  hero:unfreeze()
 end
-
-
 

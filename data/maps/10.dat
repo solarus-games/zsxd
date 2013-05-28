@@ -653,7 +653,7 @@ npc{
   layer = 1,
   x = 160,
   y = 157,
-  name = "interactive_entity",
+  name = "water_guy",
   direction = 3,
   subtype = "1",
   sprite = "npc/static_villager14",

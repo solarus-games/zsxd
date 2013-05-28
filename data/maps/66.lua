@@ -1,4 +1,5 @@
 local map = ...
+local game = map:get_game()
 
 -- Temple of Stupidities 2F SW
 
@@ -6,45 +7,38 @@ function map:on_started(destination_point)
 
   -- water removed
   if game:get_value("b283") then
-    sol.map.tile_set_group_enabled("water", false)
+    map:set_entities_enabled("water", false)
   end
 
   -- fight room
-  sol.map.door_set_open("fight_door", true)
+  map:set_doors_open("fight_door", true)
   if game:get_value("b244") then
-    sol.map.enemy_remove_group("fight")
+    map:remove_entities("fight_enemy")
   else
-    -- TODO sol.map.enemy_set_group_enabled
-    sol.map.enemy_set_enabled("fight_1", false)
-    sol.map.enemy_set_enabled("fight_2", false)
-    sol.map.enemy_set_enabled("fight_3", false)
-    sol.map.enemy_set_enabled("fight_4", false)
-    sol.map.chest_set_enabled("fight_chest", false)
+    map:set_entities_enabled("fight_enemy", false)
+    fight_chest:set_enabled(false)
   end
 end
 
-function map:on_hero_on_sensor(sensor_name)
+function fight_sensor:on_activated()
 
-  if sensor_name == "fight_sensor" 
-      and not game:get_value("b244")
-      and sol.map.door_is_open("fight_door")
-      and not sol.map.chest_is_enabled("fight_chest") then
-    sol.map.door_close("fight_door")
-    sol.map.enemy_set_enabled("fight_1", true)
-    sol.map.enemy_set_enabled("fight_2", true)
-    sol.map.enemy_set_enabled("fight_3", true)
-    sol.map.enemy_set_enabled("fight_4", true)
+  if not game:get_value("b244")
+      and fight_door:is_open()
+      and not fight_chest:is_enabled() then
+    map:close_doors("fight_door")
+    map:set_entities_enabled("fight_enemy", true)
   end
 end
 
-function map:on_enemy_dead(enemy_name)
+local function fight_enemy_dead(enemy)
 
-  if string.find(enemy_name, "^fight")
-      and sol.map.enemy_is_group_dead("fight") then
-
+  if not map:has_entities("fight_enemy") then
     sol.audio.play_sound("chest_appears")
-    sol.map.chest_set_enabled("fight_chest", true)
-    sol.map.door_open("fight_door")
+    fight_chest:set_enabled(true)
+    map:open_doors("fight_door")
   end
+end
+for _, enemy in ipairs(map:get_entities("fight_enemy")) do
+  enemy.on_dead = fight_enemy_dead
 end
 

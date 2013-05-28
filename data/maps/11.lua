@@ -4,11 +4,9 @@ local map = ...
 
 function map:on_started(destination_point)
    -- make the NPCs walk
-   random_walk("lady_a")
+   local movement = sol.movement.create("random_path")
+   movement:set_speed(32)
+   movement:start(lady_a)
+   lady_a:get_sprite():set_animation("walking")
 end
 
-function random_walk(npc_name)
-   local m = sol.main.random_path_movement_create(32)
-   sol.map.npc_start_movement(npc_name, m)
-   sol.map.npc_get_sprite(npc_name):set_animation("walking")
-end

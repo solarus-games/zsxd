@@ -1,60 +1,47 @@
 local map = ...
+local game = map:get_game()
 
 -- Link's cave
 
 function map:on_started(destination_point)
 
-  sol.map.enemy_set_enabled("zelda_enemy", false)
-  sol.map.door_set_open("door", true)
+  zelda_enemy:set_enabled(false)
+  map:set_doors_open("door", true)
 end
 
 function map:on_treasure_obtained(item_name, variant, savegame_variable)
 
   if item_name == "zelda" then
     sol.audio.play_music("boss")
-    sol.map.npc_set_position("zelda", 224, 85)
-    sol.map.hero_freeze()
-    sol.main.timer_start(angry_zelda, 1000)
-    sol.game.add_life(80)
-  end
-end
+    zelda:set_position(224, 85)
+    hero:freeze()
+    game:add_life(80)
+    sol.timer.start(map, 1000, function()
+      map:start_dialog("link_cave.angry_zelda", function()
 
-function angry_zelda()
+        map:close_doors("door")
+        zelda:get_sprite():set_animation("walking")
+        local movement = sol.movement.create("jump_movement")
+        movement:set_direction(6)
+        movement:set_jump_length(24)
+        movement:set_ignore_obstacles(true)
+        movement:set_speed(48)
+        movement:start(zelda, function()
+          zelda:set_position(-100, -100) -- disable the NPC
+          hero:unfreeze()
+          zelda_enemy:set_enabled(true)
+        end)
 
-  map:start_dialog("link_cave.angry_zelda")
-end
-
-function map:on_dialog_finished(dialog_id)
-
-  if dialog_id == "link_cave.angry_zelda" then
-
-    local m = sol.main.jump_movement_create(6, 24)
-    m:set_property("ignore_obstacles", true)
-    m:set_property("speed", 48)
-    sol.map.npc_start_movement("zelda", m)
-
-    local zelda_sprite = sol.map.npc_get_sprite("zelda")
-    zelda_sprite:set_animation("walking")
-
-    sol.map.door_close("door")
-  end
-end
-
-function map:on_npc_movement_finished(npc_name)
-
-  if npc_name == "zelda" then
-    sol.map.npc_set_position("zelda", -100, -100) -- disable the NPC
-    local x, y = sol.map.npc_get_position("zelda")
-    sol.map.hero_unfreeze()
-    sol.map.enemy_set_enabled("zelda_enemy", true) -- enable the enemy
+      end)
+    end)
   end
 end
 
 function map:on_update()
 
-  if not sol.map.door_is_open("door") and sol.game.get_life() <= 4 then
+  if door:is_closed() and game:get_life() <= 4 then
     -- go to the end screen
-    sol.map.hero_set_map(17, "start_position", 1)
+    hero:teleport("17", "start_position")
   end
 end
 

@@ -808,7 +808,7 @@ npc{
   layer = 1,
   x = 200,
   y = 61,
-  name = "interactive_entity_2",
+  name = "npc",
   direction = 3,
   subtype = "1",
   sprite = "npc/static_villager5",

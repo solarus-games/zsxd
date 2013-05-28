@@ -4,20 +4,20 @@ local map = ...
 
 function map:on_started(destination_point)
 
-  sol.map.light_set(0)
+  map:set_light(0)
 end
 
-function map:on_switch_activated(switch_name)
+function creeper_door_switch:on_activated()
 
   sol.audio.play_sound("secret")
-  sol.map.door_open("creeper_door")
+  map:open_doors("creeper_door")
 end
 
-function map:on_hero_on_sensor(sensor_name)
+function close_creeper_room_door_sensor:on_activated()
 
-  if sol.map.door_is_open("creeper_door")
-      and sol.map.hero_get_direction() == 2 then
-    sol.map.door_close("creeper_door")
+  if creeper_door:is_open()
+      and hero:get_direction() == 2 then
+    map:close_doors("creeper_door")
   end
 end
 

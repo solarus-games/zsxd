@@ -7,37 +7,42 @@ local map = ...
 function map:on_started(destination_point)
 
   -- No light inside the cave at start
-  sol.map.light_set(0)         
+  map:set_light(0)         
   -- Let the trap door openned
-  sol.map.door_open("trap_door")
+  map:set_door_open("trap_door")
   -- Disable ennemies
-  sol.map.enemy_set_enabled("ennemy_1", false)
-  sol.map.enemy_set_enabled("ennemy_2", false)
+  ennemy_1:set_enabled(false)
+  ennemy_2:set_enabled(false)
 end
 
-function map:on_hero_on_sensor(sensor_name)
+function sensor_close_trap_door:on_activated()
 
   -- Closing trap door        
-  if sensor_name == "sensor_close_trap_door" then
-    -- Close door
-    sol.map.door_close("trap_door")
-    sol.map.sensor_set_enabled("sensor_close_trap_door", false)
+  map:close_doors("trap_door")
+  sensor_close_trap_door:set_enabled(false)
+end
 
-    -- Make appear some enemies
-  elseif sensor_name == "make_appear_c1" then
-    sol.map.enemy_set_enabled("ennemy_1", true)
-    sol.map.sensor_set_enabled("make_appear_c1", false)
-  elseif sensor_name == "make_appear_c2" then
-    sol.map.enemy_set_enabled("ennemy_2", true)
-    sol.map.sensor_set_enabled("make_appear_c2", false)        
-  elseif sensor_name == "make_appear_c3" then
-    sol.map.sensor_set_enabled("make_appear_c3", false)
-    -- Teleporter at the end
-  elseif sensor_name == "sensor_teleporter" then
-    if not game:get_value("b56") then
-      map:start_dialog("freaking_cave_teleporter")
-      sol.map.hero_start_jumping(6, 64, true)
-    end
+-- Make appear some enemies
+function make_appear_c1:on_activated()
+  ennemy_1:set_enabled(true)
+  make_appear_c1:set_enabled(false)
+end
+
+function make_appear_c2:on_activated()
+  ennemy_2:set_enabled(true)
+  make_appear_c2:set_enabled(false)        
+end
+
+function make_appear_c3:on_activated()
+  make_appear_c3:set_enabled(false)
+end
+
+-- Teleporter at the end
+function sensor_teleporter:on_activated()
+
+  if not game:get_value("b56") then
+    map:start_dialog("freaking_cave_teleporter")
+    hero:start_jumping(6, 64, true)
   end
 end
 

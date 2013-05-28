@@ -1,44 +1,38 @@
 local map = ...
+local game = map:get_game()
 
 ----------------------------------
 -- FREAKING CAVE 1 OMG          --
 -- USE BOOLEAN FROM 90 TO 99    --
 ----------------------------------
 
--- Global sprites reference
-local torch1 = sol.map.npc_get_sprite("fc_torch_1")
-local torch2 = sol.map.npc_get_sprite("fc_torch_2")
-
 function map:on_started(destination_point)
 
-  torch1 = sol.map.npc_get_sprite("fc_torch_1")
-  torch2 = sol.map.npc_get_sprite("fc_torch_2")
+  local torch1 = fc_torch_1:get_sprite()
+  local torch2 = fc_torch_2:get_sprite()
 
   -- Few light inside the cave at start
-  if game:get_value("b90") == false then
-    sol.map.light_set(1)         
+  if not game:get_value("b90") then
+    self:set_light(1)         
     torch1:set_animation("lit")
     torch2:set_animation("lit")
   else        
-    sol.map.light_set(0)
+    self:set_light(0)
     torch1:set_animation("unlit")
     torch2:set_animation("unlit")
-    sol.map.sensor_set_enabled("sensor_light_off", false)
+    sensor_light_off:set_enabled(false)
   end        
 
   torch2:set_animation("lit")
 end
 
-function map:on_hero_on_sensor(sensor_name)
+function sensor_light_off:on_activated()
 
-  if sensor_name == "sensor_light_off" then
-
-    -- Map in deep dark
-    sol.map.light_set(0)
-    torch1:set_animation("unlit")
-    torch2:set_animation("unlit")
-    sol.map.sensor_set_enabled("sensor_light_off", false)
-    game:set_value("b90", true)
-  end
+  -- Map in deep dark
+  map:set_light(0)
+  torch1:set_animation("unlit")
+  torch2:set_animation("unlit")
+  sensor_light_off:set_enabled(false)
+  game:set_value("b90", true)
 end
 
