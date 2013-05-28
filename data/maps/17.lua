@@ -1,26 +1,19 @@
 local map = ...
+local game = map:get_game()
 
 -- The end
 
 function map:on_started(destination_point)
 
-  sol.map.hud_set_enabled(false)
-  sol.map.hero_freeze()
-  sol.game.add_life(sol.game.get_max_life())
-  sol.game.save()
-  sol.main.timer_start(credits, 7000)
+  game:set_hud_enabled(false)
+  hero:freeze()
+  game:set_life(game:get_max_life())
+  game:save()
   sol.audio.play_sound("hero_dying")
-end
-
-function credits()
-
-  map:start_dialog("the_end.credits")
-end
-
-function map:on_dialog_finished(dialog_id)
-
-  if dialog_id == "the_end.credits" then
-    sol.game.reset()
-  end
+  sol.timer.start(map, 7000, function()
+    map:start_dialog("the_end.credits", function()
+      sol.main.reset()
+    end)
+  end)
 end
 
