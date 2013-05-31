@@ -100,6 +100,7 @@ with the hook.
 dialog{
   id = "_item_description.bottle_1.1",
   icon = 7,
+  skip = "all",
   text = [[
 The Magic Bottle
 can hold various

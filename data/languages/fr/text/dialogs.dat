@@ -102,6 +102,7 @@ au Grappin.
 dialog{
   id = "_item_description.bottle_1.1",
   icon = 7,
+  skip = "all",
   text = [[
 Le Flacon Magique
 peut contenir pas
