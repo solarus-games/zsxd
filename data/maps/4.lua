@@ -51,7 +51,7 @@ local function yoda_sensor_activated(sensor)
   map:start_dialog("outside_fields_SE.yoda_quote_" .. index, callback)
   last_yoda_quote = index
 end
-for _, sensor in map:get_entities("yoda_sensor") do
+for _, sensor in ipairs(map:get_entities("yoda_sensor")) do
   sensor.on_activated = yoda_sensor_activated
 end
 
