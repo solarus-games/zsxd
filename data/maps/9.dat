@@ -541,15 +541,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 64,
-  y = 280,
-  width = 24,
-  height = 24,
-  pattern = 54,
-}
-
-tile{
-  layer = 1,
   x = 48,
   y = 216,
   width = 24,
@@ -1160,6 +1151,15 @@ tile{
   pattern = 77,
 }
 
+tile{
+  layer = 1,
+  x = 64,
+  y = 280,
+  width = 24,
+  height = 24,
+  pattern = 54,
+}
+
 npc{
   layer = 1,
   x = 112,
@@ -1287,7 +1287,6 @@ destructible{
   y = 221,
   subtype = "pot",
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 destructible{
@@ -1296,7 +1295,6 @@ destructible{
   y = 237,
   subtype = "pot",
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 destructible{
@@ -1305,7 +1303,6 @@ destructible{
   y = 221,
   subtype = "pot",
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 destructible{
@@ -1314,7 +1311,6 @@ destructible{
   y = 237,
   subtype = "pot",
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 teletransporter{
