@@ -33,7 +33,7 @@ function yoda:on_interaction()
 
   if not game:get_value("b66") then
     map:start_dialog("outside_fields_SE.yoda_give_sword", function()
-      hero:start_treasure("sword", 2, 66)
+      hero:start_treasure("sword", 2, "b66")
     end)
   else
     map:start_dialog("outside_fields_SE.yoda_finished")
@@ -48,7 +48,7 @@ local function yoda_sensor_activated(sensor)
     index = math.random(11)
   until index ~= last_yoda_quote
 
-  map:start_dialog("outside_fields_SE.yoda_quote_" .. index, callback)
+  map:start_dialog("outside_fields_SE.yoda_quote_" .. index)
   last_yoda_quote = index
 end
 for _, sensor in ipairs(map:get_entities("yoda_sensor")) do

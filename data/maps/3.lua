@@ -31,8 +31,8 @@ function guard:on_interaction()
       local sprite = self:get_sprite()
       if sprite:get_animation() ~= "walking" then
         -- make the guard move
-        local movement = sol.movement.create("path_movement")
-        movement:set_path("000000000066")
+        local movement = sol.movement.create("path")
+        movement:set_path({0,0,0,0,0,0,0,0,0,0,6,6})
         movement:set_speed(24)
         movement:start(guard)
         sprite:set_animation("walking")
@@ -49,7 +49,7 @@ function forest_monkey:on_interaction()
   sol.audio.play_sound("monkey")
   if game:get_value("b48") then -- has boots
     map:start_dialog("outside_fields_SO.forest_monkey_end")
-  elseif sol.game.get_item_amount("apple_pie_counter") > 0 then -- has apple pie
+  elseif game:get_item("apple_pie_counter"):has_amount(0) then -- has apple pie
     map:start_dialog("outside_fields_SO.forest_monkey_give_boots", function()
       hero:start_treasure("pegasus_shoes", 1, "b48")
       game:get_item("apple_pie_counter"):remove_amount(1)
