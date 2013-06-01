@@ -49,7 +49,7 @@ function forest_monkey:on_interaction()
   sol.audio.play_sound("monkey")
   if game:get_value("b48") then -- has boots
     map:start_dialog("outside_fields_SO.forest_monkey_end")
-  elseif game:get_item("apple_pie_counter"):has_amount(0) then -- has apple pie
+  elseif game:get_item("apple_pie_counter"):has_amount(1) then -- has apple pie
     map:start_dialog("outside_fields_SO.forest_monkey_give_boots", function()
       hero:start_treasure("pegasus_shoes", 1, "b48")
       game:get_item("apple_pie_counter"):remove_amount(1)
