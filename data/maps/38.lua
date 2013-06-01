@@ -30,8 +30,8 @@ function sensor_light_off:on_activated()
 
   -- Map in deep dark
   map:set_light(0)
-  torch1:set_animation("unlit")
-  torch2:set_animation("unlit")
+  fc_torch_1:get_sprite():set_animation("unlit")
+  fc_torch_2:get_sprite():set_animation("unlit")
   sensor_light_off:set_enabled(false)
   game:set_value("b90", true)
 end

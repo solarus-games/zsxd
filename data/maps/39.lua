@@ -1,4 +1,5 @@
 local map = ...
+local game = map:get_game()
 
 ----------------------------------
 -- FREAKING CAVE 2 OMFG         --
@@ -8,8 +9,8 @@ function map:on_started(destination_point)
 
   -- No light inside the cave at start
   map:set_light(0)         
-  -- Let the trap door openned
-  map:set_door_open("trap_door")
+  -- Let the trap door opened
+  map:set_doors_open("trap_door")
   -- Disable ennemies
   ennemy_1:set_enabled(false)
   ennemy_2:set_enabled(false)
