@@ -7422,7 +7422,7 @@ npc{
   layer = 1,
   x = 168,
   y = 165,
-  name = "Accueil_2",
+  name = "Accueil",
   direction = 3,
   subtype = "1",
   sprite = "npc/static_villager10",
