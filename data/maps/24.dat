@@ -10348,7 +10348,7 @@ dynamic_tile{
   y = 760,
   width = 8,
   height = 8,
-  name = "barrier",
+  name = "barrier_tile",
   pattern = 69,
   enabled_at_start = true,
 }
@@ -10359,7 +10359,7 @@ dynamic_tile{
   y = 768,
   width = 8,
   height = 48,
-  name = "barrier_2",
+  name = "barrier_tile_2",
   pattern = 71,
   enabled_at_start = true,
 }
@@ -10370,7 +10370,7 @@ dynamic_tile{
   y = 816,
   width = 8,
   height = 8,
-  name = "barrier_3",
+  name = "barrier_tile_3",
   pattern = 69,
   enabled_at_start = true,
 }
