@@ -19,7 +19,9 @@ end
 -- Vieillard --------------------------------------------------
 local function vieillard()
 
-  if game:get_value("i1411") >= 1 then
+  local branche1411 = game:get_value("i1411") or 0
+
+  if branche1411 >= 1 then
     if not game:get_value("b124") then
       -- Première rencontre
       map:start_dialog("crazy_house.vieillard")
@@ -37,7 +39,6 @@ local function vieillard()
           game:set_value("b125", true)
         end
         -- Incrémentation branche 1411
-        local branche1411 = game:get_value("i1411")
         if branche1411 > 0 and branche1411 <= 1 then
           game:set_value("i1411", 2)
         end
@@ -58,7 +59,6 @@ local function vieillard()
           end)
         end
         -- Incrémentation branche 1411
-        local branche1411 = game:get_value("i1411")
         if branche1411 > 0 and branche1411 <= 8 then
           game:set_value("i1411", 9)
         end
@@ -84,7 +84,7 @@ end
 local function guichet_22A()
 
   -- Incrémentation branche 1412
-  local branche1412 = game:get_value("i1412")
+  local branche1412 = game:get_value("i1412") or 0
   if branche1412 > 0 and branche1412 <= 1 then
     game:set_value("i1412", 2)
   end
@@ -112,13 +112,13 @@ end
 local function guichet_22B()
 
   -- Incrémentation branche 1411
-  local branche1411 = game:get_value("i1411")
+  local branche1411 = game:get_value("i1411") or 0
   if branche1411 > 0 and branche1411 <= 3 then
     game:set_value("i1411", 4)
   end
 
   -- Incrémentation branche 1412
-  local branche1412 = game:get_value("i1412")
+  local branche1412 = game:get_value("i1412") or 0
   if branche1412 == 6 then
     game:set_value("i1412", 7)
   end
@@ -133,12 +133,12 @@ local function guichet_22B()
           hero:start_treasure("tapisserie")
           game:get_item("sac_riz_counter"):remove_amount(1)
           -- Incrémentation branche 1411
-          local branche1411 = game:get_value("i1411")
+          local branche1411 = game:get_value("i1411") or 0
           if branche1411 > 0 and branche1411 <= 5 then
             game:set_value("i1411", 6)
           end
           -- Incrémentation branche 1412
-          local branche1412 = game:get_value("i1412")
+          local branche1412 = game:get_value("i1412") or 0
           if branche1412 >= 6 and branche1412 <= 8 then
             game:set_value("i1412", 9)
           end

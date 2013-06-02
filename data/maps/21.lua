@@ -40,7 +40,7 @@ local function guichet_45()
   end
 
   -- Incrémentation branche 1412
-  local branche1412 = game:get_value("i1412")
+  local branche1412 = game:get_value("i1412") or 0
   if branche1412 > 0 and branche1412 <= 3 then
     game:set_value("i1412", 4)
   end

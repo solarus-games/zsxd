@@ -27,7 +27,7 @@ local function guichet_82()
 
   end)
   -- Incrémentation branche 1412
-  local branche1412 = game:get_value("i1412")
+  local branche1412 = game:get_value("i1412") or 0
   if branche1412 > 0 and branche1412 <= 2 then
     game:set_value("i1412", 3)
   end
@@ -52,7 +52,7 @@ local function guichet_84()
             hero:start_treasure("poivron")
             game:get_item("hache_counter"):remove_amount(1)
             -- Incrémentation branche 1411
-            local branche1411 = game:get_value("i1411")
+            local branche1411 = game:get_value("i1411") or 0
             if branche1411 > 0 and branche1411 <= 7 then
               game:set_value("i1411", 8)
             end

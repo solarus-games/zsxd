@@ -40,50 +40,52 @@ end
 
 local function accueil_branche1()
 
-  if game:get_value("i1411") == 1 then
+  local branche1411 = game:get_value("i1411") or 0
+  if branche1411 == 1 then
     map:start_dialog("crazy_house.accueil_epi_eo_1-7")
-  elseif game:get_value("i1411") == 2 then
+  elseif branche1411 == 2 then
     map:start_dialog("crazy_house.accueil_epi_eo_2-6")
-  elseif game:get_value("i1411") == 3 then
+  elseif branche1411 == 3 then
     map:start_dialog("crazy_house.accueil_epi_eo_3-5")
-  elseif game:get_value("i1411") == 4 then
+  elseif branche1411 == 4 then
     map:start_dialog("crazy_house.accueil_epi_eo_4-9")
-  elseif game:get_value("i1411") == 5 then
+  elseif branche1411 == 5 then
     map:start_dialog("crazy_house.accueil_epi_eo_3-5")
-  elseif game:get_value("i1411") == 6 then
+  elseif branche1411 == 6 then
     map:start_dialog("crazy_house.accueil_epi_eo_2-6")
-  elseif game:get_value("i1411") == 7 then
+  elseif branche1411 == 7 then
     map:start_dialog("crazy_house.accueil_epi_eo_1-7")
-  elseif game:get_value("i1411") == 8 then
+  elseif branche1411 == 8 then
     map:start_dialog("crazy_house.accueil_epi_eo_8-10")
-  elseif game:get_value("i1411") == 9 then
+  elseif branche1411 == 9 then
     map:start_dialog("crazy_house.accueil_epi_eo_4-9")
-  elseif game:get_value("i1411") == 10 then
+  elseif branche1411 == 10 then
     map:start_dialog("crazy_house.accueil_epi_eo_8-10")
   end
 end
 
 local function accueil_branche2()
 
-  if game:get_value("i1412") == 1 then
+  local branche1412 = game:get_value("i1412") or 0
+  if branche1412 == 1 then
     map:start_dialog("crazy_house.accueil_bal_eo_1-6-8-10")
-  elseif game:get_value("i1412") == 2 then
+  elseif branche1412 == 2 then
     map:start_dialog("crazy_house.accueil_bal_eq_2")
-  elseif game:get_value("i1412") == 3 then
+  elseif branche1412 == 3 then
     map:start_dialog("crazy_house.accueil_bal_eq_3")
-  elseif game:get_value("i1412") == 4 then
+  elseif branche1412 == 4 then
     map:start_dialog("crazy_house.accueil_bal_eq_4")
-  elseif game:get_value("i1412") == 5 then
+  elseif branche1412 == 5 then
     map:start_dialog("crazy_house.accueil_bal_eo_5-9")
-  elseif game:get_value("i1412") == 6 then
+  elseif branche1412 == 6 then
     map:start_dialog("crazy_house.accueil_bal_eo_1-6-8-10")
-  elseif game:get_value("i1412") == 7 then
+  elseif branche1412 == 7 then
     map:start_dialog("crazy_house.accueil_bal_eq_7")
-  elseif game:get_value("i1412") == 8 then
+  elseif branche1412 == 8 then
     map:start_dialog("crazy_house.accueil_bal_eo_1-6-8-10")
-  elseif game:get_value("i1412") == 9 then
+  elseif branche1412 == 9 then
     map:start_dialog("crazy_house.accueil_bal_eo_5-9")
-  elseif game:get_value("i1412") == 10 then
+  elseif branche1412 == 10 then
     map:start_dialog("crazy_house.accueil_bal_eo_1-6-8-10")
   end
 end
@@ -91,46 +93,49 @@ end
 -- Hôtesse d'accueil ------------------------------------------
 local function accueil()
 
+  local branche1410 = game:get_value("i1410") or 0
+  local branche1411 = game:get_value("i1411") or 0
+  local branche1412 = game:get_value("i1412") or 0
   if game:get_value("b120") then
     -- Le joueur a retrouvé ses gants
     map:start_dialog("crazy_house.accueil_fini")
-  elseif game:get_value("i1410") == nil then
+  elseif branche1410 == nil then
     map:start_dialog("crazy_house.accueil_ech_eq_0")
     game:set_value("i1410", 1)
-  elseif game:get_value("i1410") == 1 then
+  elseif branche1410 == 1 then
     map:start_dialog("crazy_house.accueil_ech_eq_1")
-  elseif game:get_value("i1410") == 2 then
+  elseif branche1410 == 2 then
     map:start_dialog("crazy_house.accueil_ech_eq_2")
     game:set_value("i1410", 3)
-  elseif game:get_value("i1410") == 3 then
+  elseif branche1410 == 3 then
     map:start_dialog("crazy_house.accueil_ech_eq_3")
-  elseif game:get_value("i1410") == 4 then
+  elseif branche1410 == 4 then
     map:start_dialog("crazy_house.accueil_ech_eq_4")
-  elseif game:get_value("i1410") == 5 then
+  elseif branche1410 == 5 then
     map:start_dialog("crazy_house.accueil_ech_eo_5-7")
-  elseif game:get_value("i1410") == 6 then
+  elseif branche1410 == 6 then
     map:start_dialog("crazy_house.accueil_ech_eq_6")
-  elseif game:get_value("i1410") == 7 then
+  elseif branche1410 == 7 then
     map:start_dialog("crazy_house.accueil_ech_eo_5-7")
-  elseif game:get_value("i1410") == 8 then
-    if game:get_value("i1411") < 10 and game:get_value("i1412") < 10 then        	
-      if game:get_value("i1411") > game:get_value("i1412") then
+  elseif branche1410 == 8 then
+    if branche1411 < 10 and branche1412 < 10 then        	
+      if branche1411 > branche1412 then
         accueil_branche1()
       else
         accueil_branche2()
       end
     else
-      if game:get_value("i1411") == 10 then
+      if branche1411 == 10 then
         accueil_branche2()
-      elseif game:get_value("i1412") == 10 then
+      elseif branche1412 == 10 then
         accueil_branche1()
       end
     end
-  elseif game:get_value("i1410") == 9 then
+  elseif branche1410 == 9 then
     map:start_dialog("crazy_house.accueil_ech_eq_9")
-  elseif game:get_value("i1410") == 10 then
+  elseif branche1410 == 10 then
     map:start_dialog("crazy_house.accueil_ech_eq_10")
-  elseif game:get_value("i1410") == 11 then
+  elseif branche1410 == 11 then
     map:start_dialog("crazy_house.accueil_ech_eq_11")
   end
 end
@@ -138,8 +143,12 @@ end
 -- Guichet 11 -------------------------------------------------
 local function guichet_11()
 
-  if game:get_value("i1410") >= 8 then
-    if game:get_value("i1412") == 9 then
+  local branche1410 = game:get_value("i1410") or 0
+  local branche1411 = game:get_value("i1411") or 0
+  local branche1412 = game:get_value("i1412") or 0
+
+  if branche1410 >= 8 then
+    if branche1412 == 9 then
       -- Chercher des haches (mais future erreur : donné : roc magma)
       if game.get_item("tapisserie_counter"):has_amount(1) then
         map:start_dialog("crazy_house.guichet_11_bal_eq_9", function(answer)
@@ -182,7 +191,6 @@ local function guichet_11()
         map:start_dialog("crazy_house.guichet_11_ech_eq_9")
       end
       -- Incrémentation branche 1411
-      local branche1411 = game:get_value("i1411")
       if branche1411 > 0 and branche1411 <= 2 then
         game:set_value("i1411", 3)
       end
@@ -192,7 +200,6 @@ local function guichet_11()
     map:start_dialog("crazy_house.guichet_11_ech_ne_9")
   end
   -- Incrémentation branche 1412
-  local branche1412 = game:get_value("i1412")
   if branche1412 > 0 and branche1412 <= 5 then
     game:set_value("i1412", 6)
   end
@@ -212,14 +219,16 @@ end
 -- Guichet 12b -----------------------------------------------
 local function guichet_12B()
 
+  local branche1410 = game:get_value("i1410") or 0
+
   if weak_wall_A:is_closed() then -- hint for the first weak wall
     map:start_dialog("crazy_house.guichet_12B_ech_eq_3")
   elseif not game:get_value("b130") then -- hint for the second weak wall
     map:start_dialog("crazy_house.guichet_12B_aw")
-  elseif game:get_value("i1410") == 3 then
+  elseif branche1410 == 3 then
     map:start_dialog("crazy_house.guichet_12B_ech_eq_3")
-  elseif game:get_value("i1410") >= 7 then
-    if game:get_value("i1410") == 7 then
+  elseif branche1410 >= 7 then
+    if branche1410 == 7 then
       game:set_value("i1410", 8)
       game:set_value("i1411", 1)
       game:set_value("i1412", 1)
