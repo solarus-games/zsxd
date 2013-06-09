@@ -1509,7 +1509,6 @@ destructible{
   y = 421,
   subtype = "pot",
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 destructible{
@@ -1518,7 +1517,6 @@ destructible{
   y = 421,
   subtype = "pot",
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 switch{
@@ -1537,7 +1535,6 @@ destructible{
   y = 421,
   subtype = "pot",
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 stairs{
@@ -1554,7 +1551,6 @@ destructible{
   x = 400,
   y = 421,
   subtype = "pot",
-  treasure_variant = 1,
 }
 
 chest{
@@ -1562,9 +1558,8 @@ chest{
   x = 1256,
   y = 397,
   name = "CV1",
-  sprite = "entities/chest",
-  treasure_variant = 1,
   treasure_savegame_variable = "b103",
+  sprite = "entities/chest",
 }
 
 crystal_block{
@@ -1590,7 +1585,6 @@ pickable{
   x = 808,
   y = 45,
   treasure_name = "piece_of_heart",
-  treasure_variant = 1,
 }
 
 stairs{
@@ -6205,78 +6199,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 1672,
-  y = 160,
-  width = 8,
-  height = 64,
-  pattern = 32,
-}
-
-tile{
-  layer = 1,
-  x = 1672,
-  y = 152,
-  width = 8,
-  height = 8,
-  pattern = 26,
-}
-
-tile{
-  layer = 1,
-  x = 1680,
-  y = 152,
-  width = 192,
-  height = 8,
-  pattern = 30,
-}
-
-tile{
-  layer = 1,
-  x = 1672,
-  y = 224,
-  width = 8,
-  height = 8,
-  pattern = 28,
-}
-
-tile{
-  layer = 1,
-  x = 1680,
-  y = 224,
-  width = 192,
-  height = 8,
-  pattern = 33,
-}
-
-tile{
-  layer = 1,
-  x = 1872,
-  y = 224,
-  width = 8,
-  height = 8,
-  pattern = 29,
-}
-
-tile{
-  layer = 1,
-  x = 1872,
-  y = 160,
-  width = 8,
-  height = 64,
-  pattern = 31,
-}
-
-tile{
-  layer = 1,
-  x = 1872,
-  y = 152,
-  width = 8,
-  height = 8,
-  pattern = 27,
-}
-
-tile{
-  layer = 1,
   x = 1608,
   y = 184,
   width = 16,
@@ -6833,6 +6755,78 @@ tile{
   pattern = 25,
 }
 
+tile{
+  layer = 1,
+  x = 1672,
+  y = 152,
+  width = 8,
+  height = 8,
+  pattern = 14,
+}
+
+tile{
+  layer = 1,
+  x = 1672,
+  y = 224,
+  width = 8,
+  height = 8,
+  pattern = 16,
+}
+
+tile{
+  layer = 1,
+  x = 1872,
+  y = 224,
+  width = 8,
+  height = 8,
+  pattern = 17,
+}
+
+tile{
+  layer = 1,
+  x = 1872,
+  y = 152,
+  width = 8,
+  height = 8,
+  pattern = 15,
+}
+
+tile{
+  layer = 1,
+  x = 1680,
+  y = 152,
+  width = 192,
+  height = 8,
+  pattern = 18,
+}
+
+tile{
+  layer = 1,
+  x = 1680,
+  y = 224,
+  width = 192,
+  height = 8,
+  pattern = 21,
+}
+
+tile{
+  layer = 1,
+  x = 1872,
+  y = 160,
+  width = 8,
+  height = 64,
+  pattern = 19,
+}
+
+tile{
+  layer = 1,
+  x = 1672,
+  y = 160,
+  width = 8,
+  height = 64,
+  pattern = 20,
+}
+
 dynamic_tile{
   layer = 1,
   x = 1648,
@@ -7117,7 +7111,6 @@ pickable{
   x = 696,
   y = 149,
   treasure_name = "heart_container",
-  treasure_variant = 1,
   treasure_savegame_variable = "b100",
 }
 
@@ -7128,7 +7121,6 @@ npc{
   name = "mario_message_1",
   direction = 3,
   subtype = "0",
-  behavior = "map",
 }
 
 chest{
@@ -7136,9 +7128,8 @@ chest{
   x = 416,
   y = 285,
   name = "CK3",
-  sprite = "entities/chest",
-  treasure_variant = 1,
   treasure_savegame_variable = "b122",
+  sprite = "entities/chest",
 }
 
 chest{
@@ -7146,10 +7137,9 @@ chest{
   x = 1280,
   y = 229,
   name = "CR3",
-  sprite = "entities/chest",
   treasure_name = "rupee",
-  treasure_variant = 1,
   treasure_savegame_variable = "b109",
+  sprite = "entities/chest",
 }
 
 destination{
@@ -7169,7 +7159,6 @@ npc{
   direction = 3,
   subtype = "1",
   sprite = "npc/static_villager8",
-  behavior = "map",
 }
 
 npc{
@@ -7180,7 +7169,6 @@ npc{
   direction = 3,
   subtype = "1",
   sprite = "npc/static_villager8",
-  behavior = "map",
 }
 
 door{
@@ -7190,11 +7178,11 @@ door{
   name = "DK1",
   direction = 1,
   sprite = "entities/door_small_key",
+  savegame_variable = "b140",
   opening_method = "interaction_if_savegame_variable",
   opening_condition = "dungeon_2_small_keys",
   opening_condition_consumed = true,
   cannot_open_dialog = "_small_key_required",
-  savegame_variable = "b140",
 }
 
 wall{
@@ -7276,7 +7264,6 @@ npc{
   direction = 3,
   subtype = "1",
   sprite = "npc/villager1",
-  behavior = "map",
 }
 
 npc{
@@ -7287,7 +7274,6 @@ npc{
   direction = 3,
   subtype = "1",
   sprite = "npc/static_villager4",
-  behavior = "map",
 }
 
 npc{
@@ -7337,8 +7323,8 @@ door{
   name = "weak_wall_A",
   direction = 0,
   sprite = "entities/door_weak_wall",
-  opening_method = "explosion",
   savegame_variable = "b105",
+  opening_method = "explosion",
 }
 
 door{
@@ -7348,8 +7334,8 @@ door{
   name = "weak_wall_A_2",
   direction = 2,
   sprite = "entities/door_weak_wall",
-  opening_method = "explosion",
   savegame_variable = "b105",
+  opening_method = "explosion",
 }
 
 crystal{
@@ -7400,11 +7386,11 @@ door{
   name = "DK1_2",
   direction = 3,
   sprite = "entities/door_small_key",
+  savegame_variable = "b140",
   opening_method = "interaction_if_savegame_variable",
   opening_condition = "dungeon_2_small_keys",
   opening_condition_consumed = true,
   cannot_open_dialog = "_small_key_required",
-  savegame_variable = "b140",
 }
 
 npc{
@@ -7415,7 +7401,6 @@ npc{
   direction = 3,
   subtype = "1",
   sprite = "npc/newlink3",
-  behavior = "map",
 }
 
 npc{
@@ -7426,7 +7411,6 @@ npc{
   direction = 3,
   subtype = "1",
   sprite = "npc/static_villager10",
-  behavior = "map",
 }
 
 npc{
@@ -7447,7 +7431,6 @@ npc{
   name = "AccueilFront",
   direction = 3,
   subtype = "0",
-  behavior = "map",
 }
 
 npc{
@@ -7457,7 +7440,6 @@ npc{
   name = "GC11Front",
   direction = 3,
   subtype = "0",
-  behavior = "map",
 }
 
 npc{
@@ -7467,7 +7449,6 @@ npc{
   name = "GC12A",
   direction = 3,
   subtype = "0",
-  behavior = "map",
 }
 
 npc{
@@ -7477,7 +7458,6 @@ npc{
   name = "GC12B",
   direction = 3,
   subtype = "0",
-  behavior = "map",
 }
 
 jumper{
