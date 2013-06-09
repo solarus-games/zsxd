@@ -5089,7 +5089,7 @@ acheter un coffre neuf.
 dialog{
   id = "freaking_cave_teleporter",
   text = [[
-Une force mysterieuse 
+Une force mystérieuse 
 vous empêche d'emprunter
 le téléporteur.
 ]]
