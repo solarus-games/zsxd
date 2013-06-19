@@ -89,9 +89,9 @@ local function guichet_22A()
     game:set_value("i1412", 2)
   end
 
-  map:start_dialog("crazy_house.guichet_22A", function()
-    if answer == 0 then
-      if not game.get_item("roc_magma_counter"):has_amount(1) then
+  map:start_dialog("crazy_house.guichet_22A", function(answer)
+    if answer == 1 then
+      if not game:get_item("roc_magma_counter"):has_amount(1) then
         sol.audio.play_sound("wrong")
         map:start_dialog("crazy_house.guichet_22_rm_un")
       else
@@ -123,8 +123,8 @@ local function guichet_22B()
     game:set_value("i1412", 7)
   end
 
-  map:start_dialog("crazy_house.guichet_22B", function()
-    if answer == 0 then
+  map:start_dialog("crazy_house.guichet_22B", function(answer)
+    if answer == 1 then
       if not game:get_item("sac_riz_counter"):has_amount(1) then
         sol.audio.play_sound("wrong")
         map:start_dialog("crazy_house.guichet_22_sr_un")
@@ -179,7 +179,7 @@ function locked_door_switch_A:on_activated()
 end
 locked_door_switch_B.on_activated = locked_door_switch_A.on_activated
 
-function WW2:on_open()
+function WW2:on_opened()
 
   sol.audio.play_sound("secret")
 end

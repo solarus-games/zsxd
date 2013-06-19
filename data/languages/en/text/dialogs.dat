@@ -2866,7 +2866,6 @@ $0Gloves?
 Wait here,
 I'll check...
 
-
 Hmmm I'm not sure,
 maybe you should go to
 counter 21.
@@ -3244,6 +3243,7 @@ dialog{
   text = [[
 Right: counter 12
 Left: reception
+
 Top right:
 to counter 22 (locked
 door)

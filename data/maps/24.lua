@@ -50,7 +50,7 @@ local function guichet_32()
     map:start_dialog("crazy_house.guichet_32_ech_ne_6", function(answer)
 
       -- Echange de hache contre cuillere
-      if answer == 0 then
+      if answer == 1 then
         if game:get_item("hache_counter"):has_amount(1) then
           hero:start_treasure("cuillere")
           game:get_item("hache_counter"):remove_amount(1)
@@ -65,7 +65,7 @@ local function guichet_32()
     end)
   end
   -- Incrémentation branche 1412
-  local branche1412 = game.get_value("i1412") or 0
+  local branche1412 = game:get_value("i1412") or 0
   if branche1412 > 0 and branche1412 <= 4 then
     game:set_value("i1412", 5)
   end
@@ -87,7 +87,7 @@ local function guichet_33()
 
         -- Obtention clé du guichet 33 suite à l'apport du parfum
         if game:get_item("parfum_counter"):has_amount(1) then
-          hero:give_treasure("small_key", 1, "b123")
+          hero:start_treasure("small_key", 1, "b123")
           game:get_item("parfum_counter"):remove_amount(1)
         end
 
@@ -204,7 +204,7 @@ end
 -- Link approche de la porte qui annonce le couloir sans fin        
 function bowser_message:on_activated()
 
-  if not game.get_value("b126") then
+  if not game:get_value("b126") then
     -- Bouton pas appuyé
     bowser_close:set_enabled(true)
     if bowser_door:is_closed() then
@@ -295,9 +295,9 @@ function GBS:on_moved()
   end
 end
 
-function map:on_obtained_treasure(item_name, variant, savegame_variable)
+function map:on_obtained_treasure(item, variant, savegame_variable)
 
-  if item_name == "glove" then
+  if item:get_name() == "glove" then
     -- Fin du donjon
     hero:start_victory(function()
       sol.audio.play_sound("warp")

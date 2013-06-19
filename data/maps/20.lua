@@ -99,7 +99,7 @@ local function accueil()
   if game:get_value("b120") then
     -- Le joueur a retrouvé ses gants
     map:start_dialog("crazy_house.accueil_fini")
-  elseif branche1410 == nil then
+  elseif branche1410 == 0 then
     map:start_dialog("crazy_house.accueil_ech_eq_0")
     game:set_value("i1410", 1)
   elseif branche1410 == 1 then
@@ -150,10 +150,10 @@ local function guichet_11()
   if branche1410 >= 8 then
     if branche1412 == 9 then
       -- Chercher des haches (mais future erreur : donné : roc magma)
-      if game.get_item("tapisserie_counter"):has_amount(1) then
+      if game:get_item("tapisserie_counter"):has_amount(1) then
         map:start_dialog("crazy_house.guichet_11_bal_eq_9", function(answer)
 
-          if answer == 0 then
+          if answer == 1 then
             if game:get_item("tapisserie_counter"):has_amount(1) then
               -- Obtention du roc magma (guichet 11)
               guichet_11_error = true
@@ -170,7 +170,7 @@ local function guichet_11()
       end
     else
       -- Chercher des haches
-      if game.get_item("tapisserie_counter"):has_amount(1) then
+      if game:get_item("tapisserie_counter"):has_amount(1) then
         map:start_dialog("crazy_house.guichet_11_ech_eq_9_ht", function(answer)
 
           if answer == 1 then
@@ -333,9 +333,9 @@ function CK3:on_empty()
   end
 end
 
-function map:on_obtained_treasure(item_name, variant, savegame_variable)
+function map:on_obtained_treasure(item, variant, savegame_variable)
 
-  if item_name == "roc_magma" and guichet_11_error then
+  if item:get_name() == "roc_magma" and guichet_11_error then
     map:start_dialog("crazy_house.guichet_11_bal_err")
   end
 end
