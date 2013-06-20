@@ -41,7 +41,7 @@ function weak_wall_red_tunic:on_opened()
 end
 
 -- dialog near the WTF room
-function map:on_obtained_treasure(item_name, variant, savegame_variable)
+function map:on_obtained_treasure(item, variant, savegame_variable)
 
   if savegame_variable == "b248" then
     map:start_dialog("dungeon_1.small_key_danger_east")
@@ -57,7 +57,8 @@ local function launch_cannonball()
     breed = "cannonball",
     x = 280,
     y = 725,
-    layer = 0
+    layer = 0,
+    direction = 3,
   }
   sol.timer.start(map, 1500, launch_cannonball)
 end
@@ -98,7 +99,7 @@ function start_miniboss_sensor:on_activated()
   end
 end
 
-local function wft_sensor_activated(sensor)
+local function wtf_sensor_activated(sensor)
 
   if wtf_door:is_open()
       and map:has_entities("wtf_room_enemy") then
@@ -109,10 +110,12 @@ for _, sensor in ipairs(map:get_entities("wtf_sensor")) do
   sensor.on_activated = wtf_sensor_activated
 end
 
-function miniboss:on_dead()
+if miniboss ~= nil then
+  function miniboss:on_dead()
 
-  sol.audio.play_music("dark_world_dungeon")
-  map:open_doors("miniboss_door")
+    sol.audio.play_music("dark_world_dungeon")
+    map:open_doors("miniboss_door")
+  end
 end
 
 local function wtf_room_enemy_dead(enemy)

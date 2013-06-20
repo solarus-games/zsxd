@@ -1,4 +1,4 @@
-local enemy = ..
+local enemy = ...
 -- Zelda
 
 local sprite
@@ -18,7 +18,7 @@ function enemy:on_restarted()
   local movement = sol.movement.create("path_finding")
 
   function movement:on_changed()
-    sprite:set_direction(self:get_displayed_direction())
+    sprite:set_direction(self:get_direction4())
   end
 
   movement:set_speed(64)

@@ -67,12 +67,12 @@ end
 stop_timer_a_sensor_2.on_activated = stop_timer_a_sensor.on_activated
 
 function stop_timer_b_sensor:on_activated()
-  door_a_passed = true
+  door_b_passed = true
 end
 stop_timer_b_sensor_2.on_activated = stop_timer_b_sensor.on_activated
 
 function stop_timer_c_sensor:on_activated()
-  door_a_passed = true
+  door_c_passed = true
 end
 stop_timer_c_sensor_2.on_activated = stop_timer_c_sensor.on_activated
 
@@ -84,14 +84,14 @@ for _, sensor in ipairs(map:get_entities("save_solid_ground_sensor")) do
   sensor.on_activated = save_solid_ground_sensor_activated
 end
 
-function map:on_obtained_treasure(item_name, variant, savegame_variable)
+function map:on_obtained_treasure(item, variant, savegame_variable)
 
-  if item_name == "map" then
+  if item:get_name() == "map" then
     map:start_dialog("dungeon_1.after_map_treasure")
   end
 end
 
-local function close_door_a()
+function close_door_a()
 
   if stupid_run_door_a:is_open()
       and not door_a_passed then
@@ -100,7 +100,7 @@ local function close_door_a()
   end
 end
 
-local function close_door_b()
+function close_door_b()
 
   if stupid_run_door_b:is_open()
       and not door_b_passed then
@@ -109,7 +109,7 @@ local function close_door_b()
   end
 end
 
-local function close_door_c()
+function close_door_c()
 
   if stupid_run_door_c:is_open()
       and not door_c_passed then

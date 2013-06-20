@@ -32,13 +32,13 @@ end
 
 function create_son()
 
-  local nb_current_sons = enemy:get_map().get_entities_count(enemy:get_name() .. "_son")
+  local nb_current_sons = enemy:get_map():get_entities_count(enemy:get_name() .. "_son")
 
   if nb_current_sons < 30 then
-    local total_sons_created = total_sons_created + 1
+    total_sons_created = total_sons_created + 1
     son_name = enemy:get_name() .. "_son_" .. total_sons_created
-    local son = enemy:create_son(son_name, "tentacle", 0, -77)
-    son:set_treasure("heart", 1, -1)
+    local son = enemy:create_enemy(son_name, "tentacle", 0, -77)
+    son:set_treasure("heart")
   end
 
   sol.timer.start(enemy, 1000, create_son)

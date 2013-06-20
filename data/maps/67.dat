@@ -1766,7 +1766,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 64,
+  x = 136,
   y = 424,
   width = 8,
   height = 8,
@@ -1777,7 +1777,7 @@ tile{
   layer = 1,
   x = 48,
   y = 424,
-  width = 16,
+  width = 88,
   height = 8,
   pattern = 70,
 }
@@ -1838,7 +1838,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 248,
+  x = 176,
   y = 424,
   width = 8,
   height = 8,
@@ -1856,9 +1856,9 @@ tile{
 
 tile{
   layer = 1,
-  x = 256,
+  x = 184,
   y = 424,
-  width = 16,
+  width = 88,
   height = 8,
   pattern = 70,
 }
@@ -2319,17 +2319,6 @@ jumper{
 jumper{
   layer = 1,
   x = 72,
-  y = 416,
-  width = 72,
-  height = 8,
-  name = "jump_sensor_6",
-  direction = 2,
-  jump_length = 40,
-}
-
-jumper{
-  layer = 1,
-  x = 72,
   y = 488,
   width = 72,
   height = 8,
@@ -2346,17 +2335,6 @@ jumper{
   height = 8,
   name = "jump_sensor_8",
   direction = 6,
-  jump_length = 40,
-}
-
-jumper{
-  layer = 1,
-  x = 176,
-  y = 416,
-  width = 72,
-  height = 8,
-  name = "jump_sensor_9",
-  direction = 2,
   jump_length = 40,
 }
 
@@ -2378,9 +2356,7 @@ enemy{
   name = "enemy",
   direction = 3,
   breed = "bubble",
-  rank = 0,
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 dynamic_tile{
@@ -2443,10 +2419,9 @@ chest{
   x = 264,
   y = 445,
   name = "chest",
-  sprite = "entities/chest",
   treasure_name = "small_key",
-  treasure_variant = 1,
   treasure_savegame_variable = "b245",
+  sprite = "entities/chest",
 }
 
 wall{

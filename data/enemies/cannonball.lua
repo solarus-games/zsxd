@@ -121,6 +121,7 @@ function enemy:on_created()
   self:set_life(1)
   self:set_damage(0)
   self:set_invincible()
+  self:set_optimization_distance(0)  -- This is done manually by the map.
 
   local index
   if math.random(4) == 4 then

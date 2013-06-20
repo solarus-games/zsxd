@@ -9,7 +9,7 @@ function map:on_started(destination_point)
 
   -- switches of stairs of the central room
   for i = 1, 7 do
-    if not game:get_value("b292" + i) then
+    if not game:get_value("b" .. (292 + i)) then
       map:get_entity("stairs_" .. i):set_enabled(false)
       map:get_entity("stairs_".. i .. "_switch"):set_activated(false)
     else
@@ -30,7 +30,7 @@ function map:on_started(destination_point)
   end
 
   -- boss
-  boss_door:set_open(true)
+  map:set_doors_open("boss_door", true)
   if game:get_value("b306") then
     boss_gate:set_enabled(true)
   end
@@ -38,14 +38,17 @@ end
 
 local function stairs_switch_activated(switch)
 
-  local i = switch:get_name():match("^stairs_([1-7])_switch$")
-  if i -= nil then
+  local i = tonumber(switch:get_name():match("^stairs_([1-7])_switch$"))
+  if i == nil then
     error("Wrong stairs switch: " .. switch:get_name())
   end
 
   map:get_entity("stairs_" .. i):set_enabled(true)
   sol.audio.play_sound("secret")
   game:set_value("b" .. (292 + i), true)
+end
+for i = 1, 7 do
+  map:get_entity("stairs_" .. i .. "_switch").on_activated = stairs_switch_activated
 end
 
 local function switch_activated_on(switch)
@@ -66,7 +69,7 @@ local function switch_activated_off(switch)
   map:set_entities_enabled("torch_" .. i, false)
   map:get_entity("switch_torch_" .. i .. "_on"):set_activated(false)
 end
-for i in 1, 11 do
+for i = 1, 11 do
   map:get_entity("switch_torch_" .. i .. "_on").on_activated = switch_activated_on
   map:get_entity("switch_torch_" .. i .. "_off").on_activated = switch_activated_off
 end

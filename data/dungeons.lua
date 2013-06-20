@@ -10,7 +10,7 @@ game.dungeons = {
     maps = { "60", "61", "62", "63", "64", "65", "66", "67" },
     boss = {
       floor = 1,
-      x = 1088,
+      x = 2624,
       y = 845,
       savegame_variable = "b306",
     },

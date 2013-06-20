@@ -11,7 +11,7 @@ local next_switch_index = 1
 
 local function switch_activated(switch)
 
-  local switch_index = switch_name:match("^switch_([1-4])$")
+  local switch_index = switch:get_name():match("^switch_([1-4])$")
   if switch_index ~= nil and next_switch_index <= #switches_good_order then
  
     switch_index = tonumber(switch_index)
@@ -21,9 +21,9 @@ local function switch_activated(switch)
       next_switch_index = 1
     end
 
-    if next_switch_index == 5 and code_door:is_open() then
+    if next_switch_index == 5 and code_door:is_closed() then
       map:start_dialog("dungeon_1.big_code_ok", function()
-        sol.map.camera_move(1072, 456, 250, function()
+        map:move_camera(1072, 456, 250, function()
           map:open_doors("code_door")
           sol.audio.play_sound("secret")
         end)
@@ -41,7 +41,7 @@ end
 
 local function save_solid_ground_sensor_activated(sensor)
 
-  if sensor_name:find("^save_solid_ground_sensor") then
+  if sensor:get_name():find("^save_solid_ground_sensor") then
     hero:save_solid_ground()
   end
 end

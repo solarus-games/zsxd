@@ -9,9 +9,9 @@ function map:on_started(destination_point)
   map:set_doors_open("door", true)
 end
 
-function map:on_treasure_obtained(item_name, variant, savegame_variable)
+function map:on_obtained_treasure(item, variant, savegame_variable)
 
-  if item_name == "zelda" then
+  if item:get_name() == "zelda" then
     sol.audio.play_music("boss")
     zelda:set_position(224, 85)
     hero:freeze()
@@ -21,9 +21,9 @@ function map:on_treasure_obtained(item_name, variant, savegame_variable)
 
         map:close_doors("door")
         zelda:get_sprite():set_animation("walking")
-        local movement = sol.movement.create("jump_movement")
-        movement:set_direction(6)
-        movement:set_jump_length(24)
+        local movement = sol.movement.create("jump")
+        movement:set_direction8(6)
+        movement:set_distance(24)
         movement:set_ignore_obstacles(true)
         movement:set_speed(48)
         movement:start(zelda, function()

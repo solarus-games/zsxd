@@ -2455,7 +2455,6 @@ enemy{
   rank = 1,
   savegame_variable = "b302",
   treasure_name = "fairy",
-  treasure_variant = 1,
 }
 
 stairs{
@@ -2490,10 +2489,9 @@ chest{
   x = 1048,
   y = 117,
   name = "chest_2",
-  sprite = "entities/chest",
   treasure_name = "big_key",
-  treasure_variant = 1,
   treasure_savegame_variable = "b204",
+  sprite = "entities/chest",
 }
 
 door{
@@ -10031,6 +10029,15 @@ tile{
   pattern = 69,
 }
 
+tile{
+  layer = 1,
+  x = 664,
+  y = 960,
+  width = 32,
+  height = 16,
+  pattern = 70,
+}
+
 wall{
   layer = 1,
   x = 456,
@@ -10146,7 +10153,6 @@ destructible{
   y = 925,
   subtype = "pot",
   treasure_name = "heart",
-  treasure_variant = 1,
 }
 
 destructible{
@@ -10155,7 +10161,6 @@ destructible{
   y = 925,
   subtype = "pot",
   treasure_name = "heart",
-  treasure_variant = 1,
 }
 
 destructible{
@@ -10181,10 +10186,10 @@ chest{
   x = 408,
   y = 925,
   name = "chest",
-  sprite = "entities/chest",
   treasure_name = "rupee",
   treasure_variant = 5,
   treasure_savegame_variable = "b292",
+  sprite = "entities/chest",
 }
 
 jumper{
@@ -10390,11 +10395,11 @@ door{
   name = "door",
   direction = 0,
   sprite = "entities/door_small_key",
+  savegame_variable = "b307",
   opening_method = "interaction_if_savegame_variable",
   opening_condition = "dungeon_1_small_keys",
   opening_condition_consumed = true,
   cannot_open_dialog = "_small_key_required",
-  savegame_variable = "b307",
 }
 
 door{
@@ -10404,11 +10409,11 @@ door{
   name = "door_2",
   direction = 2,
   sprite = "entities/door_small_key",
+  savegame_variable = "b307",
   opening_method = "interaction_if_savegame_variable",
   opening_condition = "dungeon_1_small_keys",
   opening_condition_consumed = true,
   cannot_open_dialog = "_small_key_required",
-  savegame_variable = "b307",
 }
 
 pickable{
@@ -10416,7 +10421,6 @@ pickable{
   x = 1024,
   y = 1037,
   treasure_name = "fairy",
-  treasure_variant = 1,
 }
 
 pickable{
@@ -10424,7 +10428,6 @@ pickable{
   x = 1120,
   y = 1037,
   treasure_name = "fairy",
-  treasure_variant = 1,
 }
 
 wall{
@@ -10481,7 +10484,6 @@ destructible{
   y = 229,
   subtype = "pot",
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 enemy{
@@ -10491,9 +10493,7 @@ enemy{
   name = "enemy_2",
   direction = 3,
   breed = "blue_bullblin",
-  rank = 0,
   treasure_name = "heart",
-  treasure_variant = 1,
 }
 
 enemy{
@@ -10503,9 +10503,7 @@ enemy{
   name = "wtf_room_enemy",
   direction = 3,
   breed = "blue_bullblin",
-  rank = 0,
   treasure_name = "heart",
-  treasure_variant = 1,
 }
 
 enemy{
@@ -10515,9 +10513,7 @@ enemy{
   name = "wtf_room_enemy_12",
   direction = 3,
   breed = "blue_bullblin",
-  rank = 0,
   treasure_name = "heart",
-  treasure_variant = 1,
 }
 
 enemy{
@@ -10527,9 +10523,7 @@ enemy{
   name = "wtf_room_enemy_4",
   direction = 3,
   breed = "blue_bullblin",
-  rank = 0,
   treasure_name = "heart",
-  treasure_variant = 1,
 }
 
 enemy{
@@ -10539,9 +10533,7 @@ enemy{
   name = "wtf_room_enemy_7",
   direction = 3,
   breed = "blue_bullblin",
-  rank = 0,
   treasure_name = "heart",
-  treasure_variant = 1,
 }
 
 enemy{
@@ -10551,9 +10543,7 @@ enemy{
   name = "wtf_room_enemy_5",
   direction = 3,
   breed = "blue_bullblin",
-  rank = 0,
   treasure_name = "heart",
-  treasure_variant = 1,
 }
 
 enemy{
@@ -10563,9 +10553,7 @@ enemy{
   name = "wtf_room_enemy_10",
   direction = 3,
   breed = "blue_bullblin",
-  rank = 0,
   treasure_name = "heart",
-  treasure_variant = 1,
 }
 
 enemy{
@@ -10575,9 +10563,7 @@ enemy{
   name = "wtf_room_enemy_3",
   direction = 3,
   breed = "blue_bullblin",
-  rank = 0,
   treasure_name = "heart",
-  treasure_variant = 1,
 }
 
 enemy{
@@ -10587,9 +10573,7 @@ enemy{
   name = "wtf_room_enemy_9",
   direction = 3,
   breed = "blue_bullblin",
-  rank = 0,
   treasure_name = "heart",
-  treasure_variant = 1,
 }
 
 enemy{
@@ -10599,9 +10583,7 @@ enemy{
   name = "wtf_room_enemy_6",
   direction = 3,
   breed = "blue_bullblin",
-  rank = 0,
   treasure_name = "heart",
-  treasure_variant = 1,
 }
 
 enemy{
@@ -10611,9 +10593,7 @@ enemy{
   name = "wtf_room_enemy_2",
   direction = 3,
   breed = "blue_bullblin",
-  rank = 0,
   treasure_name = "heart",
-  treasure_variant = 1,
 }
 
 enemy{
@@ -10623,9 +10603,7 @@ enemy{
   name = "wtf_room_enemy_13",
   direction = 3,
   breed = "blue_bullblin",
-  rank = 0,
   treasure_name = "heart",
-  treasure_variant = 1,
 }
 
 enemy{
@@ -10635,9 +10613,7 @@ enemy{
   name = "wtf_room_enemy_11",
   direction = 3,
   breed = "blue_bullblin",
-  rank = 0,
   treasure_name = "heart",
-  treasure_variant = 1,
 }
 
 door{
@@ -10718,7 +10694,6 @@ destructible{
   y = 285,
   subtype = "pot",
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 destructible{
@@ -10727,7 +10702,6 @@ destructible{
   y = 413,
   subtype = "pot",
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 destructible{
@@ -10736,7 +10710,6 @@ destructible{
   y = 285,
   subtype = "pot",
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 destructible{
@@ -10745,18 +10718,20 @@ destructible{
   y = 413,
   subtype = "pot",
   treasure_name = "fairy",
-  treasure_variant = 1,
 }
 
 chest{
   layer = 1,
-  x = 672,
-  y = 965,
+  x = 680,
+  y = 973,
   name = "chest_4",
-  sprite = "entities/chest",
   treasure_name = "bomb_bag",
   treasure_variant = 2,
   treasure_savegame_variable = "b205",
+  sprite = "entities/big_chest",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "dungeon_1_big_key",
+  cannot_open_dialog = "_big_key_required",
 }
 
 chest{
@@ -10764,10 +10739,9 @@ chest{
   x = 776,
   y = 973,
   name = "chest_3",
-  sprite = "entities/chest",
   treasure_name = "compass",
-  treasure_variant = 1,
   treasure_savegame_variable = "b203",
+  sprite = "entities/chest",
 }
 
 wall{
@@ -10855,8 +10829,8 @@ door{
   name = "weak_wall_compass_2",
   direction = 1,
   sprite = "entities/door_weak_wall",
-  opening_method = "explosion",
   savegame_variable = "b233",
+  opening_method = "explosion",
 }
 
 door{
@@ -10866,8 +10840,8 @@ door{
   name = "weak_wall_compass",
   direction = 3,
   sprite = "entities/door_weak_wall",
-  opening_method = "explosion",
   savegame_variable = "b233",
+  opening_method = "explosion",
 }
 
 door{
@@ -10877,8 +10851,8 @@ door{
   name = "weak_wall_red_tunic",
   direction = 3,
   sprite = "entities/door_weak_wall",
-  opening_method = "explosion",
   savegame_variable = "b234",
+  opening_method = "explosion",
 }
 
 crystal{
@@ -10893,10 +10867,9 @@ chest{
   x = 160,
   y = 349,
   name = "small_key_danger_chest",
-  sprite = "entities/chest",
   treasure_name = "small_key",
-  treasure_variant = 1,
   treasure_savegame_variable = "b248",
+  sprite = "entities/chest",
 }
 
 destination{
@@ -10952,7 +10925,6 @@ destructible{
   x = 656,
   y = 853,
   subtype = "pot",
-  treasure_variant = 1,
 }
 
 crystal_block{
@@ -11048,7 +11020,6 @@ destructible{
   y = 229,
   subtype = "pot",
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 sensor{
@@ -11111,7 +11082,6 @@ destructible{
   y = 101,
   subtype = "pot",
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 destructible{
@@ -11120,7 +11090,6 @@ destructible{
   y = 101,
   subtype = "pot",
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 destructible{
@@ -11129,7 +11098,6 @@ destructible{
   y = 101,
   subtype = "pot",
   treasure_name = "heart",
-  treasure_variant = 1,
 }
 
 destructible{
@@ -11138,7 +11106,6 @@ destructible{
   y = 101,
   subtype = "pot",
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 destructible{
@@ -11147,7 +11114,6 @@ destructible{
   y = 101,
   subtype = "pot",
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 destructible{
@@ -11156,7 +11122,6 @@ destructible{
   y = 101,
   subtype = "pot",
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 destructible{
@@ -11165,7 +11130,6 @@ destructible{
   y = 101,
   subtype = "pot",
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 destructible{
@@ -11174,7 +11138,6 @@ destructible{
   y = 101,
   subtype = "pot",
   treasure_name = "heart",
-  treasure_variant = 1,
 }
 
 destructible{
@@ -11183,7 +11146,6 @@ destructible{
   y = 101,
   subtype = "pot",
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 destructible{
@@ -11192,7 +11154,6 @@ destructible{
   y = 101,
   subtype = "pot",
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 dynamic_tile{
@@ -11345,10 +11306,10 @@ door{
   name = "boss_door",
   direction = 1,
   sprite = "entities/door_boss_key",
-  opening_condition = "dungeon_1_boss_key",
-  opening_method = "interaction_if_savegame_variable",
-  cannot_open_dialog = "_boss_key_required",
   savegame_variable = "b239",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "dungeon_1_boss_key",
+  cannot_open_dialog = "_boss_key_required",
 }
 
 destination{

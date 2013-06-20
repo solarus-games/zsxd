@@ -64,9 +64,9 @@ function chest_link_house:on_empty()
   hero:unfreeze()
 end
 
-function map:on_obtained_treasure(item_name, variant, savegame_variable)
+function map:on_obtained_treasure(item, variant, savegame_variable)
 
-  if item_name == "pegasus_shoes" then
+  if item:get_name() == "pegasus_shoes" then
     self:random_monkey_run(48) -- reduce the speed
   end
 end

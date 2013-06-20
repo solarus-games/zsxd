@@ -2964,11 +2964,8 @@ chest{
   y = 1021,
   name = "chest",
   treasure_name = "small_key",
-  treasure_variant = 1,
   treasure_savegame_variable = "b246",
   sprite = "entities/chest",
-  opening_method = "interaction",
-  opening_condition_consumed = false,
 }
 
 door{
@@ -2979,8 +2976,6 @@ door{
   direction = 1,
   sprite = "entities/door_normal",
   savegame_variable = "b236",
-  opening_method = "none",
-  opening_condition_consumed = false,
 }
 
 door{
@@ -2991,8 +2986,6 @@ door{
   direction = 3,
   sprite = "entities/door_normal",
   savegame_variable = "b236",
-  opening_method = "none",
-  opening_condition_consumed = false,
 }
 
 stairs{
@@ -3010,12 +3003,10 @@ chest{
   y = 85,
   name = "chest_2",
   treasure_name = "feather",
-  treasure_variant = 1,
   treasure_savegame_variable = "b238",
   sprite = "entities/big_chest",
   opening_method = "interaction_if_savegame_variable",
-  opening_condition = "dungeon_2_big_key",
-  opening_condition_consumed = false,
+  opening_condition = "dungeon_1_big_key",
   cannot_open_dialog = "_big_key_required",
 }
 
@@ -3062,9 +3053,7 @@ enemy{
   name = "enemy",
   direction = 3,
   breed = "bubble",
-  rank = 0,
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 enemy{
@@ -3074,9 +3063,7 @@ enemy{
   name = "enemy_8",
   direction = 3,
   breed = "bubble",
-  rank = 0,
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 enemy{
@@ -3086,9 +3073,7 @@ enemy{
   name = "enemy_7",
   direction = 3,
   breed = "bubble",
-  rank = 0,
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 enemy{
@@ -3098,9 +3083,7 @@ enemy{
   name = "enemy_6",
   direction = 3,
   breed = "bubble",
-  rank = 0,
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 wall{
@@ -3127,6 +3110,15 @@ wall{
   stops_enemies = true,
   stops_npcs = true,
   stops_blocks = true,
+}
+
+sensor{
+  layer = 0,
+  x = 1376,
+  y = 173,
+  width = 16,
+  height = 16,
+  name = "save_solid_ground_sensor_4",
 }
 
 tile{
@@ -6532,7 +6524,6 @@ door{
   savegame_variable = "b237",
   opening_method = "interaction_if_savegame_variable",
   opening_condition = "dungeon_1_big_key",
-  opening_condition_consumed = false,
   cannot_open_dialog = "_big_key_required",
 }
 
@@ -6546,7 +6537,6 @@ door{
   savegame_variable = "b237",
   opening_method = "interaction_if_savegame_variable",
   opening_condition = "dungeon_1_big_key",
-  opening_condition_consumed = false,
   cannot_open_dialog = "_big_key_required",
 }
 
@@ -6644,9 +6634,7 @@ enemy{
   name = "enemy_2",
   direction = 3,
   breed = "skeletor",
-  rank = 0,
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 enemy{
@@ -6656,9 +6644,7 @@ enemy{
   name = "enemy_3",
   direction = 3,
   breed = "skeletor",
-  rank = 0,
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 enemy{
@@ -6668,9 +6654,7 @@ enemy{
   name = "enemy_4",
   direction = 3,
   breed = "bee_guard",
-  rank = 0,
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 enemy{
@@ -6680,9 +6664,7 @@ enemy{
   name = "enemy_5",
   direction = 3,
   breed = "bee_guard",
-  rank = 0,
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 wall{
@@ -6848,7 +6830,6 @@ destructible{
   y = 861,
   subtype = "pot",
   treasure_name = "heart",
-  treasure_variant = 1,
 }
 
 destructible{
@@ -6857,7 +6838,6 @@ destructible{
   y = 861,
   subtype = "pot",
   treasure_name = "heart",
-  treasure_variant = 1,
 }
 
 destructible{
@@ -6902,7 +6882,6 @@ destructible{
   y = 1077,
   subtype = "pot",
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 destructible{
@@ -6911,7 +6890,6 @@ destructible{
   y = 1093,
   subtype = "pot",
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 destructible{
@@ -6920,7 +6898,6 @@ destructible{
   y = 1077,
   subtype = "pot",
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 destructible{
@@ -6929,7 +6906,6 @@ destructible{
   y = 1093,
   subtype = "pot",
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 destructible{
@@ -6938,7 +6914,6 @@ destructible{
   y = 1077,
   subtype = "pot",
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 destructible{
@@ -6947,7 +6922,6 @@ destructible{
   y = 1093,
   subtype = "pot",
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 enemy{
@@ -6957,9 +6931,7 @@ enemy{
   name = "enemy_9",
   direction = 3,
   breed = "simple_green_soldier",
-  rank = 0,
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 enemy{
@@ -6969,9 +6941,7 @@ enemy{
   name = "enemy_10",
   direction = 3,
   breed = "simple_green_soldier",
-  rank = 0,
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 wall{
