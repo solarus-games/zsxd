@@ -1,6 +1,6 @@
-zsxd-1.6 (under development)
+zsxd-1.6 (2013-06-22)
 
-* Use solarus 1.0.
+* Use solarus 1.0.2.
 * Improve the English translation.
 * Fix the hero stuck after jumping on a block in dungeon 2.
 * Fix all missing empty lines in dialogs.
