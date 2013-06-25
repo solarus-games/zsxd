@@ -1,8 +1,9 @@
 zsxd-1.6.2 (under development)
 
 * Use solarus 1.0.4.
-* Fix a crash due to a missing text in the French option pause menu.
+* Fix a crash due to a missing text in the French options pause menu.
 * Fix a crash due to an invalid treasure in a pot of crazy house 1F.
+* Fix a typo in the French inventory pause menu.
 
 zsxd-1.6.1 (2013-06-25)
 
