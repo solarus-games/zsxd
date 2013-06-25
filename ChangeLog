@@ -1,4 +1,4 @@
-zsxd-1.6.2 (under development)
+zsxd-1.6.2 (2013-06-25)
 
 * Use solarus 1.0.4.
 * Fix a crash due to a missing text in the French options pause menu.
