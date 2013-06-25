@@ -9959,7 +9959,7 @@ destructible{
   y = 637,
   subtype = "pot",
   treasure_name = "random",
-  treasure_variant = 3,
+  treasure_variant = 1,
 }
 
 npc{
