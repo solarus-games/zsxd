@@ -101,7 +101,7 @@ options.joypad_column				Joypad
 
 # Game controls customization (maximum 10 characters)
 options.command.action		Action
-options.command.atttack		Epée
+options.command.attack		Epée
 options.command.item_1		Obj gauche
 options.command.item_2		Obj droit
 options.command.pause		Pause
