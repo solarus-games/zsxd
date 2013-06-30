@@ -10490,7 +10490,7 @@ enemy{
   layer = 1,
   x = 408,
   y = 365,
-  name = "enemy_2",
+  name = "wtf_room_enemy_8",
   direction = 3,
   breed = "blue_bullblin",
   treasure_name = "heart",
