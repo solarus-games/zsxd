@@ -3,6 +3,11 @@ zsxd-1.7.0 (under development).
 * Use Solarus 1.1.0.
 * Fix savegames created with Solarus 0.9 but that were never run.
 
+zsxd-1.6.3 (under development)
+
+* Dungeon 1 3F: fix "attempt to compare number with nil" in counter 36 (#3).
+* Dungeon 2 1F: fix an enemy not counting in WFT room.
+
 zsxd-1.6.2 (2013-06-25)
 
 * Use solarus 1.0.4.

@@ -159,7 +159,7 @@ local function guichet_36()
           game:set_value("i1411", 5)
         end
         -- Incrémentation branche 1412
-        local branche1412 = game:get_value("i1412")
+        local branche1412 = game:get_value("i1412") or 0
         if branche1412 >= 6 and branche1412 <= 7 then
           game:set_value("i1412", 8)
         end
