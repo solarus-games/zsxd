@@ -1,318 +1,329 @@
-0	0	Link's house
-0	1	Outside fields NO
-0	2	Outside fields NE
-0	3	Outside fields SO
-0	4	Outside fields SE
-0	5	Maison du boulet
-0	6	Maison des pots
-0	7	Magasin débile
-0	8	Caverne du coffre débile
-0	9	Geek House
-0	10	Humid house
-0	11	Shop
-0	12	Link's cave
-0	13	Before the cursed cave
-0	14	Desert small house
-0	15	Desert west house
-0	16	Desert east house
-0	17	The end
-0	20	Crazy House 1FA
-0	21	Crazy House 1FB
-0	22	Crazy House 2FA
-0	23	Crazy House 2FB
-0	24	Crazy House 3F
-0	38	Freaking_cave_1
-0	39	Freaking_cave_2
-0	42	Caverne des fragments de coeur
-0	43	Caverne Maudite 0
-0	44	Caverne Maudite -1
-0	45	Caverne Maudite -2
-0	46	Caverne Maudite -3
-0	47	Caverne Maudite -4
-0	48	Caverne Maudite -5
-0	49	Caverne Maudite -6
-0	50	Caverne Maudite -7
-0	51	Caverne Maudite -8
-0	52	Caverne Maudite -9
-0	53	Caverne Maudite -10
-0	54	Caverne Maudite -11
-0	55	Caverne Maudite -12
-0	56	Caverne Maudite -13
-0	57	Caverne Maudite -14
-0	58	Caverne Maudite -15
-0	59	Caverne Maudite -16
-0	60	Dungeon 1F NW
-0	61	Dungeon 1F NE
-0	62	Dungeon 1F SW
-0	63	Dungeon 1F SE
-0	64	Dungeon 2F NW
-0	65	Dungeon 2F NE
-0	66	Dungeon 2F SW
-0	67	Dungeon 2F SE
-1	0	House
-1	1	Light World
-1	2	Ice dungeon
-1	3	Cave
-1	4	Blue dungeon (LW)
-1	5	Green dungeon (LW)
-1	7	Brown dungeon (LW)
-1	8	Blue dungeon (DW)
-1	6	Intro
-2	agahnim	Agahnim theme
-2	beginning	Beginning
-2	boss	Boss
-2	castle	Castle
-2	cave	Cave
-2	credits	Credits
-2	dark_mountain	Dark Mountain
-2	dark_world	Dark World
-2	light_world_dungeon	Dungeon (light world)
-2	dark_world_dungeon	Dungeon (dark world)
-2	dungeon_finished	Dungeon finished
-2	excalibur	Excalibur
-2	fanfare	Fanfare
-2	fortune_teller	Fortune Teller
-2	found_items	Found Items House
-2	ganon_appears	Ganon appears
-2	ganon_battle	Ganon battle
-2	ganon_theme	Ganon theme
-2	great_fairy	Great Fairy
-2	village	Kakariko Village
-2	legend	Legend
-2	lost_woods	Lost Woods
-2	mini_game	Mini game
-2	overworld	Overworld
-2	sanctuary	Sanctuary
-2	game_over	Selection menu & Game Over
-2	soldiers	Soldiers
-2	rabbit	Turned into a rabbit
-2	title_screen	Title screen
-2	triforce	Triforce
-2	victory	Victory
-3	entities/sign	Sign
-3	npc/great_fairy	Great Fairy
-3	npc/monkey	Monkey
-3	npc/sahasrahla	Sahasrahla
-3	npc/thief	Thief
-3	npc/wizard	Wizard
-3	npc/zelda	Zelda
-3	enemies/zelda	Angry Zelda
-3	npc/tom	Tom
-3	npc/newlink1	Newlink NPC 1
-3	npc/newlink2	Newlink NPC 2
-3	npc/newlink3	Newlink NPC 3
-3	npc/newlink4	Newlink NPC 4
-3	npc/newlink5	Newlink NPC 5
-3	npc/newlink6	Newlink NPC 6
-3	npc/newlink7	Newlink NPC 7
-3	npc/newlink8	Newlink NPC 8
-3	npc/villager1	ALTTP villager 1
-3	npc/villager2	ALTTP villager 2 
-3	npc/villager3	ALTTP villager 3
-3	npc/static_villager1	ALTTP static villager 1
-3	npc/static_villager2	ALTTP static villager 2
-3	npc/static_villager3	ALTTP static villager 3
-3	npc/static_villager4	ALTTP static villager 4
-3	npc/static_villager5	ALTTP static villager 5
-3	npc/static_villager6	ALTTP static villager 6
-3	npc/static_villager7	ALTTP static villager 7
-3	npc/static_villager8	ALTTP static villager 8
-3	npc/static_villager9	ALTTP static villager 9
-3	npc/static_villager10	ALTTP static villager 10
-3	npc/static_villager11	ALTTP static villager 11
-3	npc/static_villager12	ALTTP static villager 12
-3	npc/static_villager13	ALTTP static villager 13
-3	npc/static_villager14	ALTTP static villager 14
-3	npc/solarus_child1	Solarus Child 1
-3	npc/yoda	Yoda
-3	entities/block	Block
-3	entities/teletransporter	Teletransporter (yellow)
-3	entities/destination	Destination of teletransporter
-3	entities/slot_machine	Casino slot machine
-3	entities/frozen_door	Frozen door
-3	entities/outside_door	Outside closed door
-3	entities/fresco	Intro fresco
-3	entities/bed	Hero's bed
-3	entities/snores	Snoring (zzz)
-3	entities/hint_stone	Hint stone
-3	entities/torch	Torch
-3	entities/the_end	The End
-3	entities/chest	Chest (normal)
-3	entities/big_chest	Chest (big)
-3	entities/door_normal	Door (normal)
-3	entities/door_small_key	Door (small key)
-3	entities/door_small_key_block	Door (small key block)
-3	entities/door_big_key	Door (big key)
-3	entities/door_boss_key	Door (boss key)
-3	entities/door_weak_wall	Door (weak wall)
-3	entities/door_very_weak_wall	Door (very weak wall)
-3	entities/door_weak_block	Door (weak block)
-4	arrow_hit	arrow_hit
-4	bomb	bomb
-4	boss_charge	boss_charge
-4	boss_fireball	boss_fireball
-4	boss_hurt	boss_hurt
-4	boss_killed	boss_killed
-4	bounce	bounce
-4	bow	bow
-4	bush	bush
-4	cannonball	cannonball
-4	chest_appears	chest_appears
-4	chest_open	chest_open
-4	creeper	creeper
-4	cursor	cursor
-4	danger	danger
-4	door_closed	door_closed
-4	door_open	door_open
-4	door_unlocked	door_unlocked
-4	enemy_awake	enemy_awake
-4	enemy_hurt	enemy_hurt
-4	enemy_killed	enemy_killed
-4	explosion	explosion
-4	external_stairs_down	external_stairs_down
-4	external_stairs_up	external_stairs_up
-4	heart_container	heart_container
-4	heart	heart
-4	hero_dying	hero_dying
-4	hero_falls	hero_falls
-4	hero_hurt	hero_hurt
-4	hero_lands	hero_lands
-4	hero_pushes	hero_pushes
-4	hero_seen	hero_seen
-4	hookshot	hookshot
-4	ice	ice
-4	internal_stairs_down	internal_stairs_down
-4	internal_stairs_up	internal_stairs_up
-4	intro	intro
-4	item_in_water	item_in_water
-4	jump	jump
-4	lamp	lamp
-4	lift	lift
-4	magic_bar	magic_bar
-4	message_end	message_end
-4	message_letter	message_letter
-4	mk64_mario_mammamia	mk64_mario_mammamia
-4	mk64_mario_yeah	mk64_mario_yeah
-4	mk64_toad	mk64_toad
-4	mk64_yoshi	mk64_yoshi
-4	monkey	monkey
-4	monster_hurt	monster_hurt
-4	octorok	octorok
-4	ok	ok
-4	pause_closed	pause_closed
-4	pause_open	pause_open
-4	picked_item	picked_item
-4	picked_rupee	picked_rupee
-4	picked_small_key	picked_small_key
-4	piece_of_heart	piece_of_heart
-4	running	running
-4	rupee_counter_end	rupee_counter_end
-4	rupee_counter	rupee_counter
-4	secret	secret
-4	shield	shield
-4	sm64_bowser_message	sm64_bowser_message
-4	sm64_heehee	sm64_heehee
-4	sm64_memario	sm64_memario
-4	smb_1up	smb_1up
-4	smb_coin	smb_coin
-4	smb_powerup	smb_powerup
-4	splash	splash
-4	stone	stone
-4	switch	switch
-4	sword1	sword1
-4	sword2	sword2
-4	sword3	sword3
-4	sword4	sword4
-4	sword_spin_attack_load_2	sword_spin_attack_load_2
-4	sword_spin_attack_load	sword_spin_attack_load
-4	sword_spin_attack_release_2	sword_spin_attack_release_2
-4	sword_spin_attack_release	sword_spin_attack_release
-4	sword_tapping	sword_tapping
-4	sword_tapping_weak_wall	sword_tapping_weak_wall
-4	throw	throw
-4	timer_hurry	timer_hurry
-4	timer	timer
-4	treasure	treasure
-4	victory	victory
-4	walk_on_grass	walk_on_grass
-4	walk_on_water	walk_on_water
-4	warp	warp
-4	water_drain_begin	water_drain_begin
-4	water_drain	water_drain
-4	water_fill_begin	water_fill_begin
-4	water_fill	water_fill
-4	world_warp	world_warp
-4	wrong	wrong
-4	zora	zora
-5	random	(Random)
-5	feather	Feather
-5	bombs_counter	Bombs counter
-5	bomb	Bombs (x1 / x3 / x8)
-5	bomb_bag	Bomb bag (small / large / huge)
-5	bow	Bow
-5	arrow	Arrows (x1 / x5 / x10)
-5	quiver	Quiver (small / large / huge)
-5	bottle_1	Bottle 1
-5	bottle_2	Bottle 2
-5	bottle_3	Bottle 3
-5	bottle_4	Bottle 4
-5	pegasus_shoes	Pegasus shoes
-5	croissants_counter	Croissants counter
-5	croissant	Croissant (x1)
-5	bone_key	Bone key
-5	apple_pie_counter	Apple pie counter
-5	apple_pie	Apple pie (x1)
-5	glove	Iron glove / Golden glove
-5	poivron_counter	Poivron counter
-5	poivron	Poivron
-5	balai_counter	Balai counter
-5	balai	Balai
-5	cuillere_counter	Cuillère counter
-5	cuillere	Cuillère
-5	tapisserie_counter	Tapisserie counter
-5	tapisserie	Tapisserie
-5	roc_magma_counter	Roc Magma counter
-5	roc_magma	Roc Magma
-5	sac_riz_counter	Sac de riz counter
-5	sac_riz	Sac de riz
-5	sac_olive_counter	Sac d'olives counter
-5	sac_olive	Sac d'olives
-5	bocal_epice_counter	Bocal d'épices counter
-5	bocal_epice	Bocal d'épices
-5	hache_counter	Hache counter
-5	hache	Hache
-5	parfum_counter	Parfum counter
-5	parfum	Parfum
-5	tunic	Tunic (green / blue / red)
-5	sword	Sword
-5	shield	Shield
-5	rupee_bag	Rupee bag (small / large / huge)
-5	magic_bar	Maximum of magic (none / half / full)
-5	map	Dungeon map
-5	compass	Dungeon compass
-5	big_key	Dungeon big key
-5	boss_key	Dungeon boss key
-5	small_key	Small key
-5	rupee	Rupees (x1 / x5 / x20 / x50 / x100 / x300)
-5	magic_flask	Magic flask (small / big)
-5	heart	Heart (x1)
-5	heart_container	Heart container
-5	piece_of_heart	Piece of heart
-5	fairy	Fairy
-5	zelda	Zelda
-6	bee_guard	Bee Guard
-6	blue_bullblin	Blue Bullblin
-6	bubble	Bubble
-6	cannonball	Random Cannonball
-6	creeper	Creeper
-6	ganon	Ganon
-6	globul	Globul
-6	lizarmen	Lizarmen
-6	mandible	Mandible
-6	red_bullblin	Red Bullblin
-6	skeletor	Skeletor
-6	simple_green_soldier	Simple green soldier
-6	tentacle	Tentacle
-6	zelda	Zelda
-7	fr/text/dialogs.dat	French dialogs
-7	en/text/dialogs.dat	English dialogs
+-- This is a resource list file for Solarus 1.1.
+-- This file was converted from Solarus 1.0 using the script
+-- tools/data_files_conversion/1.0_to_1.1/quest_db_converter.lua.
+map{ id = "0", description = "Link's house" }
+map{ id = "1", description = "Outside fields NO" }
+map{ id = "2", description = "Outside fields NE" }
+map{ id = "3", description = "Outside fields SO" }
+map{ id = "4", description = "Outside fields SE" }
+map{ id = "5", description = "Maison du boulet" }
+map{ id = "6", description = "Maison des pots" }
+map{ id = "7", description = "Magasin débile" }
+map{ id = "8", description = "Caverne du coffre débile" }
+map{ id = "9", description = "Geek House" }
+map{ id = "10", description = "Humid house" }
+map{ id = "11", description = "Shop" }
+map{ id = "12", description = "Link's cave" }
+map{ id = "13", description = "Before the cursed cave" }
+map{ id = "14", description = "Desert small house" }
+map{ id = "15", description = "Desert west house" }
+map{ id = "16", description = "Desert east house" }
+map{ id = "17", description = "The end" }
+map{ id = "20", description = "Crazy House 1FA" }
+map{ id = "21", description = "Crazy House 1FB" }
+map{ id = "22", description = "Crazy House 2FA" }
+map{ id = "23", description = "Crazy House 2FB" }
+map{ id = "24", description = "Crazy House 3F" }
+map{ id = "38", description = "Freaking_cave_1" }
+map{ id = "39", description = "Freaking_cave_2" }
+map{ id = "42", description = "Caverne des fragments de coeur" }
+map{ id = "43", description = "Caverne Maudite 0" }
+map{ id = "44", description = "Caverne Maudite -1" }
+map{ id = "45", description = "Caverne Maudite -2" }
+map{ id = "46", description = "Caverne Maudite -3" }
+map{ id = "47", description = "Caverne Maudite -4" }
+map{ id = "48", description = "Caverne Maudite -5" }
+map{ id = "49", description = "Caverne Maudite -6" }
+map{ id = "50", description = "Caverne Maudite -7" }
+map{ id = "51", description = "Caverne Maudite -8" }
+map{ id = "52", description = "Caverne Maudite -9" }
+map{ id = "53", description = "Caverne Maudite -10" }
+map{ id = "54", description = "Caverne Maudite -11" }
+map{ id = "55", description = "Caverne Maudite -12" }
+map{ id = "56", description = "Caverne Maudite -13" }
+map{ id = "57", description = "Caverne Maudite -14" }
+map{ id = "58", description = "Caverne Maudite -15" }
+map{ id = "59", description = "Caverne Maudite -16" }
+map{ id = "60", description = "Dungeon 1F NW" }
+map{ id = "61", description = "Dungeon 1F NE" }
+map{ id = "62", description = "Dungeon 1F SW" }
+map{ id = "63", description = "Dungeon 1F SE" }
+map{ id = "64", description = "Dungeon 2F NW" }
+map{ id = "65", description = "Dungeon 2F NE" }
+map{ id = "66", description = "Dungeon 2F SW" }
+map{ id = "67", description = "Dungeon 2F SE" }
+
+tileset{ id = "0", description = "House" }
+tileset{ id = "1", description = "Light World" }
+tileset{ id = "2", description = "Ice dungeon" }
+tileset{ id = "3", description = "Cave" }
+tileset{ id = "4", description = "Blue dungeon (LW)" }
+tileset{ id = "5", description = "Green dungeon (LW)" }
+tileset{ id = "7", description = "Brown dungeon (LW)" }
+tileset{ id = "8", description = "Blue dungeon (DW)" }
+tileset{ id = "6", description = "Intro" }
+
+music{ id = "agahnim", description = "Agahnim theme" }
+music{ id = "beginning", description = "Beginning" }
+music{ id = "boss", description = "Boss" }
+music{ id = "castle", description = "Castle" }
+music{ id = "cave", description = "Cave" }
+music{ id = "credits", description = "Credits" }
+music{ id = "dark_mountain", description = "Dark Mountain" }
+music{ id = "dark_world", description = "Dark World" }
+music{ id = "light_world_dungeon", description = "Dungeon (light world)" }
+music{ id = "dark_world_dungeon", description = "Dungeon (dark world)" }
+music{ id = "dungeon_finished", description = "Dungeon finished" }
+music{ id = "excalibur", description = "Excalibur" }
+music{ id = "fanfare", description = "Fanfare" }
+music{ id = "fortune_teller", description = "Fortune Teller" }
+music{ id = "found_items", description = "Found Items House" }
+music{ id = "ganon_appears", description = "Ganon appears" }
+music{ id = "ganon_battle", description = "Ganon battle" }
+music{ id = "ganon_theme", description = "Ganon theme" }
+music{ id = "great_fairy", description = "Great Fairy" }
+music{ id = "village", description = "Kakariko Village" }
+music{ id = "legend", description = "Legend" }
+music{ id = "lost_woods", description = "Lost Woods" }
+music{ id = "mini_game", description = "Mini game" }
+music{ id = "overworld", description = "Overworld" }
+music{ id = "sanctuary", description = "Sanctuary" }
+music{ id = "game_over", description = "Selection menu & Game Over" }
+music{ id = "soldiers", description = "Soldiers" }
+music{ id = "rabbit", description = "Turned into a rabbit" }
+music{ id = "title_screen", description = "Title screen" }
+music{ id = "triforce", description = "Triforce" }
+music{ id = "victory", description = "Victory" }
+
+sprite{ id = "entities/sign", description = "Sign" }
+sprite{ id = "npc/great_fairy", description = "Great Fairy" }
+sprite{ id = "npc/monkey", description = "Monkey" }
+sprite{ id = "npc/sahasrahla", description = "Sahasrahla" }
+sprite{ id = "npc/thief", description = "Thief" }
+sprite{ id = "npc/wizard", description = "Wizard" }
+sprite{ id = "npc/zelda", description = "Zelda" }
+sprite{ id = "enemies/zelda", description = "Angry Zelda" }
+sprite{ id = "npc/tom", description = "Tom" }
+sprite{ id = "npc/newlink1", description = "Newlink NPC 1" }
+sprite{ id = "npc/newlink2", description = "Newlink NPC 2" }
+sprite{ id = "npc/newlink3", description = "Newlink NPC 3" }
+sprite{ id = "npc/newlink4", description = "Newlink NPC 4" }
+sprite{ id = "npc/newlink5", description = "Newlink NPC 5" }
+sprite{ id = "npc/newlink6", description = "Newlink NPC 6" }
+sprite{ id = "npc/newlink7", description = "Newlink NPC 7" }
+sprite{ id = "npc/newlink8", description = "Newlink NPC 8" }
+sprite{ id = "npc/villager1", description = "ALTTP villager 1" }
+sprite{ id = "npc/villager2", description = "ALTTP villager 2 " }
+sprite{ id = "npc/villager3", description = "ALTTP villager 3" }
+sprite{ id = "npc/static_villager1", description = "ALTTP static villager 1" }
+sprite{ id = "npc/static_villager2", description = "ALTTP static villager 2" }
+sprite{ id = "npc/static_villager3", description = "ALTTP static villager 3" }
+sprite{ id = "npc/static_villager4", description = "ALTTP static villager 4" }
+sprite{ id = "npc/static_villager5", description = "ALTTP static villager 5" }
+sprite{ id = "npc/static_villager6", description = "ALTTP static villager 6" }
+sprite{ id = "npc/static_villager7", description = "ALTTP static villager 7" }
+sprite{ id = "npc/static_villager8", description = "ALTTP static villager 8" }
+sprite{ id = "npc/static_villager9", description = "ALTTP static villager 9" }
+sprite{ id = "npc/static_villager10", description = "ALTTP static villager 10" }
+sprite{ id = "npc/static_villager11", description = "ALTTP static villager 11" }
+sprite{ id = "npc/static_villager12", description = "ALTTP static villager 12" }
+sprite{ id = "npc/static_villager13", description = "ALTTP static villager 13" }
+sprite{ id = "npc/static_villager14", description = "ALTTP static villager 14" }
+sprite{ id = "npc/solarus_child1", description = "Solarus Child 1" }
+sprite{ id = "npc/yoda", description = "Yoda" }
+sprite{ id = "entities/block", description = "Block" }
+sprite{ id = "entities/teletransporter", description = "Teletransporter (yellow)" }
+sprite{ id = "entities/destination", description = "Destination of teletransporter" }
+sprite{ id = "entities/slot_machine", description = "Casino slot machine" }
+sprite{ id = "entities/frozen_door", description = "Frozen door" }
+sprite{ id = "entities/outside_door", description = "Outside closed door" }
+sprite{ id = "entities/fresco", description = "Intro fresco" }
+sprite{ id = "entities/bed", description = "Hero's bed" }
+sprite{ id = "entities/snores", description = "Snoring (zzz)" }
+sprite{ id = "entities/hint_stone", description = "Hint stone" }
+sprite{ id = "entities/torch", description = "Torch" }
+sprite{ id = "entities/the_end", description = "The End" }
+sprite{ id = "entities/chest", description = "Chest (normal)" }
+sprite{ id = "entities/big_chest", description = "Chest (big)" }
+sprite{ id = "entities/door_normal", description = "Door (normal)" }
+sprite{ id = "entities/door_small_key", description = "Door (small key)" }
+sprite{ id = "entities/door_small_key_block", description = "Door (small key block)" }
+sprite{ id = "entities/door_big_key", description = "Door (big key)" }
+sprite{ id = "entities/door_boss_key", description = "Door (boss key)" }
+sprite{ id = "entities/door_weak_wall", description = "Door (weak wall)" }
+sprite{ id = "entities/door_very_weak_wall", description = "Door (very weak wall)" }
+sprite{ id = "entities/door_weak_block", description = "Door (weak block)" }
+
+sound{ id = "arrow_hit", description = "arrow_hit" }
+sound{ id = "bomb", description = "bomb" }
+sound{ id = "boss_charge", description = "boss_charge" }
+sound{ id = "boss_fireball", description = "boss_fireball" }
+sound{ id = "boss_hurt", description = "boss_hurt" }
+sound{ id = "boss_killed", description = "boss_killed" }
+sound{ id = "bounce", description = "bounce" }
+sound{ id = "bow", description = "bow" }
+sound{ id = "bush", description = "bush" }
+sound{ id = "cannonball", description = "cannonball" }
+sound{ id = "chest_appears", description = "chest_appears" }
+sound{ id = "chest_open", description = "chest_open" }
+sound{ id = "creeper", description = "creeper" }
+sound{ id = "cursor", description = "cursor" }
+sound{ id = "danger", description = "danger" }
+sound{ id = "door_closed", description = "door_closed" }
+sound{ id = "door_open", description = "door_open" }
+sound{ id = "door_unlocked", description = "door_unlocked" }
+sound{ id = "enemy_awake", description = "enemy_awake" }
+sound{ id = "enemy_hurt", description = "enemy_hurt" }
+sound{ id = "enemy_killed", description = "enemy_killed" }
+sound{ id = "explosion", description = "explosion" }
+sound{ id = "external_stairs_down", description = "external_stairs_down" }
+sound{ id = "external_stairs_up", description = "external_stairs_up" }
+sound{ id = "heart_container", description = "heart_container" }
+sound{ id = "heart", description = "heart" }
+sound{ id = "hero_dying", description = "hero_dying" }
+sound{ id = "hero_falls", description = "hero_falls" }
+sound{ id = "hero_hurt", description = "hero_hurt" }
+sound{ id = "hero_lands", description = "hero_lands" }
+sound{ id = "hero_pushes", description = "hero_pushes" }
+sound{ id = "hero_seen", description = "hero_seen" }
+sound{ id = "hookshot", description = "hookshot" }
+sound{ id = "ice", description = "ice" }
+sound{ id = "internal_stairs_down", description = "internal_stairs_down" }
+sound{ id = "internal_stairs_up", description = "internal_stairs_up" }
+sound{ id = "intro", description = "intro" }
+sound{ id = "item_in_water", description = "item_in_water" }
+sound{ id = "jump", description = "jump" }
+sound{ id = "lamp", description = "lamp" }
+sound{ id = "lift", description = "lift" }
+sound{ id = "magic_bar", description = "magic_bar" }
+sound{ id = "message_end", description = "message_end" }
+sound{ id = "message_letter", description = "message_letter" }
+sound{ id = "mk64_mario_mammamia", description = "mk64_mario_mammamia" }
+sound{ id = "mk64_mario_yeah", description = "mk64_mario_yeah" }
+sound{ id = "mk64_toad", description = "mk64_toad" }
+sound{ id = "mk64_yoshi", description = "mk64_yoshi" }
+sound{ id = "monkey", description = "monkey" }
+sound{ id = "monster_hurt", description = "monster_hurt" }
+sound{ id = "octorok", description = "octorok" }
+sound{ id = "ok", description = "ok" }
+sound{ id = "pause_closed", description = "pause_closed" }
+sound{ id = "pause_open", description = "pause_open" }
+sound{ id = "picked_item", description = "picked_item" }
+sound{ id = "picked_rupee", description = "picked_rupee" }
+sound{ id = "picked_small_key", description = "picked_small_key" }
+sound{ id = "piece_of_heart", description = "piece_of_heart" }
+sound{ id = "running", description = "running" }
+sound{ id = "rupee_counter_end", description = "rupee_counter_end" }
+sound{ id = "rupee_counter", description = "rupee_counter" }
+sound{ id = "secret", description = "secret" }
+sound{ id = "shield", description = "shield" }
+sound{ id = "sm64_bowser_message", description = "sm64_bowser_message" }
+sound{ id = "sm64_heehee", description = "sm64_heehee" }
+sound{ id = "sm64_memario", description = "sm64_memario" }
+sound{ id = "smb_1up", description = "smb_1up" }
+sound{ id = "smb_coin", description = "smb_coin" }
+sound{ id = "smb_powerup", description = "smb_powerup" }
+sound{ id = "splash", description = "splash" }
+sound{ id = "stone", description = "stone" }
+sound{ id = "switch", description = "switch" }
+sound{ id = "sword1", description = "sword1" }
+sound{ id = "sword2", description = "sword2" }
+sound{ id = "sword3", description = "sword3" }
+sound{ id = "sword4", description = "sword4" }
+sound{ id = "sword_spin_attack_load_2", description = "sword_spin_attack_load_2" }
+sound{ id = "sword_spin_attack_load", description = "sword_spin_attack_load" }
+sound{ id = "sword_spin_attack_release_2", description = "sword_spin_attack_release_2" }
+sound{ id = "sword_spin_attack_release", description = "sword_spin_attack_release" }
+sound{ id = "sword_tapping", description = "sword_tapping" }
+sound{ id = "sword_tapping_weak_wall", description = "sword_tapping_weak_wall" }
+sound{ id = "throw", description = "throw" }
+sound{ id = "timer_hurry", description = "timer_hurry" }
+sound{ id = "timer", description = "timer" }
+sound{ id = "treasure", description = "treasure" }
+sound{ id = "victory", description = "victory" }
+sound{ id = "walk_on_grass", description = "walk_on_grass" }
+sound{ id = "walk_on_water", description = "walk_on_water" }
+sound{ id = "warp", description = "warp" }
+sound{ id = "water_drain_begin", description = "water_drain_begin" }
+sound{ id = "water_drain", description = "water_drain" }
+sound{ id = "water_fill_begin", description = "water_fill_begin" }
+sound{ id = "water_fill", description = "water_fill" }
+sound{ id = "world_warp", description = "world_warp" }
+sound{ id = "wrong", description = "wrong" }
+sound{ id = "zora", description = "zora" }
+
+item{ id = "random", description = "(Random)" }
+item{ id = "feather", description = "Feather" }
+item{ id = "bombs_counter", description = "Bombs counter" }
+item{ id = "bomb", description = "Bombs (x1 / x3 / x8)" }
+item{ id = "bomb_bag", description = "Bomb bag (small / large / huge)" }
+item{ id = "bow", description = "Bow" }
+item{ id = "arrow", description = "Arrows (x1 / x5 / x10)" }
+item{ id = "quiver", description = "Quiver (small / large / huge)" }
+item{ id = "bottle_1", description = "Bottle 1" }
+item{ id = "bottle_2", description = "Bottle 2" }
+item{ id = "bottle_3", description = "Bottle 3" }
+item{ id = "bottle_4", description = "Bottle 4" }
+item{ id = "pegasus_shoes", description = "Pegasus shoes" }
+item{ id = "croissants_counter", description = "Croissants counter" }
+item{ id = "croissant", description = "Croissant (x1)" }
+item{ id = "bone_key", description = "Bone key" }
+item{ id = "apple_pie_counter", description = "Apple pie counter" }
+item{ id = "apple_pie", description = "Apple pie (x1)" }
+item{ id = "glove", description = "Iron glove / Golden glove" }
+item{ id = "poivron_counter", description = "Poivron counter" }
+item{ id = "poivron", description = "Poivron" }
+item{ id = "balai_counter", description = "Balai counter" }
+item{ id = "balai", description = "Balai" }
+item{ id = "cuillere_counter", description = "Cuillère counter" }
+item{ id = "cuillere", description = "Cuillère" }
+item{ id = "tapisserie_counter", description = "Tapisserie counter" }
+item{ id = "tapisserie", description = "Tapisserie" }
+item{ id = "roc_magma_counter", description = "Roc Magma counter" }
+item{ id = "roc_magma", description = "Roc Magma" }
+item{ id = "sac_riz_counter", description = "Sac de riz counter" }
+item{ id = "sac_riz", description = "Sac de riz" }
+item{ id = "sac_olive_counter", description = "Sac d'olives counter" }
+item{ id = "sac_olive", description = "Sac d'olives" }
+item{ id = "bocal_epice_counter", description = "Bocal d'épices counter" }
+item{ id = "bocal_epice", description = "Bocal d'épices" }
+item{ id = "hache_counter", description = "Hache counter" }
+item{ id = "hache", description = "Hache" }
+item{ id = "parfum_counter", description = "Parfum counter" }
+item{ id = "parfum", description = "Parfum" }
+item{ id = "tunic", description = "Tunic (green / blue / red)" }
+item{ id = "sword", description = "Sword" }
+item{ id = "shield", description = "Shield" }
+item{ id = "rupee_bag", description = "Rupee bag (small / large / huge)" }
+item{ id = "magic_bar", description = "Maximum of magic (none / half / full)" }
+item{ id = "map", description = "Dungeon map" }
+item{ id = "compass", description = "Dungeon compass" }
+item{ id = "big_key", description = "Dungeon big key" }
+item{ id = "boss_key", description = "Dungeon boss key" }
+item{ id = "small_key", description = "Small key" }
+item{ id = "rupee", description = "Rupees (x1 / x5 / x20 / x50 / x100 / x300)" }
+item{ id = "magic_flask", description = "Magic flask (small / big)" }
+item{ id = "heart", description = "Heart (x1)" }
+item{ id = "heart_container", description = "Heart container" }
+item{ id = "piece_of_heart", description = "Piece of heart" }
+item{ id = "fairy", description = "Fairy" }
+item{ id = "zelda", description = "Zelda" }
+
+enemy{ id = "bee_guard", description = "Bee Guard" }
+enemy{ id = "blue_bullblin", description = "Blue Bullblin" }
+enemy{ id = "bubble", description = "Bubble" }
+enemy{ id = "cannonball", description = "Random Cannonball" }
+enemy{ id = "creeper", description = "Creeper" }
+enemy{ id = "ganon", description = "Ganon" }
+enemy{ id = "globul", description = "Globul" }
+enemy{ id = "lizarmen", description = "Lizarmen" }
+enemy{ id = "mandible", description = "Mandible" }
+enemy{ id = "red_bullblin", description = "Red Bullblin" }
+enemy{ id = "skeletor", description = "Skeletor" }
+enemy{ id = "simple_green_soldier", description = "Simple green soldier" }
+enemy{ id = "tentacle", description = "Tentacle" }
+enemy{ id = "zelda", description = "Zelda" }
+
+language{ id = "fr/text/dialogs.dat", description = "French dialogs" }
+language{ id = "en/text/dialogs.dat", description = "English dialogs" }
+
