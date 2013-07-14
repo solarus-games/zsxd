@@ -80,7 +80,7 @@ stop_timer_c_sensor_2.on_activated = stop_timer_c_sensor.on_activated
 local function save_solid_ground_sensor_activated(sensor)
   hero:save_solid_ground()
 end
-for _, sensor in ipairs(map:get_entities("save_solid_ground_sensor")) do
+for sensor in map:get_entities("save_solid_ground_sensor") do
   sensor.on_activated = save_solid_ground_sensor_activated
 end
 

@@ -45,7 +45,7 @@ local function save_solid_ground_sensor_activated(sensor)
     hero:save_solid_ground()
   end
 end
-for _, sensor in ipairs(map:get_entities("save_solid_ground_sensor")) do
+for sensor in map:get_entities("save_solid_ground_sensor") do
   sensor.on_activated = save_solid_ground_sensor_activated
 end
 

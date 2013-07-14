@@ -38,7 +38,7 @@ local function fight_enemy_dead(enemy)
     map:open_doors("fight_door")
   end
 end
-for _, enemy in ipairs(map:get_entities("fight_enemy")) do
+for enemy in map:get_entities("fight_enemy") do
   enemy.on_dead = fight_enemy_dead
 end
 

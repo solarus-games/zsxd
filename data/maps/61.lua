@@ -71,7 +71,7 @@ local function cannonballs_start_sensor_activated(sensor)
     cannonballs_enabled = true
   end
 end
-for _, sensor in ipairs(map:get_entities("cannonballs_start_sensor")) do
+for sensor in map:get_entities("cannonballs_start_sensor") do
   sensor.on_activated = cannonballs_start_sensor_activated
 end
 
@@ -79,7 +79,7 @@ local function cannonballs_stop_sensor_activated(sensor)
   sol.timer.stop_all(map)
   cannonballs_enabled = false
 end
-for _, sensor in ipairs(map:get_entities("cannonballs_stop_sensor")) do
+for sensor in map:get_entities("cannonballs_stop_sensor") do
   sensor.on_activated = cannonballs_stop_sensor_activated
 end
 
@@ -106,7 +106,7 @@ local function wtf_sensor_activated(sensor)
     map:close_doors("wtf_door")
   end
 end
-for _, sensor in ipairs(map:get_entities("wtf_sensor")) do
+for sensor in map:get_entities("wtf_sensor") do
   sensor.on_activated = wtf_sensor_activated
 end
 
@@ -126,7 +126,7 @@ local function wtf_room_enemy_dead(enemy)
     sol.audio.play_sound("secret")
   end
 end
-for _, enemy in ipairs(map:get_entities("wtf_room_enemy")) do
+for enemy in map:get_entities("wtf_room_enemy") do
   enemy.on_dead = wtf_room_enemy_dead
 end
 
