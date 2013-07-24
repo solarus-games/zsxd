@@ -44,7 +44,7 @@ end
 function map:on_obtained_treasure(item, variant, savegame_variable)
 
   if savegame_variable == "b248" then
-    map:start_dialog("dungeon_1.small_key_danger_east")
+    game:start_dialog("dungeon_1.small_key_danger_east")
   end
 end
 

@@ -8,16 +8,16 @@ local game = map:get_game()
 -- Guichet 82 -------------------------------------------------
 local function guichet_82()
 
-  map:start_dialog("crazy_house.guichet_82", function(answer)
+  game:start_dialog("crazy_house.guichet_82", function(answer)
 
     -- Choix de réponse au guichet 82
     if answer == 1 then
       -- Contrôle de la quantité
       if not game:get_item("sac_olive_counter"):has_amount(1) then
         sol.audio.play_sound("wrong")
-        map:start_dialog("crazy_house.guichet_82_un")
+        game:start_dialog("crazy_house.guichet_82_un")
       else
-        map:start_dialog("crazy_house.guichet_82_ok", function()
+        game:start_dialog("crazy_house.guichet_82_ok", function()
           -- Obtention du roc magma au guichet 82
           hero:start_treasure("roc_magma")
           game:get_item("sac_olive_counter"):remove_amount(1)
@@ -37,17 +37,17 @@ end
 local function guichet_84()
 
   if game:get_value("i1410") == 3 then
-    map:start_dialog("crazy_house.guichet_84_ech_eq_3")
+    game:start_dialog("crazy_house.guichet_84_ech_eq_3")
   else
     if game:get_item("hache_counter"):has_amount(1) then
-      map:start_dialog("crazy_house.guichet_84_ech_ne_3_hh", function(answer)
+      game:start_dialog("crazy_house.guichet_84_ech_ne_3_hh", function(answer)
 
         -- Choix de réponse au guichet 84
         if answer == 1 then
           -- Contrôle de la quantité
           if not game:get_item("hache_counter"):has_amount(1) then
             sol.audio.play_sound("wrong")
-            map:start_dialog("crazy_house.guichet_84_ech_ne_3_un")
+            game:start_dialog("crazy_house.guichet_84_ech_ne_3_un")
           else
             hero:start_treasure("poivron")
             game:get_item("hache_counter"):remove_amount(1)
@@ -61,7 +61,7 @@ local function guichet_84()
 
       end)
     else
-      map:start_dialog("crazy_house.guichet_84_ech_ne_3_nh")
+      game:start_dialog("crazy_house.guichet_84_ech_ne_3_nh")
     end
   end
 end

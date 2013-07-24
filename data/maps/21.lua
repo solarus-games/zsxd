@@ -9,23 +9,23 @@ local game = map:get_game()
 local function guichet_41()
 
   if game:get_value("i1410") == 3 then
-    map:start_dialog("crazy_house.guichet_41_ech_eq_3")
+    game:start_dialog("crazy_house.guichet_41_ech_eq_3")
     game:set_value("i1410", 4)
   else
-    map:start_dialog("crazy_house.guichet_41_ech_ne_3")
+    game:start_dialog("crazy_house.guichet_41_ech_ne_3")
   end
 end
 
 -- Guichet 43 -------------------------------------------------
 local function guichet_43()
 
-  map:start_dialog("crazy_house.guichet_43", function()
+  game:start_dialog("crazy_house.guichet_43", function()
     -- Pipelette qui se tourne vers Link, énervée
     GC43S:get_sprite():set_direction(3)
-    map:start_dialog("crazy_house.guichet_43n", function()
+    game:start_dialog("crazy_house.guichet_43n", function()
       -- Pipelette reprend sa conversation
       GC43S:get_sprite():set_direction(2)
-      map:start_dialog("crazy_house.guichet_43f")
+      game:start_dialog("crazy_house.guichet_43f")
     end)
   end)
 end
@@ -34,18 +34,18 @@ end
 local function guichet_45()
 
   if game:get_value("i1410") == 3 then
-    map:start_dialog("crazy_house.guichet_45_ech_eq_3")
+    game:start_dialog("crazy_house.guichet_45_ech_eq_3")
   else
-    map:start_dialog("crazy_house.guichet_45_ech_ne_3", function(answer)
+    game:start_dialog("crazy_house.guichet_45_ech_ne_3", function(answer)
       if answer == 1 then
         if game:get_item("cuillere_counter"):has_amount(1) then
-          map:start_dialog("crazy_house.guichet_45_ech_ok", function()
+          game:start_dialog("crazy_house.guichet_45_ech_ok", function()
             hero:start_treasure("sac_olive")
             game:get_item("cuillere_counter"):remove_amount(1)
           end)
         else
           sol.audio.play_sound("wrong")
-          map:start_dialog("crazy_house.guichet_45_ech_un")
+          game:start_dialog("crazy_house.guichet_45_ech_un")
         end
       end
     end)
@@ -62,16 +62,16 @@ end
 local function guichet_47()
 
   if game:get_value("i1410") == 3 then
-    map:start_dialog("crazy_house.guichet_47_ech_eq_3")
+    game:start_dialog("crazy_house.guichet_47_ech_eq_3")
   else
-    map:start_dialog("crazy_house.guichet_47_ech_ne_3")
+    game:start_dialog("crazy_house.guichet_47_ech_ne_3")
   end
 end
 
 -- Guichet 49 -------------------------------------------------
 local function guichet_49()
 
-  map:start_dialog("crazy_house.guichet_49")
+  game:start_dialog("crazy_house.guichet_49")
 end
 
 function mario_message_2:on_interaction()

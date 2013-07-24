@@ -1,8 +1,8 @@
 local map = ...
+local game = map:get_game()
 
 -- Outside SE
 
-local game = map:get_game()
 local last_yoda_quote = 0
 
 function map:on_started(destination_point)
@@ -25,18 +25,18 @@ function temple_door:on_interaction()
     game:set_value("b65", true)
   else
     sol.audio.play_sound("wrong")
-    map:start_dialog("outside_fields_SE.temple_door_closed")
+    game:start_dialog("outside_fields_SE.temple_door_closed")
   end
 end
 
 function yoda:on_interaction()
 
   if not game:get_value("b66") then
-    map:start_dialog("outside_fields_SE.yoda_give_sword", function()
+    game:start_dialog("outside_fields_SE.yoda_give_sword", function()
       hero:start_treasure("sword", 2, "b66")
     end)
   else
-    map:start_dialog("outside_fields_SE.yoda_finished")
+    game:start_dialog("outside_fields_SE.yoda_finished")
   end
 end
 
@@ -48,7 +48,7 @@ local function yoda_sensor_activated(sensor)
     index = math.random(11)
   until index ~= last_yoda_quote
 
-  map:start_dialog("outside_fields_SE.yoda_quote_" .. index)
+  game:start_dialog("outside_fields_SE.yoda_quote_" .. index)
   last_yoda_quote = index
 end
 for sensor in map:get_entities("yoda_sensor") do

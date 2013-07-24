@@ -22,14 +22,14 @@ local function switch_activated(switch)
     end
 
     if next_switch_index == 5 and code_door:is_closed() then
-      map:start_dialog("dungeon_1.big_code_ok", function()
+      game:start_dialog("dungeon_1.big_code_ok", function()
         map:move_camera(1072, 456, 250, function()
           map:open_doors("code_door")
           sol.audio.play_sound("secret")
         end)
       end)
     elseif next_switch_index > #switches_good_order then
-      map:start_dialog("dungeon_1.big_code_completed")
+      game:start_dialog("dungeon_1.big_code_completed")
     end
 
     switch:set_activated(false)

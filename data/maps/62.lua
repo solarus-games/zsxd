@@ -1,4 +1,5 @@
 local map = ...
+local game = map:get_game()
 
 -- Temple of Stupidities 1F NW
 
@@ -87,7 +88,7 @@ end
 function map:on_obtained_treasure(item, variant, savegame_variable)
 
   if item:get_name() == "map" then
-    map:start_dialog("dungeon_1.after_map_treasure")
+    game:start_dialog("dungeon_1.after_map_treasure")
   end
 end
 

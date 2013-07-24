@@ -42,7 +42,7 @@ end
 function sensor_teleporter:on_activated()
 
   if not game:get_value("b56") then
-    map:start_dialog("freaking_cave_teleporter")
+    game:start_dialog("freaking_cave_teleporter")
     hero:start_jumping(6, 64, true)
   end
 end

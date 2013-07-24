@@ -24,17 +24,17 @@ local function vieillard()
   if branche1411 >= 1 then
     if not game:get_value("b124") then
       -- Première rencontre
-      map:start_dialog("crazy_house.vieillard")
+      game:start_dialog("crazy_house.vieillard")
       game:set_value("b124", true)
     else
       if not game:get_value("b125") then
         -- Vieillard n'a pas encore changé d'avis
         if not game:get_item("poivron_counter"):has_amount(1) then
           -- N'a pas encore de poivron
-          map:start_dialog("crazy_house.vieillard")
+          game:start_dialog("crazy_house.vieillard")
         else
           -- A le poivron
-          map:start_dialog("crazy_house.vieillard_poivron")
+          game:start_dialog("crazy_house.vieillard_poivron")
           -- Changement d'avis
           game:set_value("b125", true)
         end
@@ -45,10 +45,10 @@ local function vieillard()
       else
         -- Vieillard veut du riz maintenant !
         if not game:get_item("sac_riz_counter"):has_amount(1) then
-          map:start_dialog("crazy_house.vieillard_riz_quantite")
+          game:start_dialog("crazy_house.vieillard_riz_quantite")
         else
           -- A le sac de riz
-          map:start_dialog("crazy_house.vieillard_riz_ok", function()
+          game:start_dialog("crazy_house.vieillard_riz_ok", function()
             hero:start_treasure("bocal_epice")
             game:get_item("sac_riz_counter"):remove_amount(1)
             -- branche 1411 finie
@@ -65,7 +65,7 @@ local function vieillard()
       end
     end
   else
-    map:start_dialog("crazy_house.vieillard_ronfl")
+    game:start_dialog("crazy_house.vieillard_ronfl")
   end
 end
 
@@ -73,10 +73,10 @@ end
 local function guichet_21()
 
   if game:get_value("i1410") == 1 then
-    map:start_dialog("crazy_house.guichet_21_ech_eq_1")
+    game:start_dialog("crazy_house.guichet_21_ech_eq_1")
     game:set_value("i1410", 2)
   else
-    map:start_dialog("crazy_house.guichet_21_ech_ne_1")
+    game:start_dialog("crazy_house.guichet_21_ech_ne_1")
   end
 end
 
@@ -89,13 +89,13 @@ local function guichet_22A()
     game:set_value("i1412", 2)
   end
 
-  map:start_dialog("crazy_house.guichet_22A", function(answer)
+  game:start_dialog("crazy_house.guichet_22A", function(answer)
     if answer == 1 then
       if not game:get_item("roc_magma_counter"):has_amount(1) then
         sol.audio.play_sound("wrong")
-        map:start_dialog("crazy_house.guichet_22_rm_un")
+        game:start_dialog("crazy_house.guichet_22_rm_un")
       else
-        map:start_dialog("crazy_house.guichet_22_rm_ok", function()
+        game:start_dialog("crazy_house.guichet_22_rm_ok", function()
           hero:start_treasure("balai")
           game:get_item("roc_magma_counter"):remove_amount(1)
           -- branche 1412 finie
@@ -123,13 +123,13 @@ local function guichet_22B()
     game:set_value("i1412", 7)
   end
 
-  map:start_dialog("crazy_house.guichet_22B", function(answer)
+  game:start_dialog("crazy_house.guichet_22B", function(answer)
     if answer == 1 then
       if not game:get_item("sac_riz_counter"):has_amount(1) then
         sol.audio.play_sound("wrong")
-        map:start_dialog("crazy_house.guichet_22_sr_un")
+        game:start_dialog("crazy_house.guichet_22_sr_un")
       else
-        map:start_dialog("crazy_house.guichet_22_sr_ok", function()
+        game:start_dialog("crazy_house.guichet_22_sr_ok", function()
           hero:start_treasure("tapisserie")
           game:get_item("sac_riz_counter"):remove_amount(1)
           -- Incrémentation branche 1411

@@ -30,24 +30,24 @@ function map:on_opening_transition_finished(destination_point)
 
   -- Affichage du nom du donjon quand on vient de l'escalier de dehors
   if destination_point == fromOutsideSO then
-    map:start_dialog("crazy_house.title")
+    game:start_dialog("crazy_house.title")
   end
 end
 
 -- Guichet 31 -------------------------------------------------
 local function guichet_31()
 
-  map:start_dialog("crazy_house.guichet_31")
+  game:start_dialog("crazy_house.guichet_31")
 end
 
 -- Guichet 32 -------------------------------------------------
 local function guichet_32()
 
   if game:get_value("i1410") == 6 then
-    map:start_dialog("crazy_house.guichet_32_ech_le_6")
+    game:start_dialog("crazy_house.guichet_32_ech_le_6")
     game:set_value("i1410", 7)
   else
-    map:start_dialog("crazy_house.guichet_32_ech_ne_6", function(answer)
+    game:start_dialog("crazy_house.guichet_32_ech_ne_6", function(answer)
 
       -- Echange de hache contre cuillere
       if answer == 1 then
@@ -56,10 +56,10 @@ local function guichet_32()
           game:get_item("hache_counter"):remove_amount(1)
         else
           sol.audio.play_sound("wrong")
-          map:start_dialog("crazy_house.guichet_32_ech_ne_6_un")
+          game:start_dialog("crazy_house.guichet_32_ech_ne_6_un")
         end
       else
-        map:start_dialog("crazy_house.guichet_32_ech_ne_6_no")
+        game:start_dialog("crazy_house.guichet_32_ech_ne_6_no")
       end
 
     end)
@@ -78,12 +78,12 @@ local function guichet_33()
   local branche1410 = game:get_value("i1410") or 0
   if branche1410 == 3
       and not small_key_obtained then        
-    map:start_dialog("crazy_house.guichet_33_ech_eq_3")
+    game:start_dialog("crazy_house.guichet_33_ech_eq_3")
   elseif branche1410 >= 4
       and not small_key_obtained then
     if game:get_item("parfum_counter"):has_amount(1) then
       -- A le parfum
-      map:start_dialog("crazy_house.guichet_33_parfum", function()
+      game:start_dialog("crazy_house.guichet_33_parfum", function()
 
         -- Obtention clé du guichet 33 suite à l'apport du parfum
         if game:get_item("parfum_counter"):has_amount(1) then
@@ -94,25 +94,25 @@ local function guichet_33()
       end)
     else
       -- N'a pas encore le parfum
-      map:start_dialog("crazy_house.guichet_33_ech_ge_4")
+      game:start_dialog("crazy_house.guichet_33_ech_ge_4")
       if branche1410 == 4 then
         game:set_value("i1410", 5)
       end
     end
   else
-    map:start_dialog("crazy_house.guichet_33_ech_le_2")
+    game:start_dialog("crazy_house.guichet_33_ech_le_2")
   end
 end
 
 -- Apothicaire ------------------------------------------------
 local function apothicaire()
 
-  map:start_dialog("crazy_house.apothicaire", function(answer)
+  game:start_dialog("crazy_house.apothicaire", function(answer)
 
     -- Achat de sacs de riz à l'apothicaire        	
     if answer == 1 then
       if game:get_money() >= 20 then
-        map:start_dialog("crazy_house.apothicaire_oui", function()
+        game:start_dialog("crazy_house.apothicaire_oui", function()
 
           -- Remise du sac de riz achetés à l'apothicaire
           hero:start_treasure("sac_riz")
@@ -133,10 +133,10 @@ local function apothicaire()
         end
       else
         sol.audio.play_sound("wrong")
-        map:start_dialog("crazy_house.apothicaire_rubis")
+        game:start_dialog("crazy_house.apothicaire_rubis")
       end
     else
-      map:start_dialog("crazy_house.apothicaire_non")
+      game:start_dialog("crazy_house.apothicaire_non")
     end
 
   end)
@@ -145,7 +145,7 @@ end
 -- Guichet 36 -------------------------------------------------
 local function guichet_36()
 
-  map:start_dialog("crazy_house.guichet_36", function(answer)
+  game:start_dialog("crazy_house.guichet_36", function(answer)
 
     -- Achat de 3 sacs de riz à Panoda Fichage
     if answer == 1 then
@@ -165,7 +165,7 @@ local function guichet_36()
         end
       else
         sol.audio.play_sound("wrong")
-        map:start_dialog("crazy_house.guichet_36_un")
+        game:start_dialog("crazy_house.guichet_36_un")
       end
     end
 
@@ -208,7 +208,7 @@ function bowser_message:on_activated()
     -- Bouton pas appuyé
     bowser_close:set_enabled(true)
     if bowser_door:is_closed() then
-      map:start_dialog("crazy_house.infinite_greetings", function()
+      game:start_dialog("crazy_house.infinite_greetings", function()
 
         -- Ouverture de la porte vers le couloir sans fin
         if bowser_door:is_closed() then
@@ -271,7 +271,7 @@ function giga_bouton_sensor:on_activated()
 
   if not dialogue_trop_leger_fait
       and not giga_bouton:is_activated() then
-    map:start_dialog("crazy_house.giga_bouton_trop_leger")
+    game:start_dialog("crazy_house.giga_bouton_trop_leger")
     dialogue_trop_leger_fait = true
   end
 end

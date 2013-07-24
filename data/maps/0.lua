@@ -1,4 +1,5 @@
 local map = ...
+local game = map:get_game()
 
 -- Link's house
 
@@ -15,7 +16,7 @@ function map:on_started(destination_point)
     hero:set_visible(false)
     sol.audio.play_music("triforce")
     sol.timer.start(map, 3000, function()
-      map:start_dialog("link_house.intro", function()
+      game:start_dialog("link_house.intro", function()
         sol.timer.start(map, 2000, function()
           sol.audio.play_music("village")
           snores:remove()

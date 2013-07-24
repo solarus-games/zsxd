@@ -17,7 +17,7 @@ function map:on_obtained_treasure(item, variant, savegame_variable)
     hero:freeze()
     game:add_life(80)
     sol.timer.start(map, 1000, function()
-      map:start_dialog("link_cave.angry_zelda", function()
+      game:start_dialog("link_cave.angry_zelda", function()
 
         map:close_doors("door")
         zelda:get_sprite():set_animation("walking")

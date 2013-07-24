@@ -1,8 +1,8 @@
 local map = ...
+local game = map:get_game()
 
 -- Temple of Stupidities 1F NE
 
-local game = map:get_game()
 local will_remove_water = false
 
 function map:on_started(destination_point)
@@ -100,7 +100,7 @@ function remove_water_sensor:on_activated()
     sol.timer.start(map, 500, function()
       sol.audio.play_sound("water_drain_begin")
       sol.audio.play_sound("water_drain")
-      map:start_dialog("dungeon_1.2f_sw_water_removed")
+      game:start_dialog("dungeon_1.2f_sw_water_removed")
       game:set_value("b283", true)
     end)
     will_remove_water = true
@@ -118,7 +118,7 @@ function start_boss_sensor:on_activated()
       sol.audio.play_music("ganon_theme")
       hero:unfreeze()
       sol.timer.start(map, 1000, function()
-        map:start_dialog("dungeon_1.ganon", function()
+        game:start_dialog("dungeon_1.ganon", function()
           sol.audio.play_music("ganon_battle")
         end)
       end)
@@ -132,8 +132,8 @@ function boss_hint_stone:on_interaction()
   hero:set_direction(3)
   hero:freeze()
   sol.timer.start(map, 9000, function()
-    map:set_dialog_variable("dungeon_1.boss_hint_stone", game:get_player_name())
-    map:start_dialog("dungeon_1.boss_hint_stone", function()
+    game:set_dialog_variable("dungeon_1.boss_hint_stone", game:get_player_name())
+    game:start_dialog("dungeon_1.boss_hint_stone", function()
       sol.timer.start(map, 1000, function()
         hero:start_victory(function()
           sol.audio.play_sound("warp")

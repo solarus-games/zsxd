@@ -1,7 +1,8 @@
 local map = ...
+local game = map:get_game()
 
 function fake_chest:on_empty()
-  map:start_dialog("maison_boulet.fakechest")
+  game:start_dialog("maison_boulet.fakechest")
   hero:unfreeze()
 end
 

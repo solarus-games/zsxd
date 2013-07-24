@@ -1,4 +1,5 @@
 local map = ...
+local game = map:get_game()
 
 ----------------------------
 -- Caverne maudite script --
@@ -6,7 +7,6 @@ local map = ...
 
 function sign:on_interaction()
 
-  map:set_dialog_variable("caverne_maudite.pancarte", map:get_game():get_player_name())
-  map:start_dialog("caverne_maudite.pancarte")
+  game:start_dialog("caverne_maudite.pancarte", game:get_player_name())
 end
 
