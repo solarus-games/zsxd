@@ -37,7 +37,12 @@ function create_son()
   if nb_current_sons < 30 then
     total_sons_created = total_sons_created + 1
     son_name = enemy:get_name() .. "_son_" .. total_sons_created
-    local son = enemy:create_enemy(son_name, "tentacle", 0, -77)
+    local son = enemy:create_enemy{
+      name = son_name,
+      breed = "tentacle",
+      x = 0,
+      y = -77
+    }
     son:set_treasure("heart")
   end
 
