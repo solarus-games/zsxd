@@ -324,6 +324,6 @@ enemy{ id = "simple_green_soldier", description = "Simple green soldier" }
 enemy{ id = "tentacle", description = "Tentacle" }
 enemy{ id = "zelda", description = "Zelda" }
 
-language{ id = "fr/text/dialogs.dat", description = "French dialogs" }
-language{ id = "en/text/dialogs.dat", description = "English dialogs" }
+language{ id = "en", description = "English" }
+language{ id = "fr", description = "French" }
 
