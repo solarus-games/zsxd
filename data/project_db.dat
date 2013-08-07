@@ -325,5 +325,5 @@ enemy{ id = "tentacle", description = "Tentacle" }
 enemy{ id = "zelda", description = "Zelda" }
 
 language{ id = "en", description = "English" }
-language{ id = "fr", description = "French" }
+language{ id = "fr", description = "Français" }
 
