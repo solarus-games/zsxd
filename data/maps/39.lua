@@ -5,9 +5,12 @@ local game = map:get_game()
 -- FREAKING CAVE 2 OMFG         --
 ----------------------------------
 
+local light_manager = require("maps/lib/light_manager")
+
 function map:on_started(destination_point)
 
   -- No light inside the cave at start
+  light_manager.enable_light_features(map)
   map:set_light(0)         
   -- Let the trap door opened
   map:set_doors_open("trap_door")

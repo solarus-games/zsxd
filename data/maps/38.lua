@@ -6,7 +6,11 @@ local game = map:get_game()
 -- USE BOOLEAN FROM 90 TO 99    --
 ----------------------------------
 
+local light_manager = require("maps/lib/light_manager")
+
 function map:on_started(destination_point)
+
+  light_manager.enable_light_features(map)
 
   local torch1 = fc_torch_1:get_sprite()
   local torch2 = fc_torch_2:get_sprite()
