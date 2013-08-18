@@ -63,34 +63,17 @@ tileset{ id = "7", description = "Brown dungeon (LW)" }
 tileset{ id = "8", description = "Blue dungeon (DW)" }
 tileset{ id = "6", description = "Intro" }
 
-music{ id = "agahnim", description = "Agahnim theme" }
-music{ id = "beginning", description = "Beginning" }
 music{ id = "boss", description = "Boss" }
-music{ id = "castle", description = "Castle" }
 music{ id = "cave", description = "Cave" }
 music{ id = "credits", description = "Credits" }
-music{ id = "dark_mountain", description = "Dark Mountain" }
-music{ id = "dark_world", description = "Dark World" }
-music{ id = "light_world_dungeon", description = "Dungeon (light world)" }
 music{ id = "dark_world_dungeon", description = "Dungeon (dark world)" }
-music{ id = "dungeon_finished", description = "Dungeon finished" }
-music{ id = "excalibur", description = "Excalibur" }
-music{ id = "fanfare", description = "Fanfare" }
 music{ id = "fortune_teller", description = "Fortune Teller" }
 music{ id = "found_items", description = "Found Items House" }
-music{ id = "ganon_appears", description = "Ganon appears" }
 music{ id = "ganon_battle", description = "Ganon battle" }
 music{ id = "ganon_theme", description = "Ganon theme" }
-music{ id = "great_fairy", description = "Great Fairy" }
 music{ id = "village", description = "Kakariko Village" }
-music{ id = "legend", description = "Legend" }
-music{ id = "lost_woods", description = "Lost Woods" }
-music{ id = "mini_game", description = "Mini game" }
 music{ id = "overworld", description = "Overworld" }
-music{ id = "sanctuary", description = "Sanctuary" }
 music{ id = "game_over", description = "Selection menu & Game Over" }
-music{ id = "soldiers", description = "Soldiers" }
-music{ id = "rabbit", description = "Turned into a rabbit" }
 music{ id = "title_screen", description = "Title screen" }
 music{ id = "triforce", description = "Triforce" }
 music{ id = "victory", description = "Victory" }

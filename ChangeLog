@@ -1,6 +1,7 @@
 zsxd-1.7.0 (under development).
 
 * Use Solarus 1.1.0.
+* Replace .spc musics by .it musics (faster) and remove unused ones.
 * Fix savegames created with Solarus 0.9 but that were never run.
 * Fix a slight alignment issue with the hurt animation of the hero.
 
