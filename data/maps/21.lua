@@ -99,3 +99,9 @@ function GC49:on_interaction()
   guichet_49()
 end
 
+function CV2:on_empty()
+  sol.audio.play_sound("wrong")
+  game:start_dialog("_empty_chest")
+  hero:unfreeze()
+end
+

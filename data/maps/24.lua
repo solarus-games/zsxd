@@ -313,3 +313,13 @@ function barrier_switch:on_activated()
   game:set_value("b129", true)
 end
 
+local function storage_room_chest_empty()
+  sol.audio.play_sound("wrong")
+  game:start_dialog("_empty_chest")
+  hero:unfreeze()
+end
+
+for chest in map:get_entities("storage_room_empty_chest") do
+  chest.on_empty = storage_room_chest_empty
+end
+

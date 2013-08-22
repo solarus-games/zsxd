@@ -340,3 +340,9 @@ function map:on_obtained_treasure(item, variant, savegame_variable)
   end
 end
 
+function CV1:on_empty()
+  sol.audio.play_sound("wrong")
+  game:start_dialog("_empty_chest")
+  hero:unfreeze()
+end
+

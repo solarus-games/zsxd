@@ -1,6 +1,3 @@
--- This is a resource list file for Solarus 1.1.
--- This file was converted from Solarus 1.0 using the script
--- tools/data_files_conversion/1.0_to_1.1/quest_db_converter.lua.
 map{ id = "0", description = "Link's house" }
 map{ id = "1", description = "Outside fields NO" }
 map{ id = "2", description = "Outside fields NE" }
@@ -63,21 +60,6 @@ tileset{ id = "7", description = "Brown dungeon (LW)" }
 tileset{ id = "8", description = "Blue dungeon (DW)" }
 tileset{ id = "6", description = "Intro" }
 
-music{ id = "boss", description = "Boss" }
-music{ id = "cave", description = "Cave" }
-music{ id = "credits", description = "Credits" }
-music{ id = "dark_world_dungeon", description = "Dungeon (dark world)" }
-music{ id = "fortune_teller", description = "Fortune Teller" }
-music{ id = "found_items", description = "Found Items House" }
-music{ id = "ganon_battle", description = "Ganon battle" }
-music{ id = "ganon_theme", description = "Ganon theme" }
-music{ id = "village", description = "Kakariko Village" }
-music{ id = "overworld", description = "Overworld" }
-music{ id = "game_over", description = "Selection menu & Game Over" }
-music{ id = "title_screen", description = "Title screen" }
-music{ id = "triforce", description = "Triforce" }
-music{ id = "victory", description = "Victory" }
-
 sprite{ id = "entities/sign", description = "Sign" }
 sprite{ id = "npc/great_fairy", description = "Great Fairy" }
 sprite{ id = "npc/monkey", description = "Monkey" }
@@ -136,6 +118,22 @@ sprite{ id = "entities/door_boss_key", description = "Door (boss key)" }
 sprite{ id = "entities/door_weak_wall", description = "Door (weak wall)" }
 sprite{ id = "entities/door_very_weak_wall", description = "Door (very weak wall)" }
 sprite{ id = "entities/door_weak_block", description = "Door (weak block)" }
+sprite{ id = "entities/statue", description = "Statue" }
+
+music{ id = "boss", description = "Boss" }
+music{ id = "cave", description = "Cave" }
+music{ id = "credits", description = "Credits" }
+music{ id = "dark_world_dungeon", description = "Dungeon (dark world)" }
+music{ id = "fortune_teller", description = "Fortune Teller" }
+music{ id = "found_items", description = "Found Items House" }
+music{ id = "ganon_battle", description = "Ganon battle" }
+music{ id = "ganon_theme", description = "Ganon theme" }
+music{ id = "village", description = "Kakariko Village" }
+music{ id = "overworld", description = "Overworld" }
+music{ id = "game_over", description = "Selection menu & Game Over" }
+music{ id = "title_screen", description = "Title screen" }
+music{ id = "triforce", description = "Triforce" }
+music{ id = "victory", description = "Victory" }
 
 sound{ id = "arrow_hit", description = "arrow_hit" }
 sound{ id = "bomb", description = "bomb" }
