@@ -119,6 +119,61 @@ sprite{ id = "entities/door_weak_wall", description = "Door (weak wall)" }
 sprite{ id = "entities/door_very_weak_wall", description = "Door (very weak wall)" }
 sprite{ id = "entities/door_weak_block", description = "Door (weak block)" }
 sprite{ id = "entities/statue", description = "Statue" }
+sprite{ id = "entities/conveyor_belt", description = "Conveyor belt" }
+sprite{ id = "entities/crystal", description = "Crystal" }
+sprite{ id = "entities/bomb", description = "Bomb" }
+sprite{ id = "entities/explosion", description = "Explosion" }
+sprite{ id = "entities/grass", description = "Grass" }
+sprite{ id = "entities/bush", description = "Bush" }
+sprite{ id = "entities/pot", description = "Pot" }
+sprite{ id = "entities/bomb_flower", description = "Bomb flower" }
+sprite{ id = "entities/arrow", description = "Arrow" }
+sprite{ id = "entities/items", description = "Items" }
+sprite{ id = "entities/shadow", description = "Shadow" }
+sprite{ id = "entities/star", description = "Star" }
+sprite{ id = "entities/stone_small_black", description = "Small black stone" }
+sprite{ id = "entities/stone_small_white", description = "Small white stone" }
+sprite{ id = "entities/switch", description = "Switch" }
+sprite{ id = "hero/tunic1", description = "Hero tunic 1" }
+sprite{ id = "hero/tunic2", description = "Hero tunic 2" }
+sprite{ id = "hero/tunic3", description = "Hero tunic 3" }
+sprite{ id = "hero/sword1", description = "Hero sword 1" }
+sprite{ id = "hero/sword2", description = "Hero sword 2" }
+sprite{ id = "hero/sword3", description = "Hero sword 3" }
+sprite{ id = "hero/sword4", description = "Hero sword 4" }
+sprite{ id = "hero/sword_stars1", description = "Hero sword stars 1" }
+sprite{ id = "hero/sword_stars2", description = "Hero sword stars 2" }
+sprite{ id = "hero/shield1", description = "Hero shield 1" }
+sprite{ id = "hero/shield2", description = "Hero shield 2" }
+sprite{ id = "hero/shield3", description = "Hero shield 3" }
+sprite{ id = "hero/ground1", description = "Grass under hero" }
+sprite{ id = "hero/ground2", description = "Shallow water under hero" }
+sprite{ id = "hero/trail", description = "Hero trail" }
+sprite{ id = "enemies/enemy_killed", description = "Enemy killed" }
+sprite{ id = "enemies/cannonball_big", description = "Enemy: Big cannonball" }
+sprite{ id = "enemies/dkc_bananas", description = "Enemy: Bananas" }
+sprite{ id = "enemies/dkc_barrel", description = "Enemy: Barrel" }
+sprite{ id = "enemies/mc_pickaxe", description = "Enemy: Pickaxe" }
+sprite{ id = "enemies/smb_block", description = "Enemy: Coin block" }
+sprite{ id = "enemies/smk_mario", description = "Enemy: Kart 1" }
+sprite{ id = "enemies/smk_toad", description = "Enemy: Kart 2" }
+sprite{ id = "enemies/smk_yoshi", description = "Enemy: Kart 3" }
+sprite{ id = "enemies/bee_guard", description = "Enemy: Bee Guard" }
+sprite{ id = "enemies/bee_guard_sword", description = "Enemy: Bee Guard sword" }
+sprite{ id = "enemies/blue_bullblin", description = "Enemy: Blue Bullblin" }
+sprite{ id = "enemies/blue_bullblin_sword", description = "Enemy: Blue Bullblin sword" }
+sprite{ id = "enemies/bubble", description = "Enemy: Bubble" }
+sprite{ id = "enemies/cannonball", description = "Enemy: Random Cannonball" }
+sprite{ id = "enemies/creeper", description = "Enemy: Creeper" }
+sprite{ id = "enemies/ganon", description = "Enemy: Ganon" }
+sprite{ id = "enemies/globul", description = "Enemy: Globul" }
+sprite{ id = "enemies/lizarmen", description = "Enemy: Lizarmen" }
+sprite{ id = "enemies/mandible", description = "Enemy: Mandible" }
+sprite{ id = "enemies/red_bullblin", description = "Enemy: Red Bullblin" }
+sprite{ id = "enemies/red_bullblin_sword", description = "Enemy: Red Bullblin sword" }
+sprite{ id = "enemies/skeletor", description = "Enemy: Skeletor" }
+sprite{ id = "enemies/simple_green_soldier", description = "Enemy: Simple green soldier" }
+sprite{ id = "enemies/tentacle", description = "Enemy: Tentacle" }
 
 music{ id = "boss", description = "Boss" }
 music{ id = "cave", description = "Cave" }
