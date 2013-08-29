@@ -1,23 +1,50 @@
-walking enemies/creeper.png 4 200 0
-0	0	64	64	32	61	4	4
-0	0	64	64	32	61	4	4
-0	0	64	64	32	61	4	4
-0	0	64	64	32	61	4	4
+animation{
+  name = "walking",
+  src_image = "enemies/creeper.png",
+  frame_delay = 200,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 0, frame_width = 64, frame_height = 64, origin_x = 32, origin_y = 61, num_frames = 4 },
+    { x = 0, y = 0, frame_width = 64, frame_height = 64, origin_x = 32, origin_y = 61, num_frames = 4 },
+    { x = 0, y = 0, frame_width = 64, frame_height = 64, origin_x = 32, origin_y = 61, num_frames = 4 },
+    { x = 0, y = 0, frame_width = 64, frame_height = 64, origin_x = 32, origin_y = 61, num_frames = 4 },
+  },
+}
 
-immobilized enemies/creeper.png 4 0 -1
-384	0	64	64	32	61	1	1
-384	0	64	64	32	61	1	1
-384	0	64	64	32	61	1	1
-384	0	64	64	32	61	1	1
+animation{
+  name = "immobilized",
+  src_image = "enemies/creeper.png",
+  directions = {
+    { x = 384, y = 0, frame_width = 64, frame_height = 64, origin_x = 32, origin_y = 61 },
+    { x = 384, y = 0, frame_width = 64, frame_height = 64, origin_x = 32, origin_y = 61 },
+    { x = 384, y = 0, frame_width = 64, frame_height = 64, origin_x = 32, origin_y = 61 },
+    { x = 384, y = 0, frame_width = 64, frame_height = 64, origin_x = 32, origin_y = 61 },
+  },
+}
 
-shaking enemies/creeper.png 4 50 0
-384	0	64	64	32	61	2	2
-384	0	64	64	32	61	2	2
-384	0	64	64	32	61	2	2
-384	0	64	64	32	61	2	2
+animation{
+  name = "shaking",
+  src_image = "enemies/creeper.png",
+  frame_delay = 50,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 384, y = 0, frame_width = 64, frame_height = 64, origin_x = 32, origin_y = 61, num_frames = 2 },
+    { x = 384, y = 0, frame_width = 64, frame_height = 64, origin_x = 32, origin_y = 61, num_frames = 2 },
+    { x = 384, y = 0, frame_width = 64, frame_height = 64, origin_x = 32, origin_y = 61, num_frames = 2 },
+    { x = 384, y = 0, frame_width = 64, frame_height = 64, origin_x = 32, origin_y = 61, num_frames = 2 },
+  },
+}
 
-hurt enemies/creeper.png 4 50 0
-256	0	64	64	32	61	3	3
-256	0	64	64	32	61	3	3
-256	0	64	64	32	61	3	3
-256	0	64	64	32	61	3	3
+animation{
+  name = "hurt",
+  src_image = "enemies/creeper.png",
+  frame_delay = 50,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 256, y = 0, frame_width = 64, frame_height = 64, origin_x = 32, origin_y = 61, num_frames = 3 },
+    { x = 256, y = 0, frame_width = 64, frame_height = 64, origin_x = 32, origin_y = 61, num_frames = 3 },
+    { x = 256, y = 0, frame_width = 64, frame_height = 64, origin_x = 32, origin_y = 61, num_frames = 3 },
+    { x = 256, y = 0, frame_width = 64, frame_height = 64, origin_x = 32, origin_y = 61, num_frames = 3 },
+  },
+}
+

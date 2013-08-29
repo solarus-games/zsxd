@@ -1,24 +1,48 @@
-walking enemies/ganon.png 4 0 -1
-0	40	48	40	24	37	1	1
-0	0	48	40	24	37	1	1
-0	40	48	40	24	37	1	1
-0	40	48	40	24	37	1	1
+animation{
+  name = "walking",
+  src_image = "enemies/ganon.png",
+  directions = {
+    { x = 0, y = 40, frame_width = 48, frame_height = 40, origin_x = 24, origin_y = 37 },
+    { x = 0, y = 0, frame_width = 48, frame_height = 40, origin_x = 24, origin_y = 37 },
+    { x = 0, y = 40, frame_width = 48, frame_height = 40, origin_x = 24, origin_y = 37 },
+    { x = 0, y = 40, frame_width = 48, frame_height = 40, origin_x = 24, origin_y = 37 },
+  },
+}
 
-immobilized enemies/ganon.png 4 0 -1
-144	40	48	40	24	37	1	1
-144	0	48	40	24	37	1	1
-144	40	48	40	24	37	1	1
-144	40	48	40	24	37	1	1
+animation{
+  name = "immobilized",
+  src_image = "enemies/ganon.png",
+  directions = {
+    { x = 144, y = 40, frame_width = 48, frame_height = 40, origin_x = 24, origin_y = 37 },
+    { x = 144, y = 0, frame_width = 48, frame_height = 40, origin_x = 24, origin_y = 37 },
+    { x = 144, y = 40, frame_width = 48, frame_height = 40, origin_x = 24, origin_y = 37 },
+    { x = 144, y = 40, frame_width = 48, frame_height = 40, origin_x = 24, origin_y = 37 },
+  },
+}
 
-shaking enemies/ganon.png 4 50 0
-144	40	48	40	24	37	2	2
-144	0	48	40	24	37	2	2
-144	40	48	40	24	37	2	2
-144	40	48	40	24	37	2	2
+animation{
+  name = "shaking",
+  src_image = "enemies/ganon.png",
+  frame_delay = 50,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 144, y = 40, frame_width = 48, frame_height = 40, origin_x = 24, origin_y = 37, num_frames = 2 },
+    { x = 144, y = 0, frame_width = 48, frame_height = 40, origin_x = 24, origin_y = 37, num_frames = 2 },
+    { x = 144, y = 40, frame_width = 48, frame_height = 40, origin_x = 24, origin_y = 37, num_frames = 2 },
+    { x = 144, y = 40, frame_width = 48, frame_height = 40, origin_x = 24, origin_y = 37, num_frames = 2 },
+  },
+}
 
-hurt enemies/ganon.png 4 50 0
-48	40	48	40	24	37	3	3
-48	0	48	40	24	37	3	3
-48	40	48	40	24	37	3	3
-48	40	48	40	24	37	3	3
+animation{
+  name = "hurt",
+  src_image = "enemies/ganon.png",
+  frame_delay = 50,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 48, y = 40, frame_width = 48, frame_height = 40, origin_x = 24, origin_y = 37, num_frames = 3 },
+    { x = 48, y = 0, frame_width = 48, frame_height = 40, origin_x = 24, origin_y = 37, num_frames = 3 },
+    { x = 48, y = 40, frame_width = 48, frame_height = 40, origin_x = 24, origin_y = 37, num_frames = 3 },
+    { x = 48, y = 40, frame_width = 48, frame_height = 40, origin_x = 24, origin_y = 37, num_frames = 3 },
+  },
+}
 

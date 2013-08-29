@@ -1,23 +1,46 @@
-walking enemies/lizarmen.png 4 0 -1
-0	0	144	176	72	165	1	1
-0	0	144	176	72	165	1	1
-0	0	144	176	72	165	1	1
-0	0	144	176	72	165	1	1
+animation{
+  name = "walking",
+  src_image = "enemies/lizarmen.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 144, frame_height = 176, origin_x = 72, origin_y = 165 },
+    { x = 0, y = 0, frame_width = 144, frame_height = 176, origin_x = 72, origin_y = 165 },
+    { x = 0, y = 0, frame_width = 144, frame_height = 176, origin_x = 72, origin_y = 165 },
+    { x = 0, y = 0, frame_width = 144, frame_height = 176, origin_x = 72, origin_y = 165 },
+  },
+}
 
-immobilized enemies/lizarmen.png 4 0 -1
-0	0	144	176	72	165	1	1
-0	0	144	176	72	165	1	1
-0	0	144	176	72	165	1	1
-0	0	144	176	72	165	1	1
+animation{
+  name = "immobilized",
+  src_image = "enemies/lizarmen.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 144, frame_height = 176, origin_x = 72, origin_y = 165 },
+    { x = 0, y = 0, frame_width = 144, frame_height = 176, origin_x = 72, origin_y = 165 },
+    { x = 0, y = 0, frame_width = 144, frame_height = 176, origin_x = 72, origin_y = 165 },
+    { x = 0, y = 0, frame_width = 144, frame_height = 176, origin_x = 72, origin_y = 165 },
+  },
+}
 
-shaking enemies/lizarmen.png 4 0 -1
-0	0	144	176	72	165	1	1
-0	0	144	176	72	165	1	1
-0	0	144	176	72	165	1	1
-0	0	144	176	72	165	1	1
+animation{
+  name = "shaking",
+  src_image = "enemies/lizarmen.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 144, frame_height = 176, origin_x = 72, origin_y = 165 },
+    { x = 0, y = 0, frame_width = 144, frame_height = 176, origin_x = 72, origin_y = 165 },
+    { x = 0, y = 0, frame_width = 144, frame_height = 176, origin_x = 72, origin_y = 165 },
+    { x = 0, y = 0, frame_width = 144, frame_height = 176, origin_x = 72, origin_y = 165 },
+  },
+}
 
-hurt enemies/lizarmen.png 4 50 0
-0	0	144	176	72	165	3	3
-0	0	144	176	72	165	3	3
-0	0	144	176	72	165	3	3
-0	0	144	176	72	165	3	3
+animation{
+  name = "hurt",
+  src_image = "enemies/lizarmen.png",
+  frame_delay = 50,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 0, frame_width = 144, frame_height = 176, origin_x = 72, origin_y = 165, num_frames = 3 },
+    { x = 0, y = 0, frame_width = 144, frame_height = 176, origin_x = 72, origin_y = 165, num_frames = 3 },
+    { x = 0, y = 0, frame_width = 144, frame_height = 176, origin_x = 72, origin_y = 165, num_frames = 3 },
+    { x = 0, y = 0, frame_width = 144, frame_height = 176, origin_x = 72, origin_y = 165, num_frames = 3 },
+  },
+}
+
