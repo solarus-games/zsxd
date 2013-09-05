@@ -88,9 +88,10 @@ dialog{
   icon = 6,
   skip = "all",
   text = [[
-Hoist yourself to
-unreachable places
-with the hookshot.
+Elévate hasta
+lugares inaccesibles
+con ayuda
+del gancho.
 ]]
 }
 --------------------
@@ -101,9 +102,9 @@ dialog{
   icon = 7,
   skip = "all",
   text = [[
-The Magic Bottle
-can hold various
-things...
+Botella Mágica que
+puede contener
+varias sustancias.
 ]]
 }
 --------------------
@@ -114,11 +115,11 @@ dialog{
   icon = 8,
   skip = "all",
   text = [[
-Your Magic Bottle is
-filled with water.
+Tu Botella Mágica
+está llena de agua.
 
-You'd better empty
-it.
+Úsala en un lugar
+adecuado...
 ]]
 }
 --------------------
