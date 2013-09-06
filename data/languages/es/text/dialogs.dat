@@ -449,9 +449,9 @@ dialog{
   skip = "all",
   next = "_warning_magic",
   text = [[
-Create blocks and
-use the Hookshot to
-climb onto them.
+Crea un bloque y
+engánchate a él
+usando el Gancho.
 ]]
 }
 --------------------
@@ -462,9 +462,9 @@ dialog{
   icon = 16,
   skip = "all",
   text = [[
-Eat Apples to
-restore some of
-your Hearts.
+Come Manzanas para
+recuperar algunos
+corazones.
 ]]
 }
 --------------------
@@ -475,9 +475,10 @@ dialog{
   icon = 17,
   skip = "all",
   text = [[
-Eat a Chocolate
-Croissant to recover
-three Hearts.
+Come Cruasánes 
+de Chocolate para
+recuperar tres
+Corazones.
 ]]
 }
 --------------------
@@ -488,9 +489,9 @@ dialog{
   icon = 18,
   skip = "all",
   text = [[
-Eat a Croissant
-to recover seven
-Hearts.
+Come un Cruasán
+para recuperar
+siete Corazones.
 ]]
 }
 --------------------
@@ -501,9 +502,9 @@ dialog{
   icon = 19,
   skip = "all",
   text = [[
-The Rock Key. But
-where is the
-lock?
+La Llave del Roc.
+¿Pero dónde está
+la cerradura?.
 ]]
 }
 --------------------
@@ -514,8 +515,9 @@ dialog{
   icon = 20,
   skip = "all",
   text = [[
-The Bone Key, where
-do you use it?
+La Llave de Hueso.
+¿Dónde podré
+usarla?.
 ]]
 }
 --------------------
@@ -526,9 +528,10 @@ dialog{
   icon = 21,
   skip = "all",
   text = [[
-The Earth Key,
-unlocks the entry to
-the village cavern.
+La Llave de la
+Tierra. Desbloquea
+el acceso a la
+caverna de la aldea.
 ]]
 }
 --------------------
@@ -539,8 +542,9 @@ dialog{
   icon = 22,
   skip = "all",
   text = [[
-This Apple Pie looks
-really horrible...
+El Pastel de Manzana
+tiene una pinta
+horrible...
 ]]
 }
 --------------------
@@ -551,9 +555,9 @@ dialog{
   icon = 26,
   skip = "all",
   text = [[
-With the Flippers,
-you can swim
-in deep waters.
+Con las Aletas, 
+podrás nadar en 
+aguas profundas.
 ]]
 }
 --------------------
@@ -564,10 +568,11 @@ dialog{
   icon = 27,
   skip = "all",
   text = [[
-The Magic Cape
-warns you if
-you are near a
-fragile wall...
+La Capa Mágica
+te avisará
+cuando estás 
+cerca de una
+pared débil.
 ]]
 }
 --------------------
@@ -578,9 +583,10 @@ dialog{
   icon = 28,
   skip = "all",
   text = [[
-The Iron Key.
-Use it only with
-the right lock!
+La Llave de Hierro.
+Usala sólo en
+la cerradura
+correcta.
 ]]
 }
 --------------------
