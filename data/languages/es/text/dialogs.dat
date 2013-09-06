@@ -130,9 +130,9 @@ dialog{
   icon = 9,
   skip = "all",
   text = [[
-Drink a Red Potion
-to refill all
-your Hearts.
+Bebe la Poción Roja
+para rellenar
+tus corazones.
 ]]
 }
 --------------------
@@ -143,9 +143,9 @@ dialog{
   icon = 10,
   skip = "all",
   text = [[
-Drink a Green Potion
-to replenish
-your Magic.
+Bebe la Poción Verde
+para recuperar
+tu magia.
 ]]
 }
 --------------------
@@ -156,9 +156,9 @@ dialog{
   icon = 11,
   skip = "all",
   text = [[
-Drink a Blue Potion
-to recover
-Hearts and Magic!
+Bebe una Poción Azul
+para recuperar
+corazones y magia.
 ]]
 }
 --------------------
@@ -169,9 +169,9 @@ dialog{
   icon = 12,
   skip = "all",
   text = [[
-This Fairy will
-help you when your
-Hearts are low.
+Esta Hada te ayudará
+cuando necesites
+corazones.
 ]]
 }
 --------------------
@@ -182,9 +182,9 @@ dialog{
   icon = 7,
   skip = "all",
   text = [[
-The Magic Bottle
-can hold various
-things...
+Botella Mágica que
+puede contener
+varias sustancias.
 ]]
 }
 --------------------
@@ -195,11 +195,11 @@ dialog{
   icon = 8,
   skip = "all",
   text = [[
-Your Magic Bottle is
-filled with water.
+Tu Botella Mágica
+está llena de agua.
 
-You'd better empty
-it.
+Usala en el lugar
+adecuado...
 ]]
 }
 --------------------
@@ -210,9 +210,9 @@ dialog{
   icon = 9,
   skip = "all",
   text = [[
-Drink a Red Potion
-to refill all
-your Hearts.
+Bebe la Poción Roja
+para rellenar
+tus corazones.
 ]]
 }
 --------------------
@@ -223,9 +223,9 @@ dialog{
   icon = 10,
   skip = "all",
   text = [[
-Drink a Green Potion
-to replenish
-your Magic.
+Bebe la Poción Verde
+para recuperar
+tu magia.
 ]]
 }
 --------------------
@@ -236,9 +236,9 @@ dialog{
   icon = 11,
   skip = "all",
   text = [[
-Drink a Blue Potion
-to recover
-Hearts and Magic!
+Bebe una Poción Azul
+para recuperar
+corazones y magia.
 ]]
 }
 --------------------
@@ -249,9 +249,9 @@ dialog{
   icon = 12,
   skip = "all",
   text = [[
-This Fairy will help
-you when your Hearts
-are low.
+Esta Hada te ayudará
+cuando necesites
+corazones.
 ]]
 }
 --------------------
@@ -262,9 +262,9 @@ dialog{
   icon = 7,
   skip = "all",
   text = [[
-The Magic Bottle
-can hold various
-things...
+Botella Mágica que
+puede contener
+varias sustancias.
 ]]
 }
 --------------------
@@ -275,11 +275,11 @@ dialog{
   icon = 8,
   skip = "all",
   text = [[
-Your Magic Bottle is
-filled with water.
+Tu Botella Mágica
+está llena de agua.
 
-You'd better empty
-it.
+Usala en el lugar
+adecuado...
 ]]
 }
 --------------------
@@ -290,9 +290,9 @@ dialog{
   icon = 9,
   skip = "all",
   text = [[
-Drink a Red Potion
-to refill all
-your Hearts.
+Bebe la Poción Roja
+para rellenar
+tus corazones.
 ]]
 }
 --------------------
@@ -303,9 +303,9 @@ dialog{
   icon = 10,
   skip = "all",
   text = [[
-Drink a Green Potion
-to replenish
-your Magic.
+Bebe la Poción Verde
+para recuperar
+tu magia.
 ]]
 }
 --------------------
@@ -316,9 +316,9 @@ dialog{
   icon = 11,
   skip = "all",
   text = [[
-Drink a Blue Potion
-to recover
-Hearts and Magic!
+Bebe una Poción Azul
+para recuperar
+corazones y magia.
 ]]
 }
 --------------------
@@ -329,9 +329,9 @@ dialog{
   icon = 12,
   skip = "all",
   text = [[
-This Fairy will help
-you when your Hearts
-are low.
+Esta Hada te ayudará
+cuando necesites
+corazones.
 ]]
 }
 --------------------
@@ -342,9 +342,9 @@ dialog{
   icon = 7,
   skip = "all",
   text = [[
-The Magic Bottle
-can hold various
-things...
+Botella Mágica que
+puede contener
+varias sustancias.
 ]]
 }
 --------------------
@@ -355,11 +355,11 @@ dialog{
   icon = 8,
   skip = "all",
   text = [[
-Your Magic Bottle is
-filled with water.
+Tu Botella Mágica
+está llena de agua.
 
-You'd better empty
-it.
+Usala en el lugar
+adecuado...
 ]]
 }
 --------------------
@@ -370,9 +370,9 @@ dialog{
   icon = 9,
   skip = "all",
   text = [[
-Drink a Red Potion
-to refill all
-your Hearts.
+Bebe la Poción Roja
+para rellenar
+tus corazones.
 ]]
 }
 --------------------
@@ -383,9 +383,9 @@ dialog{
   icon = 10,
   skip = "all",
   text = [[
-Drink a Green Potion
-to replenish
-your Magic.
+Bebe la Poción Verde
+para recuperar
+tu magia.
 ]]
 }
 --------------------
@@ -396,9 +396,9 @@ dialog{
   icon = 11,
   skip = "all",
   text = [[
-Drink a Blue Potion
-to recover
-Hearts and Magic!
+Bebe una Poción Azul
+para recuperar
+corazones y magia.
 ]]
 }
 --------------------
@@ -409,9 +409,9 @@ dialog{
   icon = 12,
   skip = "all",
   text = [[
-This Fairy will help
-you when your Hearts
-are low.
+Esta Hada te ayudará
+cuando necesites
+corazones.
 ]]
 }
 --------------------
@@ -422,8 +422,9 @@ dialog{
   icon = 13,
   skip = "all",
   text = [[
-The Pegasus Shoes
-do weird things.
+Las Botas de Pegaso
+pueden hacer cosas
+extrañas.
 ]]
 }
 --------------------
@@ -434,9 +435,9 @@ dialog{
   icon = 14,
   skip = "all",
   text = [[
-The Mystic Mirror
-has mysterious
-powers...
+El Espejo Místico
+tiene extraños
+poderes...
 ]]
 }
 --------------------
