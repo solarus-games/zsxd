@@ -174,6 +174,20 @@ sprite{ id = "enemies/red_bullblin_sword", description = "Enemy: Red Bullblin sw
 sprite{ id = "enemies/skeletor", description = "Enemy: Skeletor" }
 sprite{ id = "enemies/simple_green_soldier", description = "Enemy: Simple green soldier" }
 sprite{ id = "enemies/tentacle", description = "Enemy: Tentacle" }
+sprite{ id = "hud/dialog_box_message_end", description = "Dialog end" }
+sprite{ id = "hud/gameover_fade", description = "HUD: Game-over fade" }
+sprite{ id = "hud/action_icon_flip", description = "HUD: Action icon" }
+sprite{ id = "hud/pause_icon_flip", description = "HUD: Pause icon" }
+sprite{ id = "hud/sword_icon_flip", description = "HUD: Sword icon" }
+sprite{ id = "hud/empty_heart", description = "HUD: Empty heart" }
+sprite{ id = "hud/magic_bar", description = "HUD: Magic bar" }
+sprite{ id = "menus/arrow", description = "Menu: Arrow" }
+sprite{ id = "menus/selection_menu_cursor", description = "Menu: Savegame cursor" }
+sprite{ id = "menus/pause_cursor", description = "Menu: Pause cursor" }
+sprite{ id = "menus/pause_save_dialog", description = "Menu: Pause save dialog" }
+sprite{ id = "menus/options_cursor", description = "Menu: Options cursor" }
+sprite{ id = "menus/hero_head", description = "Menu: Hero head" }
+sprite{ id = "menus/hero_point", description = "Menu: Hero point" }
 
 music{ id = "boss", description = "Boss" }
 music{ id = "cave", description = "Cave" }
