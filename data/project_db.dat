@@ -188,6 +188,7 @@ sprite{ id = "menus/pause_save_dialog", description = "Menu: Pause save dialog" 
 sprite{ id = "menus/options_cursor", description = "Menu: Options cursor" }
 sprite{ id = "menus/hero_head", description = "Menu: Hero head" }
 sprite{ id = "menus/hero_point", description = "Menu: Hero point" }
+sprite{ id = "menus/solarus_logo", description = "Menu: Solarus logo" }
 
 music{ id = "boss", description = "Boss" }
 music{ id = "cave", description = "Cave" }
@@ -273,6 +274,7 @@ sound{ id = "sm64_memario", description = "sm64_memario" }
 sound{ id = "smb_1up", description = "smb_1up" }
 sound{ id = "smb_coin", description = "smb_coin" }
 sound{ id = "smb_powerup", description = "smb_powerup" }
+sound{ id = "solarus_logo", description = "Solarus logo" }
 sound{ id = "splash", description = "splash" }
 sound{ id = "stone", description = "stone" }
 sound{ id = "switch", description = "switch" }
