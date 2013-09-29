@@ -597,9 +597,9 @@ dialog{
   icon = 29,
   skip = "all",
   text = [[
-The Stone Key.
-Need to find
-the lock now!
+La Llave de Hueso.
+¡Encontremos la
+cerradura correcta!
 ]]
 }
 --------------------
@@ -610,9 +610,10 @@ dialog{
   icon = 30,
   skip = "all",
   text = [[
-The Wooden Key.
-But there is only
-one lock for it...
+La Llave de Madera.
+Pero solo hay
+una cerradura 
+para ella...
 ]]
 }
 --------------------
@@ -623,10 +624,10 @@ dialog{
   icon = 31,
   skip = "all",
   text = [[
-The Ice Key.
-You have to find
-a frozen place
-to use it!
+La Llave de Hielo.
+Tienes que encontrar
+un lugar elado para 
+usarla.
 ]]
 }
 --------------------
@@ -637,9 +638,9 @@ dialog{
   icon = 32,
   skip = "all",
   text = [[
-With this, you can
-lift many things.
-I think...
+Con esto, puedes
+levantar muchas cosas.
+Creo...
 ]]
 }
 --------------------
@@ -650,9 +651,8 @@ dialog{
   icon = 33,
   skip = "all",
   text = [[
-Lift black rocks
-with the
-Golden Glove.
+Levanta Rocas Negras
+con el Guante Dorado.
 ]]
 }
 --------------------
@@ -663,6 +663,7 @@ dialog{
   icon = 34,
   skip = "all",
   text = [[
+  
 Find all three
 Fire Stones and
 take them
