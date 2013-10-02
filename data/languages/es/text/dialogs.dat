@@ -2,6 +2,8 @@
 -- This dialog file was converted from the 0.9.0 ini syntax using the script
 -- tools/data_files_converstion/dialogs_0.9.0_to_0.9.1.lua.
 
+--Linea 738
+
 -- Plume / Feather
 dialog{
   id = "_item_description.feather.1",
@@ -597,9 +599,9 @@ dialog{
   icon = 29,
   skip = "all",
   text = [[
-The Stone Key.
-Need to find
-the lock now!
+La Llave de Hueso.
+¡Encontremos la
+cerradura correcta!
 ]]
 }
 --------------------
@@ -610,9 +612,10 @@ dialog{
   icon = 30,
   skip = "all",
   text = [[
-The Wooden Key.
-But there is only
-one lock for it...
+La Llave de Madera.
+Pero solo hay
+una cerradura 
+para ella...
 ]]
 }
 --------------------
@@ -623,10 +626,10 @@ dialog{
   icon = 31,
   skip = "all",
   text = [[
-The Ice Key.
-You have to find
-a frozen place
-to use it!
+La Llave de Hielo.
+Tienes que encontrar
+un lugar elado para 
+usarla.
 ]]
 }
 --------------------
@@ -637,9 +640,9 @@ dialog{
   icon = 32,
   skip = "all",
   text = [[
-With this, you can
-lift many things.
-I think...
+Con esto, puedes
+levantar muchas cosas.
+Creo...
 ]]
 }
 --------------------
@@ -650,9 +653,8 @@ dialog{
   icon = 33,
   skip = "all",
   text = [[
-Lift black rocks
-with the
-Golden Glove.
+Levanta Rocas Negras
+con el Guante Dorado.
 ]]
 }
 --------------------
@@ -663,10 +665,10 @@ dialog{
   icon = 34,
   skip = "all",
   text = [[
-Find all three
-Fire Stones and
-take them
-to Inferno.
+Encuentra las 
+tres Rocas de Fuego
+y llévaselas a
+Inferno.
 ]]
 }
 --------------------
@@ -676,10 +678,11 @@ dialog{
   icon = 40,
   skip = "all",
   text = [[
-These peppers are a
-a real treasure
-for people who like
-spicy food.
+Estos pimientos
+son un verdadero
+teroso para la gente
+que le gusta
+la comida picante.
 ]]
 }
 -----------------------
@@ -689,9 +692,9 @@ dialog{
   icon = 41,
   skip = "all",
   text = [[
-An old broom, nobody
-will agree to buy
-it!
+Una vieja escoba,
+¡nadie estaría de
+acuerdo en comprarla!
 ]]
 }
 --------------------
@@ -701,9 +704,10 @@ dialog{
   icon = 42,
   skip = "all",
   text = [[
-Nice silver spoons,
-don't take them with
-you, you thief!
+Bonitas cucharas
+de plata, no las
+cojas para ti,
+¡ladrón!
 ]]
 }
 --------------------
@@ -713,10 +717,10 @@ dialog{
   icon = 43,
   skip = "all",
   text = [[
-An old tapestry of
-the 18th century.
-Nobody makes them
-like this now.
+Una vieja tapicería
+del siglo 18.
+Nadie los hace
+así ahora.
 ]]
 }
 -----------------------
@@ -726,8 +730,9 @@ dialog{
   icon = 44,
   skip = "all",
   text = [[
-Magma rock of the
-Goron mines.
+Una roca de magma
+de las minas 
+Goron.
 ]]
 }
 --------------------
@@ -749,8 +754,9 @@ dialog{
   icon = 46,
   skip = "all",
   text = [[
-Sacks of olives,
-cats love them.
+Bolsas de olivas,
+a los gatos
+les encantan.
 ]]
 }
 --------------------
@@ -760,9 +766,9 @@ dialog{
   icon = 47,
   skip = "all",
   text = [[
-Spice jars: thyme,
-rosemary, and
-coriander.
+Frascos de especias:
+tomillo, romero y
+cilantro.
 ]]
 }
 --------------------
@@ -772,10 +778,11 @@ dialog{
   icon = 48,
   skip = "all",
   text = [[
-Wonderfully sharp,
-this axe is
-guaranteed to last
-twenty years!
+Maravillosamente fuerte,
+¡esta hacha está
+garantizada para 
+los proximos veinte
+años!.
 ]]
 }
 --------------------
@@ -785,11 +792,11 @@ dialog{
   icon = 49,
   skip = "all",
   text = [[
-Internationally
-acclaimed fragrance,
-this Kipu will make
-girls fall all over
-you!
+Fragancia aclamada
+internacionalmente,
+¡este Kipu hará
+que las mujeres
+caigan ante ti!
 ]]
 }
 -----------------------
@@ -806,10 +813,10 @@ dialog{
   id = "_treasure.feather.1",
   icon = 0,
   text = [[
-You found the
-Feather!$0 Use it
-to jump and to clear
-obstacles!
+¡Encontraste la
+Pluma!$0 ¡Usala
+para saltar y salvar
+obstaculos!
 ]]
 }
 --------------------
@@ -819,8 +826,10 @@ dialog{
   id = "_treasure.bow.1",
   icon = 2,
   text = [[
-You found The Bow!$0
-Become the next
+¡Encontraste 
+El Arco!$0 
+¡Conviertete en
+el proximo
 Robin Hood!
 ]]
 }
@@ -831,8 +840,10 @@ dialog{
   id = "_treasure.bow.2",
   icon = 3,
   text = [[
-You found The Bow!$0
-Become the next
+¡Encontraste 
+El Arco!$0 
+¡Conviertete en
+el proximo
 Robin Hood!
 ]]
 }
@@ -843,17 +854,19 @@ dialog{
   id = "_treasure.boomerang.1",
   icon = 4,
   text = [[
-You found the
-Boomerang!$0 You
-can stun enemies
-or catch objects
-out of reach.
+¡Encontraste el
+Boomerang!$0
+Ahora puedes
+aturdir a los 
+enemigos o coger
+objetos que no esten
+a tu alcance.
 
-There are several
-techniques to use
-it, it's up to you
-to discover them
-all!
+¡Hay varias 
+técnicas que
+puedes usar,
+es cosa tuya el
+descubrirlas todas!
 ]]
 }
 --------------------
@@ -864,6 +877,8 @@ dialog{
   icon = 5,
   next = "_warning_magic",
   text = [[
+¡Encontraste la
+Lampara!$0 
 You found The
 Lamp!$0 It lights
 your way in the
