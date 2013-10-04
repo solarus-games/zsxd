@@ -878,12 +878,11 @@ dialog{
   next = "_warning_magic",
   text = [[
 ¡Encontraste la
-Lampara!$0 
-You found The
-Lamp!$0 It lights
-your way in the
-dark and allows you
-to ignite torches.
+Lampara!$0
+Iluminará tu camino
+y te permitirá
+encender las
+antorchas.
 ]]
 }
 --------------------
@@ -893,11 +892,12 @@ dialog{
   id = "_treasure.hookshot.1",
   icon = 6,
   text = [[
-You found The
-Hookshot!$0 Freeze
-your enemies and
-climb to distant
-places!
+¡Encontraste el
+Gancho!$0 ¡Congela
+a tus enemigos y
+te permitirá
+llevar a lugares
+lejanos!
 ]]
 }
 --------------------
@@ -907,9 +907,10 @@ dialog{
   id = "_treasure.bottle_1.1",
   icon = 7,
   text = [[
-You found a Magic
-Bottle!$0 It might be
-useful someday!
+¡Encontraste una
+Botella Mágica!$0
+¡Podría ser útil
+algún día!
 ]]
 }
 --------------------
@@ -919,7 +920,7 @@ dialog{
   id = "_treasure.bottle_1.2",
   icon = 8,
   text = [[
-You found Water!
+¡Encontraste Agua!
 ]]
 }
 --------------------
@@ -929,12 +930,12 @@ dialog{
   id = "_treasure.bottle_1.3",
   icon = 9,
   text = [[
-You found a
-Red Potion !$0
+¡Encontraste una
+Poción Roja!$0
 
-Drink it
-to refill
-all your Hearts.
+Bébetela para
+recuperar todos
+tus Corazones.
 ]]
 }
 --------------------
@@ -944,12 +945,12 @@ dialog{
   id = "_treasure.bottle_1.4",
   icon = 10,
   text = [[
-You found a
-Green Potion!$0
+¡Encontraste una
+Poción Verde!$0
 
-Drink it
-to replenish
-your Magic.
+Bébetela para
+rellenar tu 
+magia.
 ]]
 }
 --------------------
@@ -959,12 +960,12 @@ dialog{
   id = "_treasure.bottle_1.5",
   icon = 11,
   text = [[
-You found a
-Blue Potion!$0
+¡Encontraste una
+Poción Azul!$0
 
-Drink it
-to recover
-Hearts and Magic!
+¡Bébetela para
+recuperar
+Corazones y Magia!
 ]]
 }
 --------------------
@@ -974,13 +975,16 @@ dialog{
   id = "_treasure.bottle_1.6",
   icon = 12,
   text = [[
-You captured a
-Fairy! She'll help
-you if you're
-in danger.
-Also you can use her
-at any time to
-recover Hearts.
+¡Capturaste un
+Hada! Ella te
+ayudará si te
+encuentras en 
+peligro.
+También puedes
+usarla para 
+recuperar tus
+corazones cuando 
+quieras.
 ]]
 }
 --------------------
@@ -990,9 +994,10 @@ dialog{
   id = "_treasure.bottle_2.1",
   icon = 7,
   text = [[
-You found a Magic
-Bottle!$0 It might be
-useful someday!
+¡Encontraste una
+Botella Mágica!$0
+¡Podría ser útil
+algún día!
 ]]
 }
 --------------------
@@ -1002,7 +1007,7 @@ dialog{
   id = "_treasure.bottle_2.2",
   icon = 8,
   text = [[
-You found Water!
+¡Encontraste Agua!
 ]]
 }
 --------------------
@@ -1012,12 +1017,12 @@ dialog{
   id = "_treasure.bottle_2.3",
   icon = 9,
   text = [[
-You found a
-Red Potion!$0
+¡Encontraste una
+Poción Roja!$0
 
-Drink it
-to refill
-all your Hearts.
+Bébetela para
+recuperar todos
+tus Corazones.
 ]]
 }
 --------------------
@@ -1027,12 +1032,12 @@ dialog{
   id = "_treasure.bottle_2.4",
   icon = 10,
   text = [[
-You found a
-Green Potion!$0
+¡Encontraste una
+Poción Verde!$0
 
-Drink it
-to replenish
-your Magic.
+Bébetela para
+rellenar tu 
+magia.
 ]]
 }
 --------------------
@@ -1042,12 +1047,12 @@ dialog{
   id = "_treasure.bottle_2.5",
   icon = 11,
   text = [[
-You found a
-Blue Potion!$0
+¡Encontraste una
+Poción Azul!$0
 
-Drink it
-to recover
-Hearts and Magic!
+¡Bébetela para
+recuperar
+Corazones y Magia!
 ]]
 }
 --------------------
@@ -1057,13 +1062,16 @@ dialog{
   id = "_treasure.bottle_2.6",
   icon = 12,
   text = [[
-You captured a
-Fairy! She'll help
-you if you're
-in danger.
-Also you can use her
-at any time to
-recover Hearts.
+¡Capturaste un
+Hada! Ella te
+ayudará si te
+encuentras en 
+peligro.
+También puedes
+usarla para 
+recuperar tus
+corazones cuando 
+quieras.
 ]]
 }
 --------------------
@@ -1073,9 +1081,10 @@ dialog{
   id = "_treasure.bottle_3.1",
   icon = 7,
   text = [[
-You found a Magic
-Bottle!$0 It might be
-useful someday!
+¡Encontraste una
+Botella Mágica!$0
+¡Podría ser útil
+algún día!
 ]]
 }
 --------------------
@@ -1085,7 +1094,7 @@ dialog{
   id = "_treasure.bottle_3.2",
   icon = 8,
   text = [[
-You found Water!
+¡Encontraste Agua!
 ]]
 }
 --------------------
@@ -1095,12 +1104,12 @@ dialog{
   id = "_treasure.bottle_3.3",
   icon = 9,
   text = [[
-You found a
-Red Potion!$0
+¡Encontraste una
+Poción Roja!$0
 
-Drink it
-to refill
-all your Hearts.
+Bébetela para
+recuperar todos
+tus Corazones.
 ]]
 }
 --------------------
@@ -1110,12 +1119,12 @@ dialog{
   id = "_treasure.bottle_3.4",
   icon = 10,
   text = [[
-You found a
-Green Potion!$0
+¡Encontraste una
+Poción Verde!$0
 
-Drink it
-to replenish
-your Magic.
+Bébetela para
+rellenar tu 
+magia.
 ]]
 }
 --------------------
@@ -1125,12 +1134,12 @@ dialog{
   id = "_treasure.bottle_3.5",
   icon = 11,
   text = [[
-You found a
-Blue Potion!$0
+¡Encontraste una
+Poción Azul!$0
 
-Drink it
-to recover
-Hearts and Magic!
+¡Bébetela para
+recuperar
+Corazones y Magia!
 ]]
 }
 --------------------
@@ -1140,13 +1149,16 @@ dialog{
   id = "_treasure.bottle_3.6",
   icon = 12,
   text = [[
-You captured a
-Fairy! She'll help
-you if you're
-in danger.
-Also you can use her
-at any time to
-recover Hearts.
+¡Capturaste un
+Hada! Ella te
+ayudará si te
+encuentras en 
+peligro.
+También puedes
+usarla para 
+recuperar tus
+corazones cuando 
+quieras.
 ]]
 }
 --------------------
