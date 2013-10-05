@@ -1168,9 +1168,10 @@ dialog{
   id = "_treasure.bottle_4.1",
   icon = 7,
   text = [[
-You found a Magic
-Bottle!$0 It might be
-useful someday !
+¡Encontraste una
+Botella Mágica!$0
+¡Podría ser útil
+algún día!
 ]]
 }
 --------------------
@@ -1180,7 +1181,7 @@ dialog{
   id = "_treasure.bottle_4.2",
   icon = 8,
   text = [[
-You found Water!
+¡Encontraste Agua!
 ]]
 }
 --------------------
@@ -1190,12 +1191,12 @@ dialog{
   id = "_treasure.bottle_4.3",
   icon = 9,
   text = [[
-You found a
-Red Potion!$0
+¡Encontraste una
+Poción Roja!$0
 
-Drink it
-to refill
-all your Hearts.
+Bébetela para
+recuperar todos
+tus Corazones.
 ]]
 }
 --------------------
@@ -1205,12 +1206,12 @@ dialog{
   id = "_treasure.bottle_4.4",
   icon = 10,
   text = [[
-You found a
-Green Potion!$0
+¡Encontraste una
+Poción Verde!$0
 
-Drink it
-to replenish
-your Magic.
+Bébetela para
+rellenar tu 
+magia.
 ]]
 }
 --------------------
@@ -1220,12 +1221,12 @@ dialog{
   id = "_treasure.bottle_4.5",
   icon = 11,
   text = [[
-You found a
-Blue Potion!$0
+¡Encontraste una
+Poción Azul!$0
 
-Drink it
-to recover
-Hearts and Magic!
+¡Bébetela para
+recuperar
+Corazones y Magia!
 ]]
 }
 --------------------
@@ -1235,13 +1236,16 @@ dialog{
   id = "_treasure.bottle_4.6",
   icon = 12,
   text = [[
-You captured a
-Fairy! She'll help
-you if you're
-in danger.
-Also you can use her
-at any time to
-recover Hearts.
+¡Capturaste un
+Hada! Ella te
+ayudará si te
+encuentras en 
+peligro.
+También puedes
+usarla para 
+recuperar tus
+corazones cuando 
+quieras.
 ]]
 }
 --------------------
@@ -1251,12 +1255,13 @@ dialog{
   id = "_treasure.pegasus_shoes.1",
   icon = 13,
   text = [[
-You found the
-Pegasus Shoes,
-without laces!
-They're tough to
-wear but you can
-run really fast!
+¡Encontraste las
+Botas de Pegaso,
+sin cordones!
+¡Son resistentes
+al desgaste,
+pero puedes
+correr muy rápido!
 ]]
 }
 --------------------
@@ -1266,12 +1271,13 @@ dialog{
   id = "_treasure.mystic_mirror.1",
   icon = 14,
   text = [[
-You found the
-Mystic Mirror!$0
-It has unknown
-powers that you'll
-need to succeed in
-your quest...
+¡Encontraste el
+Espejo Místico!$0
+Tiene poderes
+misteriosos que 
+necesitaras para
+tener éxito en tu
+misión...
 ]]
 }
 --------------------
@@ -1282,12 +1288,12 @@ dialog{
   icon = 15,
   next = "_warning_magic",
   text = [[
-You found the
-Cane of Somaria!$0
+¡Encontraste la 
+Vara de Somaria!$0
 
-Create blocks and
-use the Hookshot to
-climb onto them.
+Crea bloques y usa
+el Gancho para 
+subirse a ellos.
 ]]
 }
 --------------------
@@ -1297,9 +1303,11 @@ dialog{
   id = "_treasure.apple.1",
   icon = 16,
   text = [[
-You found 3 Apples!$0
-Eat them later
-to recover Hearts.
+¡Encontraste 3
+Manzanas!$0
+Cometelas después 
+para recuperar 
+Corazones.
 ]]
 }
 --------------------
@@ -1309,12 +1317,13 @@ dialog{
   id = "_treasure.pain_au_chocolat.1",
   icon = 17,
   text = [[
-You found a
-Chocolate Croissant!$0
+¡Encontraste un
+Cruasán de Chocolate!$0
 
-Eat a Chocolate
-Croissant to recover
-three Hearts.
+Cómete un Cruasán
+de Chocolate para 
+recuperar tres
+corazones.
 ]]
 }
 --------------------
@@ -1324,12 +1333,13 @@ dialog{
   id = "_treasure.croissant.1",
   icon = 18,
   text = [[
-You found a
-Croissant!$0 It's
-sooo delicious!
-Eat a Croissant
-to recover seven
-Hearts.
+¡Encontraste un
+Cruasán!$0
+¡Es taaaaan
+delicioso!
+Cómete un Cruasán
+para recuperar
+siete Corazones.
 ]]
 }
 --------------------
@@ -1339,8 +1349,8 @@ dialog{
   id = "_treasure.rock_key.1",
   icon = 19,
   text = [[
-You found the
-Rock Key!$0
+¡Encontraste la
+Llave de Rock!$0
 ]]
 }
 --------------------
@@ -1350,11 +1360,12 @@ dialog{
   id = "_treasure.bone_key.1",
   icon = 20,
   text = [[
-You found the
-Bone Key!$0
+¡Encontraste la
+Llave de Hueso!$0
 
-You can now enter
-the Lair of Ganon!
+¡Ahora podrás 
+entrar a la 
+Guarida de Ganon!
 ]]
 }
 --------------------
@@ -1364,12 +1375,12 @@ dialog{
   id = "_treasure.clay_key.1",
   icon = 21,
   text = [[
-You found the
-Earth Key!$0
+¡Encontraste la 
+Llava de la Tierra!$0
 
-You can now
-access the
-village cavern.
+Ahora podrás
+acceder a la
+Caverna del Pueblo.
 ]]
 }
 --------------------
@@ -1379,12 +1390,12 @@ dialog{
   id = "_treasure.apple_pie.1",
   icon = 22,
   text = [[
-You found an
-Apple Pie!
+¡Encontraste un
+Pastel de Manzana!
 
-It's moldy, but you
-don't really care,
-do you?
+Esta mohoso, pero
+no te importa, 
+¿verdad?
 ]]
 }
 --------------------
@@ -1394,11 +1405,12 @@ dialog{
   id = "_treasure.flippers.1",
   icon = 26,
   text = [[
-You found the
-Flippers!$0
+¡Encontraste las
+Aletas!$0
 
-Now you can swim
-in deep waters.
+Ahora puedes
+nadar en aguas
+profundas.
 ]]
 }
 --------------------
@@ -1408,12 +1420,13 @@ dialog{
   id = "_treasure.magic_cape.1",
   icon = 27,
   text = [[
-You found the
-Magic Cape!$0
+¡Encontraste la
+Capa Mágica!$0
 
-You'll be warned
-when you're near
-a fragile wall.
+Serás avisado
+cuando estés
+cerca de un 
+muro debil.
 ]]
 }
 --------------------
@@ -1423,11 +1436,13 @@ dialog{
   id = "_treasure.iron_key.1",
   icon = 28,
   text = [[
-You found the
-Iron Key!$0
+¡Encontraste la
+Llave de Hierro!$0
 
-Now find the
-right door to open!
+!Ahora encuentra
+la puerta 
+correcta para 
+abrirla!
 ]]
 }
 --------------------
@@ -1437,11 +1452,12 @@ dialog{
   id = "_treasure.stone_key.1",
   icon = 29,
   text = [[
-You found The
-Stone Key!$0
+¡Encontraste la
+Llave de Piedra!$0
 
-But where's the
-lock?
+Pero, ¿dónde
+está la 
+cerradura?
 ]]
 }
 --------------------
