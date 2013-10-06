@@ -1467,11 +1467,12 @@ dialog{
   id = "_treasure.wooden_key.1",
   icon = 30,
   text = [[
-You found the
-Wooden Key!$0
+¡Encontraste la
+Llave del Bosque!$0
 
-Find the correct
-lock to use it!
+¡Encuentra la 
+cerradura correcta
+para usarla!
 ]]
 }
 --------------------
@@ -1481,12 +1482,11 @@ dialog{
   id = "_treasure.ice_key.1",
   icon = 31,
   text = [[
-You found the
-Ice Key!$0
+¡Encontraste la
+Llave de Hielo!$0
 
-A frozen place
-this key
-unlocks...
+Está llave abre
+un lugar helado...
 ]]
 }
 --------------------
@@ -1496,11 +1496,13 @@ dialog{
   id = "_treasure.glove.1",
   icon = 32,
   text = [[
-You found the Iron
-Glove!$0
+¡Encontraste el
+Guante de Hierro!$0
 
-Now you can lift
-heavy stuff, try it!
+Ahora, podrás
+levantar cosas
+muy pesadas,
+!pruébalo!
 ]]
 }
 --------------------
