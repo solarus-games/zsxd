@@ -1512,11 +1512,12 @@ dialog{
   id = "_treasure.glove.2",
   icon = 33,
   text = [[
-You found The
-Gold Glove!$0
+¡Encontraste el
+Guante Dorad!$0
 
-Now you can lift
-the Black Rocks!
+¡Ahora podrás
+levantar las
+Rocas Negras!
 ]]
 }
 --------------------
@@ -1526,8 +1527,8 @@ dialog{
   id = "_treasure.fire_stone.1",
   icon = 34,
   text = [[
-You found a
-Fire Stone!
+¡Encontraste
+la Roca de Fuego!
 ]]
 }
 --------------------
@@ -1537,11 +1538,13 @@ dialog{
   id = "_treasure.world_map.1",
   icon = 50,
   text = [[
-You found the
-World Map!$0
+¡Encontraste
+el Mapa del
+Mundo!$0
 
-You can view it
-in the Map Menu.
+Puedes mirarlo
+en el Menú del
+Mapa.
 ]]
 }
 --------------------
@@ -1551,15 +1554,18 @@ dialog{
   id = "_treasure.rupee_bag.2",
   icon = 52,
   text = [[
-You found the
-Big Rupee Bag!$0
+¡Encontraste el
+Gran Saco de Rupias!$0
 
-You can now carry
-300 Rupees!
+¡Ahora podrás 
+cargar con
+300 Rupias!$0
 
-It's a shame the
-game is over, you
-could have used it!
+Es una pena
+que el juego
+haya terminado,
+¡Podrías haberlo
+usado!
 ]]
 }
 --------------------
@@ -1569,11 +1575,13 @@ dialog{
   id = "_treasure.rupee_bag.3",
   icon = 53,
   text = [[
-You found the
-Huge Rupee Bag!$0
+¡Encontraste la
+Bolsa de Rupias
+Enorme!$0
 
-Now you can carry
-999 Rupees!
+¡Ahora podrás 
+cargar con 
+999 Rupias!
 ]]
 }
 --------------------
@@ -1583,27 +1591,30 @@ dialog{
   id = "_treasure.bomb_bag.1",
   icon = 54,
   text = [[
-You found the
-Bomb Bag!$0 You
-can store 10 bombs.
+¡Encontraste el
+Saco de Bombas!$0
+Ahora podrás
+guardar 10 Bombas.
 Tic Tac $1
 pschhhhhhhhhhhhht $0 $3
 Ka-BOOOM!
 ]]
 }
 --------------------
-
+You can view it
+in the Map Menu.You can view it
+in the Map Menu.
 -- Grand sac de bombes
 dialog{
   id = "_treasure.bomb_bag.2",
   icon = 55,
   text = [[
-You found the
-Big Bomb Bag!$0
+¡Encontraste el
+Saco de Bombas Enorme!$0
 
-Awesome!
-Now you can store
-11 Bombs!
+¡Impresionante!
+¡Ahora, podrás llevar
+11 Bombas!
 ]]
 }
 --------------------
@@ -1613,12 +1624,14 @@ dialog{
   id = "_treasure.bomb_bag.3",
   icon = 56,
   text = [[
-You found the
-Huge Bomb Bag!$0
+¡Encontraste el
+Saco de Bombas 
+Enorme!$0
 
-It's really cool!
-Now you can store
-12 Bombs!
+¡Esto es realmente
+genial!
+¡Ahora, podrás llevar
+12 Bombas!
 ]]
 }
 --------------------
