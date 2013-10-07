@@ -2674,6 +2674,15 @@ npc{
   behavior = "dialog#crazy_house.guichet_31_ici",
 }
 
+stairs{
+  layer = 0,
+  x = 2568,
+  y = 512,
+  name = "stairs_2",
+  direction = 3,
+  subtype = "4",
+}
+
 tile{
   layer = 1,
   x = 2480,
@@ -8624,15 +8633,6 @@ crystal_block{
   width = 16,
   height = 16,
   subtype = "0",
-}
-
-stairs{
-  layer = 1,
-  x = 2568,
-  y = 512,
-  name = "stairs_2",
-  direction = 3,
-  subtype = "4",
 }
 
 jumper{
