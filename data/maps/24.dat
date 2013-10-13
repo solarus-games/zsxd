@@ -9345,7 +9345,7 @@ npc{
 
 sensor{
   layer = 1,
-  x = 1248,
+  x = 1192,
   y = 797,
   width = 16,
   height = 16,
