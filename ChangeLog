@@ -1,13 +1,10 @@
-zsxd-1.7.0 (under development).
+zsxd-1.7.0 (2013-10-13).
 
 * Use Solarus 1.1.0.
 * Replace .spc musics by .it musics (faster) and remove unused ones.
 * Add an animated Solarus logo from Maxs.
 * Fix savegames created with Solarus 0.9 but that were never run.
 * Fix a slight alignment issue with the hurt animation of the hero.
-
-zsxd-1.6.3 (under development)
-
 * Dungeon 1 3F: fix "attempt to compare number with nil" in counter 36 (#3).
 * Dungeon 2 1F: fix an enemy not counting in WFT room.
 
