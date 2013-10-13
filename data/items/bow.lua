@@ -41,5 +41,7 @@ function item:on_obtaining(variant, savegame_variable)
     -- Give the first quiver automatically with the bow.
     quiver:set_variant(1)
   end
+
+  self:set_amount(self:get_max_amount())
 end
 
