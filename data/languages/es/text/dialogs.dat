@@ -2,8 +2,6 @@
 -- This dialog file was converted from the 0.9.0 ini syntax using the script
 -- tools/data_files_converstion/dialogs_0.9.0_to_0.9.1.lua.
 
---Linea 738
-
 -- Plume / Feather
 dialog{
   id = "_item_description.feather.1",
@@ -742,9 +740,9 @@ dialog{
   icon = 45,
   skip = "all",
   text = [[
-Bags of basmati
-rice. Low price,
-store brand.
+Sacos de Arroz
+Basmati. Marca
+de bajo coste.
 ]]
 }
 --------------------
@@ -1641,12 +1639,12 @@ dialog{
   id = "_treasure.quiver.2",
   icon = 58,
   text = [[
-You found the
-Big Quiver!$0
+¡Encontrate el
+Carjac Grande!$0
 
-You can hold 30
-Arrows instead of
-10!
+¡Ahora podrás
+tener 30 Flechas
+en lugar de 10!
 ]]
 }
 --------------------
@@ -1656,12 +1654,14 @@ dialog{
   id = "_treasure.quiver.3",
   icon = 59,
   text = [[
-You found the
-Huge Quiver!$0
+¡Encontraste el
+Carjac Enorme!$0
 
-Awesome, you can
-carry 100 Arrows
-instead of 30!
+Impresionante,
+¡ahora podrás
+cargar con 
+100 Flechas
+en lugar de 30!
 ]]
 }
 --------------------
@@ -1671,12 +1671,12 @@ dialog{
   id = "_treasure.tunic.2",
   icon = 61,
   text = [[
-You found the
-Blue Mail!
-$0This armor
-protects you
-from the coldest
-temperatures...
+¡Encontraste
+la Malla Azul!$0
+Esta Armadura
+te protegerá de
+las temperaturas
+frías...
 ]]
 }
 --------------------
@@ -1686,12 +1686,12 @@ dialog{
   id = "_treasure.tunic.3",
   icon = 62,
   text = [[
-You found The
-Red Mail!
-$0This armor
-reduces the damage
-that you take
-from enemies!
+¡Encontraste la
+Malla Roja!$0
+!Esta Armadura
+recude el daño
+que recibirás
+de los enemigos!
 ]]
 }
 --------------------
@@ -1701,12 +1701,12 @@ dialog{
   id = "_treasure.shield.1",
   icon = 63,
   text = [[
-You found your
-Shield!$0
+¡Encontraste tu
+Armadura!$0
 
-Next time, don't
-leave it outside,
-will you?
+La proxima vez,
+no la dejes
+fuera,¿quieres?
 ]]
 }
 --------------------
