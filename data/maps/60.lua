@@ -1,4 +1,5 @@
 local map = ...
+local game = map:get_game()
 
 -- Temple of Stupidities 1F NW
 
