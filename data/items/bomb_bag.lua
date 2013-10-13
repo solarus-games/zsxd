@@ -19,7 +19,7 @@ function item:on_variant_changed(variant)
     bombs_counter:set_max_amount(0)
     bomb:set_obtainable(false)
   else
-    local max_amounts = {10, 30, 99}
+    local max_amounts = {10, 11, 12}
     local max_amount = max_amounts[variant]
 
     -- Set the max value of the bomb counter.
