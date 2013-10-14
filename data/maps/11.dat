@@ -1439,7 +1439,7 @@ destination{
   direction = 1,
 }
 
-shop_item{
+shop_treasure{
   layer = 1,
   x = 552,
   y = 120,
@@ -1450,7 +1450,7 @@ shop_item{
   dialog = "shop.apple_pie",
 }
 
-shop_item{
+shop_treasure{
   layer = 1,
   x = 480,
   y = 120,
@@ -1462,7 +1462,7 @@ shop_item{
   dialog = "shop.huge_rupee_bag",
 }
 
-shop_item{
+shop_treasure{
   layer = 1,
   x = 408,
   y = 120,
@@ -1474,7 +1474,7 @@ shop_item{
   dialog = "shop.heart_container",
 }
 
-shop_item{
+shop_treasure{
   layer = 1,
   x = 408,
   y = 64,
