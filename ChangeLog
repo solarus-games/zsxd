@@ -3,6 +3,10 @@ zsxd 1.8.0 (under development)
 * Use solarus 1.2.0.
 * Replace fixed8.fon by a TTF font due to an SDL2 regression (#59).
 
+zsxd 1.7.1 (under development)
+
+* Fix Creepers never exploding after they are hurt (#16).
+
 zsxd-1.7.0 (2013-10-13).
 
 * Use Solarus 1.1.0.
