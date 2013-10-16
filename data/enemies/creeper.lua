@@ -17,6 +17,7 @@ end
 
 function enemy:on_restarted()
 
+  explosion_soon = false
   self:go_random()
   self:check_hero()
 end
