@@ -814,7 +814,7 @@ dialog{
 ¡Encontraste la
 Pluma!$0 ¡Usala
 para saltar y salvar
-obstaculos!
+obstáculos!
 ]]
 }
 --------------------
@@ -1716,12 +1716,14 @@ dialog{
   id = "_treasure.shield.2",
   icon = 64,
   text = [[
-You found the
-Fire Shield !$0
-Now you're
-protected against
-fire attacks
-and fireballs!
+¡Encontraste
+la Armadura 
+de Fuego!$0
+¡Ahora estarás
+protegido
+contra los ataques
+de fuego y las
+bolas de fuego!
 ]]
 }
 --------------------
@@ -1731,11 +1733,12 @@ dialog{
   id = "_treasure.shield.3",
   icon = 65,
   text = [[
-You found the
-Mirror Shield!$0
+¡Encontraste
+la Armadura Espejo!$0
 
-You can now reflect
-laser attacks!
+¡Ahora podrás
+reflectar los 
+ataques láser!
 ]]
 }
 --------------------
@@ -1745,14 +1748,14 @@ dialog{
   id = "_treasure.sword.1",
   icon = 66,
   text = [[
-You found your
-Training Sword.
+Encontraste tu
+Espada de entrenamiento.
 
-You know it's yours
-because your name
-is carved on it!
-But what is it
-doing here?
+Sabes que es tuya
+porque tu nombre
+está grabado en ella!
+Pero, ¿qué hace
+aquí?
 ]]
 }
 --------------------
@@ -1762,11 +1765,11 @@ dialog{
   id = "_treasure.sword.2",
   icon = 67,
   text = [[
-You found the
-Laser Sword!$0
+¡Encontraste la
+Espada Láser!$0
 
-May the Triforcizzle
-be with you!
+¡Que la trifuerza
+este contigo!
 ]]
 }
 --------------------
@@ -1776,12 +1779,14 @@ dialog{
   id = "_treasure.sword.3",
   icon = 68,
   text = [[
-You found
+¡Encontraste
 Excalibur!$0
 
-It's a shame the
-game is over, you
-could have used it!
+Es una pena
+que el juego
+haya terminado,
+!podrías haberla
+usado!
 ]]
 }
 --------------------
@@ -1791,12 +1796,14 @@ dialog{
   id = "_treasure.sword.4",
   icon = 69,
   text = [[
-You found
+¡Encontraste
 Excalibur!$0
 
-It's a shame the
-game is over, you
-could have used it!
+Es una pena
+que el juego
+haya terminado,
+!podrías haberla
+usado!
 ]]
 }
 --------------------
@@ -1806,9 +1813,11 @@ dialog{
   id = "_treasure.map.1",
   icon = 70,
   text = [[
-You found the Map!
-Use it to discover
-your environment.
+¡Encontraste 
+el Mapa!
+Usalo para
+descubrir tu
+entorno.
 ]]
 }
 --------------------
@@ -1816,9 +1825,9 @@ your environment.
 dialog{
   id = "dungeon_1.after_map_treasure",
   text = [[
-And cry when you see
-the size of the
-dungeon!
+¡Y llora cuando 
+veas el tamaño
+de la mazmorra!
 ]]
 }
 -----------------------
@@ -1828,14 +1837,15 @@ dialog{
   id = "_treasure.compass.1",
   icon = 71,
   text = [[
-You found the
-Compass! Now you
-know the location
-of many things:
-chests, treasures
-and the Boss.
-That's what I
-call improvement!
+¡Encontraste 
+el Compas!
+Ahora sabes
+la localización
+de muchas cosas:
+cofres, tesoros
+y el Jefe.
+Esto es lo que
+llamo una mejora!
 ]]
 }
 --------------------
@@ -1845,12 +1855,13 @@ dialog{
   id = "_treasure.small_key.1",
   icon = 72,
   text = [[
-You found a Small
-Key!
+¡Encontraste una
+Llave Pequeña!
 
-You can use it to
-open a nearby
-locked door.
+Puedes usarla
+para abrir una
+puerta cerrada
+que este cerca.
 ]]
 }
 --------------------
@@ -1860,12 +1871,14 @@ dialog{
   id = "_treasure.big_key.1",
   icon = 73,
   text = [[
-You found the Big
-Key! Use it to open
-special doors and
-big chests!
-Now all you need is
-to find them!
+¡Encontraste la
+Llave Grande!
+¡Usala para abrir
+puertas especiales
+y cofres grandes!
+¡Ahora lo único
+que necesitas es
+encontrarlos!
 ]]
 }
 --------------------
@@ -1875,11 +1888,12 @@ dialog{
   id = "_treasure.boss_key.1",
   icon = 74,
   text = [[
-You found the Boss
-Key! At last you can
-meet with Ganon,
-master of this
-place!
+¡Encontraste la
+Llave del Jefe!
+¡Por fin te podrás
+reunir con Ganon,
+maestro de este
+lugar!
 ]]
 }
 --------------------
@@ -1889,8 +1903,8 @@ dialog{
   id = "_treasure.piece_of_heart.1",
   icon = 79,
   text = [[
-You found a
-Piece of Heart!
+¡Encontraste una
+Pieza de Corazón!
 ]]
 }
 --------------------
@@ -1900,12 +1914,13 @@ dialog{
   id = "_treasure.heart_container.1",
   icon = 80,
   text = [[
-You found a
-Heart Container.
+Encontraste un
+Contenedor de
+Corazones.
 
-You just gained
-a new Heart!
-It rooocks!
+¡Acabas de ganar
+un nuevo Corazón!
+¡Molaaa!
 ]]
 }
 --------------------
@@ -1916,7 +1931,8 @@ dialog{
   icon = 82,
   next = "_treasure.bomb.1.1",
   text = [[
-You found a Bomb!$0
+¡Encontraste una 
+Bomba!$0
 ]]
 }
 --------------------
@@ -1924,9 +1940,10 @@ You found a Bomb!$0
 dialog{
   id = "_treasure.bomb.1.1",
   text = [[
-Use a Bomb to blow
-up an enemy or an
-obstacle.
+Usa una Bomba
+para explotar a
+un enemigo o
+a un obstáculo.
 ]]
 }
 -----------------------
@@ -1937,7 +1954,7 @@ dialog{
   icon = 82,
   next = "_treasure.bomb.1.1",
   text = [[
-You found 3 Bombs!$0
+¡Encontraste 3 Bombas!$0
 ]]
 }
 --------------------
@@ -1948,7 +1965,7 @@ dialog{
   icon = 82,
   next = "_treasure.bomb.1.1",
   text = [[
-You found 8 Bombs!
+¡Encontraste 8 Bombas!
 ]]
 }
 --------------------
@@ -1959,7 +1976,7 @@ dialog{
   icon = 83,
   next = "_treasure.arrow.1.1",
   text = [[
-You found an Arrow!
+¡Encontraste un Arco!
 ]]
 }
 --------------------
@@ -1967,9 +1984,10 @@ You found an Arrow!
 dialog{
   id = "_treasure.arrow.1.1",
   text = [[
-Use the Bow with
-the Arrows to defeat
-distant monsters.
+Utiliza el Arco
+con las Flechas
+para derrotar 
+monstruos lejanos.
 ]]
 }
 -----------------------
@@ -1980,7 +1998,8 @@ dialog{
   icon = 83,
   next = "_treasure.arrow.1.1",
   text = [[
-You found 5 Arrows!
+¡Encontraste 5 Flechas!
+
 ]]
 }
 --------------------
@@ -1991,7 +2010,7 @@ dialog{
   icon = 83,
   next = "_treasure.arrow.1.1",
   text = [[
-You found 10 Arrows!
+¡Encontraste 10 Flechas!
 ]]
 }
 --------------------
@@ -2001,7 +2020,7 @@ dialog{
   id = "_treasure.heart.1",
   icon = 84,
   text = [[
-You found a Heart!
+¡Encontraste un Corazón!
 ]]
 }
 --------------------
@@ -2125,12 +2144,12 @@ a pizza?
 }
 --------------------
 
-dialog{
+dialog{Sell 1
   id = "_treasure.balai.1",
   icon = 41,
   text = [[
 You get the broom!
-
+Sell 1
 
 Mère Denis will be
 pleased with this ;)
@@ -2140,7 +2159,7 @@ pleased with this ;)
 
 dialog{
   id = "_treasure.cuillere.1",
-  icon = 42,
+  icon = 42,Sell 1
   text = [[
 A spoon! Eat soup
 and you'll grow big!
