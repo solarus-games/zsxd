@@ -2685,7 +2685,7 @@ dialog{
   text = [[
 Left: counter 22
 Stairs: reception,
-counters 11 et 12
+counters 11 and 12
 Right:
 counters 41, 43, 82
 ]]
