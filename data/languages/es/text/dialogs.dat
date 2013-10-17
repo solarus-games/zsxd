@@ -2030,8 +2030,8 @@ dialog{
   id = "_treasure.magic_flask.1",
   icon = 85,
   text = [[
-You found a
-Little Magic Flask!
+¡Encontraste un
+Pequeño Frasco Mágico!
 ]]
 }
 --------------------
@@ -2041,8 +2041,8 @@ dialog{
   id = "_treasure.magic_flask.2",
   icon = 86,
   text = [[
-You found a
-Big Magic Flask!
+¡Encontraste un
+Gran Frasco Mágico!
 ]]
 }
 --------------------
@@ -2052,7 +2052,8 @@ dialog{
   id = "_treasure.rupee.1",
   icon = 90,
   text = [[
-You found a Rupee!
+¡Encontraste una 
+Rupia!
 ]]
 }
 --------------------
@@ -2062,9 +2063,10 @@ dialog{
   id = "_treasure.rupee.2",
   icon = 91,
   text = [[
-You found a Blue
-Rupee. It's worth
-5 Rupees!
+¡Encontraste una
+Rupia Azul!¡Su 
+valor es de 
+5 Rupias!
 ]]
 }
 --------------------
@@ -2074,9 +2076,10 @@ dialog{
   id = "_treasure.rupee.3",
   icon = 92,
   text = [[
-You found a Red
-Rupee! It's worth
-20 Rupees!
+¡Encontraste una
+Rupia Roja! Su 
+valor es de 
+20 Rupias!
 ]]
 }
 --------------------
@@ -2087,8 +2090,9 @@ dialog{
   id = "_treasure.rupee.4",
   icon = 90,
   text = [[
-You found 50 Rupees!
-Awesome!
+¡Encontraste 
+50 Rupias!
+¡Impresionante!
 ]]
 }
 --------------------
@@ -2099,9 +2103,9 @@ dialog{
   id = "_treasure.rupee.5",
   icon = 90,
   text = [[
-You found 100
-Rupees!
-Fantastic!
+¡Encontraste 
+100 Rupias!
+!Fantastico!
 ]]
 }
 --------------------
@@ -2112,9 +2116,9 @@ dialog{
   id = "_treasure.rupee.6",
   icon = 90,
   text = [[
-You found 200
-Rupees!
-You're ecstatic!
+¡Encontraste
+200 Rupias!
+¡Estás eufórico!
 ]]
 }
 --------------------
@@ -2123,12 +2127,12 @@ You're ecstatic!
 dialog{
   id = "_treasure.zelda.1",
   text = [[
-You found
-Princess Zelda!
+¡Encontraste
+a la Princesa Zelda!
 
-It seems you just
-forgot her in your
-chest!
+¡Parece que te
+olvidaste de ella
+en su cofre!
 ]]
 }
 -----------------------
@@ -2144,12 +2148,11 @@ a pizza?
 }
 --------------------
 
-dialog{Sell 1
+dialog{
   id = "_treasure.balai.1",
   icon = 41,
   text = [[
 You get the broom!
-Sell 1
 
 Mère Denis will be
 pleased with this ;)
@@ -2159,7 +2162,7 @@ pleased with this ;)
 
 dialog{
   id = "_treasure.cuillere.1",
-  icon = 42,Sell 1
+  icon = 42,
   text = [[
 A spoon! Eat soup
 and you'll grow big!
