@@ -2141,9 +2141,9 @@ dialog{
   id = "_treasure.poivron.1",
   icon = 40,
   text = [[
-You got a pepper!
-How about cooking
-a pizza?
+¡Tienes un pimiento!
+¿Qué hay de cocinar
+una pizza?
 ]]
 }
 --------------------
@@ -2152,10 +2152,12 @@ dialog{
   id = "_treasure.balai.1",
   icon = 41,
   text = [[
-You get the broom!
+¡Has recibido la
+Escoba!
 
-Mère Denis will be
-pleased with this ;)
+Mère Denis estará
+encantada con
+esto ;)
 ]]
 }
 --------------------
@@ -2164,8 +2166,9 @@ dialog{
   id = "_treasure.cuillere.1",
   icon = 42,
   text = [[
-A spoon! Eat soup
-and you'll grow big!
+¡Una cuchara!
+¡Comete la sopa
+y crecerás grande!
 ]]
 }
 --------------------
@@ -2174,8 +2177,8 @@ dialog{
   id = "_treasure.tapisserie.1",
   icon = 43,
   text = [[
-What a magnificient
-tapestry!
+¡Que magnífico
+tapiz!
 ]]
 }
 --------------------
@@ -2184,8 +2187,8 @@ dialog{
   id = "_treasure.roc_magma.1",
   icon = 44,
   text = [[
-A Magma Rock!
-Whoa, it's hot!
+¡Una Roca de Magma!
+Whoa,¡está caliente!
 ]]
 }
 --------------------
@@ -2194,9 +2197,9 @@ dialog{
   id = "_treasure.sac_riz.1",
   icon = 45,
   text = [[
-You got rice.
-But basmati rice,
-doh :(
+Has recibido arroz.
+Pero es arroz
+basmati, doh :(
 ]]
 }
 --------------------
@@ -2205,10 +2208,10 @@ dialog{
   id = "_treasure.sac_olive.1",
   icon = 46,
   text = [[
-We give you a bag of
-olives, don't you
-like it?
-Too bad for you!
+Te damos una 
+bolsa de olivas, 
+¿no te gustan?
+¡Peor para tí!
 ]]
 }
 --------------------
@@ -2217,8 +2220,9 @@ dialog{
   id = "_treasure.bocal_epice.1",
   icon = 47,
   text = [[
-You got a spice jar,
-but what's in it?
+Has recibido un tarro
+de especias, ¿pero
+qué contiene?
 ]]
 }
 --------------------
@@ -2227,10 +2231,11 @@ dialog{
   id = "_treasure.hache.1",
   icon = 48,
   text = [[
-The axe, a wonderful
-tool, that cuts
-everything...
-or not.
+El Hacha, una
+herramienta
+maravillosa, lo
+corta todo...
+o no.
 ]]
 }
 --------------------
@@ -2239,12 +2244,13 @@ dialog{
   id = "_treasure.parfum.1",
   icon = 49,
   text = [[
-We give you:
-Fragrance Kipu de
+Te damos:
+Fragancia Kipu de
 Cacaco Charnel,
-get rid of it ASAP
-before you die of
-asphyxia!
+¡deshazte de ella
+lo antes posible
+antes de que mueras
+de asfixia!
 ]]
 }
 -----------------------
