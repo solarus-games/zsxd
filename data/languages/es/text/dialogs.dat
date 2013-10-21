@@ -2266,8 +2266,9 @@ de asfixia!
 dialog{
   id = "_warning_magic",
   text = [[
-Keep an eye on your
-Magic Meter!
+¡Manten un ojo
+en el Medidor
+de Magia!
 ]]
 }
 -----------------------
@@ -2276,9 +2277,9 @@ Magic Meter!
 dialog{
   id = "_empty_chest",
   text = [[
-This chest is empty!
-Not your lucky day
-it seems!
+¡Este cofre está vacío!
+¡Parece que no es
+tu día de suerte!
 ]]
 }
 -----------------------
@@ -2289,7 +2290,7 @@ dialog{
   id = "_small_key_required",
   icon = 72,
   text = [[
-Locked!
+¡Cerrado!
 ]]
 }
 --------------------
@@ -2300,8 +2301,9 @@ dialog{
   id = "_big_key_required",
   icon = 73,
   text = [[
-Locked, you need the
-Big Key to open it!
+Cerrado,¡Necesitas
+la Llave Grande 
+para abrirlo!
 ]]
 }
 --------------------
@@ -2311,12 +2313,12 @@ dialog{
   id = "_boss_key_required",
   icon = 74,
   text = [[
-This door leads
-to Ganon!
+¡Esta puerta
+conduce a Ganon!
 
-Don't even try to
-open it whithout
-the Master Key!
+¡No intentes 
+abrirla sin la
+Llave Maestra!
 ]]
 }
 --------------------
@@ -2327,9 +2329,9 @@ dialog{
   id = "_cannot_lift_should_cut",
   skip = "all",
   text = [[
-Maybe you need
-something to cut down
-this bush...
+Puede que necesites
+algo para cortar
+este arbusto...
 ]]
 }
 -----------------------
@@ -2340,8 +2342,9 @@ dialog{
   id = "_cannot_lift_too_heavy",
   skip = "all",
   text = [[
-You're not strong
-enough for this!
+¡No eres lo
+suficientemente
+fuerte para esto!
 ]]
 }
 -----------------------
@@ -2351,8 +2354,10 @@ enough for this!
 dialog{
   id = "_cannot_lift_still_too_heavy",
   text = [[
-You're REALLY not
-strong enough for this!
+¡En realidad,
+no eres lo
+suficientemente
+fuere para esto!
 ]]
 }
 -----------------------
@@ -2363,9 +2368,9 @@ dialog{
   id = "_shop.question",
   question = true,
   text = [[
-Cost: $v rupees.
-Buy
-No way
+Precio: $v Rupias.
+Comprar
+¡Ni hablar!
 ]]
 }
 -----------------------
@@ -2375,8 +2380,8 @@ No way
 dialog{
   id = "_shop.not_enough_money",
   text = [[
-Dude, you're short on
-Rupees!
+Tío, ¡no tienes
+Rupias!
 ]]
 }
 -----------------------
@@ -2387,7 +2392,8 @@ Rupees!
 dialog{
   id = "_shop.amount_full",
   text = [[
-You can't get any more!
+¡No se puede 
+conseguir nada más!
 ]]
 }
 -----------------------
@@ -2396,9 +2402,11 @@ You can't get any more!
 dialog{
   id = "_crystal",
   text = [[
-It's a crystal switch.
-Hit the switch with
-something...
+Es un interruptor
+de Cristal.
+
+Pulsa el interruptor
+con algo...
 ]]
 }
 -----------------------
@@ -2407,10 +2415,10 @@ dialog{
   id = "found_piece_of_heart.first",
   icon = 75,
   text = [[
-Don't even THINK
-about it: you need
-3 more of them to
-have a new Heart.
+Ni lo pienses:
+necesitas 3 más
+para conseguir un 
+nuevo Corazón.
 ]]
 }
 --------------------
@@ -2419,7 +2427,7 @@ dialog{
   id = "found_piece_of_heart.second",
   icon = 76,
   text = [[
-Just two more!
+¡Solo dos más!
 ]]
 }
 --------------------
@@ -2428,9 +2436,9 @@ dialog{
   id = "found_piece_of_heart.third",
   icon = 77,
   text = [[
-Just one more!
-Get ready for
-the party!
+¡Solo una más!
+¡Prepárate para
+la fiesta!
 ]]
 }
 --------------------
@@ -2439,9 +2447,10 @@ dialog{
   id = "found_piece_of_heart.fourth",
   icon = 78,
   text = [[
-You found 4 Pieces
-of Heart. You gain a
-new Heart!
+Encontraste 4
+Piezas de Corazón.
+¡Has ganado un 
+nuevo Corazón!
 ]]
 }
 --------------------
@@ -2453,8 +2462,8 @@ dialog{
   skip = "all",
   next = "found_fairy.1",
   text = [[
-You found a Fairy,
-that's cool!
+¡Encontraste un Hada,
+es genial!
 ]]
 }
 --------------------
