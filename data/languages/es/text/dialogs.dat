@@ -2474,9 +2474,10 @@ dialog{
   skip = "none",
   question = true,
   text = [[
-You found a fairy!
-Recover Hearts now
-Keep her in a Bottle
+¡Encontraste un Hada!
+Recupera tus Corazones
+ahora o guardala
+en una Botella.
 ]]
 }
 --------------------
@@ -2485,8 +2486,8 @@ Keep her in a Bottle
 dialog{
   id = "found_fairy.no_empty_bottle",
   text = [[
-You don't have a
-Magic Bottle!
+¡No tienes una
+Botella Mágica!
 ]]
 }
 -----------------------
@@ -2497,11 +2498,11 @@ dialog{
   icon = 8,
   question = true,
   text = [[
-Do you want to fill
-your Magic Bottle
+¿Quiéres llenar
+tu Botella Mágica
+con Agua?
 
-with water?
-Yes
+Sí
 No
 ]]
 }
@@ -2511,10 +2512,10 @@ No
 dialog{
   id = "found_water.no_bottle",
   text = [[
-You found water,
-but you don't have
-a Magic Bottle
-to store it...
+Encontraste Agua,
+pero no tienes
+una Botella Mágica
+para guardarla...
 ]]
 }
 -----------------------
@@ -2524,10 +2525,10 @@ dialog{
   id = "found_water.no_empty_bottle",
   icon = 8,
   text = [[
-You found water,
-but you need an
-empty Magic Bottle
-to store it...
+Encontraste Agua,
+pero necesitas 
+una Botella Mágica
+para guardarla...
 ]]
 }
 --------------------
@@ -2538,11 +2539,11 @@ dialog{
   icon = 8,
   question = true,
   text = [[
-Your Magic Bottle is
-filled with water.
+¿Quiéres llenar
+tu Botella Mágica
+con Agua?
 
-Empty it?
-Yes
+Sí
 No
 ]]
 }
@@ -2554,11 +2555,12 @@ dialog{
   icon = 16,
   question = true,
   text = [[
-Eat an apple
-to recover
-one Heart.
-Eat one now?
-Yes
+Comete una Manzana
+para recuperar
+un Corazón.
+¿Te comes una
+ahora?
+Sí
 No
 ]]
 }
@@ -2570,11 +2572,12 @@ dialog{
   icon = 17,
   question = true,
   text = [[
-A Chocolate
-Croissant recovers
-three Hearts.
-Eat one now?
-Yes
+Un Cruasán de
+Chocolate recupera
+tres Corazones.
+¿Te comes uno
+ahora?
+Sí
 No
 ]]
 }
@@ -2586,11 +2589,13 @@ dialog{
   icon = 18,
   question = true,
   text = [[
-A Croissant
-recovers 7 Hearts.
+Un Cruasán
+recupera 
+7 Corazones.
 
-Eat one now?
-Yes
+¿Te comes un
+ahora?
+Sí
 No
 ]]
 }
@@ -2608,9 +2613,10 @@ to light this torch.
 dialog{
   id = "caverne_fragments.sign",
   text = [[
-Only a true Hero
-deserves the chest.$0$0
-Or maybe not.
+Solo un verdadero
+Héroe merece el
+Cofre. $0$0
+O puede que no.
 ]]
 }
 -----------------------
@@ -2628,8 +2634,9 @@ kiss u sux lol :D!
 dialog{
   id = "maison_boulet.fakechest",
   text = [[
-lololol!
-You're so unlucky!!
+¡lololol!
+¡¡Eres muy
+desafortunado!!
 XD
 ]]
 }
@@ -2638,8 +2645,8 @@ XD
 dialog{
   id = "maison_pots.sign",
   text = [[
-You really want to
-break them all?
+¿De verdad quieres
+romperlo todo?
 ]]
 }
 -----------------------
@@ -2647,10 +2654,11 @@ break them all?
 dialog{
   id = "caverne_maudite.pancarte",
   text = [[
-You have to let it all
-go. Fear, doubt and
-disbelief...
-Free your mind $v.
+Hay que dejar que 
+todo se vaya.
+El miedo, la duda 
+y la incredulidad...
+Libera tu mente $v.
 ]]
 }
 -----------------------
@@ -2661,9 +2669,9 @@ Free your mind $v.
 dialog{
   id = "crazy_house.title",
   text = [[
-        Level 1        
-     Lost and Found    
-        Office         
+	Nivel 1
+   Oficina de objetos
+	Perdidos       
 ]]
 }
 -----------------------
