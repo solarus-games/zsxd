@@ -70,7 +70,6 @@ end
 
 function console:on_key_pressed(key, modifiers)
 
-  local handled = true
   if key == "f12" or key == "escape" then
     sol.menu.stop(self)
   elseif key == "backspace" then
@@ -90,13 +89,10 @@ function console:on_key_pressed(key, modifiers)
     self:history_up()
   elseif key == "down" then
     self:history_down()
-  elseif key == "left shift" or key == "right shift" then
-    -- Stop propagation.
-  else
-    handled = false
   end
 
-  return handled
+  -- The debugging console has exclusive focus.
+  return true
 end
 
 function console:on_character_pressed(character)
