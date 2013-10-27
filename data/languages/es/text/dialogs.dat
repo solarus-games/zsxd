@@ -2671,7 +2671,7 @@ dialog{
   text = [[
 	Nivel 1
    Oficina de objetos
-	Perdidos       
+  Perdidos y Encontrados        
 ]]
 }
 -----------------------
@@ -2680,20 +2680,22 @@ dialog{
   id = "crazy_house.welcome_message",
   skip = "current",
   text = [[
-Welcome to the Lost and
-Found Office.
+Bienvenido a la Oficina
+de Objetos Perdidos y 
+Encontrados.
 
-Also known as... 3T:
-Things To Trade!
+También conocida como... 3T:
 
-You'll need pen and
-paper...
+¡Cosas para vender!
 
-Left: Reception,
-counters 11, 21
+Necesitarás un bolígrafo
+y papel...
 
-Right:
-counters 12, 22
+Izquierda: Recepción, 
+mostradores 11, 21
+
+Derecha: 
+mostradores 12, 22
 ]]
 }
 -----------------------
@@ -2702,7 +2704,7 @@ dialog{
   id = "crazy_house.mario_message_1",
   skip = "current",
   text = [[
-It's-a me, Mario!
+¡Soy yo, Mario!
 ]]
 }
 -----------------------
@@ -2711,8 +2713,8 @@ dialog{
   id = "crazy_house.directionsAccueil",
   skip = "current",
   text = [[
-     - Reception -     
- Please stand in line  
+     - Recepción -
+ Por favor, hagan cola 
 ]]
 }
 -----------------------
@@ -2721,9 +2723,9 @@ dialog{
   id = "crazy_house.directions_1F",
   skip = "current",
   text = [[
-Down: counter 21
-Right:
-counters 45, 47, 49, 84
+Abajo: mostrador 21
+Derecha:
+mostradores 45, 47, 49, 84
 ]]
 }
 -----------------------
@@ -2732,12 +2734,12 @@ dialog{
   id = "crazy_house.directions_1F_se",
   skip = "current",
   text = [[
-Stairs:
-counters 22, 12
+Escalera:
+mostradores 22, 12
 
-Left:
-counters 41, 43, 82,
-third floor
+Izquierda:
+mostradores 41, 43, 82,
+tercer piso
 ]]
 }
 -----------------------
@@ -2746,7 +2748,7 @@ dialog{
   id = "crazy_house.directions_1F_sw",
   skip = "current",
   text = [[
-Warp to the right wing
+Gira hacia el ala derecha
 ]]
 }
 -----------------------
@@ -2755,12 +2757,12 @@ dialog{
   id = "crazy_house.directions_2F",
   skip = "current",
   text = [[
-Left:
-counters 45, 47, 49, 84
-Down: counter 21
-Right: counter 33
-Stairs:
-counter 11, reception
+Izquierda:
+mostradores 45, 47, 49, 84
+Abajo: mostrador 21
+Derecha: mostrador 33
+Escalera:
+mostrador 11, recepción
 ]]
 }
 -----------------------
@@ -2769,11 +2771,11 @@ dialog{
   id = "crazy_house.directions_2F_no",
   skip = "current",
   text = [[
-Stairs:
-counters 49, 47, 45
+Escalera:
+mostradores 49, 47, 45
 
-Right:
-counters 84, 33
+Derecha:
+mostradores 84, 33
 ]]
 }
 -----------------------
@@ -2782,9 +2784,9 @@ dialog{
   id = "crazy_house.directions_2F_ne",
   skip = "current",
   text = [[
-Warp to
-counters 11, 21 and
-the reception.
+Gira hacia los
+mostradores 11, 21 y
+la recepción.
 ]]
 }
 -----------------------
@@ -2793,11 +2795,11 @@ dialog{
   id = "crazy_house.directions_2F_e",
   skip = "current",
   text = [[
-Left: counter 22
-Stairs: reception,
-counters 11 et 12
-Right:
-counters 41, 43, 82
+Izquierda: mostrador 22
+Escaleras: recepción,
+mostradores 11 y 12
+Derecha:
+mostradores 41, 43, 82
 ]]
 }
 -----------------------
@@ -2806,17 +2808,18 @@ dialog{
   id = "crazy_house.directions_3F",
   skip = "current",
   text = [[
-Right:
-counters 31, 32, 36
+Derecha:
+mostradores 31, 32, 36
 
-Left: 1500 Megawatt
-Aperture Science Heavy
-Duty Super-Colliding
-Super Button.
-Up: counter 82
+Izquierda: Botón de 
+Giga colisión adicional
+con una carga superior
+a 15.000 megavatios
 
-This sign is here to
-bother you. Thank you.
+Arriba: mostrador 82
+
+Este signo está aquí
+para molestarte.Gracias.
 ]]
 }
 -----------------------
@@ -2825,9 +2828,10 @@ dialog{
   id = "crazy_house.directions_3F_3",
   skip = "current",
   text = [[
-This sign is here to
-bother you again.
-Thank you.
+Este signo está aquí
+para molestarte de
+nuevo.
+Gracias.
 ]]
 }
 -----------------------
@@ -2836,7 +2840,7 @@ dialog{
   id = "crazy_house.directions_3FB",
   skip = "current",
   text = [[
-Up: counter 33
+Arriba: mostrador 33
 ]]
 }
 -----------------------
@@ -2845,8 +2849,8 @@ dialog{
   id = "crazy_house.directions_3FC",
   skip = "current",
   text = [[
-Stairs to
-counters 84, 49, 47, 45
+Escaleras hacia
+los mostradores 49, 47, 45
 ]]
 }
 -----------------------
@@ -2855,12 +2859,11 @@ dialog{
   id = "crazy_house.giga_bouton_trop_leger",
   skip = "current",
   text = [[
-There's not enough
-weight on the 1500
-Megawatt Aperture
-Science Heavy Duty
-Super-Colliding
-Super Button.
+No hay suficiente
+peso en el Botón de 
+Giga colisión adicional
+con una carga superior
+a 15.000 megavatios
 ]]
 }
 -----------------------
@@ -2869,10 +2872,10 @@ dialog{
   id = "crazy_house.alcoholic_man",
   skip = "current",
   text = [[
-Burp! I don't even...
-... rememburps!...
-how I came... burp!
-... back here! Burps!
+¡Eructo! Yo ni siquiera...
+...¡recuereructo!...
+cómo llege... ¡eructo!
+... ¡vuelve aquí!¡Eructo!
 ]]
 }
 -----------------------
@@ -2881,14 +2884,14 @@ dialog{
   id = "crazy_house.infinite_greetings",
   skip = "current",
   text = [[
-You must activate the
-1500 Megawatt Aperture
-Science Heavy Duty
-Super-Colliding Super
-Button to get across
-the neverending
-corridor. Exactly what
-you forgot to do!
+Debes activar el Botón de 
+Giga colisión adicional
+con una carga superior
+a 15.000 megavatios para
+cruzar el pasillo 
+interminable.¡Exactamente
+lo que te olvidaste de 
+hacer!
 
 BWAH HA HA HA HA!
 ]]
@@ -2899,32 +2902,32 @@ dialog{
   id = "crazy_house.hint_part2",
   skip = "current",
   text = [[
-Touch this slab and the
-the counter clerk will
-use telepathy to talk
-to you.
+Toca esta losa y el 
+empleado del mostrador
+usará la telepatia para
+hablar contigo.
 
 
 Humm humm 1, 2...
-1, 2... do you hear me?
+1, 2... ¿me escuchas?
 
-I'm on air?
+¿Estoy en el aire?
 Ha hum...
 
-Young man, this crazy
-house will become your
-tomb if you don't
-listen to me.
-Follow my advice:
-the hidden crystal
-must be remotely
-activated.
+Joven, esta loca 
+casa se convertirá en
+tu tumba si no me 
+escuchas.
+Sigue mi consejo:
+el cristal oculto
+puede ser activado
+remotamente.
 
-What, you've done it
-before? Hum...
-Herrr... wait,
-crr... I pass through
-a tunnel crr...
+¿Qué, lo hiciste
+antes? Hum...
+Herrr... espera,
+crr... Paso por 
+un tunel crr...
 crr... crr... beeep!
 ]]
 }
@@ -2934,9 +2937,9 @@ dialog{
   id = "crazy_house.chemin_de_dieu",
   skip = "current",
   text = [[
-The Path of God.
-It's a leap of faith!
-You must believe, boy!
+El camino de Dios.
+¡Es un acto de fe!
+¡Debes creer, chico!
 ]]
 }
 -----------------------
@@ -2948,6 +2951,8 @@ dialog{
   id = "crazy_house.public_agent",
   skip = "all",
   text = [[
+¿Qué?¿Quieres atravesarla?
+
 What? You want to go
 through? Don't you
 see I'm on strike?
