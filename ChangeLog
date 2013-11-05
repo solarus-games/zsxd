@@ -5,6 +5,7 @@ zsxd 1.8.0 (under development)
 
 zsxd 1.7.1 (under development)
 
+* Use Solarus 1.1.1.
 * Fix Creepers never exploding after they are hurt (#16).
 * Fix a typo in English dialogs.
 * Fix the debugging console no longer working after using F1, F2 or F3.
