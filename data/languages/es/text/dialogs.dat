@@ -2914,8 +2914,8 @@ Humm humm 1, 2...
 ¿Estoy en el aire?
 Ha hum...
 
-Joven, esta loca 
-casa se convertirá en
+Joven, esta casa 
+loca se convertirá en
 tu tumba si no me 
 escuchas.
 Sigue mi consejo:
@@ -2951,17 +2951,17 @@ dialog{
   id = "crazy_house.public_agent",
   skip = "all",
   text = [[
-¿Qué?¿Quieres atravesarla?
-
-What? You want to go
-through? Don't you
-see I'm on strike?
-God damnit! You people
-in the private sector,
-you don't understand
-our demands but we
-still let you judge us!
-Go away!
+¿Qué?¿Quiéres 
+atravesarla?
+¿No ves que estoy
+en huelga?
+¡Dios maldita sea!
+¡Ustedes en el sector
+privado, no entienden
+nuestras demandas pero 
+aún así permitiré que
+nos juzgue!
+¡Vete!
 ]]
 }
 -----------------------
@@ -2972,21 +2972,20 @@ Go away!
 dialog{
   id = "crazy_house.accueil_ech_eq_0",
   text = [[
-Hello Sir, have you
-lost something?
+Hola Señor, ¿A perdido
+algo?
 
-What are you looking
-for?
-$0Gloves?
-Wait here,
-I'll check...
+¿Qué está buscando?
+$0¿Guantes?
+Espere aquí,
+Voy a comprobarlo...
 
-Hmmm I'm not sure,
-maybe you should go to
-counter 21.
-Go upstairs and you'll
-find it on the second
-floor.
+Hmmm No estoy seguro,
+tal vez podría ir al
+mostrador 21.
+Suba las escaleras
+y podrá encontrarlo
+en el segundo piso.
 ]]
 }
 -----------------------
@@ -2994,8 +2993,10 @@ floor.
 dialog{
   id = "crazy_house.accueil_ech_eq_1",
   text = [[
-Use the stairs behind
-me to find counter 21.
+Usa las escaleras
+que hay detrás de mi
+para encontrar el 
+mostrador 21.
 ]]
 }
 -----------------------
@@ -3003,17 +3004,19 @@ me to find counter 21.
 dialog{
   id = "crazy_house.accueil_ech_eq_2",
   text = [[
-Yes? Uh, the counter
-clerk is a fool?
-Hmmm, maybe you should
-check counter 41. It's
-here on the ground
-floor, but you have to
-reach it by crossing
-the second floor.
+¿Si? Uh, ¿el empleado
+del mostrador es
+idiota? Hmmm, tal vez
+debería comprobar el
+mostrador 41. 
+Es aquí, en la 
+planta baja, pero hay
+que llegar a ella 
+cruzando el segundo piso.
 
-Use the stairs behind
-me and ask people.
+Usa las escaleras que
+hay detrás de mi y pregunta
+a la gente.
 ]]
 }
 -----------------------
@@ -3021,11 +3024,12 @@ me and ask people.
 dialog{
   id = "crazy_house.accueil_ech_eq_3",
   text = [[
-Counter 41 is on the
-ground floor, first
-use the stairs behind
-me and ask people
-around.
+El mostrador 41 está
+en la planta baja, 
+primero usa las escaleras
+que hay detrás de mi
+y pregunta a la gente
+de alrededor.
 ]]
 }
 -----------------------
@@ -3033,9 +3037,11 @@ around.
 dialog{
   id = "crazy_house.accueil_ech_eq_4",
   text = [[
-Counter 33? It's on the
-third floor, left
-wing.
+¿El mostrador 33?
+
+Counter 33? Está en
+el tercer piso, ala
+izquierda.
 ]]
 }
 -----------------------
@@ -3043,12 +3049,13 @@ wing.
 dialog{
   id = "crazy_house.accueil_ech_eo_5-7",
   text = [[
-Counter 12... This is
-the right floor, but
-it's in the right wing.
-You have to go through
-the second floor once
-again.
+El mostrador 12...
+Este es el piso
+correcto, pero es
+en el ala derecha.
+Necesitas ir a través 
+del segundo piso,
+una vez más.
 ]]
 }
 -----------------------
@@ -3056,12 +3063,13 @@ again.
 dialog{
   id = "crazy_house.accueil_ech_eq_6",
   text = [[
-Counter 32 is on the
-third floor of the
-right wing.
-You have to use the
-stairs on the second
-floor, near counter 82.
+El mostrador 32 está
+en el tercer piso
+en el ala derecha.
+Tendrás que usar las
+escaleras en el segundo
+piso, cerca del 
+mostrador 82.
 ]]
 }
 -----------------------
@@ -3069,9 +3077,10 @@ floor, near counter 82.
 dialog{
   id = "crazy_house.accueil_ech_eq_8",
   text = [[
-Counter 22? It's
-on the second floor
-in the right wing.
+¿El mostrador 22?
+Está en el segundo
+piso en el ala
+derecha.
 ]]
 }
 -----------------------
@@ -3079,11 +3088,12 @@ in the right wing.
 dialog{
   id = "crazy_house.accueil_ech_eq_9",
   text = [[
-Counter 12 is on this
-floor, but in the
-right wing.
-Go through the second
-floor to go around.
+El mostrador 12 está 
+en este piso, pero
+en el ala derecha.
+Ves a través del 
+segundo piso para 
+llegar.
 ]]
 }
 -----------------------
