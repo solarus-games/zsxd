@@ -2671,7 +2671,7 @@ dialog{
   text = [[
 	Nivel 1
    Oficina de objetos
-  Perdidos y Encontrados        
+        Perdidos       
 ]]
 }
 -----------------------
@@ -3101,10 +3101,11 @@ llegar.
 dialog{
   id = "crazy_house.accueil_ech_eq_10",
   text = [[
-To find counter 33, you
-you have to go up the
-third floor, in the
-left wing.
+Para encontrar el 
+mostrador 33, tienes
+que subir a la tercera
+planta, en el ala
+izquierda.
 ]]
 }
 -----------------------
@@ -3112,14 +3113,13 @@ left wing.
 dialog{
   id = "crazy_house.accueil_ech_eq_11",
   text = [[
-You don't know what to
-do with this key?
-It unlocks a room
-on the third floor I
-think, in the left
-wing...
-... if I remember
-correctly.
+¿No sabes qué hacer
+con esta llave?
+Abre una habitación
+en el tercer piso, 
+en el ala izquierda...
+... si es que lo 
+recuerdo correctamente.
 ]]
 }
 -----------------------
@@ -3127,11 +3127,12 @@ correctly.
 dialog{
   id = "crazy_house.accueil_epi_eo_1-7",
   text = [[
-If you're looking for
-peppers, check counter
-84.
-You'll find it on the
-second floor, left wing.
+Si tu estás buscando
+pimientos,comprueba 
+el mostrador 84.
+Puedes encontrarlo en 
+el segundo piso,
+ala izquierda.
 ]]
 }
 -----------------------
@@ -3139,11 +3140,11 @@ second floor, left wing.
 dialog{
   id = "crazy_house.accueil_epi_eo_2-6",
   text = [[
-Counter 11? Just behind
-me, Sir.
+¿El mostrador 11? Justo
+detrás de mí, señor.
 
-(Oh god, he has no
-memory!)
+(Oh, dios,!Él no tiene
+memoria¡)
 ]]
 }
 -----------------------
@@ -3151,11 +3152,12 @@ memory!)
 dialog{
   id = "crazy_house.accueil_epi_eo_3-5",
   text = [[
-To find counter 22, go
-to the second floor in
-the right wing.
-Use the stairs behind
-me.
+Para encontrar el
+mostrador 22, ves al 
+segundo piso en el ala
+derecha.
+Usa las escaleras que
+ahí detrás de mí.
 ]]
 }
 -----------------------
@@ -3163,12 +3165,13 @@ me.
 dialog{
   id = "crazy_house.accueil_epi_eo_4-9",
   text = [[
-Some bags of rice?
-Let's see... counter 36
-on the third floor,
-right wing. Use the
-stairs on the second
-floor, right wing.
+¿Algunas bolsas de 
+arroz?
+Ya veo... mostrador 36
+en el tercer piso, 
+ala derecha. Usa las 
+escaleras del segundo
+piso, ala derecha.
 ]]
 }
 -----------------------
@@ -3176,9 +3179,9 @@ floor, right wing.
 dialog{
   id = "crazy_house.accueil_epi_eo_8-10",
   text = [[
-An old man? I don't
-know what you're
-talking about, sorry.
+¿Un anciano? No se
+de qué me esta 
+hablando, disculpa.
 ]]
 }
 -----------------------
@@ -3186,12 +3189,13 @@ talking about, sorry.
 dialog{
   id = "crazy_house.accueil_bal_eo_1-6-8-10",
   text = [[
-At counter 22, you
-should find tapestries
-and brooms. To reach
-it, go to the second
-floor, right wing. Use
-the stairs behind me.
+El mostrador 22, debes
+encontrar tapices y 
+escobas. Para llegar 
+a él, ves al segundo
+piso, ala derecha.
+Usa las escaleras que 
+ahí detrás de mí.
 ]]
 }
 -----------------------
@@ -3199,9 +3203,9 @@ the stairs behind me.
 dialog{
   id = "crazy_house.accueil_bal_eq_2",
   text = [[
-Counter 82 is on the
-second floor, right
-wing.
+El mostrador 82 está
+en el segundo piso, 
+ala derecha.
 ]]
 }
 -----------------------
@@ -3209,12 +3213,12 @@ wing.
 dialog{
   id = "crazy_house.accueil_bal_eq_3",
   text = [[
-Counter 45?
-Hmmm, where was it
-last time...? I think
-on the ground floor,
-left wing. If no one
-moved it...
+¿El mostrador 45?
+Hmmm, ¿dónde estaba
+la última vez...?
+Creo que en la planta
+baja, ala izquierda.
+Si no lo han movido...
 ]]
 }
 -----------------------
@@ -3222,9 +3226,9 @@ moved it...
 dialog{
   id = "crazy_house.accueil_bal_eq_4",
   text = [[
-Counter 32 is on the
-third floor, right
-wing.
+El mostrador 32 está
+en el tercer piso, 
+ala derecha.
 ]]
 }
 -----------------------
@@ -3232,9 +3236,10 @@ wing.
 dialog{
   id = "crazy_house.accueil_bal_eo_5-9",
   text = [[
-I think I JUST told you
-counter 11 can be found
-right behind me!
+¡Creo que acabo DE DECIR
+que el mostrador 11
+se puede encontrar
+detrás de mí!
 ]]
 }
 -----------------------
@@ -3242,9 +3247,11 @@ right behind me!
 dialog{
   id = "crazy_house.accueil_bal_eq_7",
   text = [[
-Some bags of rice?
-Maybe counter 36 on the
-third floor.
+¿Algunas bolsas 
+de arroz?
+Puede que en el
+mostrador 36 en el
+tercer piso.
 ]]
 }
 -----------------------
@@ -3252,15 +3259,15 @@ third floor.
 dialog{
   id = "crazy_house.accueil_fini",
   text = [[
-You found your gloves
-dear Sir?
-Perfect.
-The Lost and Found
-Office was honored to
-serve you and we hope
-you'll come to visit us
-again soon.
-Have a nice day!
+¿Encontró sus guantes
+querido señor?
+Perfecto.
+La oficina de objetos
+perdidos tuvo el honor
+de servirle y esperamos
+que venga a visitarnos
+pronto.
+¡Que tenga un buen día!
 ]]
 }
 -----------------------
@@ -3268,7 +3275,7 @@ Have a nice day!
 dialog{
   id = "crazy_house.depot_ici",
   text = [[
-   - Storage Room -    
+   - Trastero -
 ]]
 }
 -----------------------
@@ -3280,7 +3287,7 @@ dialog{
   id = "crazy_house.guichet_11",
   skip = "current",
   text = [[
-     - Counter 11 -
+     - Mostrador 11 -
 ]]
 }
 -----------------------
@@ -5568,11 +5575,14 @@ another castle.
 dialog{
   id = "dungeon_1.ganon",
   text = [[
-Princess Zelda?
-No, she's not here.
+¿La princesa Zelda?
+No, ella no está aquí.
 
-You went with her, we
-all saw you.
+Te fuiste con ella, 
+todos nosotros te 
+vimos.
+
+Por otra parte, 
 
 Moreover, no one
 expected she would
