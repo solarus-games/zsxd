@@ -3722,15 +3722,16 @@ dialog{
   skip = "current",
   question = true,
   text = [[
-Here at counter 32,
-a spoon can be traded
-for an axe, the deal
-is really promising.
+Aquí, en el 
+mostrador 32, una
+cuchara puede ser 
+intercambiada por
+un hacha, el trato
+es muy prometedor.
 
-
-What do you think?
-Why not?
-Noooooooooooooo!!
+¿Qué piensas?
+¿Por qué no?
+¡¡Noooooooooooooo!!
 ]]
 }
 -----------------------
@@ -3739,8 +3740,9 @@ dialog{
   id = "crazy_house.guichet_32_ech_ne_6_un",
   skip = "current",
   text = [[
-Sorry, but you don't
-have an axe to trade.
+Disculpa, pero no 
+tiene un hacha para
+comerciar.
 ]]
 }
 -----------------------
@@ -3748,9 +3750,9 @@ have an axe to trade.
 dialog{
   id = "crazy_house.guichet_32_ech_ne_6_no",
   text = [[
-No? What a shame,
-you're losing something
-there!
+¿No? ¡Qué pena, 
+estás, perdiendo
+algo allí!
 ]]
 }
 -----------------------
@@ -3762,15 +3764,16 @@ dialog{
   id = "crazy_house.guichet_33_ech_le_2",
   skip = "current",
   text = [[
-Welcome to counter 33.
-I'm in charge of the
-storage room keys.
-But customers are NOT
-allowed to enter.
-By the way, you're not
-supposed to know what I
-just said. Why did I
-tell you?
+Bienvenido al mostrador 33.
+Estoy a cargo de las 
+llaves del trastero.
+Pero los clientes
+NO están autorizados
+a entrar.
+A propósito, se supone
+que no deberías saber
+lo que acabo de decir.
+¿Por qué lo digo?
 ]]
 }
 -----------------------
@@ -3779,11 +3782,13 @@ dialog{
   id = "crazy_house.guichet_33_ech_eq_3",
   skip = "current",
   text = [[
-I'm sorry, this is
-counter 33, not 41.
+Lo siento, este es
+el mostrador 33, no
+el 41.
 
-The warp on your left
-leads to counter 22.
+El teletransportador
+de tú izquierda 
+coduce al mostrador 22.
 ]]
 }
 -----------------------
@@ -3792,21 +3797,24 @@ dialog{
   id = "crazy_house.guichet_33_ech_ge_4",
   skip = "current",
   text = [[
-What? The storage room
-key? I'm sorry! I won't
-give the key to anyone!
-If you give me a nice
-perfume, I would MAYBE
-let you borrow it.
-I think someone
-managed to find one.
+¿Qué?¿La llave del 
+trastero? ¡Lo siento!
+¡No puedo dar la llave
+a nadie!Si me das un
+perfume bonito, 
+tal vez podría 
+dejartela.
+Creo que alguien
+se las arregló
+para encontrar una.
 
-Try counter 12, they
-will perhaps give you
-more information.
-Where's this counter?
-I have no idea, ask
-the receptionist.
+Prueba en el contador 12,
+ellos quizás te den
+más información.
+¿Dónde está el mostrador?
+No tengo ni idea, 
+pregunta al 
+recepcionista.
 ]]
 }
 -----------------------
@@ -3815,17 +3823,16 @@ dialog{
   id = "crazy_house.guichet_33_parfum",
   skip = "current",
   text = [[
-Wow! You found the
-perfume?!
-
-I never thought someone
-could do this!
-But I'm a man of my word
-word, I entrust you with
-the key leading to the
-storage room.
-DO NOT make a mess
-inside, will ya?
+¡Wow! ¡¿Encontraste el
+perfume?!¡Nunca pensé
+que alguien pudiera 
+conseguirlo!
+Pero yo soy un hombre
+de palabra, te encomiendo
+la llave que conduce 
+al trastero.
+NO HAGAS ningún lio
+dentro, entendido?
 ]]
 }
 -----------------------
@@ -3838,13 +3845,13 @@ dialog{
   skip = "current",
   question = true,
   text = [[
-Welcome to counter 36,
-I'm Bill Board, I sell
-bags of rice:
-50 rupees for 3 bags.
+Bienvenido al mostrador 36,
+Soy Bill Board, vendo
+sacos de arroz:
+50 rupias por 3 sacos.
 
 
-Interested?
+¿Interesado?
 Oh yeah!
 Er, no...
 ]]
@@ -3855,8 +3862,8 @@ dialog{
   id = "crazy_house.guichet_36_un",
   skip = "current",
   text = [[
-Sorry, you need at
-least 50 rupees.
+Perdona,pero necesitas
+por lo menos 50 rupias.
 ]]
 }
 -----------------------
@@ -3868,7 +3875,7 @@ dialog{
   id = "crazy_house.guichet_41_ici",
   skip = "current",
   text = [[
-     - Counter 41 -    
+     - Mostrador 41 -    
 ]]
 }
 -----------------------
@@ -3877,9 +3884,9 @@ dialog{
   id = "crazy_house.guichet_41_ech_ne_3",
   skip = "current",
   text = [[
-Sorry, I'm taking a
-break, and I need it
-badly.
+Disculpa, estoy 
+tomando un descanso, 
+y lo necesito mucho.
 ]]
 }
 -----------------------
@@ -3888,21 +3895,21 @@ dialog{
   id = "crazy_house.guichet_41_ech_eq_3",
   skip = "current",
   text = [[
-Hello, you're looking
-for gloves?
-Wait a minute...
-Hmm we have some, they
-have been stored in the
-storage room.
-But I don't have the
-key, go and ask at
-counter 33, he's the
-one in charge of all
-the keys.
+Hola, ¿estás buscando
+unos guantes?
+Espera un minuto...
+Hmm tenemos algunos, 
+estan guardados en
+el trastero.
+Pero no tengo la llave,
+vaya y pregunte en 
+el mostrador 33, 
+él es el responsable
+de todas las llaves.
 
-You'll find him on the
-third floor, left
-wing.
+Lo encontrarás en el
+tercer piso, en el
+ala izquierda.
 ]]
 }
 -----------------------
@@ -3914,7 +3921,7 @@ dialog{
   id = "crazy_house.guichet_43_ici",
   skip = "current",
   text = [[
-     - Counter 43 -
+     - Mostrador 43 -
 ]]
 }
 -----------------------
@@ -3923,15 +3930,15 @@ dialog{
   id = "crazy_house.guichet_43",
   skip = "all",
   text = [[
-Did you know? His
-mother flirted with the
-postman!
-I swear!
-Poor boy, what a shock
-for him, it's
-unbelievable what
-people can do
-sometimes...
+¿Lo sabías?¡Su
+madre conqueteó 
+con el cartero!
+¡Te lo juro!
+Pobre chico, que
+sorpresa para él, 
+es increíble lo
+que la gente puede
+hacer a veces...
 ]]
 }
 -----------------------
@@ -3940,11 +3947,13 @@ dialog{
   id = "crazy_house.guichet_43n",
   skip = "all",
   text = [[
-WHAT?!! Don't you see
-I'm busy at the moment?
+¡¡¿QUÉ?!! No ves que
+estoy ocupado en este
+momento?
 
-How rude are people
-nowadays!
+¡Qué grosera es la 
+gente de hoy en 
+día!
 ]]
 }
 -----------------------
@@ -3953,8 +3962,8 @@ dialog{
   id = "crazy_house.guichet_43f",
   skip = "all",
   text = [[
-Uh... what was I
-saying?...
+Uh... ¿Qué estaba
+diciendo?...
 ]]
 }
 -----------------------
@@ -3966,7 +3975,7 @@ dialog{
   id = "crazy_house.guichet_45",
   skip = "current",
   text = [[
-     - Counter 45 -
+     - Mostrador 45 -
 ]]
 }
 -----------------------
@@ -3975,30 +3984,30 @@ dialog{
   id = "crazy_house.guichet_45_ech_eq_3",
   skip = "current",
   text = [[
-Sir? Counter 41?
-This is 45.
+¿Señor? ¿El mostrador 41?
+Este es el 45.
 
-Wait, I'll ask my
-colleague...
+Espera, le preguntaré
+a mi compañero...
 ....
 ....
 ....
 
-Hello? Maurice?
-This is Josiane.
-Tell me you're at 41?
-OK, where are you?
-OK... Thanks, there's
-a customer for you.
-See ya...
+¿Hola? ¿Maurice?
+Esta es Josiane.
+¿Dime que estás en el 41?
+¿OK, dónde estás?
+OK... Gracias, es un
+cliente para ti.
 
-
-So... This is the wrong
-place, you have to go
-to counter 12, near the
-entrance of the
-building.
-Have a nice day, Sir.
+Así que... Este es el
+lugar equivocado, 
+tiene que ir al 
+mostrador 12, cerca 
+de la entrada del 
+edificio.
+Que tenga un 
+buen día, Señor.
 ]]
 }
 -----------------------
