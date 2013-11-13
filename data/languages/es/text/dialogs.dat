@@ -4379,15 +4379,19 @@ dialog{
   id = "crazy_house.pnja",
   skip = "current",
   text = [[
-Oh la la! I can't stand
-this place anymore!
+¡Oh la la!¡No puedo
+seguir en este lugar
+más tiempo!
+Me he movido de un
+mostrador a otro, 
 I've moved from one
-counter to another, I'm
-sure they're doing this
-to justify their
-salary...
-A real pension I'd say!
-It's a scam!
+counter to another, 
+estoy seguro de que 
+está haciendo esto
+para justificar su 
+sueldo...
+¡Una pensión real!
+¡Es una estafa!
 ]]
 }
 -----------------------
@@ -4396,14 +4400,15 @@ dialog{
   id = "crazy_house.pnjb",
   skip = "current",
   text = [[
-Ah! I came to this
-office to give them
-some bottles of water,
-but it seems they don't
-care. What a shame!
+¡Ah! Vine a esta
+oficina para 
+darles alguna botellas
+de agua, pero parece
+que no les importa.
+¡Qué vergüenza!
 
-They don't know what
-they're missing.
+No saben lo que se 
+están perdiendo.
 ]]
 }
 -----------------------
@@ -4412,11 +4417,12 @@ dialog{
   id = "crazy_house.pnjc",
   skip = "current",
   text = [[
-I'm the only employee
-in charge of cleaning
-the building, about
-14,000 square meters,
-this is real slavery.
+Soy el único empleado
+a cargo de la limpieza
+del edificio, con 
+14000 metros cuadrados,
+esto es una autentica
+esclavitud.
 ]]
 }
 -----------------------
@@ -4425,23 +4431,23 @@ dialog{
   id = "crazy_house.pnjd",
   skip = "current",
   text = [[
-Weird, when I went to
-the second floor,
-looking for the blue
-form used to obtain
-permit A38, someone
-mentioned an
-overture conscience
-heavy beauty super
-coding super button
-or someting like that.
-IMO it must be a very
-elaborate mechanism.
-I don't think you're
-able to make it work
-by itself.
-Maybe you could try
-using some heavy stuff.
+Es extraño, cuando
+fui a la segunda planta,
+en busca del formulario
+azul que se usa para
+obtener el permiso A38,
+alguien menciono una 
+cosa sobre un botón
+giga-tensión o no sé 
+qué de mega. En mi 
+opinión debe ser un 
+mecanismo muy 
+complicado.
+No creo que seas
+capaz de hacerlo 
+funcionar por tí mismo.
+Tal vez podrías usar
+alguna cosa pesada.
 ]]
 }
 -----------------------
@@ -4450,17 +4456,19 @@ dialog{
   id = "crazy_house.pnje",
   skip = "current",
   text = [[
-I noticed the employee
-at counter 11 has her
-head in the clouds.
-She lost a magma rock
-I gave her while I
-was looking for a spoon
-in this place that
-makes you mad...
+Me he dado cuenta
+de que el empleado
+del mostrador 11 tiene
+la cabeza en las nubes.
+Ella perdió una roca
+de magma mientras
+yo estaba buscando 
+una cuchara en esté 
+sitio que te hace 
+malvado...
 
-What a bunch of
-incompetents!
+¡Vaya pandilla de
+incompotentes!
 ]]
 }
 -----------------------
@@ -4469,9 +4477,11 @@ incompetents!
 dialog{
   id = "geek_house.sign_a",
   text = [[
-Optimistic Policy
-Iteration and Learning
-the Game of Tetris.
+Optimista sobre
+las Políticas de
+Iteración y 
+aprendizaje del
+juego Zelda.
 ]]
 }
 -----------------------
@@ -4494,9 +4504,9 @@ cases for this sign. */
 dialog{
   id = "geek_house.sign_c",
   text = [[
-        WANTED!
-Schrödinger's cat.
-Dead and alive.
+        ¡SE BUSCA!
+Schrödinger's gato.
+Vivo o muerto.
 ]]
 }
 -----------------------
@@ -4504,7 +4514,7 @@ Dead and alive.
 dialog{
   id = "geek_house.sign_d",
   text = [[
-There is no spoon.
+No hay cuchara.
 ]]
 }
 -----------------------
@@ -4520,7 +4530,8 @@ dialog{
 dialog{
   id = "geek_house.sign_f",
   text = [[
-The cake is a lie.
+Este pastel es 
+una mentira.
 ]]
 }
 -----------------------
@@ -4528,8 +4539,9 @@ The cake is a lie.
 dialog{
   id = "geek_house.sign_g",
   text = [[
-I have a bad feeling
-about this.
+Tengo un mal 
+presentimiento
+acerca de esto.
 ]]
 }
 -----------------------
@@ -4545,11 +4557,11 @@ TODO
 dialog{
   id = "geek_house.sign_i",
   text = [[
-1.21 gigawatts!
-1.21 gigawatts!
-Great Scott!!!
-What the hell
-is a gigawatt?
+¡1.21 gigavatios!
+¡1.21 gigavatios!
+¡¡¡Magnífico Scott!!!
+¿Qué demonios es
+un gigavatio?
 ]]
 }
 -----------------------
@@ -4557,8 +4569,8 @@ is a gigawatt?
 dialog{
   id = "geek_house.sign_j",
   text = [[
-Chuck Norris finished
-Zelda unarmed.
+Chuck Norris terminó
+Zelda desarmado.
 ]]
 }
 -----------------------
@@ -4566,8 +4578,9 @@ Zelda unarmed.
 dialog{
   id = "outside_fields_NE_girly_sign",
   text = [[
-We respect gender
-equality too!
+¡Nosotros también
+respetamos la igualdad
+de género!
 ]]
 }
 -----------------------
@@ -4575,10 +4588,10 @@ equality too!
 dialog{
   id = "outside_fields_SO_endofgame1",
   text = [[
-Warp to the end of the
-game.
+Teletransporte al final
+del juego.
 
--- out of order --
+-- Fuera de servicio --
 ]]
 }
 -----------------------
@@ -4586,7 +4599,7 @@ game.
 dialog{
   id = "outside_fields_SO_sh",
   text = [[
-Hidden sign!
+¡Signo oculto!
 ]]
 }
 -----------------------
@@ -4594,8 +4607,8 @@ Hidden sign!
 dialog{
   id = "outside_fields_SO_mailbox",
   text = [[
-This is a really boring
-mailbox...
+Este buzón es 
+realmente aburrido...
 ]]
 }
 -----------------------
@@ -4603,12 +4616,12 @@ mailbox...
 dialog{
   id = "outside_fields_SO.chest_link_house",
   text = [[
-It's empty!
+¡Está vacío!
 
-
-You REALLY thought you
-would find a treasure
-just behind your house?
+¿REALMENTE pensabas 
+que ibas a encontrar
+un tesoro justo detrás
+de tu casa?
 ]]
 }
 -----------------------
@@ -4616,9 +4629,9 @@ just behind your house?
 dialog{
   id = "outside_fields_SO.guard_nok",
   text = [[
-No freeloaders!
-Go stand in line like
-everyone else.
+¡No vividores!
+Ves a hacer cola
+como todo el mundo.
 ]]
 }
 -----------------------
@@ -4626,7 +4639,8 @@ everyone else.
 dialog{
   id = "outside_fields_SO.guard_ok",
   text = [[
-Have a nice day.
+Que tenga un 
+buen día.
 ]]
 }
 -----------------------
@@ -4635,29 +4649,27 @@ dialog{
   id = "outside_fields_SO.forest_monkey_start",
   next = "outside_fields_SO.forest_monkey_end",
   text = [[
-Ook!
-You want my boots?
+¡Ook!
+¿Quiéres mis botas?
 
 ...
 
+¿Son tuyas?
 
-These are yours?
 
+¡Estás soñando!
+Las encontré,¡son 
+mias!
 
-You're dreaming!
-I found them, they're
-mine!
 ...
 
+OK, te las daré, 
+pero..
+¡¡¡Tengo hambre!!!
 
-OK, I'll agree to
-give them to you,
-but...
-I'm hungry!!!
-
-
-Bring me an apple pie
-and we'll trade.
+Traeme un pastel
+de manzana y
+te las daré.
 ]]
 }
 -----------------------
@@ -4666,22 +4678,22 @@ dialog{
   id = "outside_fields_SO.forest_monkey_give_boots",
   next = "outside_fields_SO.forest_monkey_end",
   text = [[
-Ook! Great, an apple
-pie!!!
-Here are your boots.
+¡Ook! Genial,¡¡¡un pastel
+de manzana!!!
+Aquí están tus botas.
 ...
 
 
-Laces are missing?
+¿Faltan los cordones?
 
 
-Well...
+Bien...
 
 
-I was hungry!!!
+¡¡¡Tenía hambre!!!
 
 
-You had to move faster!
+¡Haber ido más rápido!
 ]]
 }
 -----------------------
@@ -4689,7 +4701,7 @@ You had to move faster!
 dialog{
   id = "outside_fields_SO.forest_monkey_end",
   text = [[
-Ook! Ook! Ook!
+¡Ook! ¡Ook! ¡Ook!
 ]]
 }
 -----------------------
@@ -4697,7 +4709,7 @@ Ook! Ook! Ook!
 dialog{
   id = "outside_fields_SE.temple_door_closed",
   text = [[
-It's locked...
+Está cerrado...
 ]]
 }
 -----------------------
@@ -4706,9 +4718,9 @@ dialog{
   id = "outside_fields_SE.yoda_quote_1",
   skip = "all",
   text = [[
-No. Try not. Jump or
-jump not. There is no
-try.
+No. No pruebes. Saltas
+o no saltas. No es una
+prueba.
 ]]
 }
 -----------------------
@@ -4717,8 +4729,8 @@ dialog{
   id = "outside_fields_SE.yoda_quote_2",
   skip = "all",
   text = [[
-Link, use the
-Triforcizzle.
+Link, usa la 
+Trifuerza.
 ]]
 }
 -----------------------
@@ -4727,8 +4739,8 @@ dialog{
   id = "outside_fields_SE.yoda_quote_3",
   skip = "all",
   text = [[
-Always in motion is the
-future.
+Siempre en movimiento
+es el futuro.
 ]]
 }
 -----------------------
@@ -4737,9 +4749,9 @@ dialog{
   id = "outside_fields_SE.yoda_quote_4",
   skip = "all",
   text = [[
-When 900 years you
-reach, look as good,
-you will not.
+Cuando alcances
+los 900 años, no
+te veras tan bien.
 ]]
 }
 -----------------------
@@ -4748,9 +4760,9 @@ dialog{
   id = "outside_fields_SE.yoda_quote_5",
   skip = "all",
   text = [[
-Fear the dark side of
-the Triforcizzle, you
-must.
+Teme al lado oscuro
+de la Trifuerza, 
+deberías.
 ]]
 }
 -----------------------
@@ -4759,8 +4771,8 @@ dialog{
   id = "outside_fields_SE.yoda_quote_6",
   skip = "all",
   text = [[
-Always two there are.
-No more, no less.
+Siempre hay dos.
+No más, no menos.
 ]]
 }
 -----------------------
@@ -4769,9 +4781,11 @@ dialog{
   id = "outside_fields_SE.yoda_quote_7",
   skip = "all",
   text = [[
-Lead you to Zelda I
-can. But now, we're
-going to eat.
+Te llevaré 
+hasta Zelda,
+hasta donde pueda.
+Pero ahora, vamos 
+a comer.
 ]]
 }
 -----------------------
@@ -4780,8 +4794,9 @@ dialog{
   id = "outside_fields_SE.yoda_quote_8",
   skip = "all",
   text = [[
-Ready you must be.
-How can you know?
+Listo debes estár.
+¿Cómo se puede
+saber?
 ]]
 }
 -----------------------
@@ -4790,8 +4805,8 @@ dialog{
   id = "outside_fields_SE.yoda_quote_9",
   skip = "all",
   text = [[
-May the Triforcizzle be
-with you.
+Que la Trifuerza sea
+contigo.
 ]]
 }
 -----------------------
@@ -4800,8 +4815,9 @@ dialog{
   id = "outside_fields_SE.yoda_quote_10",
   skip = "all",
   text = [[
-Good relationship I
-maintain with Cookies.
+Mantengo una buena
+relación con las
+Galletas.
 ]]
 }
 -----------------------
@@ -4810,8 +4826,8 @@ dialog{
   id = "outside_fields_SE.yoda_quote_11",
   skip = "all",
   text = [[
-Hard to see, the Dark
-Side is.
+Difícil de ver, 
+el Lado Oscuro es.
 ]]
 }
 -----------------------
@@ -4819,18 +4835,19 @@ Side is.
 dialog{
   id = "outside_fields_SE.yoda_give_sword",
   text = [[
-Strong I am with the
-Triforcizzle, but not
-that strong.
-Twilight is upon me
-and soon, night must
-fall.
-No more training do you
-require.
+Fuerte soy con la
+Trifuerza, pero 
+no tan fuerte.
+El crepúsculo está
+sobre mí, la noche
+debe caer.
+No necesitas más
+entrenamiento.
 
-That is the way of
-things. The way of the
-Triforcizzle.
+Esa es el camino
+de las cosas. El
+camino de la
+Trifuerza.
 ]]
 }
 -----------------------
@@ -4839,12 +4856,14 @@ dialog{
   id = "outside_fields_SE.yoda_finished",
   skip = "all",
   text = [[
-Through the
-Triforcizzle things
-you will see.
-Other places.
-The future... the past.
-Old friends long gone.
+A través de la
+Trifuerza podrás
+ver cosas.
+Otros lugares.
+El futuro... el pasado.
+Viejos amigos que 
+hace mucho que se
+fueron.
 ]]
 }
 -----------------------
@@ -4852,18 +4871,18 @@ Old friends long gone.
 dialog{
   id = "outside_fields_SE.west_sign",
   text = [[
-South-East:
-Triforcizzle Marsh
+Sur-Este:
+Marismas de la Trifuerza
 
-West:
-Lost and Found Office
+Oeste:
+Oficina de Objetos Perdidos
 
-North: 
-Village
+Norte: 
+Pueblo
 
-North-East: 
-Sandpit Desert
-Mount Typython
+Nordeste: 
+Desierto Sandpit
+Monte Typython
 ]]
 }
 -----------------------
@@ -4871,18 +4890,19 @@ Mount Typython
 dialog{
   id = "outside_fields_NO_indic",
   text = [[
-West: Castle
-East: Sandpit Desert
-Mount Typython
-South East:
-Lost and Found Office
-and maybe more.
-Under your feet:
-Green grass
+Oeste: Castillo
+Este: Desierto Sandpit
+Monte Typython
+Sur Este:
+Oficina de Objetos
+Perdidos y tal vez
+más.
+Bajo tus pies:
+Hierva verde
 
-Above:
-Nothing or nothing
-that you can see.
+Arriba:
+Nada o nada que
+tú puedas ver.
 ]]
 }
 -----------------------
@@ -4890,8 +4910,8 @@ that you can see.
 dialog{
   id = "outside_fields_NO_goa",
   text = [[
-Find the secret of the
-golden lol.
+Encuentra el secreto
+del lol dorado.
 ]]
 }
 -----------------------
@@ -4899,9 +4919,9 @@ golden lol.
 dialog{
   id = "outside_fields_NO.lawn_master",
   text = [[
-I'll give you 100
-Rupees if you mow the
-lawn.
+Te daré 100 Rupias
+si me cortas el 
+césped.
 ]]
 }
 -----------------------
@@ -4909,14 +4929,14 @@ lawn.
 dialog{
   id = "outside_fields_NO.drunk",
   text = [[
-You don't remember your
-party last night?
+¿No recuerdas la 
+fiesta de la noche
+anterior?
 
-Me neither...
+Yo tampoco...
 
-
-It happens all the
-time.
+Me pasa todo el
+tiempo.
 ]]
 }
 -----------------------
@@ -4924,14 +4944,15 @@ time.
 dialog{
   id = "outside_fields_NO.lady_b",
   text = [[
-You lost Zelda?
+¿Has perdido a Zelda?
 ...
 
-**Unworthy husband...**
+
+**Indigno marido...**
 
 
-No, I don't know where
-she is.
+No, no sé dónde
+está.
 ]]
 }
 -----------------------
@@ -4939,12 +4960,12 @@ she is.
 dialog{
   id = "outside_fields_NO.guy_a",
   text = [[
-Did you lose something?
+¿Has perdido algo?
 
 
-Did you take a look
-around the Lost and
-Found Office?
+¿Querrías dar una vuelta
+por la Oficina de Objetos
+Perdidos?
 ]]
 }
 -----------------------
@@ -4952,9 +4973,9 @@ Found Office?
 dialog{
   id = "outside_fields_NO.castle_guard",
   text = [[
-Sorry, we lost the key.
-We can't open it for
-you.
+Disculpa, hemos perdido
+la llave.
+No podemos abrirtela.
 ]]
 }
 -----------------------
@@ -4962,9 +4983,9 @@ you.
 dialog{
   id = "outside_fields_NE.cursed_cave_sign",
   text = [[
-    - Cursed Cave -    
-   Entrance sealed up  
-   for your security   
+    - Cueva Maldita -
+     Entrada sellada
+     por su seguridad   
 ]]
 }
 -----------------------
@@ -4972,12 +4993,12 @@ dialog{
 dialog{
   id = "outside_fields_NE.tipiton_sign",
   text = [[
-Top of Mount Typython
+Cima del Monte Typython
 
 
-Altitude:
-Not really high,
-actually...
+Altitud:
+No muy alto, 
+en realidad.
 ]]
 }
 -----------------------
@@ -4985,18 +5006,19 @@ actually...
 dialog{
   id = "outside_fields_NE.indic",
   text = [[
-West: Castle
+Oeste: Castillo
 
 
-North:
-Sandpit Desert
-Mount Typython
-South: Pub
+Norte:
+Desierto Sandpit 
+MonteTypython
+Sur: Taberna
 
 
-East: a little bit
-difficult to explain.
-Go and see yourself.
+Este: es un poco
+dificil de explicar.
+Ves y miralo por
+ti mismo.
 ]]
 }
 -----------------------
@@ -5004,15 +5026,15 @@ Go and see yourself.
 dialog{
   id = "outside_fields_NE.south_sign",
   text = [[
-South:
-Triforcizzle Marsh
+Sur:
+Marismas de la Trifuerza
 
-West:
-Village
+Oeste:
+pueblo
 
-North:
-Sandpit Desert
-Mount Typython
+Norte:
+Desierto Sandpit 
+Monte Typython
 ]]
 }
 -----------------------
@@ -5023,9 +5045,10 @@ dialog{
 
            ...
 
-I interact socially
-through my sheets
-pasted on the walls.
+Me relaciono socialmente
+a través de mis hojas
+pegadas en las 
+paredes.
 ]]
 }
 -----------------------
@@ -5033,11 +5056,11 @@ pasted on the walls.
 dialog{
   id = "outside_fields_SO.attente_a",
   text = [[
-    LOST AND FOUND     
-        OFFICE         
+    Oficina de Objetos
+	 Perdidos
 
-From this point, one
-day of waiting.
+Desde este punto, un 
+día de espera.
 ]]
 }
 -----------------------
@@ -5045,11 +5068,11 @@ day of waiting.
 dialog{
   id = "outside_fields_SO.attente_b",
   text = [[
-    LOST AND FOUND     
-        OFFICE         
+    Oficina de Objetos
+	 Perdidos
 
-From this point,
-a twelve-hour wait.
+Desde este punto, una
+espera de 12 horas.
 ]]
 }
 -----------------------
@@ -5057,11 +5080,11 @@ a twelve-hour wait.
 dialog{
   id = "outside_fields_SO.attente_c",
   text = [[
-    LOST AND FOUND     
-        OFFICE         
+    Oficina de Objetos
+	 Perdidos
 
-From this point,
-a six-hour wait.
+Desde este punto, una
+espera de 6 horas.
 ]]
 }
 -----------------------
@@ -5069,12 +5092,12 @@ a six-hour wait.
 dialog{
   id = "outside_fields_SO.attente_d",
   text = [[
-    LOST AND FOUND     
-        OFFICE         
+    Oficina de Objetos
+	 Perdidos
 
-You're almost there!
-You just have to line
-up inside.
+¡Ya casi has terminado!
+Sólo tienes que hacer
+cola en el interior.
 ]]
 }
 -----------------------
@@ -5082,9 +5105,9 @@ up inside.
 dialog{
   id = "freaking_cave_indic1",
   text = [[
-Feeling harassed?
+¿Te sientes acosado?
 
-Run!
+¡Corre!
 ]]
 }
 -----------------------
@@ -5092,9 +5115,10 @@ Run!
 dialog{
   id = "freaking_cave_indic2",
   text = [[
-Sorry, we didn't have
-enough Rupees to buy a
-new chest.
+Disculpa, no teníamos
+suficientes Rupias
+para comprar un
+cofre nuevo.
 ]]
 }
 -----------------------
@@ -5102,9 +5126,9 @@ new chest.
 dialog{
   id = "freaking_cave_teleporter",
   text = [[
-A mysterious power
-prevents you from using
-the teleporter.
+Un extraño poder 
+impide que uses
+el teletransporte.
 ]]
 }
 -----------------------
@@ -5113,8 +5137,9 @@ dialog{
   id = "shop.red_rupee",
   next = "_unknown",
   text = [[
-A red Rupee.
-Extremely rare!
+Una Rupia roja.
+¡Es extremadamente
+rara!
 ]]
 }
 -----------------------
@@ -5123,8 +5148,9 @@ dialog{
   id = "shop.heart_container",
   next = "_unknown",
   text = [[
-A Heart Container.
-Pretty common.
+Un Contenedor de
+Corazón. Bastante
+común.
 ]]
 }
 -----------------------
@@ -5133,9 +5159,9 @@ dialog{
   id = "shop.huge_rupee_bag",
   next = "_unknown",
   text = [[
-A Huge Rupee Bag.
-Allows to carry up
-to 999 Rupees!
+Un Saco de Rupias 
+Enorme.¡Te permitirá
+llevar 999 Rupias!s
 ]]
 }
 -----------------------
@@ -5144,9 +5170,10 @@ dialog{
   id = "shop.apple_pie",
   next = "_unknown",
   text = [[
-An apple pie. Not very
-fresh, but don't give a
-fuck, buy it please.
+Un pastel de manzana.
+No es muy fresco, pero
+no me jodas, compralo
+por favor.
 ]]
 }
 -----------------------
@@ -5155,23 +5182,24 @@ dialog{
   id = "shop.wizard",
   skip = "all",
   text = [[
-I don't understand why
-everybody is staring at
-me strangely.
-... What?
-Why are you looking at
-me that way?
-Is there a problem with
-my wizard look?
+No entiendo por qué
+todo el mundo me está
+mirando extrañamente.
+...¿Qué?
+¿Por qué me estás
+mirando de esa manera?
+¿Tienes algun problema
+con mi apariencia
+de mago?
 
-Today, we can't even
-share our passion
-without being taken for
-a fool. I'm a person
-like everyone else!
+Hoy en día, ni siquiera
+podemos compartir nuestra
+pasión sin ser tomados
+por locos. ¡Soy una persona
+como cualquier otra!
 
-It's incredible to have
-so many prejudices!
+¡Es increíble tener
+tanto prejuicios!
 ]]
 }
 -----------------------
@@ -5180,13 +5208,13 @@ dialog{
   id = "shop.near_wizard",
   skip = "all",
   text = [[
-This guy irritates me!
-This fan of witchcaft
-has been boring me with
-his stories for the
-past two hours!
-In addition, he is
-super sensitive!
+¡Este tio me irrita!
+¡Este fan de la 
+brujería me aburre con
+sus historias las
+dos últimas horas!
+¡Además, es super
+sensible!
 ]]
 }
 -----------------------
@@ -5194,11 +5222,12 @@ super sensitive!
 dialog{
   id = "shop.last_night_guy",
   text = [[
-Hey bro!
-Everything OK after
-last night?
-How's your head?
-A bad hangover?
+¡Qué pasa hermano!
+¿Todo bien después
+de anoche?
+¿Cómo está tu 
+cabeza?
+¿Una mala resaca?
 ]]
 }
 -----------------------
@@ -5206,8 +5235,9 @@ A bad hangover?
 dialog{
   id = "shop.pub_woman",
   text = [[
-Sorry, I've got no
-booze for you!
+Lo siento,¡no tengo
+nada de alcohol para
+tí!
 ]]
 }
 -----------------------
@@ -5215,8 +5245,8 @@ booze for you!
 dialog{
   id = "shop.lady_a",
   text = [[
-Zelda?
-No, I didn't see her.
+¿Zelda?
+No, no la vi.
 ]]
 }
 -----------------------
@@ -5224,9 +5254,9 @@ No, I didn't see her.
 dialog{
   id = "shop.salesman",
   text = [[
-Choose what you want to
-buy... I don't have
-all day!
+Elige lo que quieres
+comprar...¡No tengo 
+todo el día!
 ]]
 }
 -----------------------
@@ -5234,11 +5264,12 @@ all day!
 dialog{
   id = "desert.east_house.first_time",
   text = [[
-To the North is the
-Cursed Cave.
+Hacia el Norte se
+encuentra la
+Cueva Maldita.
 
-Nobody has ever come
-back. Don't go there!
+Nadie ha vuelto.
+¡No vayas ahí!
 ]]
 }
 -----------------------
@@ -5246,27 +5277,29 @@ back. Don't go there!
 dialog{
   id = "desert.east_house.back_from_dead",
   text = [[
-What? You went to
-the Cursed Cave?
+¿Qué?¿Tú fuiste
+a la Cueva Maldita?
 
-The youth today is
-really reckless!
+¡La juventud de hoy
+en día es muy
+temeraria!
 
-We should have more
-warnings on the
-dangers of the cave.
-I told you so: you
-mustn't go there.
+Deberíamos poner más
+advertencias de los
+peligros de la cueva.
+Te lo dije: No debes
+ir ahí.
 
-You're not following
-the game! If you wanna
-see Ganon, nothing
-could be simpler. Take
-the key in my room.
+¡No estás siguiendo
+el juego! Si quieres
+ver a Ganon, no será
+nada sencillo. Coge
+la llave de mi 
+habitación.
 
-You could have said it
-right away instead of
-going on adventures.
+Podrías haber dicho que
+de inmediato, en lugar
+de ir de aventuras.
 ]]
 }
 -----------------------
@@ -5274,8 +5307,9 @@ going on adventures.
 dialog{
   id = "desert.east_house.bone_key",
   text = [[
-This key opens
-Ganon's hideout.
+Esta llave 
+abre el escondite
+de Ganon.
 ]]
 }
 -----------------------
@@ -5283,15 +5317,16 @@ Ganon's hideout.
 dialog{
   id = "desert.west_house",
   text = [[
-Many adventurers have
-dared enter the Cursed
-Cave.
-We have never heard
-from them again...
+Muchos aventureros
+se han atrevido a entrar
+en la Cueva Maldita.
+No hemos vuelto oir
+hblar de ellos...
 
-These days, access
-is barred to protect
-curious people.
+Hoy en día, el acceso
+se prohibió para
+proteger a los 
+curiosos.
 ]]
 }
 -----------------------
@@ -5299,14 +5334,15 @@ curious people.
 dialog{
   id = "desert.small_house",
   text = [[
-If you try to kill
-yourself, a good way to
-do this is to go to the
-Cursed Cave, to the
-North.
+Si tú quieres
+suicidarte, la mejor
+forma para hacerlo
+es ir a la Cueva
+Maldita, hacia el
+Norte.
 
-Pain and death are
-guaranteed.
+El dolor y la muerte
+estan garantizados.
 ]]
 }
 -----------------------
