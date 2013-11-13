@@ -4017,13 +4017,13 @@ dialog{
   skip = "current",
   question = true,
   text = [[
-Sir, are you interested
-in trading some sacks
-of olives?
-I'd like to trade a
-sack of olives for a
-spoon.
-Interested?
+Señor,¿está usted
+interesado en comerciar
+algunas bolsas de olivas?
+Me gustaría intercambiar
+un saco de olivas por
+una cuchara.
+¿Interesado?
 Hmmm...
 Hmmm...
 ]]
@@ -4034,8 +4034,8 @@ dialog{
   id = "crazy_house.guichet_45_ech_un",
   skip = "current",
   text = [[
-What a shame, you don't
-have a spoon.
+Que vergüenza, no tienes
+una cuchara.
 ]]
 }
 -----------------------
@@ -4044,8 +4044,8 @@ dialog{
   id = "crazy_house.guichet_45_ech_ok",
   skip = "current",
   text = [[
-Great, here's your sack
-of olives.
+Magnífico, aquí está
+su saco de olivas.
 ]]
 }
 -----------------------
@@ -4057,7 +4057,7 @@ dialog{
   id = "crazy_house.guichet_47",
   skip = "current",
   text = [[
-     - Counter 47 -
+     - Mostrador 47 -
 ]]
 }
 -----------------------
@@ -4066,12 +4066,14 @@ dialog{
   id = "crazy_house.guichet_47_ech_ne_3",
   skip = "current",
   text = [[
-Want to register a
-galley? They've sent
-you to the wrong place,
-you want the
-harbourmaster's office
-down by the port!
+¿Quiéres registrar
+la cocina? Te han
+enviado al lugar
+equivocado, ¡lo 
+que debe es ponerse
+en contacto con la 
+oficina del capitán 
+del puerto!
 ]]
 }
 -----------------------
@@ -4080,9 +4082,9 @@ dialog{
   id = "crazy_house.guichet_47_ech_eq_3",
   skip = "current",
   text = [[
-Hello, you want
-counter 41?
-I'm sorry, this is 47.
+Hola,¿el mostrador
+41?
+Lo siento, este es el 47.
 ]]
 }
 -----------------------
@@ -4094,7 +4096,7 @@ dialog{
   id = "crazy_house.guichet_49_ici",
   skip = "current",
   text = [[
-     - Counter 49 -
+     - Mostrador 49 -
 ]]
 }
 -----------------------
@@ -4103,8 +4105,8 @@ dialog{
   id = "crazy_house.guichet_49",
   skip = "current",
   text = [[
-I was relegated to the
-basement, all alone...
+Estaba relegada
+al sótano, a solas...
 
 Boo hoo hoo!
 ]]
@@ -4118,7 +4120,7 @@ dialog{
   id = "crazy_house.guichet_82_ici",
   skip = "current",
   text = [[
-     - Counter 82 -
+     - Mostrador 82 -
 ]]
 }
 -----------------------
@@ -4128,21 +4130,23 @@ dialog{
   skip = "current",
   question = true,
   text = [[
-Hmmm... I get depressed
-because I need a sack
-of olives to feed my
-cat but nobody seems to
-have any...
+Hmm... Estoy deprimido
+porque necesito un 
+saco de olivas para
+alimentar a mi gato
+pero no parece que
+nadie tenga uno...
 *sigh*
-By chance, you don't
-have a sack of olives?
-I'll trade your sack
-of olives for a magma
-rock.
+Por casualidad,¿tú
+no tendrás un saco
+de olivas?
+Te cambio un saco 
+de olivas por una
+roca de magma.
 
-We have a deal?
-Of course!
-In your dreams...
+¿Trato hecho?
+¡Por supuesto!
+En tus sueños...
 ]]
 }
 -----------------------
@@ -4151,9 +4155,10 @@ dialog{
   id = "crazy_house.guichet_82_un",
   skip = "current",
   text = [[
-Sorry, you need a sack
-of olives to trade for
-this magma rock.
+Disculpa, necesitas
+un saco de olivas para
+intercambiarlo por está
+roca de magma.
 ]]
 }
 -----------------------
@@ -4162,11 +4167,12 @@ dialog{
   id = "crazy_house.guichet_82_ok",
   skip = "current",
   text = [[
-Oh my gosh!
-You have a sack of
-olives, you rock!
-Here's your magma rock,
-you deserve it.
+¡Oh, Dios mío!
+¡Tienes un saco 
+de olivas, genial!
+Aquí tienes tu
+roca de magma, te
+la mereces.
 ]]
 }
 -----------------------
@@ -4178,7 +4184,7 @@ dialog{
   id = "crazy_house.guichet_84_ici",
   skip = "current",
   text = [[
-     - Counter 84 -
+     - Mostrador 84 -
 ]]
 }
 -----------------------
@@ -4187,11 +4193,11 @@ dialog{
   id = "crazy_house.guichet_84_ech_eq_3",
   skip = "current",
   text = [[
-Excuse me? Counter 41?
-Sorry, this is 84.
-To find 41, you have
-to go to the
-ground floor.
+¿Perdón?¿El mostrador 41?
+Disculpa, este es el 84.
+Para encontrar el 41,
+necesitas ir a la planta
+baja.
 ]]
 }
 -----------------------
@@ -4200,11 +4206,12 @@ dialog{
   id = "crazy_house.guichet_84_ech_ne_3_nh",
   skip = "current",
   text = [[
-We have peppers here.
-We'll trade them for an
-axe if you want.
-I heard you can find an
-axe at counter 11.
+Tenemos pimientos aquí.
+Vamos a intercambiarlos
+por un hacha si tu quieres.
+He escuchado que puedes
+encontrar un hacha en 
+el mostrador 11.
 ]]
 }
 -----------------------
@@ -4214,12 +4221,12 @@ dialog{
   skip = "current",
   question = true,
   text = [[
-An axe for a pepper.
+Un hacha por un
+pimiento.
 
-
-Deal?
-Yay!
-Oh no!!
+¿Hay trato?
+¡Yay!
+¡¡Oh no!!
 ]]
 }
 -----------------------
@@ -4228,11 +4235,10 @@ dialog{
   id = "crazy_house.guichet_84_ech_ne_3_un",
   skip = "current",
   text = [[
-He ho the green gnome!
-Don't try to swindle
-me!
-Bring an axe or you
-get NOTHING!
+¡El gnomo verde!
+¡No intentes estafarme!
+¡Traeme un hacha o 
+no conseguiras NADA!
 ]]
 }
 -----------------------
@@ -4245,14 +4251,14 @@ dialog{
   skip = "current",
   next = "crazy_house.vieillard_ronfl",
   text = [[
-Snort... ZZZ... Huh?
-By chance, are you
-looking for a spice
-jar? Hehe, I can read
-your mind.
+Snort... ZZZ... ¿Huh?
+Por casualidad,¿estás
+buscando un tarro de
+especias? Jeje, puedo
+leer tu mente.
 
-Bring me a pepper and
-maybe I'll help you...
+Traeme un pimiento y 
+puede que te ayude...
 ]]
 }
 -----------------------
@@ -4262,14 +4268,14 @@ dialog{
   skip = "current",
   next = "crazy_house.vieillard_ronfl",
   text = [[
-But... What's this?
-I never asked for a
-pepper!
-I want a bag of rice!
+Pero...¿Qué es estó?
+¡Nunca dije un 
+pimiento!
+¡Quiero un saco de
+arroz!
 
-
-Ah youth, they never
-listen!
+Ah, la juventud, ¡nunca
+escucha!
 ]]
 }
 -----------------------
@@ -4279,10 +4285,10 @@ dialog{
   skip = "current",
   next = "crazy_house.vieillard_ronfl",
   text = [[
-ZZZ... Huh?...
-But you don't have
-a bag of rice!
-Go away! I want some!
+ZZZ... ¿Huh?...
+¡Pero no tienes
+un saco de arroz!
+¡Vete!¡Quiero uno!
 ]]
 }
 -----------------------
@@ -4293,13 +4299,14 @@ dialog{
   text = [[
 ZZZ....
 Oh Jacqueline...
-Snort... AH!!
-Why did you awake me?
-I was having a
-wonderful dream...
-You found some rice?
-That's it! Now here's
-my precious spice jar.
+Suspiro... ¡¡AH!!
+¿Por qué me despiertas?
+Estaba teniendo un
+sueño maravilloso...
+¿Tienes algo de arroz?
+¡Eso es! Ahora, aquí
+está mi precioso tarro
+de especias.
 ]]
 }
 -----------------------
@@ -4307,7 +4314,7 @@ my precious spice jar.
 dialog{
   id = "crazy_house.vieillard_ronfl",
   text = [[
-Snort... ZZZ...
+Suspiro... ZZZ...
 ]]
 }
 -----------------------
@@ -4320,15 +4327,14 @@ dialog{
   skip = "current",
   question = true,
   text = [[
-Greetings, young lad.
-I sell bags of
-rice cheap.
-20 Rupees a bag.
+Bienvenido, joven chico.
+Vendo sacos de 
+arroz baratos.
+20 Rupias un saco.
 
-
-We have a deal?
-Of course!
-Noo, foolish thief!
+¿Tenemos trato?
+¡Por supuesto!
+Noo,¡ladrón tonto!
 ]]
 }
 -----------------------
@@ -4337,8 +4343,9 @@ dialog{
   id = "crazy_house.apothicaire_non",
   skip = "current",
   text = [[
-That's not really kind
-of you...
+Eso no es muy 
+amable por 
+tú parte...
 ]]
 }
 -----------------------
@@ -4347,10 +4354,10 @@ dialog{
   id = "crazy_house.apothicaire_rubis",
   skip = "current",
   text = [[
-You're short on Rupees,
-young lad. I'll sell a
-bag of rice for
-twenty Rupees.
+Estás corto de Rupias,
+joven chico. Vendo el
+saco de arroz por
+veinte Rupias.
 ]]
 }
 -----------------------
@@ -4359,8 +4366,8 @@ dialog{
   id = "crazy_house.apothicaire_oui",
   skip = "current",
   text = [[
-Wow, you got a good
-deal!
+Wow,¡tienes un
+buen negocio!
 ]]
 }
 -----------------------
@@ -5307,21 +5314,24 @@ guaranteed.
 dialog{
   id = "link_cave.angry_zelda",
   text = [[
-You!!! You locked me
-here then forgot me!
+¡¡¡Tú!!! Me encerraste
+aquí y después te 
+olvidaste de mí!
 
-You let me rot in
-the cellar!
+¡Deja que me pudra
+en el sótano!
 
-You and your buddies
-are just alcoholics!
+¡Tú y tus amigos
+son sólo unos
+alcohólicos!
 
-This is not funny at
-all!!!
+¡¡¡Esto no es nada
+divertido!!!
 
-This time, I'm tired of
-your antics!
-I'll get angry!!!
+
+Esta vez,¡estoy cansado
+de tus payasadas!
+¡¡¡Estoy enfadado!!!
 HAAAAAAAAAAAAAAAAAA!!!
 ]]
 }
@@ -5330,23 +5340,25 @@ HAAAAAAAAAAAAAAAAAA!!!
 dialog{
   id = "the_end.credits",
   text = [[
-$1This game parody was
-made in seven weeks
-by the team behind
-Zelda: Mystery of
-Solarus DX to celebrate
-April Fool's Day 2011
-with help from some
-pizzas and high doses
-of caffeine.
+$1Este juego parodia
+se hizo en siete semanas
+por el equipo que hay 
+detrás de Zelda: Mystery
+of Solarus DX para 
+celebrar el Día de los
+Inocentes de Abril de 
+2011 con ayuda de 
+algunas pizzas y 
+altas dosis de cafeína.
 
-        CREDITS
 
-      Programming:
+        Créditos
+
+      Programación:
 Christopho
 
-          Maps
-        creation:
+       Creación de
+         mapas:
 
 Christopho
 Metallizer
@@ -5354,29 +5366,27 @@ Yoshi04
 BenObiWan
 Sam101
 Mymy
-       Dungeons
-      conception:
+    Concepción de 
+    las mazmorras:
 
-    Lost and Found     
-       Office:        
+    Oficina de objetos     
+        Perdidos:        
 Metallizer
-       Temple of
-      Stupidities:
+      Templo de las
+      estupideces:
 Christopho
-These guys are
-sadistics!
+¡Estos tios son 
+sádicos!
 
-      Additional
-       graphics:
+      Gráficos
+      adicionales:
 Newlink
-         English
-       translation:
-
-BAFelton
-KageNoSensei
-bcallah@openbsd.org
-        Special
-        thanks:
+       Traducción al
+       español:
+xexio   xexio91@gmail.com
+       
+      Agradecimiento
+        especial:
 
 19oj19
 Neovyse
@@ -5393,8 +5403,8 @@ JB
 Nintendo
 
 
-Congratulations on
-reaching the end!
+¡Felicidades por llegar
+hasta el final!
 
 
 
@@ -5406,55 +5416,57 @@ reaching the end!
 dialog{
   id = "link_house.intro",
   text = [[
-$1Ancient legends tell
-that long ago there was
-a beautiful land
-named Hyrule.$0$0
-This kingdom flourished
-under the blessing of
-three goddesses.
+$1Las leyendas de los
+Ancianos cuentan que 
+hace mucho había una
+tierra preciosa llamada
+Hyrule.$0$0 Este reino
+floreció bajo la 
+bendición de las tres
+diosas.
 
 
-After creation of the
-world, these three
-goddesses left a
-symbol of their
-passage in the form of
-the Triforce.$0$0
-Seven wise men sealed
-the Triforce in the
-Golden Earth.
-This text is written
-very slowly and you
-can't pass it.$0$0
-It's also punctuated
-with boring pauses.$0$0
+Después de la creación
+del mundo, estas tres
+diosas dejaron un 
+símbolo de su paso
+con la forma de la
+Trifuerza.$0$0Siete
+hombres sabios 
+sellaron la Trifuerza
+en la Tierra Dorada.
+Este texto está 
+escrito muy lentamente
+y no lo puedes pasar.$0$0
+También está salpicado
+de aburridas pausas.$0$0
 
-You really want to
-start playing, but
-this uninteresting text
-scrolls on in a solemn
-tone and in an ambiance
-of legend,
-so you're stuck
-dealing with it.
+Realmente quieres
+comenzar a jugar,
+pero este texto no es nada
+interesante y se desplaza
+en un tono solemne y en
+un ambiente de leyenda,
+así que tendrás que 
+hacerle frente.
 
-$3OK, I abbreviate.
-
-
-It's the morning. You
-wake up near your bed
-and your head is
-killing you.
+$3OK, Abrevio.
 
 
-You don't remember
-yesterday and you don't
-have your equipment!
-Oh I forgot: Princess
-Zelda disappeared.
+Es por la mañana. Te
+despiertas cerca de 
+tu cama y tu cabeza
+te está matando.
 
-Your turn!
+¡No recuerdas que
+sucedió ayer y no
+tienes tu equipo!
+Oh, me olvidé: la
+Princesa Zelda ha
+desaparecido.
+
+
+¡Tu turno!
 ]]
 }
 -----------------------
@@ -5462,12 +5474,13 @@ Your turn!
 dialog{
   id = "water_house.give_bottle",
   text = [[
-You don't seem to like
-water.
-I do love it.
-So take it, it's a
-water bottle. It can't
-be bad for you!
+No parece gustarte
+el agua.
+A mi me gusta.
+Así que cogela, es 
+una botella de agua, 
+¡No puede ser malo
+para tí!
 ]]
 }
 -----------------------
@@ -5475,7 +5488,7 @@ be bad for you!
 dialog{
   id = "water_house.after",
   text = [[
-Long live water!
+¡Larga vida agua!
 ]]
 }
 -----------------------
@@ -5483,8 +5496,9 @@ Long live water!
 dialog{
   id = "dungeon_1.welcome",
   text = [[
-        Level 2       
- Temple of Stupidities 
+        Nivel 2  
+     Templo de las 
+      estupideces
 ]]
 }
 -----------------------
@@ -5492,9 +5506,9 @@ dialog{
 dialog{
   id = "dungeon_1.lizarmen_sign",
   text = [[
-In tribute to the worst
-mini-boss of Zelda
-fangame history.
+En homenaje al peor
+mini-jefe de la historia
+fangame de Zelda
 ]]
 }
 -----------------------
@@ -5512,13 +5526,14 @@ dialog{
 dialog{
   id = "dungeon_1.big_code_ok",
   text = [[
-Beginning of the code
-detected.
-Access: authorized.
-But if you want some
-advice, if you enter
-the rest of the code,
-nothing will happen.
+A partir del código
+detectado
+Acceso: autorizado.
+Pero si quieres
+un consejo, si 
+introduces el resto 
+del código, no pasará
+nada.
 ]]
 }
 -----------------------
@@ -5526,7 +5541,7 @@ nothing will happen.
 dialog{
   id = "dungeon_1.big_code_completed",
   text = [[
-I told you so!
+¡Te lo dije!
 ]]
 }
 -----------------------
@@ -5534,8 +5549,8 @@ I told you so!
 dialog{
   id = "dungeon_1.danger_north_sign",
   text = [[
-North: hazard
-Do not enter please.
+Norte: peligro
+No pasar por favor.
 ]]
 }
 -----------------------
@@ -5543,9 +5558,9 @@ Do not enter please.
 dialog{
   id = "dungeon_1.danger_west_sign",
   text = [[
-West: hazard
-It would be a bad idea
-to go there.
+Oeste: peligro
+No sería una buena
+idea ir allí.
 ]]
 }
 -----------------------
@@ -5553,8 +5568,9 @@ to go there.
 dialog{
   id = "dungeon_1.danger_south_sign",
   text = [[
-South: hazard
-Enter at your own risk.
+Sur: peligro
+entra bajo tu 
+responsabilidad.
 ]]
 }
 -----------------------
@@ -5562,8 +5578,8 @@ Enter at your own risk.
 dialog{
   id = "dungeon_1.small_key_danger_east",
   text = [[
-But don't go to East,
-it's surely dangerous.
+No vayas hacia el Este,
+sin duda es peligroso.
 ]]
 }
 -----------------------
@@ -5607,36 +5623,33 @@ Te fuiste con ella,
 todos nosotros te 
 vimos.
 
-Por otra parte, 
+Por otra parte,¡nadie
+esperaba que fuera
+a terminar la noche
+en tu casa ayer!
 
-Moreover, no one
-expected she would
-end the evening
-at your place
-yesterday!
+¡Pero lo hizo!
 
-But she did!
+Creemos que te
+encuentra encantador...
 
+¿Pensaste que la 
+secuestré?
+¡Ha ha ha ha ha!
 
-We must believe she
-finds you charming...
-
-You thought I kidnapped
-her? Ha ha ha ha ha!
-
-In short, she isn't
-here. Did you look
-everywhere in your
-home?
+Resumiendo, ella no
+está aquí.¿Has mirado
+en todas las estancias
+de tu casa?
 
 
-You should take a
-look around your
-house from time to
-time. Meanwhile, I'm
-not against a little
-deathmatch.
-En guard!
+Debes echas un vistazo
+alrededor de tu casa
+de vez en cuando.
+Mientras tanto,
+no estoy en contra
+de un combate a muerte.
+¡En guardia!
 ]]
 }
 -----------------------
