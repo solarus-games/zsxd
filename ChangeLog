@@ -4,14 +4,14 @@ zsxd 1.8.0 (under development)
 * Spanish translation (beta). Thanks Xexio!
 * Replace fixed8.fon by a TTF font due to an SDL2 regression (#59).
 
-zsxd 1.7.1 (under development)
+zsxd 1.7.1 (2013-12-01)
 
 * Use Solarus 1.1.1.
 * Fix Creepers never exploding after they are hurt (#16).
 * Fix a typo in English dialogs.
 * Fix the debugging console no longer working after using F1, F2 or F3.
 
-zsxd-1.7.0 (2013-10-13).
+zsxd-1.7.0 (2013-10-13)
 
 * Use Solarus 1.1.0.
 * Replace .spc musics by .it musics (faster) and remove unused ones.
