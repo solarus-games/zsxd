@@ -1,6 +1,7 @@
 zsxd 1.8.0 (under development)
 
 * Use solarus 1.2.0.
+* Spanish translation (beta). Thanks Xexio!
 * Replace fixed8.fon by a TTF font due to an SDL2 regression (#59).
 
 zsxd 1.7.1 (under development)
