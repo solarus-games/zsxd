@@ -1599,9 +1599,6 @@ Ka-BOOOM!
 ]]
 }
 --------------------
-You can view it
-in the Map Menu.You can view it
-in the Map Menu.
 -- Grand sac de bombes
 dialog{
   id = "_treasure.bomb_bag.2",
@@ -1702,7 +1699,7 @@ dialog{
   icon = 63,
   text = [[
 ¡Encontraste tu
-Armadura!$0
+Escudo!$0
 
 La proxima vez,
 no la dejes
@@ -1749,8 +1746,8 @@ dialog{
   icon = 66,
   text = [[
 Encontraste tu
-Espada de entrenamiento.
-
+Espada 
+de entrenamiento.
 Sabes que es tuya
 porque tu nombre
 está grabado en ella!
@@ -4932,7 +4929,6 @@ dialog{
 ¿No recuerdas la 
 fiesta de la noche
 anterior?
-
 Yo tampoco...
 
 Me pasa todo el
@@ -5211,8 +5207,10 @@ dialog{
 ¡Este tio me irrita!
 ¡Este fan de la 
 brujería me aburre con
-sus historias las
-dos últimas horas!
+sus historias lleva
+así las dos
+últimas horas!
+
 ¡Además, es super
 sensible!
 ]]
@@ -5461,7 +5459,6 @@ floreció bajo la
 bendición de las tres
 diosas.
 
-
 Después de la creación
 del mundo, estas tres
 diosas dejaron un 
@@ -5476,32 +5473,28 @@ escrito muy lentamente
 y no lo puedes pasar.$0$0
 También está salpicado
 de aburridas pausas.$0$0
-
 Realmente quieres
 comenzar a jugar,
-pero este texto no es nada
-interesante y se desplaza
-en un tono solemne y en
+pero este texto no es 
+nada interesante 
+y se desplaza en 
+un tono solemne y en
 un ambiente de leyenda,
 así que tendrás que 
 hacerle frente.
-
 $3OK, Abrevio.
-
-
 Es por la mañana. Te
 despiertas cerca de 
 tu cama y tu cabeza
 te está matando.
-
+ 
+ 
 ¡No recuerdas que
 sucedió ayer y no
 tienes tu equipo!
 Oh, me olvidé: la
 Princesa Zelda ha
 desaparecido.
-
-
 ¡Tu turno!
 ]]
 }
