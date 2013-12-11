@@ -2680,13 +2680,14 @@ dialog{
 Bienvenido a la Oficina
 de Objetos Perdidos y 
 Encontrados.
-
-También conocida como... 3T:
-
+También conocida como... 
+3T:
 ¡Cosas para vender!
+
 
 Necesitarás un bolígrafo
 y papel...
+
 
 Izquierda: Recepción, 
 mostradores 11, 21
@@ -2755,7 +2756,9 @@ dialog{
   skip = "current",
   text = [[
 Izquierda:
-mostradores 45, 47, 49, 84
+mostradores 45, 47, 
+49, 84
+
 Abajo: mostrador 21
 Derecha: mostrador 33
 Escalera:
@@ -4327,6 +4330,7 @@ dialog{
 Bienvenido, joven chico.
 Vendo sacos de 
 arroz baratos.
+
 20 Rupias un saco.
 
 ¿Tenemos trato?
@@ -4381,8 +4385,6 @@ seguir en este lugar
 más tiempo!
 Me he movido de un
 mostrador a otro, 
-I've moved from one
-counter to another, 
 estoy seguro de que 
 está haciendo esto
 para justificar su 
@@ -4930,7 +4932,6 @@ dialog{
 fiesta de la noche
 anterior?
 Yo tampoco...
-
 Me pasa todo el
 tiempo.
 ]]
@@ -4943,9 +4944,7 @@ dialog{
 ¿Has perdido a Zelda?
 ...
 
-
 **Indigno marido...**
-
 
 No, no sé dónde
 está.
@@ -5157,7 +5156,7 @@ dialog{
   text = [[
 Un Saco de Rupias 
 Enorme.¡Te permitirá
-llevar 999 Rupias!s
+llevar 999 Rupias!
 ]]
 }
 -----------------------
