@@ -2723,7 +2723,8 @@ dialog{
   text = [[
 Abajo: mostrador 21
 Derecha:
-mostradores 45, 47, 49, 84
+mostradores 45, 47,
+49, 84
 ]]
 }
 -----------------------
@@ -2758,7 +2759,6 @@ dialog{
 Izquierda:
 mostradores 45, 47, 
 49, 84
-
 Abajo: mostrador 21
 Derecha: mostrador 33
 Escalera:
@@ -2850,7 +2850,8 @@ dialog{
   skip = "current",
   text = [[
 Escaleras hacia
-los mostradores 49, 47, 45
+los mostradores 
+49, 47, 45.
 ]]
 }
 -----------------------
@@ -2863,7 +2864,7 @@ No hay suficiente
 peso en el Botón de 
 Giga colisión adicional
 con una carga superior
-a 15.000 megavatios
+a 15.000 megavatios.
 ]]
 }
 -----------------------
@@ -3391,7 +3392,7 @@ dialog{
   id = "crazy_house.guichet_12A_ech_ne_5",
   skip = "current",
   text = [[
-El contador está cerrado
+El mostrador está cerrado
 Señor.
 ]]
 }
@@ -4208,7 +4209,8 @@ dialog{
   text = [[
 Tenemos pimientos aquí.
 Vamos a intercambiarlos
-por un hacha si tu quieres.
+por un hacha,
+si tu quieres.
 He escuchado que puedes
 encontrar un hacha en 
 el mostrador 11.
@@ -4465,7 +4467,6 @@ yo estaba buscando
 una cuchara en esté 
 sitio que te hace 
 malvado...
-
 ¡Vaya pandilla de
 incompotentes!
 ]]
