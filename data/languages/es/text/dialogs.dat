@@ -1558,7 +1558,6 @@ Gran Saco de Rupias!$0
 ¡Ahora podrás 
 cargar con
 300 Rupias!$0
-
 Es una pena
 que el juego
 haya terminado,
@@ -2681,22 +2680,18 @@ dialog{
   skip = "current",
   text = [[
 Bienvenido a la Oficina
-de Objetos Perdidos y 
-Encontrados.
+de Objetos Perdidos.
 También conocida como... 
 3T:
 ¡Cosas para vender!
-
-
 Necesitarás un bolígrafo
 y papel...
 
-
 Izquierda: Recepción, 
-mostradores 11, 21
+mostradores 11 y 21
 
 Derecha: 
-mostradores 12, 22
+mostradores 12 y 22
 ]]
 }
 -----------------------
@@ -4508,7 +4503,7 @@ dialog{
   id = "geek_house.sign_c",
   text = [[
         ¡SE BUSCA!
-Schrödinger's gato.
+Al gato Schrödinger's.
 Vivo o muerto.
 ]]
 }
@@ -4874,17 +4869,18 @@ fueron.
 dialog{
   id = "outside_fields_SE.west_sign",
   text = [[
-Sur-Este:
+Sudeste:
 Marismas de la Trifuerza
 
 Oeste:
-Oficina de Objetos Perdidos
+Oficina de 
+Objetos Perdidos
 
 Norte: 
 Pueblo
 
 Nordeste: 
-Desierto Sandpit
+Desierto Sandpit,
 Monte Typython
 ]]
 }
@@ -4894,15 +4890,14 @@ dialog{
   id = "outside_fields_NO_indic",
   text = [[
 Oeste: Castillo
-Este: Desierto Sandpit
+Este: Desierto Sandpit,
 Monte Typython
-Sur Este:
+Sudeste:
 Oficina de Objetos
-Perdidos y tal vez
-más.
+Perdidos y 
+tal vez más.
 Bajo tus pies:
-Hierva verde
-
+Hierba verde
 Arriba:
 Nada o nada que
 tú puedas ver.
@@ -4950,6 +4945,7 @@ dialog{
 
 **Indigno marido...**
 
+
 No, no sé dónde
 está.
 ]]
@@ -4974,7 +4970,7 @@ dialog{
   text = [[
 Disculpa, hemos perdido
 la llave.
-No podemos abrirtela.
+No podemos abrirte.
 ]]
 }
 -----------------------
@@ -5190,13 +5186,12 @@ mirando de esa manera?
 ¿Tienes algun problema
 con mi apariencia
 de mago?
-
 Hoy en día, ni siquiera
 podemos compartir nuestra
 pasión sin ser tomados
-por locos. ¡Soy una persona
-como cualquier otra!
-
+por locos. ¡Soy una 
+persona como 
+cualquier otra!
 ¡Es increíble tener
 tanto prejuicios!
 ]]
@@ -5213,7 +5208,6 @@ brujería me aburre con
 sus historias lleva
 así las dos
 últimas horas!
-
 ¡Además, es super
 sensible!
 ]]
@@ -5280,25 +5274,21 @@ dialog{
   text = [[
 ¿Qué?¿Tú fuiste
 a la Cueva Maldita?
-
 ¡La juventud de hoy
 en día es muy
 temeraria!
-
 Deberíamos poner más
 advertencias de los
 peligros de la cueva.
 Te lo dije: No debes
 ir ahí.
-
 ¡No estás siguiendo
 el juego! Si quieres
 ver a Ganon, no será
 nada sencillo. Coge
 la llave de mi 
 habitación.
-
-Podrías haber dicho que
+Podrías haberlo dicho
 de inmediato, en lugar
 de ir de aventuras.
 ]]
@@ -5341,7 +5331,6 @@ forma para hacerlo
 es ir a la Cueva
 Maldita, hacia el
 Norte.
-
 El dolor y la muerte
 estan garantizados.
 ]]
