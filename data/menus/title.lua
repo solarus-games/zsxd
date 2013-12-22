@@ -139,7 +139,7 @@ end
 function title_screen:draw_phase_title()
 
   -- background
-  self.surface:fill_color({0, 0, 0})
+  self.surface:clear()
   self.background_img:draw(self.surface)
 
   -- clouds
