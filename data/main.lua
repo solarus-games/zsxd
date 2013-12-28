@@ -1,6 +1,7 @@
 -- Main script of the quest.
 
 local console = require("console")
+local quest_manager = require("quest_manager")
 
 local debug_enabled = false
 function sol.main.is_debug_enabled()
@@ -9,6 +10,9 @@ end
 
 -- Event called when the program starts.
 function sol.main:on_started()
+
+  -- Make quest-specific initializations.
+  quest_manager:initialize_quest()
 
   -- Load built-in settings (audio volume, video mode, etc.).
   sol.main.load_settings()
