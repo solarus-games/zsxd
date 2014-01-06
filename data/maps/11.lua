@@ -7,6 +7,5 @@ function map:on_started(destination_point)
    local movement = sol.movement.create("random_path")
    movement:set_speed(32)
    movement:start(lady_a)
-   lady_a:get_sprite():set_animation("walking")
 end
 

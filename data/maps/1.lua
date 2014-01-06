@@ -8,7 +8,6 @@ local function random_walk(npc)
   local movement = sol.movement.create("random_path")
   movement:set_speed(32)
   movement:start(npc)
-  npc:get_sprite():set_animation("walking")
 end
 
 -- Function called when the map starts.

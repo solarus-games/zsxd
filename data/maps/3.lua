@@ -21,7 +21,6 @@ function map:random_monkey_run(speed)
   local movement = sol.movement.create("random_path")
   movement:set_speed(speed)
   movement:start(forest_monkey)
-  forest_monkey:get_sprite():set_animation("walking")
 end
 
 function guard:on_interaction()
@@ -35,7 +34,6 @@ function guard:on_interaction()
         movement:set_path({0,0,0,0,0,0,0,0,0,0,6,6})
         movement:set_speed(24)
         movement:start(guard)
-        sprite:set_animation("walking")
       end
     end)
   else
