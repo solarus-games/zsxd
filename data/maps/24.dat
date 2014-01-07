@@ -8718,7 +8718,7 @@ teletransporter{
   width = 16,
   height = 16,
   name = "to2Fb_left",
-  transition = 1,
+  transition = "fade",
   destination_map = "23",
   destination = "from3F_left",
 }
@@ -8780,7 +8780,7 @@ teletransporter{
   width = 16,
   height = 16,
   name = "toOutsideSO",
-  transition = 1,
+  transition = "fade",
   destination_map = "3",
   destination = "from_crazy_house_secret",
 }
@@ -9059,7 +9059,7 @@ teletransporter{
   width = 16,
   height = 16,
   name = "to2FB_right",
-  transition = 1,
+  transition = "fade",
   destination_map = "23",
   destination = "from3F_right",
 }
@@ -9081,7 +9081,7 @@ teletransporter{
   name = "teletransporter",
   sprite = "entities/teletransporter",
   sound = "warp",
-  transition = 1,
+  transition = "fade",
   destination_map = "24",
   destination = "fromGridPlatforms",
 }
@@ -9102,7 +9102,7 @@ teletransporter{
   width = 16,
   height = 16,
   name = "to2Fa_center",
-  transition = 1,
+  transition = "fade",
   destination_map = "22",
   destination = "from3F_center",
 }
@@ -9779,7 +9779,7 @@ teletransporter{
   name = "departure_D",
   sprite = "entities/teletransporter",
   sound = "warp",
-  transition = 1,
+  transition = "fade",
   destination_map = "22",
   destination = "arrival_D",
 }
@@ -9793,7 +9793,7 @@ teletransporter{
   name = "departure_D_2",
   sprite = "entities/teletransporter",
   sound = "warp",
-  transition = 1,
+  transition = "fade",
   destination_map = "22",
   destination = "arrival_D",
 }

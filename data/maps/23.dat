@@ -3427,7 +3427,7 @@ teletransporter{
   width = 16,
   height = 16,
   name = "to1Fb_left",
-  transition = 1,
+  transition = "fade",
   destination_map = "21",
   destination = "from2Fb_left",
 }
@@ -3447,7 +3447,7 @@ teletransporter{
   width = 16,
   height = 16,
   name = "to3Fa_left",
-  transition = 1,
+  transition = "fade",
   destination_map = "24",
   destination = "from2Fb_left",
 }
@@ -3476,7 +3476,7 @@ teletransporter{
   width = 16,
   height = 16,
   name = "to3F_right",
-  transition = 1,
+  transition = "fade",
   destination_map = "24",
   destination = "from2Fb_right",
 }
@@ -3505,7 +3505,7 @@ teletransporter{
   width = 16,
   height = 16,
   name = "to1Fb_right",
-  transition = 1,
+  transition = "fade",
   destination_map = "21",
   destination = "from2Fb_right",
 }

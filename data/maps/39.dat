@@ -1317,7 +1317,7 @@ teletransporter{
   width = 16,
   height = 16,
   name = "teletransporter",
-  transition = 2,
+  transition = "scrolling",
   destination_map = "38",
   destination = "_side",
 }
@@ -1524,7 +1524,7 @@ teletransporter{
   name = "teletransporter_2",
   sprite = "entities/teletransporter",
   sound = "warp",
-  transition = 1,
+  transition = "fade",
   destination_map = "38",
   destination = "back",
 }

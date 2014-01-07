@@ -2383,7 +2383,7 @@ teletransporter{
   width = 16,
   height = 1136,
   name = "teletransporter",
-  transition = 2,
+  transition = "scrolling",
   destination_map = "60",
   destination = "_side",
 }
@@ -2395,7 +2395,7 @@ teletransporter{
   width = 1536,
   height = 16,
   name = "teletransporter_2",
-  transition = 2,
+  transition = "scrolling",
   destination_map = "63",
   destination = "_side",
 }
@@ -10130,7 +10130,7 @@ teletransporter{
   width = 1536,
   height = 16,
   name = "teletransporter_4",
-  transition = 2,
+  transition = "scrolling",
   destination_map = "63",
   destination = "_side",
 }
@@ -10142,7 +10142,7 @@ teletransporter{
   width = 16,
   height = 1136,
   name = "teletransporter_3",
-  transition = 2,
+  transition = "scrolling",
   destination_map = "60",
   destination = "_side",
 }
@@ -10905,7 +10905,7 @@ teletransporter{
   width = 16,
   height = 16,
   name = "teletransporter_5",
-  transition = 1,
+  transition = "fade",
   destination_map = "65",
   destination = "from_1F_c",
 }
@@ -11329,7 +11329,7 @@ teletransporter{
   width = 16,
   height = 16,
   name = "teletransporter_6",
-  transition = 1,
+  transition = "fade",
   destination_map = "65",
   destination = "from_1f_boss",
 }

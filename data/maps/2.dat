@@ -11067,7 +11067,7 @@ teletransporter{
   width = 16,
   height = 1024,
   name = "teletransporter",
-  transition = 2,
+  transition = "scrolling",
   destination_map = "1",
   destination = "_side",
 }
@@ -11079,7 +11079,7 @@ teletransporter{
   width = 1136,
   height = 16,
   name = "teletransporter_2",
-  transition = 2,
+  transition = "scrolling",
   destination_map = "4",
   destination = "_side",
 }
@@ -11307,7 +11307,7 @@ teletransporter{
   width = 16,
   height = 16,
   name = "teletransporter_3",
-  transition = 1,
+  transition = "fade",
   destination_map = "38",
   destination = "start_position",
 }
@@ -11335,7 +11335,7 @@ teletransporter{
   width = 16,
   height = 16,
   name = "teletransporter_4",
-  transition = 1,
+  transition = "fade",
   destination_map = "11",
   destination = "from_outside_NE",
 }
@@ -11646,7 +11646,7 @@ teletransporter{
   width = 16,
   height = 16,
   name = "teletransporter_5",
-  transition = 1,
+  transition = "fade",
   destination_map = "43",
   destination = "start_position",
 }
@@ -11691,7 +11691,7 @@ teletransporter{
   width = 16,
   height = 16,
   name = "teletransporter_6",
-  transition = 1,
+  transition = "fade",
   destination_map = "13",
   destination = "from_outside_e",
 }
@@ -11703,7 +11703,7 @@ teletransporter{
   width = 16,
   height = 16,
   name = "teletransporter_7",
-  transition = 1,
+  transition = "fade",
   destination_map = "13",
   destination = "from_outside_w",
 }
@@ -11723,7 +11723,7 @@ teletransporter{
   width = 16,
   height = 16,
   name = "teletransporter_8",
-  transition = 1,
+  transition = "fade",
   destination_map = "42",
   destination = "from_outside",
 }
@@ -11760,7 +11760,7 @@ teletransporter{
   width = 16,
   height = 16,
   name = "teletransporter_9",
-  transition = 1,
+  transition = "fade",
   destination_map = "16",
   destination = "from_outside",
 }
@@ -11780,7 +11780,7 @@ teletransporter{
   width = 16,
   height = 16,
   name = "teletransporter_10",
-  transition = 1,
+  transition = "fade",
   destination_map = "14",
   destination = "from_outside",
 }
@@ -11792,7 +11792,7 @@ teletransporter{
   width = 16,
   height = 16,
   name = "teletransporter_11",
-  transition = 1,
+  transition = "fade",
   destination_map = "15",
   destination = "from_outside",
 }

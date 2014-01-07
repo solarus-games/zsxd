@@ -7378,7 +7378,7 @@ teletransporter{
   width = 16,
   height = 16,
   name = "to2Fb_left",
-  transition = 1,
+  transition = "fade",
   destination_map = "23",
   destination = "from1Fb_left",
 }
@@ -7407,7 +7407,7 @@ teletransporter{
   width = 16,
   height = 16,
   name = "to2Fa_left",
-  transition = 1,
+  transition = "fade",
   destination_map = "22",
   destination = "from1Fb_left",
 }
@@ -7545,7 +7545,7 @@ teletransporter{
   width = 16,
   height = 16,
   name = "to2FA_right",
-  transition = 1,
+  transition = "fade",
   destination_map = "22",
   destination = "from1Fb_right",
 }
@@ -7574,7 +7574,7 @@ teletransporter{
   width = 16,
   height = 16,
   name = "to2Fb_right",
-  transition = 1,
+  transition = "fade",
   destination_map = "23",
   destination = "from1Fb_right",
 }
@@ -7597,7 +7597,7 @@ teletransporter{
   name = "TB_departure",
   sprite = "entities/teletransporter",
   sound = "warp",
-  transition = 1,
+  transition = "fade",
   destination_map = "20",
   destination = "TB_destination",
 }

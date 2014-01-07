@@ -7511,7 +7511,7 @@ teletransporter{
   width = 1024,
   height = 16,
   name = "teletransporter",
-  transition = 2,
+  transition = "scrolling",
   destination_map = "1",
   destination = "_side",
 }
@@ -7551,7 +7551,7 @@ teletransporter{
   width = 16,
   height = 16,
   name = "crazy_house.in",
-  transition = 1,
+  transition = "fade",
   destination_map = "20",
   destination = "start_position",
 }
@@ -7563,7 +7563,7 @@ teletransporter{
   width = 16,
   height = 16,
   name = "teletransporter_2",
-  transition = 1,
+  transition = "fade",
   destination_map = "0",
   destination = "from_outside",
 }
@@ -7805,7 +7805,7 @@ teletransporter{
   width = 16,
   height = 16,
   name = "toCrazyHouse",
-  transition = 1,
+  transition = "fade",
   destination_map = "24",
   destination = "fromOutsideSO",
 }
@@ -8639,7 +8639,7 @@ teletransporter{
   width = 16,
   height = 1024,
   name = "teletransporter_3",
-  transition = 2,
+  transition = "scrolling",
   destination_map = "4",
   destination = "_side",
 }

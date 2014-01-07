@@ -286,7 +286,7 @@ teletransporter{
   width = 192,
   height = 112,
   name = "teletransporter",
-  transition = 1,
+  transition = "fade",
   destination_map = "45",
   destination = "_same",
 }

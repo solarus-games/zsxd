@@ -819,7 +819,7 @@ teletransporter{
   width = 16,
   height = 16,
   name = "teletransporter_2",
-  transition = 1,
+  transition = "fade",
   destination_map = "1",
   destination = "stupid_guy_house_out",
 }

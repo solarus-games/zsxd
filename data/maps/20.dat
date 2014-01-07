@@ -7109,7 +7109,7 @@ teletransporter{
   width = 16,
   height = 16,
   name = "exit",
-  transition = 1,
+  transition = "fade",
   destination_map = "3",
   destination = "from_crazy_house",
 }
@@ -7319,7 +7319,7 @@ teletransporter{
   width = 16,
   height = 16,
   name = "to2Fa_right",
-  transition = 1,
+  transition = "fade",
   destination_map = "22",
   destination = "from1Fb",
 }
@@ -7360,7 +7360,7 @@ teletransporter{
   width = 16,
   height = 16,
   name = "to2Fa_left",
-  transition = 1,
+  transition = "fade",
   destination_map = "22",
   destination = "from1Fa",
 }
