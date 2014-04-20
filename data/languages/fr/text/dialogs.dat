@@ -5079,7 +5079,7 @@ Courez !
 dialog{
   id = "freaking_cave_indic2",
   text = [[
-Désolé, on avait plus 
+Désolé, on n'avait plus 
 assez de rubis pour
 acheter un coffre neuf.
 ]]
