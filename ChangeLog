@@ -4,6 +4,7 @@ zsxd 1.8.0 (under development)
 * Spanish translation (beta). Thanks Xexio!
 * Replace fixed8.fon by a TTF font due to an SDL2 regression (#59).
 * Switch fullscreen also with F11.
+* Make streams non-blocking in the crazy house.
 * Fix a typo in French dialogs.
 * Fix the position of some diagonal jumpers.
 
