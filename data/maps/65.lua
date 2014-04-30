@@ -87,10 +87,12 @@ for enemy in map:get_entities("fight_room_enemy") do
   enemy.on_dead = fight_room_enemy_dead
 end
 
-function boss:on_dead()
-  map:set_entities_enabled("boss_gate", true) 
-  game:set_value("b62", true)  -- Open the door of Link's cave.
-  sol.audio.play_sound("secret")
+if boss ~= nil then
+  function boss:on_dead()
+    map:set_entities_enabled("boss_gate", true) 
+    game:set_value("b62", true)  -- Open the door of Link's cave.
+    sol.audio.play_sound("secret")
+  end
 end
 
 function remove_water_sensor:on_activated()
