@@ -33,6 +33,8 @@ function map:on_started(destination_point)
   map:set_doors_open("boss_door", true)
   if game:get_value("b306") then
     boss_gate:set_enabled(true)
+  else
+    boss:set_enabled(false)
   end
 end
 
@@ -89,7 +91,7 @@ end
 
 if boss ~= nil then
   function boss:on_dead()
-    map:set_entities_enabled("boss_gate", true) 
+    map:set_entities_enabled("boss_gate", true)
     game:set_value("b62", true)  -- Open the door of Link's cave.
     sol.audio.play_sound("secret")
   end
