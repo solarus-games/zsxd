@@ -12,8 +12,8 @@ Scripts under GNU GPL v3:
 -------------------------
 **.lua
 
-Data files under CC BY-SA 3.0:
-------------------------------
+Data files under CC BY-SA 3.0:                      Author (if not us)
+------------------------------                      ------------------
 **.dat
 sprites/enemies/bee_guard.png
 sprites/enemies/*_bullblin.png
@@ -50,11 +50,7 @@ sprites/menus/title_sunset_*.png
 sprites/npc/newlink.png
 sprites/npc/solarus_child*.png
 sprites/npc/yoda.png
-
-TODO: Check the status of these fonts:
---------------------------------------
-text/fixed8.fon
-text/wqy-microhei.ttc
+text/minecraftia.png                                Andrew Tyler: http://www.andrewtyler.net
 
 Files that include content from Nintendo:
 -----------------------------------------
