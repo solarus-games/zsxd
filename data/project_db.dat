@@ -383,3 +383,4 @@ language{ id = "es", description = "Español" }
 language{ id = "fr", description = "Français" }
 
 sound{ id = "running_obstacle", description = "running_obstacle" }
+sprite{ id = "entities/solid_switch", description = "Solid switch" }

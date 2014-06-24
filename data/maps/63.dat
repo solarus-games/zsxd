@@ -8438,7 +8438,8 @@ switch{
   x = 768,
   y = 56,
   name = "ne_door_switch",
-  subtype = "2",
+  subtype = "arrow_target",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = false,
 }
@@ -8746,7 +8747,9 @@ switch{
   x = 128,
   y = 288,
   name = "remove_water_switch",
-  subtype = "1",
+  subtype = "walkable",
+  sprite = "entities/switch",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = false,
 }

@@ -9444,7 +9444,9 @@ switch{
   x = 1656,
   y = 784,
   name = "giga_bouton",
-  subtype = "1",
+  subtype = "walkable",
+  sprite = "entities/switch",
+  sound = "switch",
   needs_block = true,
   inactivate_when_leaving = false,
 }
@@ -10324,7 +10326,9 @@ switch{
   x = 1600,
   y = 848,
   name = "barrier_switch",
-  subtype = "1",
+  subtype = "walkable",
+  sprite = "entities/switch",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = false,
 }

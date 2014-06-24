@@ -6431,7 +6431,8 @@ switch{
   x = 968,
   y = 520,
   name = "switch_1",
-  subtype = "2",
+  subtype = "arrow_target",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = false,
 }
@@ -6441,7 +6442,8 @@ switch{
   x = 1008,
   y = 520,
   name = "switch_2",
-  subtype = "2",
+  subtype = "arrow_target",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = false,
 }
@@ -6451,7 +6453,8 @@ switch{
   x = 1120,
   y = 520,
   name = "switch_3",
-  subtype = "2",
+  subtype = "arrow_target",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = false,
 }
@@ -6461,7 +6464,8 @@ switch{
   x = 1160,
   y = 520,
   name = "switch_4",
-  subtype = "2",
+  subtype = "arrow_target",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = false,
 }

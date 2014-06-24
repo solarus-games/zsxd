@@ -4927,7 +4927,9 @@ switch{
   x = 1304,
   y = 336,
   name = "stupid_run_switch_a",
-  subtype = "1",
+  subtype = "walkable",
+  sprite = "entities/switch",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = false,
 }
@@ -4937,7 +4939,9 @@ switch{
   x = 1400,
   y = 240,
   name = "stupid_run_switch_b",
-  subtype = "1",
+  subtype = "walkable",
+  sprite = "entities/switch",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = false,
 }
@@ -4957,7 +4961,9 @@ switch{
   x = 1448,
   y = 72,
   name = "stupid_run_switch_c",
-  subtype = "1",
+  subtype = "walkable",
+  sprite = "entities/switch",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = false,
 }

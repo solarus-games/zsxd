@@ -7765,7 +7765,9 @@ switch{
   x = 1256,
   y = 536,
   name = "creeper_door_switch",
-  subtype = "1",
+  subtype = "walkable",
+  sprite = "entities/switch",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = false,
 }
