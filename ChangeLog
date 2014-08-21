@@ -1,9 +1,6 @@
-zsxd 1.9.0 (under development)
+zsxd 1.9.0 (2014-08-21)
 
 * Use Solarus 1.3.0.
-
-zsxd 1.8.1 (under development)
-
 * Make cmake paths more modifiable. By hasufell.
 * Fix direction of vertical movement on joypad in menus.
 * Clarify license of some files.
