@@ -11,11 +11,20 @@ function savegame_menu:on_started()
   self.cloud_img = sol.surface.create("menus/selection_menu_cloud.png")
   self.save_container_img = sol.surface.create("menus/selection_menu_save_container.png")
   self.option_container_img = sol.surface.create("menus/selection_menu_option_container.png")
-  self.option1_text = sol.text_surface.create()
-  self.option2_text = sol.text_surface.create()
+  local dialog_font, dialog_font_size = sol.language.get_dialog_font()
+  local menu_font, menu_font_size = sol.language.get_menu_font()
+  self.option1_text = sol.text_surface.create{
+    font = dialog_font,
+    font_size = dialog_font_size,
+  }
+  self.option2_text = sol.text_surface.create{
+    font = dialog_font,
+    font_size = dialog_font_size,
+  }
   self.title_text = sol.text_surface.create{
     horizontal_alignment = "center",
-    font = "fixed"
+    font = menu_font,
+    font_size = menu_font_size,
   }
   self.cursor_position = 1
   self.cursor_sprite = sol.sprite.create("menus/selection_menu_cursor")
@@ -231,13 +240,17 @@ end
 function savegame_menu:read_savegames()
 
   self.slots = {}
+  local font, font_size = sol.language.get_dialog_font()
   for i = 1, 3 do
     local slot = {}
     slot.file_name = "save" .. i .. ".dat"
     slot.savegame = sol.game.load(slot.file_name)
     slot.number_img = sol.surface.create("menus/selection_menu_save" .. i .. ".png")
 
-    slot.player_name_text = sol.text_surface.create()
+    slot.player_name_text = sol.text_surface.create{
+      font = font,
+      font_size = font_size,
+    }
     if sol.game.exists(slot.file_name) then
       -- Existing file.
       if slot.savegame:get_ability("tunic") == 0 then
@@ -591,19 +604,22 @@ function savegame_menu:init_phase_options()
     }
   }
 
+  local font, font_size = sol.language.get_menu_font()
   for _, option in ipairs(self.options) do
 
     option.current_index = nil
 
     -- Text surface of the label.
     option.label_text = sol.text_surface.create{
-      font = "fixed",
+      font = font,
+      font_size = font_size,
       text_key = "selection_menu.options." .. option.name
     }
 
     -- Text surface of the value.
     option.value_text = sol.text_surface.create{
-      font = "fixed",
+      font = font,
+      font_size = font_size,
       horizontal_alignment = "right"
     }
   end
@@ -828,11 +844,16 @@ end
 ------------------------------
 function savegame_menu:init_phase_choose_name()
 
+  local menu_font, menu_font_size = sol.language.get_menu_font()
+
   self.phase = "choose_name"
   self.title_text:set_text_key("selection_menu.phase.choose_name")
   self.cursor_sprite:set_animation("letters")
   self.player_name = ""
-  self.player_name_text = sol.text_surface.create()
+  self.player_name_text = sol.text_surface.create{
+    font = menu_font,
+    font_size = menu_font_size,
+  }
   self.letter_cursor = { x = 0, y = 0 }
   self.letters_img = sol.surface.create("menus/selection_menu_letters.png")
   self.name_arrow_sprite = sol.sprite.create("menus/arrow")

@@ -67,20 +67,24 @@ function title_screen:phase_title()
       .. "_clouds.png")
   self.logo_img = sol.surface.create("menus/title_logo.png")
 
+  local menu_font, menu_font_size = sol.language.get_menu_font()
+
   self.website_img = sol.text_surface.create{
-    font = "dialog",
+    font = menu_font,
+    font_size = menu_font_size,
     rendering_mode = "antialiasing",
     color = hour_text_color,
     text_key = "title_screen.website",
-    horizontal_alignment = "center"
+    horizontal_alignment = "center",
   }
 
   self.press_space_img = sol.text_surface.create{
-    font = "dialog_big",
+    font = "la",
+    font_size = 18,
     rendering_mode = "antialiasing",
     color = hour_text_color,
     text_key = "title_screen.press_space",
-    horizontal_alignment = "center"
+    horizontal_alignment = "center",
   }
 
   -- set up the appearance of images and texts

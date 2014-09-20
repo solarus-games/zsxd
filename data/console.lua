@@ -9,12 +9,21 @@ local console = {
   history_capacity = 50,   -- Maximum size of the history.
   history_position = 1,    -- Current position when browsing the history.
   input_text_surface = sol.text_surface.create{
-    font = "fixed"
+    font = "minecraftia",
+    size = 8,
   },
   output_text_surface = sol.text_surface.create{
-    font = "fixed"
+    font = "minecraftia",
+    size = 8,
   },
 }
+
+-- Global function tp to mean hero:teleport()
+function tp(...)
+
+  local hero = sol.main.game and sol.main.game:get_hero() or nil
+  hero:teleport(...)
+end
 
 function console:on_started()
   self.enabled = true

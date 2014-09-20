@@ -239,12 +239,12 @@ function sol.main:start_savegame(game)
   play_game(game)
 end
 
--- Returns the font to be used for dialogs
+-- Returns the font and font size to be used for dialogs
 -- depending on the specified language (the current one by default).
 function sol.language.get_dialog_font(language)
 
   -- No font differences between languages (for now).
-  return "dialog"
+  return "la", 11
 end
 
 -- Returns the font to be used to display text in menus
@@ -252,6 +252,6 @@ end
 function sol.language.get_menu_font(language)
 
   -- No font differences between languages (for now).
-  return "fixed"
+  return "minecraftia", 8
 end
 
