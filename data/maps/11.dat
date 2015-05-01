@@ -1440,6 +1440,7 @@ destination{
 }
 
 shop_treasure{
+  font = "la",
   layer = 1,
   x = 552,
   y = 120,
@@ -1451,6 +1452,7 @@ shop_treasure{
 }
 
 shop_treasure{
+  font = "la",
   layer = 1,
   x = 480,
   y = 120,
@@ -1463,6 +1465,7 @@ shop_treasure{
 }
 
 shop_treasure{
+  font = "la",
   layer = 1,
   x = 408,
   y = 120,
@@ -1475,6 +1478,7 @@ shop_treasure{
 }
 
 shop_treasure{
+  font = "la",
   layer = 1,
   x = 408,
   y = 64,
