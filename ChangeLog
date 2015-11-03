@@ -2,6 +2,7 @@ zsdx 1.10.2 (in progress)
 
 * Upgrade to Solarus 1.4.5.
 * Make fairies play a sound when restoring life even when already full (#101).
+* Fix dialog cursor drawn at wrong position after successive questions (#105).
 
 zsxd 1.10.1 (2015-05-09)
 
