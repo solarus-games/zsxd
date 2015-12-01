@@ -1,8 +1,8 @@
-zsdx 1.10.3 (in progress)
+zsxd 1.10.3 (in progress)
 
 * Fix game-over stopped sometimes using a workaround.
 
-zsdx 1.10.2 (2015-11-22)
+zsxd 1.10.2 (2015-11-22)
 
 * Upgrade to Solarus 1.4.5.
 * Make fairies play a sound when restoring life even when already full (#101).
