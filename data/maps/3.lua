@@ -57,7 +57,7 @@ function forest_monkey:on_interaction()
   end
 end
 
-function chest_link_house:on_empty()
+function chest_link_house:on_opened()
   game:start_dialog("outside_fields_SO.chest_link_house")
   hero:unfreeze()
 end

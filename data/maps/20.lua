@@ -323,7 +323,7 @@ function DK1:on_opened()
   game:set_value("b128", true)
 end
 
-function CK3:on_empty()
+function CK3:on_opened()
   if game:get_value("b141") then
     -- The locked door in 3F is already open
     hero:start_treasure("rupee", 4)
@@ -340,7 +340,7 @@ function map:on_obtained_treasure(item, variant, savegame_variable)
   end
 end
 
-function CV1:on_empty()
+function CV1:on_opened()
   sol.audio.play_sound("wrong")
   game:start_dialog("_empty_chest")
   hero:unfreeze()
