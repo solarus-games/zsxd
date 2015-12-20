@@ -1,4 +1,4 @@
-zsxd 1.10.3 (in progress)
+zsxd 1.10.3 (2015-12-20)
 
 * Fix game-over stopped sometimes using a workaround.
 * Fix dialog cursor drawn at wrong position after successive questions.
