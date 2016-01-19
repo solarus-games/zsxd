@@ -9578,7 +9578,6 @@ enemy{
   name = "globul_a",
   direction = 3,
   breed = "globul",
-  rank = 0,
   treasure_name = "random",
   treasure_variant = 1,
 }

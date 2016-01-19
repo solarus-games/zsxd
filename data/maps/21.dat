@@ -7351,7 +7351,6 @@ enemy{
   name = "enemy",
   direction = 3,
   breed = "tentacle",
-  rank = 0,
   treasure_name = "random",
   treasure_variant = 1,
 }

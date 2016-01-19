@@ -2454,7 +2454,6 @@ enemy{
   name = "miniboss",
   direction = 3,
   breed = "lizarmen",
-  rank = 1,
   savegame_variable = "b302",
   treasure_name = "fairy",
 }

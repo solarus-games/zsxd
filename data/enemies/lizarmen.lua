@@ -9,6 +9,7 @@ function enemy:on_created()
 
   self:set_life(20)
   self:set_damage(2)
+  self:set_hurt_style("boss")
   self:create_sprite("enemies/lizarmen")
   self:set_size(144, 176)
   self:set_origin(77, 165)

@@ -1092,7 +1092,6 @@ enemy{
   name = "zelda_enemy",
   direction = 3,
   breed = "zelda",
-  rank = 0,
   treasure_variant = 1,
 }
 
