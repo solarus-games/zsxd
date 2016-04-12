@@ -12,6 +12,12 @@ We assume in this readme that Solarus is already installed.
 See our [development blog](http://www.solarus-games.org) to get more
 information and documentation about Solarus and our games.
 
+## Table of Contents
+- [1. Play directly](#1-play-directly)
+- [2. Install the quest](#2-install-the-quest)
+	- [2.1. Default settings](#21-default-settings)
+	- [2.2. Change the install directory](#22-change-the-install-directory)
+
 
 ## 1. Play directly
 
@@ -22,11 +28,11 @@ to use. The binary `solarus_run` accepts two forms of quest paths:
 
 Thus, to run zsxd, if the current directory is the one that
 contains the `data` subdirectory (and this readme), you can type:
-```
+```bash
 $ solarus_run .
 ```
 Or without arguments, if Solarus was compiled with the default quest set to `"."`:
-```
+```bash
 $ solarus_run
 ```
 
@@ -37,14 +43,14 @@ $ solarus_run
 
 If you want to install zsxd, cmake and zip are recommended.
 Just type:
-```
+```bash
 $ cmake .
 $ make
 ```
 
 This generates the `data.solarus` archive that contains all data files
 of the quest. You can then install it with
-```
+```bash
 $ make install
 ```
 
@@ -56,11 +62,11 @@ is `/usr/local`):
 The `zsxd` script launches `solarus_run` with the appropriate command-line argument
 to specify the quest path.
 This means that you can launch the zsxd quest with the command:
-```
+```bash
 $ zsxd
 ```
 which is equivalent to:
-```
+```bash
 $ solarus_run /usr/local/share/solarus/zsxd
 ```
 
@@ -68,9 +74,9 @@ $ solarus_run /usr/local/share/solarus/zsxd
 ### 2.2. Change the install directory
 
 You may want to install zsxd in another directory
-(e.g. so that no root access is necessary). 
+(e.g. so that no root access is necessary).
 You can specify this directory as a parameter of cmake:
-```
+```bash
 $ cmake -D CMAKE_INSTALL_PREFIX=/home/your_directory .
 $ make
 $ make install
