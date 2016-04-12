@@ -13,10 +13,10 @@ See our [development blog](http://www.solarus-games.org) to get more
 information and documentation about Solarus and our games.
 
 ## Table of Contents
-- [1. Play directly](#1-play-directly)
-- [2. Install the quest](#2-install-the-quest)
-	- [2.1. Default settings](#21-default-settings)
-	- [2.2. Change the install directory](#22-change-the-install-directory)
+ 1. [Play directly](#1-play-directly)
+ 2. [Install the quest](#2-install-the-quest)
+	1. [Default settings](#21-default-settings)
+	2. [Change the install directory](#22-change-the-install-directory)
 
 
 ## 1. Play directly
