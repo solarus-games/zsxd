@@ -4,12 +4,12 @@
 # Zelda: Mystery of Solarus XD
 
 This package contains the data files of the game Zelda: Mystery of Solarus XD.
-This quest is a free, open-source game that works with Solarus,
+This quest is a free, open-source game that works with [Solarus](https://github.com/christopho/solarus),
 an open-source Zelda-like 2D game engine.
 To play this game, you need Solarus.
 We assume in this readme that Solarus is already installed.
 
-See our development blog (http://www.solarus-games.org) to get more
+See our [development blog](http://www.solarus-games.org) to get more
 information and documentation about Solarus and our games.
 
 
