@@ -13,7 +13,7 @@ See our [development blog](http://www.solarus-games.org) to get more
 information and documentation about Solarus and our games.
 
 
-## Play directly
+## 1. Play directly
 
 You need to specify to the `solarus_run` binary the path of the quest data files
 to use. The binary `solarus_run` accepts two forms of quest paths:
@@ -31,9 +31,9 @@ $ solarus_run
 ```
 
 
-## Install the quest
+## 2. Install the quest
 
-###  Default settings
+###  2.1. Default settings
 
 If you want to install zsxd, cmake and zip are recommended.
 Just type:
@@ -65,7 +65,7 @@ $ solarus_run /usr/local/share/solarus/zsxd
 ```
 
 
-###  Change the install directory
+### 2.2. Change the install directory
 
 You may want to install zsxd in another directory
 (e.g. so that no root access is necessary). 
