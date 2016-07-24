@@ -64,7 +64,15 @@ function game:is_in_dungeon()
   return self:get_dungeon() ~= nil
 end
 
+-- Allows the hero to jump over water when he cannot swim.
+-- This was the default behavior before Solarus 1.5.
+local function fix_jump_over_water(game)
+
+  game:set_ability("jump_over_water", 1)
+end
+
 -- Run the game.
 sol.main.game = game
+fix_jump_over_water(game)
 game:start()
 
