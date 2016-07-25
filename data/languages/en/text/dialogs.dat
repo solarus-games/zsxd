@@ -1,24 +1,116 @@
--- This is a Lua dialog file for solarus 0.9.1 or greater.
--- This dialog file was converted from the 0.9.0 ini syntax using the script
--- tools/data_files_converstion/dialogs_0.9.0_to_0.9.1.lua.
-
--- Plume / Feather
 dialog{
-  id = "_item_description.feather.1",
-  icon = 0,
-  skip = "all",
+  id = "_big_key_required",
+  icon = "73",
   text = [[
-Use Roc's Feather
-to jump and get
-across obstacles.
+Locked, you need the
+Big Key to open it!
 ]]
 }
---------------------
 
--- Bombes / Bombs
+dialog{
+  id = "_boss_key_required",
+  icon = "74",
+  text = [[
+This door leads
+to Ganon!
+
+Don't even try to
+open it whithout
+the Master Key!
+]]
+}
+
+dialog{
+  id = "_cannot_lift_should_cut",
+  skip = "all",
+  text = [[
+Maybe you need
+something to cut down
+this bush...
+]]
+}
+
+dialog{
+  id = "_cannot_lift_still_too_heavy",
+  text = [[
+You're REALLY not
+strong enough for this!
+]]
+}
+
+dialog{
+  id = "_cannot_lift_too_heavy",
+  skip = "all",
+  text = [[
+You're not strong
+enough for this!
+]]
+}
+
+dialog{
+  id = "_crystal",
+  text = [[
+It's a crystal switch.
+Hit the switch with
+something...
+]]
+}
+
+dialog{
+  id = "_empty_chest",
+  text = [[
+This chest is empty!
+Not your lucky day
+it seems!
+]]
+}
+
+dialog{
+  id = "_item_description.apple_pie_counter.1",
+  icon = "22",
+  skip = "all",
+  text = [[
+This Apple Pie looks
+really horrible...
+]]
+}
+
+dialog{
+  id = "_item_description.apples_counter.1",
+  icon = "16",
+  skip = "all",
+  text = [[
+Eat Apples to
+restore some of
+your Hearts.
+]]
+}
+
+dialog{
+  id = "_item_description.balai_counter.1",
+  icon = "41",
+  skip = "all",
+  text = [[
+An old broom, nobody
+will agree to buy
+it!
+]]
+}
+
+dialog{
+  id = "_item_description.bocal_epice_counter.1",
+  icon = "47",
+  skip = "all",
+  text = [[
+Spice jars: thyme,
+rosemary, and
+coriander.
+]]
+}
+
 dialog{
   id = "_item_description.bombs_counter.1",
-  icon = 1,
+  icon = "1",
   skip = "all",
   text = [[
 Use Bombs against
@@ -26,36 +118,20 @@ enemies or to blow
 up obstacles.
 ]]
 }
---------------------
 
--- Arc / Bow
 dialog{
-  id = "_item_description.bow.1",
-  icon = 2,
+  id = "_item_description.bone_key.1",
+  icon = "20",
   skip = "all",
   text = [[
-You are out of
-Arrows!
+The Bone Key, where
+do you use it?
 ]]
 }
---------------------
 
--- Arc & Flèches / Bow & Arrows
-dialog{
-  id = "_item_description.bow.2",
-  icon = 3,
-  skip = "all",
-  text = [[
-OK, you still
-have arrows.
-]]
-}
---------------------
-
--- Boomerang
 dialog{
   id = "_item_description.boomerang.1",
-  icon = 4,
+  icon = "4",
   skip = "all",
   text = [[
 Use the Boomerang
@@ -65,12 +141,449 @@ objects in
 remote locations.
 ]]
 }
---------------------
 
--- Lanterne / Lamp
+dialog{
+  id = "_item_description.bottle_1.1",
+  icon = "7",
+  skip = "all",
+  text = [[
+The Magic Bottle
+can hold various
+things...
+]]
+}
+
+dialog{
+  id = "_item_description.bottle_1.2",
+  icon = "8",
+  skip = "all",
+  text = [[
+Your Magic Bottle is
+filled with water.
+
+You'd better empty
+it.
+]]
+}
+
+dialog{
+  id = "_item_description.bottle_1.3",
+  icon = "9",
+  skip = "all",
+  text = [[
+Drink a Red Potion
+to refill all
+your Hearts.
+]]
+}
+
+dialog{
+  id = "_item_description.bottle_1.4",
+  icon = "10",
+  skip = "all",
+  text = [[
+Drink a Green Potion
+to replenish
+your Magic.
+]]
+}
+
+dialog{
+  id = "_item_description.bottle_1.5",
+  icon = "11",
+  skip = "all",
+  text = [[
+Drink a Blue Potion
+to recover
+Hearts and Magic!
+]]
+}
+
+dialog{
+  id = "_item_description.bottle_1.6",
+  icon = "12",
+  skip = "all",
+  text = [[
+This Fairy will
+help you when your
+Hearts are low.
+]]
+}
+
+dialog{
+  id = "_item_description.bottle_2.1",
+  icon = "7",
+  skip = "all",
+  text = [[
+The Magic Bottle
+can hold various
+things...
+]]
+}
+
+dialog{
+  id = "_item_description.bottle_2.2",
+  icon = "8",
+  skip = "all",
+  text = [[
+Your Magic Bottle is
+filled with water.
+
+You'd better empty
+it.
+]]
+}
+
+dialog{
+  id = "_item_description.bottle_2.3",
+  icon = "9",
+  skip = "all",
+  text = [[
+Drink a Red Potion
+to refill all
+your Hearts.
+]]
+}
+
+dialog{
+  id = "_item_description.bottle_2.4",
+  icon = "10",
+  skip = "all",
+  text = [[
+Drink a Green Potion
+to replenish
+your Magic.
+]]
+}
+
+dialog{
+  id = "_item_description.bottle_2.5",
+  icon = "11",
+  skip = "all",
+  text = [[
+Drink a Blue Potion
+to recover
+Hearts and Magic!
+]]
+}
+
+dialog{
+  id = "_item_description.bottle_2.6",
+  icon = "12",
+  skip = "all",
+  text = [[
+This Fairy will help
+you when your Hearts
+are low.
+]]
+}
+
+dialog{
+  id = "_item_description.bottle_3.1",
+  icon = "7",
+  skip = "all",
+  text = [[
+The Magic Bottle
+can hold various
+things...
+]]
+}
+
+dialog{
+  id = "_item_description.bottle_3.2",
+  icon = "8",
+  skip = "all",
+  text = [[
+Your Magic Bottle is
+filled with water.
+
+You'd better empty
+it.
+]]
+}
+
+dialog{
+  id = "_item_description.bottle_3.3",
+  icon = "9",
+  skip = "all",
+  text = [[
+Drink a Red Potion
+to refill all
+your Hearts.
+]]
+}
+
+dialog{
+  id = "_item_description.bottle_3.4",
+  icon = "10",
+  skip = "all",
+  text = [[
+Drink a Green Potion
+to replenish
+your Magic.
+]]
+}
+
+dialog{
+  id = "_item_description.bottle_3.5",
+  icon = "11",
+  skip = "all",
+  text = [[
+Drink a Blue Potion
+to recover
+Hearts and Magic!
+]]
+}
+
+dialog{
+  id = "_item_description.bottle_3.6",
+  icon = "12",
+  skip = "all",
+  text = [[
+This Fairy will help
+you when your Hearts
+are low.
+]]
+}
+
+dialog{
+  id = "_item_description.bottle_4.1",
+  icon = "7",
+  skip = "all",
+  text = [[
+The Magic Bottle
+can hold various
+things...
+]]
+}
+
+dialog{
+  id = "_item_description.bottle_4.2",
+  icon = "8",
+  skip = "all",
+  text = [[
+Your Magic Bottle is
+filled with water.
+
+You'd better empty
+it.
+]]
+}
+
+dialog{
+  id = "_item_description.bottle_4.3",
+  icon = "9",
+  skip = "all",
+  text = [[
+Drink a Red Potion
+to refill all
+your Hearts.
+]]
+}
+
+dialog{
+  id = "_item_description.bottle_4.4",
+  icon = "10",
+  skip = "all",
+  text = [[
+Drink a Green Potion
+to replenish
+your Magic.
+]]
+}
+
+dialog{
+  id = "_item_description.bottle_4.5",
+  icon = "11",
+  skip = "all",
+  text = [[
+Drink a Blue Potion
+to recover
+Hearts and Magic!
+]]
+}
+
+dialog{
+  id = "_item_description.bottle_4.6",
+  icon = "12",
+  skip = "all",
+  text = [[
+This Fairy will help
+you when your Hearts
+are low.
+]]
+}
+
+dialog{
+  id = "_item_description.bow.1",
+  icon = "2",
+  skip = "all",
+  text = [[
+You are out of
+Arrows!
+]]
+}
+
+dialog{
+  id = "_item_description.bow.2",
+  icon = "3",
+  skip = "all",
+  text = [[
+OK, you still
+have arrows.
+]]
+}
+
+dialog{
+  id = "_item_description.cane_of_somaria.1",
+  icon = "15",
+  next = "_warning_magic",
+  skip = "all",
+  text = [[
+Create blocks and
+use the Hookshot to
+climb onto them.
+]]
+}
+
+dialog{
+  id = "_item_description.clay_key.1",
+  icon = "21",
+  skip = "all",
+  text = [[
+The Earth Key,
+unlocks the entry to
+the village cavern.
+]]
+}
+
+dialog{
+  id = "_item_description.croissants_counter.1",
+  icon = "18",
+  skip = "all",
+  text = [[
+Eat a Croissant
+to recover seven
+Hearts.
+]]
+}
+
+dialog{
+  id = "_item_description.cuillere_counter.1",
+  icon = "42",
+  skip = "all",
+  text = [[
+Nice silver spoons,
+don't take them with
+you, you thief!
+]]
+}
+
+dialog{
+  id = "_item_description.feather.1",
+  icon = "0",
+  skip = "all",
+  text = [[
+Use Roc's Feather
+to jump and get
+across obstacles.
+]]
+}
+
+dialog{
+  id = "_item_description.fire_stones_counter.1",
+  icon = "34",
+  skip = "all",
+  text = [[
+Find all three
+Fire Stones and
+take them
+to Inferno.
+]]
+}
+
+dialog{
+  id = "_item_description.flippers.1",
+  icon = "26",
+  skip = "all",
+  text = [[
+With the Flippers,
+you can swim
+in deep waters.
+]]
+}
+
+dialog{
+  id = "_item_description.glove.1",
+  icon = "32",
+  skip = "all",
+  text = [[
+With this, you can
+lift many things.
+I think...
+]]
+}
+
+dialog{
+  id = "_item_description.glove.2",
+  icon = "33",
+  skip = "all",
+  text = [[
+Lift black rocks
+with the
+Golden Glove.
+]]
+}
+
+dialog{
+  id = "_item_description.hache_counter.1",
+  icon = "48",
+  skip = "all",
+  text = [[
+Wonderfully sharp,
+this axe is
+guaranteed to last
+twenty years!
+]]
+}
+
+dialog{
+  id = "_item_description.hookshot.1",
+  icon = "6",
+  skip = "all",
+  text = [[
+Hoist yourself to
+unreachable places
+with the hookshot.
+]]
+}
+
+dialog{
+  id = "_item_description.ice_key.1",
+  icon = "31",
+  skip = "all",
+  text = [[
+The Ice Key.
+You have to find
+a frozen place
+to use it!
+]]
+}
+
+dialog{
+  id = "_item_description.iron_key.1",
+  icon = "28",
+  skip = "all",
+  text = [[
+The Iron Key.
+Use it only with
+the right lock!
+]]
+}
+
 dialog{
   id = "_item_description.lamp.1",
-  icon = 5,
+  icon = "5",
   skip = "all",
   text = [[
 Light your way
@@ -81,486 +594,10 @@ an eye on your
 Magic Meter!
 ]]
 }
---------------------
 
--- Grappin / Hook Shot
-dialog{
-  id = "_item_description.hookshot.1",
-  icon = 6,
-  skip = "all",
-  text = [[
-Hoist yourself to
-unreachable places
-with the hookshot.
-]]
-}
---------------------
-
--- Flacon Magique vide / Empty bottle
-dialog{
-  id = "_item_description.bottle_1.1",
-  icon = 7,
-  skip = "all",
-  text = [[
-The Magic Bottle
-can hold various
-things...
-]]
-}
---------------------
-
--- Eau dans Flacon / Water in Bottle
-dialog{
-  id = "_item_description.bottle_1.2",
-  icon = 8,
-  skip = "all",
-  text = [[
-Your Magic Bottle is
-filled with water.
-
-You'd better empty
-it.
-]]
-}
---------------------
-
--- Potion rouge / Red potion
-dialog{
-  id = "_item_description.bottle_1.3",
-  icon = 9,
-  skip = "all",
-  text = [[
-Drink a Red Potion
-to refill all
-your Hearts.
-]]
-}
---------------------
-
--- Potion verte / Red potion
-dialog{
-  id = "_item_description.bottle_1.4",
-  icon = 10,
-  skip = "all",
-  text = [[
-Drink a Green Potion
-to replenish
-your Magic.
-]]
-}
---------------------
-
--- Potion bleue / Red potion
-dialog{
-  id = "_item_description.bottle_1.5",
-  icon = 11,
-  skip = "all",
-  text = [[
-Drink a Blue Potion
-to recover
-Hearts and Magic!
-]]
-}
---------------------
-
--- Fée dans Flacon / Fairy in Bottle
-dialog{
-  id = "_item_description.bottle_1.6",
-  icon = 12,
-  skip = "all",
-  text = [[
-This Fairy will
-help you when your
-Hearts are low.
-]]
-}
---------------------
-
--- Flacon Magique vide / Empty bottle
-dialog{
-  id = "_item_description.bottle_2.1",
-  icon = 7,
-  skip = "all",
-  text = [[
-The Magic Bottle
-can hold various
-things...
-]]
-}
---------------------
-
--- Eau dans Flacon / Water in Bottle
-dialog{
-  id = "_item_description.bottle_2.2",
-  icon = 8,
-  skip = "all",
-  text = [[
-Your Magic Bottle is
-filled with water.
-
-You'd better empty
-it.
-]]
-}
---------------------
-
--- Potion rouge / Red potion
-dialog{
-  id = "_item_description.bottle_2.3",
-  icon = 9,
-  skip = "all",
-  text = [[
-Drink a Red Potion
-to refill all
-your Hearts.
-]]
-}
---------------------
-
--- Potion verte / Green potion
-dialog{
-  id = "_item_description.bottle_2.4",
-  icon = 10,
-  skip = "all",
-  text = [[
-Drink a Green Potion
-to replenish
-your Magic.
-]]
-}
---------------------
-
--- Potion bleue / Blue potion
-dialog{
-  id = "_item_description.bottle_2.5",
-  icon = 11,
-  skip = "all",
-  text = [[
-Drink a Blue Potion
-to recover
-Hearts and Magic!
-]]
-}
---------------------
-
--- Fée dans Flacon / Fairy in Bottle
-dialog{
-  id = "_item_description.bottle_2.6",
-  icon = 12,
-  skip = "all",
-  text = [[
-This Fairy will help
-you when your Hearts
-are low.
-]]
-}
---------------------
-
--- Flacon Magique vide / Empty bottle
-dialog{
-  id = "_item_description.bottle_3.1",
-  icon = 7,
-  skip = "all",
-  text = [[
-The Magic Bottle
-can hold various
-things...
-]]
-}
---------------------
-
--- Eau dans Flacon / Water in Bottle
-dialog{
-  id = "_item_description.bottle_3.2",
-  icon = 8,
-  skip = "all",
-  text = [[
-Your Magic Bottle is
-filled with water.
-
-You'd better empty
-it.
-]]
-}
---------------------
-
--- Potion rouge / Red potion
-dialog{
-  id = "_item_description.bottle_3.3",
-  icon = 9,
-  skip = "all",
-  text = [[
-Drink a Red Potion
-to refill all
-your Hearts.
-]]
-}
---------------------
-
--- Potion verte / Green potion
-dialog{
-  id = "_item_description.bottle_3.4",
-  icon = 10,
-  skip = "all",
-  text = [[
-Drink a Green Potion
-to replenish
-your Magic.
-]]
-}
---------------------
-
--- Potion bleue / Blue potion
-dialog{
-  id = "_item_description.bottle_3.5",
-  icon = 11,
-  skip = "all",
-  text = [[
-Drink a Blue Potion
-to recover
-Hearts and Magic!
-]]
-}
---------------------
-
--- Fée dans Flacon / Fairy in Bottle
-dialog{
-  id = "_item_description.bottle_3.6",
-  icon = 12,
-  skip = "all",
-  text = [[
-This Fairy will help
-you when your Hearts
-are low.
-]]
-}
---------------------
-
--- Flacon Magique vide / Empty bottle
-dialog{
-  id = "_item_description.bottle_4.1",
-  icon = 7,
-  skip = "all",
-  text = [[
-The Magic Bottle
-can hold various
-things...
-]]
-}
---------------------
-
--- Eau dans Flacon / Water in Bottle
-dialog{
-  id = "_item_description.bottle_4.2",
-  icon = 8,
-  skip = "all",
-  text = [[
-Your Magic Bottle is
-filled with water.
-
-You'd better empty
-it.
-]]
-}
---------------------
-
--- Potion rouge / Red potion
-dialog{
-  id = "_item_description.bottle_4.3",
-  icon = 9,
-  skip = "all",
-  text = [[
-Drink a Red Potion
-to refill all
-your Hearts.
-]]
-}
---------------------
-
--- Potion verte / Red potion
-dialog{
-  id = "_item_description.bottle_4.4",
-  icon = 10,
-  skip = "all",
-  text = [[
-Drink a Green Potion
-to replenish
-your Magic.
-]]
-}
---------------------
-
--- Potion bleue / Red potion
-dialog{
-  id = "_item_description.bottle_4.5",
-  icon = 11,
-  skip = "all",
-  text = [[
-Drink a Blue Potion
-to recover
-Hearts and Magic!
-]]
-}
---------------------
-
--- Fée dans Flacon / Fairy in Bottle
-dialog{
-  id = "_item_description.bottle_4.6",
-  icon = 12,
-  skip = "all",
-  text = [[
-This Fairy will help
-you when your Hearts
-are low.
-]]
-}
---------------------
-
--- Bottes de Pégase / Pegasus Shoes
-dialog{
-  id = "_item_description.pegasus_shoes.1",
-  icon = 13,
-  skip = "all",
-  text = [[
-The Pegasus Shoes
-do weird things.
-]]
-}
---------------------
-
--- Miroir Mystique / Mystic Mirror
-dialog{
-  id = "_item_description.mystic_mirror.1",
-  icon = 14,
-  skip = "all",
-  text = [[
-The Mystic Mirror
-has mysterious
-powers...
-]]
-}
---------------------
-
--- Canne de Somaria / Cane of Somaria
-dialog{
-  id = "_item_description.cane_of_somaria.1",
-  icon = 15,
-  skip = "all",
-  next = "_warning_magic",
-  text = [[
-Create blocks and
-use the Hookshot to
-climb onto them.
-]]
-}
---------------------
-
--- Pommes / Apples
-dialog{
-  id = "_item_description.apples_counter.1",
-  icon = 16,
-  skip = "all",
-  text = [[
-Eat Apples to
-restore some of
-your Hearts.
-]]
-}
---------------------
-
--- Pains au Chocolat / Pains au Chocolat
-dialog{
-  id = "_item_description.pains_au_chocolat_counter.1",
-  icon = 17,
-  skip = "all",
-  text = [[
-Eat a Chocolate
-Croissant to recover
-three Hearts.
-]]
-}
---------------------
-
--- Croissant / Croissant
-dialog{
-  id = "_item_description.croissants_counter.1",
-  icon = 18,
-  skip = "all",
-  text = [[
-Eat a Croissant
-to recover seven
-Hearts.
-]]
-}
---------------------
-
--- Clé de Roc / Rock Key
-dialog{
-  id = "_item_description.rock_key.1",
-  icon = 19,
-  skip = "all",
-  text = [[
-The Rock Key. But
-where is the
-lock?
-]]
-}
---------------------
-
--- Clé d'Os / Bone Key
-dialog{
-  id = "_item_description.bone_key.1",
-  icon = 20,
-  skip = "all",
-  text = [[
-The Bone Key, where
-do you use it?
-]]
-}
---------------------
-
--- Clé de Terre / Earth Key
-dialog{
-  id = "_item_description.clay_key.1",
-  icon = 21,
-  skip = "all",
-  text = [[
-The Earth Key,
-unlocks the entry to
-the village cavern.
-]]
-}
---------------------
-
--- Tarte aux Pommes / Apple Pie
-dialog{
-  id = "_item_description.apple_pie_counter.1",
-  icon = 22,
-  skip = "all",
-  text = [[
-This Apple Pie looks
-really horrible...
-]]
-}
---------------------
-
--- Palmes / Flippers
-dialog{
-  id = "_item_description.flippers.1",
-  icon = 26,
-  skip = "all",
-  text = [[
-With the Flippers,
-you can swim
-in deep waters.
-]]
-}
---------------------
-
--- Cape magique / Magic Cape
 dialog{
   id = "_item_description.magic_cape.1",
-  icon = 27,
+  icon = "27",
   skip = "all",
   text = [[
 The Magic Cape
@@ -569,213 +606,32 @@ you are near a
 fragile wall...
 ]]
 }
---------------------
-
--- Clé de Fer / Iron Key
-dialog{
-  id = "_item_description.iron_key.1",
-  icon = 28,
-  skip = "all",
-  text = [[
-The Iron Key.
-Use it only with
-the right lock!
-]]
-}
---------------------
-
--- Clé de Pierre / Stone Key
-dialog{
-  id = "_item_description.stone_key.1",
-  icon = 29,
-  skip = "all",
-  text = [[
-The Stone Key.
-Need to find
-the lock now!
-]]
-}
---------------------
-
--- Clé de Bois / Wooden Key
-dialog{
-  id = "_item_description.wooden_key.1",
-  icon = 30,
-  skip = "all",
-  text = [[
-The Wooden Key.
-But there is only
-one lock for it...
-]]
-}
---------------------
-
--- Clé de Glace / Ice Key
-dialog{
-  id = "_item_description.ice_key.1",
-  icon = 31,
-  skip = "all",
-  text = [[
-The Ice Key.
-You have to find
-a frozen place
-to use it!
-]]
-}
---------------------
-
--- Poigne de Fer / Iron Glove
-dialog{
-  id = "_item_description.glove.1",
-  icon = 32,
-  skip = "all",
-  text = [[
-With this, you can
-lift many things.
-I think...
-]]
-}
---------------------
-
--- Poigne d'Or / Golden Glove
-dialog{
-  id = "_item_description.glove.2",
-  icon = 33,
-  skip = "all",
-  text = [[
-Lift black rocks
-with the
-Golden Glove.
-]]
-}
---------------------
-
--- Pierres de Feu / Fire Stones
-dialog{
-  id = "_item_description.fire_stones_counter.1",
-  icon = 34,
-  skip = "all",
-  text = [[
-Find all three
-Fire Stones and
-take them
-to Inferno.
-]]
-}
---------------------
 
 dialog{
-  id = "_item_description.poivron_counter.1",
-  icon = 40,
+  id = "_item_description.mystic_mirror.1",
+  icon = "14",
   skip = "all",
   text = [[
-These peppers are a
-a real treasure
-for people who like
-spicy food.
+The Mystic Mirror
+has mysterious
+powers...
 ]]
 }
------------------------
 
 dialog{
-  id = "_item_description.balai_counter.1",
-  icon = 41,
+  id = "_item_description.pains_au_chocolat_counter.1",
+  icon = "17",
   skip = "all",
   text = [[
-An old broom, nobody
-will agree to buy
-it!
+Eat a Chocolate
+Croissant to recover
+three Hearts.
 ]]
 }
---------------------
-
-dialog{
-  id = "_item_description.cuillere_counter.1",
-  icon = 42,
-  skip = "all",
-  text = [[
-Nice silver spoons,
-don't take them with
-you, you thief!
-]]
-}
---------------------
-
-dialog{
-  id = "_item_description.tapisserie_counter.1",
-  icon = 43,
-  skip = "all",
-  text = [[
-An old tapestry of
-the 18th century.
-Nobody makes them
-like this now.
-]]
-}
------------------------
-
-dialog{
-  id = "_item_description.roc_magma_counter.1",
-  icon = 44,
-  skip = "all",
-  text = [[
-Magma rock of the
-Goron mines.
-]]
-}
---------------------
-
-dialog{
-  id = "_item_description.sac_riz_counter.1",
-  icon = 45,
-  skip = "all",
-  text = [[
-Bags of basmati
-rice. Low price,
-store brand.
-]]
-}
---------------------
-
-dialog{
-  id = "_item_description.sac_olive_counter.1",
-  icon = 46,
-  skip = "all",
-  text = [[
-Sacks of olives,
-cats love them.
-]]
-}
---------------------
-
-dialog{
-  id = "_item_description.bocal_epice_counter.1",
-  icon = 47,
-  skip = "all",
-  text = [[
-Spice jars: thyme,
-rosemary, and
-coriander.
-]]
-}
---------------------
-
-dialog{
-  id = "_item_description.hache_counter.1",
-  icon = 48,
-  skip = "all",
-  text = [[
-Wonderfully sharp,
-this axe is
-guaranteed to last
-twenty years!
-]]
-}
---------------------
 
 dialog{
   id = "_item_description.parfum_counter.1",
-  icon = 49,
+  icon = "49",
   skip = "all",
   text = [[
 Internationally
@@ -785,56 +641,321 @@ girls fall all over
 you!
 ]]
 }
------------------------
 
--- ---------------------
--- Obtention d'un trésor
--- ---------------------
--- 
--- Les messages ci-dessous sont affichés lorsque le joueur obtient
--- un trésor, généralement en ouvrant un coffre ou en l'achetant
--- dans un magasin.
--- Plume
 dialog{
-  id = "_treasure.feather.1",
-  icon = 0,
+  id = "_item_description.pegasus_shoes.1",
+  icon = "13",
+  skip = "all",
+  text = [[
+The Pegasus Shoes
+do weird things.
+]]
+}
+
+dialog{
+  id = "_item_description.poivron_counter.1",
+  icon = "40",
+  skip = "all",
+  text = [[
+These peppers are a
+a real treasure
+for people who like
+spicy food.
+]]
+}
+
+dialog{
+  id = "_item_description.roc_magma_counter.1",
+  icon = "44",
+  skip = "all",
+  text = [[
+Magma rock of the
+Goron mines.
+]]
+}
+
+dialog{
+  id = "_item_description.rock_key.1",
+  icon = "19",
+  skip = "all",
+  text = [[
+The Rock Key. But
+where is the
+lock?
+]]
+}
+
+dialog{
+  id = "_item_description.sac_olive_counter.1",
+  icon = "46",
+  skip = "all",
+  text = [[
+Sacks of olives,
+cats love them.
+]]
+}
+
+dialog{
+  id = "_item_description.sac_riz_counter.1",
+  icon = "45",
+  skip = "all",
+  text = [[
+Bags of basmati
+rice. Low price,
+store brand.
+]]
+}
+
+dialog{
+  id = "_item_description.stone_key.1",
+  icon = "29",
+  skip = "all",
+  text = [[
+The Stone Key.
+Need to find
+the lock now!
+]]
+}
+
+dialog{
+  id = "_item_description.tapisserie_counter.1",
+  icon = "43",
+  skip = "all",
+  text = [[
+An old tapestry of
+the 18th century.
+Nobody makes them
+like this now.
+]]
+}
+
+dialog{
+  id = "_item_description.wooden_key.1",
+  icon = "30",
+  skip = "all",
+  text = [[
+The Wooden Key.
+But there is only
+one lock for it...
+]]
+}
+
+dialog{
+  id = "_shop.amount_full",
+  text = [[
+You can't get any more!
+]]
+}
+
+dialog{
+  id = "_shop.not_enough_money",
+  text = [[
+Dude, you're short on
+Rupees!
+]]
+}
+
+dialog{
+  id = "_shop.question",
+  question = "1",
+  text = [[
+Cost: $v rupees.
+Buy
+No way
+]]
+}
+
+dialog{
+  id = "_small_key_required",
+  icon = "72",
+  text = [[
+Locked!
+]]
+}
+
+dialog{
+  id = "_treasure.apple.1",
+  icon = "16",
+  text = [[
+You found 3 Apples!$0
+Eat them later
+to recover Hearts.
+]]
+}
+
+dialog{
+  id = "_treasure.apple_pie.1",
+  icon = "22",
+  text = [[
+You found an
+Apple Pie!
+
+It's moldy, but you
+don't really care,
+do you?
+]]
+}
+
+dialog{
+  id = "_treasure.arrow.1",
+  icon = "83",
+  next = "_treasure.arrow.1.1",
+  text = [[
+You found an Arrow!
+]]
+}
+
+dialog{
+  id = "_treasure.arrow.1.1",
+  text = [[
+Use the Bow with
+the Arrows to defeat
+distant monsters.
+]]
+}
+
+dialog{
+  id = "_treasure.arrow.2",
+  icon = "83",
+  next = "_treasure.arrow.1.1",
+  text = [[
+You found 5 Arrows!
+]]
+}
+
+dialog{
+  id = "_treasure.arrow.3",
+  icon = "83",
+  next = "_treasure.arrow.1.1",
+  text = [[
+You found 10 Arrows!
+]]
+}
+
+dialog{
+  id = "_treasure.balai.1",
+  icon = "41",
+  text = [[
+You get the broom!
+
+
+Mère Denis will be
+pleased with this ;)
+]]
+}
+
+dialog{
+  id = "_treasure.big_key.1",
+  icon = "73",
+  text = [[
+You found the Big
+Key! Use it to open
+special doors and
+big chests!
+Now all you need is
+to find them!
+]]
+}
+
+dialog{
+  id = "_treasure.bocal_epice.1",
+  icon = "47",
+  text = [[
+You got a spice jar,
+but what's in it?
+]]
+}
+
+dialog{
+  id = "_treasure.bomb.1",
+  icon = "82",
+  next = "_treasure.bomb.1.1",
+  text = [[
+You found a Bomb!$0
+]]
+}
+
+dialog{
+  id = "_treasure.bomb.1.1",
+  text = [[
+Use a Bomb to blow
+up an enemy or an
+obstacle.
+]]
+}
+
+dialog{
+  id = "_treasure.bomb.2",
+  icon = "82",
+  next = "_treasure.bomb.1.1",
+  text = [[
+You found 3 Bombs!$0
+]]
+}
+
+dialog{
+  id = "_treasure.bomb.3",
+  icon = "82",
+  next = "_treasure.bomb.1.1",
+  text = [[
+You found 8 Bombs!
+]]
+}
+
+dialog{
+  id = "_treasure.bomb_bag.1",
+  icon = "54",
   text = [[
 You found the
-Feather!$0 Use it
-to jump and to clear
-obstacles!
+Bomb Bag!$0 You
+can store 10 bombs.
+Tic Tac $1
+pschhhhhhhhhhhhht $0 $3
+Ka-BOOOM!
 ]]
 }
---------------------
 
--- Arc seul
 dialog{
-  id = "_treasure.bow.1",
-  icon = 2,
+  id = "_treasure.bomb_bag.2",
+  icon = "55",
   text = [[
-You found The Bow!$0
-Become the next
-Robin Hood!
+You found the
+Big Bomb Bag!$0
+
+Awesome!
+Now you can store
+11 Bombs!
 ]]
 }
---------------------
 
--- Arc & Flèches
 dialog{
-  id = "_treasure.bow.2",
-  icon = 3,
+  id = "_treasure.bomb_bag.3",
+  icon = "56",
   text = [[
-You found The Bow!$0
-Become the next
-Robin Hood!
+You found the
+Huge Bomb Bag!$0
+
+It's really cool!
+Now you can store
+12 Bombs!
 ]]
 }
---------------------
 
--- Boomerang
+dialog{
+  id = "_treasure.bone_key.1",
+  icon = "20",
+  text = [[
+You found the
+Bone Key!$0
+
+You can now enter
+the Lair of Ganon!
+]]
+}
+
 dialog{
   id = "_treasure.boomerang.1",
-  icon = 4,
+  icon = "4",
   text = [[
 You found the
 Boomerang!$0 You
@@ -849,63 +970,40 @@ to discover them
 all!
 ]]
 }
---------------------
 
--- Lanterne
 dialog{
-  id = "_treasure.lamp.1",
-  icon = 5,
-  next = "_warning_magic",
+  id = "_treasure.boss_key.1",
+  icon = "74",
   text = [[
-You found The
-Lamp!$0 It lights
-your way in the
-dark and allows you
-to ignite torches.
+You found the Boss
+Key! At last you can
+meet with Ganon,
+master of this
+place!
 ]]
 }
---------------------
 
--- Grappin
-dialog{
-  id = "_treasure.hookshot.1",
-  icon = 6,
-  text = [[
-You found The
-Hookshot!$0 Freeze
-your enemies and
-climb to distant
-places!
-]]
-}
---------------------
-
--- Flacon vide
 dialog{
   id = "_treasure.bottle_1.1",
-  icon = 7,
+  icon = "7",
   text = [[
 You found a Magic
 Bottle!$0 It might be
 useful someday!
 ]]
 }
---------------------
 
--- Eau
 dialog{
   id = "_treasure.bottle_1.2",
-  icon = 8,
+  icon = "8",
   text = [[
 You found Water!
 ]]
 }
---------------------
 
--- Potion rouge
 dialog{
   id = "_treasure.bottle_1.3",
-  icon = 9,
+  icon = "9",
   text = [[
 You found a
 Red Potion !$0
@@ -915,12 +1013,10 @@ to refill
 all your Hearts.
 ]]
 }
---------------------
 
--- Potion verte
 dialog{
   id = "_treasure.bottle_1.4",
-  icon = 10,
+  icon = "10",
   text = [[
 You found a
 Green Potion!$0
@@ -930,12 +1026,10 @@ to replenish
 your Magic.
 ]]
 }
---------------------
 
--- Potion bleue
 dialog{
   id = "_treasure.bottle_1.5",
-  icon = 11,
+  icon = "11",
   text = [[
 You found a
 Blue Potion!$0
@@ -945,12 +1039,10 @@ to recover
 Hearts and Magic!
 ]]
 }
---------------------
 
--- Fée dans Flacon
 dialog{
   id = "_treasure.bottle_1.6",
-  icon = 12,
+  icon = "12",
   text = [[
 You captured a
 Fairy! She'll help
@@ -961,34 +1053,28 @@ at any time to
 recover Hearts.
 ]]
 }
---------------------
 
--- Flacon vide
 dialog{
   id = "_treasure.bottle_2.1",
-  icon = 7,
+  icon = "7",
   text = [[
 You found a Magic
 Bottle!$0 It might be
 useful someday!
 ]]
 }
---------------------
 
--- Eau
 dialog{
   id = "_treasure.bottle_2.2",
-  icon = 8,
+  icon = "8",
   text = [[
 You found Water!
 ]]
 }
---------------------
 
--- Potion rouge
 dialog{
   id = "_treasure.bottle_2.3",
-  icon = 9,
+  icon = "9",
   text = [[
 You found a
 Red Potion!$0
@@ -998,12 +1084,10 @@ to refill
 all your Hearts.
 ]]
 }
---------------------
 
--- Potion verte
 dialog{
   id = "_treasure.bottle_2.4",
-  icon = 10,
+  icon = "10",
   text = [[
 You found a
 Green Potion!$0
@@ -1013,12 +1097,10 @@ to replenish
 your Magic.
 ]]
 }
---------------------
 
--- Potion bleue
 dialog{
   id = "_treasure.bottle_2.5",
-  icon = 11,
+  icon = "11",
   text = [[
 You found a
 Blue Potion!$0
@@ -1028,12 +1110,10 @@ to recover
 Hearts and Magic!
 ]]
 }
---------------------
 
--- Fée dans Flacon
 dialog{
   id = "_treasure.bottle_2.6",
-  icon = 12,
+  icon = "12",
   text = [[
 You captured a
 Fairy! She'll help
@@ -1044,34 +1124,28 @@ at any time to
 recover Hearts.
 ]]
 }
---------------------
 
--- Flacon vide
 dialog{
   id = "_treasure.bottle_3.1",
-  icon = 7,
+  icon = "7",
   text = [[
 You found a Magic
 Bottle!$0 It might be
 useful someday!
 ]]
 }
---------------------
 
--- Eau
 dialog{
   id = "_treasure.bottle_3.2",
-  icon = 8,
+  icon = "8",
   text = [[
 You found Water!
 ]]
 }
---------------------
 
--- Potion rouge
 dialog{
   id = "_treasure.bottle_3.3",
-  icon = 9,
+  icon = "9",
   text = [[
 You found a
 Red Potion!$0
@@ -1081,12 +1155,10 @@ to refill
 all your Hearts.
 ]]
 }
---------------------
 
--- Potion verte
 dialog{
   id = "_treasure.bottle_3.4",
-  icon = 10,
+  icon = "10",
   text = [[
 You found a
 Green Potion!$0
@@ -1096,12 +1168,10 @@ to replenish
 your Magic.
 ]]
 }
---------------------
 
--- Potion bleue
 dialog{
   id = "_treasure.bottle_3.5",
-  icon = 11,
+  icon = "11",
   text = [[
 You found a
 Blue Potion!$0
@@ -1111,12 +1181,10 @@ to recover
 Hearts and Magic!
 ]]
 }
---------------------
 
--- Fée dans Flacon
 dialog{
   id = "_treasure.bottle_3.6",
-  icon = 12,
+  icon = "12",
   text = [[
 You captured a
 Fairy! She'll help
@@ -1127,34 +1195,28 @@ at any time to
 recover Hearts.
 ]]
 }
---------------------
 
--- Flacon vide
 dialog{
   id = "_treasure.bottle_4.1",
-  icon = 7,
+  icon = "7",
   text = [[
 You found a Magic
 Bottle!$0 It might be
 useful someday !
 ]]
 }
---------------------
 
--- Eau
 dialog{
   id = "_treasure.bottle_4.2",
-  icon = 8,
+  icon = "8",
   text = [[
 You found Water!
 ]]
 }
---------------------
 
--- Potion rouge
 dialog{
   id = "_treasure.bottle_4.3",
-  icon = 9,
+  icon = "9",
   text = [[
 You found a
 Red Potion!$0
@@ -1164,12 +1226,10 @@ to refill
 all your Hearts.
 ]]
 }
---------------------
 
--- Potion verte
 dialog{
   id = "_treasure.bottle_4.4",
-  icon = 10,
+  icon = "10",
   text = [[
 You found a
 Green Potion!$0
@@ -1179,12 +1239,10 @@ to replenish
 your Magic.
 ]]
 }
---------------------
 
--- Potion bleue
 dialog{
   id = "_treasure.bottle_4.5",
-  icon = 11,
+  icon = "11",
   text = [[
 You found a
 Blue Potion!$0
@@ -1194,12 +1252,10 @@ to recover
 Hearts and Magic!
 ]]
 }
---------------------
 
--- Fée dans Flacon
 dialog{
   id = "_treasure.bottle_4.6",
-  icon = 12,
+  icon = "12",
   text = [[
 You captured a
 Fairy! She'll help
@@ -1210,42 +1266,30 @@ at any time to
 recover Hearts.
 ]]
 }
---------------------
 
--- Bottes de Pégase
 dialog{
-  id = "_treasure.pegasus_shoes.1",
-  icon = 13,
+  id = "_treasure.bow.1",
+  icon = "2",
   text = [[
-You found the
-Pegasus Shoes,
-without laces!
-They're tough to
-wear but you can
-run really fast!
+You found The Bow!$0
+Become the next
+Robin Hood!
 ]]
 }
---------------------
 
--- Miroir Mystique
 dialog{
-  id = "_treasure.mystic_mirror.1",
-  icon = 14,
+  id = "_treasure.bow.2",
+  icon = "3",
   text = [[
-You found the
-Mystic Mirror!$0
-It has unknown
-powers that you'll
-need to succeed in
-your quest...
+You found The Bow!$0
+Become the next
+Robin Hood!
 ]]
 }
---------------------
 
--- Canne de Somaria
 dialog{
   id = "_treasure.cane_of_somaria.1",
-  icon = 15,
+  icon = "15",
   next = "_warning_magic",
   text = [[
 You found the
@@ -1256,79 +1300,10 @@ use the Hookshot to
 climb onto them.
 ]]
 }
---------------------
 
--- 3 Pommes
-dialog{
-  id = "_treasure.apple.1",
-  icon = 16,
-  text = [[
-You found 3 Apples!$0
-Eat them later
-to recover Hearts.
-]]
-}
---------------------
-
--- 1 Pain au Chocolat
-dialog{
-  id = "_treasure.pain_au_chocolat.1",
-  icon = 17,
-  text = [[
-You found a
-Chocolate Croissant!$0
-
-Eat a Chocolate
-Croissant to recover
-three Hearts.
-]]
-}
---------------------
-
--- 1 Croissant
-dialog{
-  id = "_treasure.croissant.1",
-  icon = 18,
-  text = [[
-You found a
-Croissant!$0 It's
-sooo delicious!
-Eat a Croissant
-to recover seven
-Hearts.
-]]
-}
---------------------
-
--- Clé de Roc
-dialog{
-  id = "_treasure.rock_key.1",
-  icon = 19,
-  text = [[
-You found the
-Rock Key!$0
-]]
-}
---------------------
-
--- Clé d'os
-dialog{
-  id = "_treasure.bone_key.1",
-  icon = 20,
-  text = [[
-You found the
-Bone Key!$0
-
-You can now enter
-the Lair of Ganon!
-]]
-}
---------------------
-
--- Clé de Terre
 dialog{
   id = "_treasure.clay_key.1",
-  icon = 21,
+  icon = "21",
   text = [[
 You found the
 Earth Key!$0
@@ -1338,27 +1313,67 @@ access the
 village cavern.
 ]]
 }
---------------------
 
--- Tarte aux Pommes
 dialog{
-  id = "_treasure.apple_pie.1",
-  icon = 22,
+  id = "_treasure.compass.1",
+  icon = "71",
   text = [[
-You found an
-Apple Pie!
-
-It's moldy, but you
-don't really care,
-do you?
+You found the
+Compass! Now you
+know the location
+of many things:
+chests, treasures
+and the Boss.
+That's what I
+call improvement!
 ]]
 }
---------------------
 
--- Palmes
+dialog{
+  id = "_treasure.croissant.1",
+  icon = "18",
+  text = [[
+You found a
+Croissant!$0 It's
+sooo delicious!
+Eat a Croissant
+to recover seven
+Hearts.
+]]
+}
+
+dialog{
+  id = "_treasure.cuillere.1",
+  icon = "42",
+  text = [[
+A spoon! Eat soup
+and you'll grow big!
+]]
+}
+
+dialog{
+  id = "_treasure.feather.1",
+  icon = "0",
+  text = [[
+You found the
+Feather!$0 Use it
+to jump and to clear
+obstacles!
+]]
+}
+
+dialog{
+  id = "_treasure.fire_stone.1",
+  icon = "34",
+  text = [[
+You found a
+Fire Stone!
+]]
+}
+
 dialog{
   id = "_treasure.flippers.1",
-  icon = 26,
+  icon = "26",
   text = [[
 You found the
 Flippers!$0
@@ -1367,69 +1382,78 @@ Now you can swim
 in deep waters.
 ]]
 }
---------------------
 
--- Cape Magique
 dialog{
-  id = "_treasure.magic_cape.1",
-  icon = 27,
+  id = "_treasure.glove.1",
+  icon = "32",
   text = [[
-You found the
-Magic Cape!$0
+You found the Iron
+Glove!$0
 
-You'll be warned
-when you're near
-a fragile wall.
+Now you can lift
+heavy stuff, try it!
 ]]
 }
---------------------
 
--- Clé de Fer
 dialog{
-  id = "_treasure.iron_key.1",
-  icon = 28,
-  text = [[
-You found the
-Iron Key!$0
-
-Now find the
-right door to open!
-]]
-}
---------------------
-
--- Clé de Pierre
-dialog{
-  id = "_treasure.stone_key.1",
-  icon = 29,
+  id = "_treasure.glove.2",
+  icon = "33",
   text = [[
 You found The
-Stone Key!$0
+Gold Glove!$0
 
-But where's the
-lock?
+Now you can lift
+the Black Rocks!
 ]]
 }
---------------------
 
--- Clé de Bois
 dialog{
-  id = "_treasure.wooden_key.1",
-  icon = 30,
+  id = "_treasure.hache.1",
+  icon = "48",
   text = [[
-You found the
-Wooden Key!$0
-
-Find the correct
-lock to use it!
+The axe, a wonderful
+tool, that cuts
+everything...
+or not.
 ]]
 }
---------------------
 
--- Clé de Glace
+dialog{
+  id = "_treasure.heart.1",
+  icon = "84",
+  text = [[
+You found a Heart!
+]]
+}
+
+dialog{
+  id = "_treasure.heart_container.1",
+  icon = "80",
+  text = [[
+You found a
+Heart Container.
+
+You just gained
+a new Heart!
+It rooocks!
+]]
+}
+
+dialog{
+  id = "_treasure.hookshot.1",
+  icon = "6",
+  text = [[
+You found The
+Hookshot!$0 Freeze
+your enemies and
+climb to distant
+places!
+]]
+}
+
 dialog{
   id = "_treasure.ice_key.1",
-  icon = 31,
+  icon = "31",
   text = [[
 You found the
 Ice Key!$0
@@ -1439,65 +1463,248 @@ this key
 unlocks...
 ]]
 }
---------------------
 
--- Poigne de Fer
 dialog{
-  id = "_treasure.glove.1",
-  icon = 32,
-  text = [[
-You found the Iron
-Glove!$0
-
-Now you can lift
-heavy stuff, try it!
-]]
-}
---------------------
-
--- Poigne d'Or
-dialog{
-  id = "_treasure.glove.2",
-  icon = 33,
-  text = [[
-You found The
-Gold Glove!$0
-
-Now you can lift
-the Black Rocks!
-]]
-}
---------------------
-
--- Pierre de Feu
-dialog{
-  id = "_treasure.fire_stone.1",
-  icon = 34,
-  text = [[
-You found a
-Fire Stone!
-]]
-}
---------------------
-
--- Carte du Monde
-dialog{
-  id = "_treasure.world_map.1",
-  icon = 50,
+  id = "_treasure.iron_key.1",
+  icon = "28",
   text = [[
 You found the
-World Map!$0
+Iron Key!$0
 
-You can view it
-in the Map Menu.
+Now find the
+right door to open!
 ]]
 }
---------------------
 
--- Grand sac de rubis
+dialog{
+  id = "_treasure.lamp.1",
+  icon = "5",
+  next = "_warning_magic",
+  text = [[
+You found The
+Lamp!$0 It lights
+your way in the
+dark and allows you
+to ignite torches.
+]]
+}
+
+dialog{
+  id = "_treasure.magic_cape.1",
+  icon = "27",
+  text = [[
+You found the
+Magic Cape!$0
+
+You'll be warned
+when you're near
+a fragile wall.
+]]
+}
+
+dialog{
+  id = "_treasure.magic_flask.1",
+  icon = "85",
+  text = [[
+You found a
+Little Magic Flask!
+]]
+}
+
+dialog{
+  id = "_treasure.magic_flask.2",
+  icon = "86",
+  text = [[
+You found a
+Big Magic Flask!
+]]
+}
+
+dialog{
+  id = "_treasure.map.1",
+  icon = "70",
+  text = [[
+You found the Map!
+Use it to discover
+your environment.
+]]
+}
+
+dialog{
+  id = "_treasure.mystic_mirror.1",
+  icon = "14",
+  text = [[
+You found the
+Mystic Mirror!$0
+It has unknown
+powers that you'll
+need to succeed in
+your quest...
+]]
+}
+
+dialog{
+  id = "_treasure.pain_au_chocolat.1",
+  icon = "17",
+  text = [[
+You found a
+Chocolate Croissant!$0
+
+Eat a Chocolate
+Croissant to recover
+three Hearts.
+]]
+}
+
+dialog{
+  id = "_treasure.parfum.1",
+  icon = "49",
+  text = [[
+We give you:
+Fragrance Kipu de
+Cacaco Charnel,
+get rid of it ASAP
+before you die of
+asphyxia!
+]]
+}
+
+dialog{
+  id = "_treasure.pegasus_shoes.1",
+  icon = "13",
+  text = [[
+You found the
+Pegasus Shoes,
+without laces!
+They're tough to
+wear but you can
+run really fast!
+]]
+}
+
+dialog{
+  id = "_treasure.piece_of_heart.1",
+  icon = "79",
+  text = [[
+You found a
+Piece of Heart!
+]]
+}
+
+dialog{
+  id = "_treasure.poivron.1",
+  icon = "40",
+  text = [[
+You got a pepper!
+How about cooking
+a pizza?
+]]
+}
+
+dialog{
+  id = "_treasure.quiver.2",
+  icon = "58",
+  text = [[
+You found the
+Big Quiver!$0
+
+You can hold 30
+Arrows instead of
+10!
+]]
+}
+
+dialog{
+  id = "_treasure.quiver.3",
+  icon = "59",
+  text = [[
+You found the
+Huge Quiver!$0
+
+Awesome, you can
+carry 100 Arrows
+instead of 30!
+]]
+}
+
+dialog{
+  id = "_treasure.roc_magma.1",
+  icon = "44",
+  text = [[
+A Magma Rock!
+Whoa, it's hot!
+]]
+}
+
+dialog{
+  id = "_treasure.rock_key.1",
+  icon = "19",
+  text = [[
+You found the
+Rock Key!$0
+]]
+}
+
+dialog{
+  id = "_treasure.rupee.1",
+  icon = "90",
+  text = [[
+You found a Rupee!
+]]
+}
+
+dialog{
+  id = "_treasure.rupee.2",
+  icon = "91",
+  text = [[
+You found a Blue
+Rupee. It's worth
+5 Rupees!
+]]
+}
+
+dialog{
+  id = "_treasure.rupee.3",
+  icon = "92",
+  text = [[
+You found a Red
+Rupee! It's worth
+20 Rupees!
+]]
+}
+
+dialog{
+  id = "_treasure.rupee.4",
+  icon = "90",
+  text = [[
+You found 50 Rupees!
+Awesome!
+]]
+}
+
+dialog{
+  id = "_treasure.rupee.5",
+  icon = "90",
+  text = [[
+You found 100
+Rupees!
+Fantastic!
+]]
+}
+
+dialog{
+  id = "_treasure.rupee.6",
+  icon = "90",
+  text = [[
+You found 200
+Rupees!
+You're ecstatic!
+]]
+}
+
 dialog{
   id = "_treasure.rupee_bag.2",
-  icon = 52,
+  icon = "52",
   text = [[
 You found the
 Big Rupee Bag!$0
@@ -1510,12 +1717,10 @@ game is over, you
 could have used it!
 ]]
 }
---------------------
 
--- Sac de rubis géant
 dialog{
   id = "_treasure.rupee_bag.3",
-  icon = 53,
+  icon = "53",
   text = [[
 You found the
 Huge Rupee Bag!$0
@@ -1524,117 +1729,31 @@ Now you can carry
 999 Rupees!
 ]]
 }
---------------------
 
--- Petit sac de bombes
 dialog{
-  id = "_treasure.bomb_bag.1",
-  icon = 54,
+  id = "_treasure.sac_olive.1",
+  icon = "46",
   text = [[
-You found the
-Bomb Bag!$0 You
-can store 10 bombs.
-Tic Tac $1
-pschhhhhhhhhhhhht $0 $3
-Ka-BOOOM!
+We give you a bag of
+olives, don't you
+like it?
+Too bad for you!
 ]]
 }
---------------------
 
--- Grand sac de bombes
 dialog{
-  id = "_treasure.bomb_bag.2",
-  icon = 55,
+  id = "_treasure.sac_riz.1",
+  icon = "45",
   text = [[
-You found the
-Big Bomb Bag!$0
-
-Awesome!
-Now you can store
-11 Bombs!
+You got rice.
+But basmati rice,
+doh :(
 ]]
 }
---------------------
 
--- Sac de bombes géant
-dialog{
-  id = "_treasure.bomb_bag.3",
-  icon = 56,
-  text = [[
-You found the
-Huge Bomb Bag!$0
-
-It's really cool!
-Now you can store
-12 Bombs!
-]]
-}
---------------------
-
--- Grand carquois 
-dialog{
-  id = "_treasure.quiver.2",
-  icon = 58,
-  text = [[
-You found the
-Big Quiver!$0
-
-You can hold 30
-Arrows instead of
-10!
-]]
-}
---------------------
-
--- Carquois géant
-dialog{
-  id = "_treasure.quiver.3",
-  icon = 59,
-  text = [[
-You found the
-Huge Quiver!$0
-
-Awesome, you can
-carry 100 Arrows
-instead of 30!
-]]
-}
---------------------
-
--- Cotte de mailles bleue
-dialog{
-  id = "_treasure.tunic.2",
-  icon = 61,
-  text = [[
-You found the
-Blue Mail!
-$0This armor
-protects you
-from the coldest
-temperatures...
-]]
-}
---------------------
-
--- Cotte de mailles rouge
-dialog{
-  id = "_treasure.tunic.3",
-  icon = 62,
-  text = [[
-You found The
-Red Mail!
-$0This armor
-reduces the damage
-that you take
-from enemies!
-]]
-}
---------------------
-
--- Bouclier
 dialog{
   id = "_treasure.shield.1",
-  icon = 63,
+  icon = "63",
   text = [[
 You found your
 Shield!$0
@@ -1644,12 +1763,10 @@ leave it outside,
 will you?
 ]]
 }
---------------------
 
--- Bouclier de Feu
 dialog{
   id = "_treasure.shield.2",
-  icon = 64,
+  icon = "64",
   text = [[
 You found the
 Fire Shield !$0
@@ -1659,12 +1776,10 @@ fire attacks
 and fireballs!
 ]]
 }
---------------------
 
--- Bouclier Miroir
 dialog{
   id = "_treasure.shield.3",
-  icon = 65,
+  icon = "65",
   text = [[
 You found the
 Mirror Shield!$0
@@ -1673,12 +1788,35 @@ You can now reflect
 laser attacks!
 ]]
 }
---------------------
 
--- Epée 1 (Epée d'entraînement)
+dialog{
+  id = "_treasure.small_key.1",
+  icon = "72",
+  text = [[
+You found a Small
+Key!
+
+You can use it to
+open a nearby
+locked door.
+]]
+}
+
+dialog{
+  id = "_treasure.stone_key.1",
+  icon = "29",
+  text = [[
+You found The
+Stone Key!$0
+
+But where's the
+lock?
+]]
+}
+
 dialog{
   id = "_treasure.sword.1",
-  icon = 66,
+  icon = "66",
   text = [[
 You found your
 Training Sword.
@@ -1690,12 +1828,10 @@ But what is it
 doing here?
 ]]
 }
---------------------
 
--- Epée 2 (Sabre laser)
 dialog{
   id = "_treasure.sword.2",
-  icon = 67,
+  icon = "67",
   text = [[
 You found the
 Laser Sword!$0
@@ -1704,12 +1840,10 @@ May the Triforcizzle
 be with you!
 ]]
 }
---------------------
 
--- Epée 3 (Excalibur)
 dialog{
   id = "_treasure.sword.3",
-  icon = 68,
+  icon = "68",
   text = [[
 You found
 Excalibur!$0
@@ -1719,12 +1853,10 @@ game is over, you
 could have used it!
 ]]
 }
---------------------
 
--- Epée 4 (Excalibur)
 dialog{
   id = "_treasure.sword.4",
-  icon = 69,
+  icon = "69",
   text = [[
 You found
 Excalibur!$0
@@ -1734,308 +1866,66 @@ game is over, you
 could have used it!
 ]]
 }
---------------------
 
--- Carte
 dialog{
-  id = "_treasure.map.1",
-  icon = 70,
+  id = "_treasure.tapisserie.1",
+  icon = "43",
   text = [[
-You found the Map!
-Use it to discover
-your environment.
+What a magnificient
+tapestry!
 ]]
 }
---------------------
 
 dialog{
-  id = "dungeon_1.after_map_treasure",
-  text = [[
-And cry when you see
-the size of the
-dungeon!
-]]
-}
------------------------
-
--- Boussole
-dialog{
-  id = "_treasure.compass.1",
-  icon = 71,
+  id = "_treasure.tunic.2",
+  icon = "61",
   text = [[
 You found the
-Compass! Now you
-know the location
-of many things:
-chests, treasures
-and the Boss.
-That's what I
-call improvement!
+Blue Mail!
+$0This armor
+protects you
+from the coldest
+temperatures...
 ]]
 }
---------------------
-
--- Petite clé
-dialog{
-  id = "_treasure.small_key.1",
-  icon = 72,
-  text = [[
-You found a Small
-Key!
-
-You can use it to
-open a nearby
-locked door.
-]]
-}
---------------------
-
--- Grande Clé
-dialog{
-  id = "_treasure.big_key.1",
-  icon = 73,
-  text = [[
-You found the Big
-Key! Use it to open
-special doors and
-big chests!
-Now all you need is
-to find them!
-]]
-}
---------------------
-
--- Clé du Maître
-dialog{
-  id = "_treasure.boss_key.1",
-  icon = 74,
-  text = [[
-You found the Boss
-Key! At last you can
-meet with Ganon,
-master of this
-place!
-]]
-}
---------------------
-
--- Fragment de Coeur
-dialog{
-  id = "_treasure.piece_of_heart.1",
-  icon = 79,
-  text = [[
-You found a
-Piece of Heart!
-]]
-}
---------------------
-
--- Réceptacle de Coeur
-dialog{
-  id = "_treasure.heart_container.1",
-  icon = 80,
-  text = [[
-You found a
-Heart Container.
-
-You just gained
-a new Heart!
-It rooocks!
-]]
-}
---------------------
-
--- 1 Bombe
-dialog{
-  id = "_treasure.bomb.1",
-  icon = 82,
-  next = "_treasure.bomb.1.1",
-  text = [[
-You found a Bomb!$0
-]]
-}
---------------------
 
 dialog{
-  id = "_treasure.bomb.1.1",
+  id = "_treasure.tunic.3",
+  icon = "62",
   text = [[
-Use a Bomb to blow
-up an enemy or an
-obstacle.
+You found The
+Red Mail!
+$0This armor
+reduces the damage
+that you take
+from enemies!
 ]]
 }
------------------------
-
--- 3 Bombes
-dialog{
-  id = "_treasure.bomb.2",
-  icon = 82,
-  next = "_treasure.bomb.1.1",
-  text = [[
-You found 3 Bombs!$0
-]]
-}
---------------------
-
--- 8 Bombes
-dialog{
-  id = "_treasure.bomb.3",
-  icon = 82,
-  next = "_treasure.bomb.1.1",
-  text = [[
-You found 8 Bombs!
-]]
-}
---------------------
-
--- 1 Flèche
-dialog{
-  id = "_treasure.arrow.1",
-  icon = 83,
-  next = "_treasure.arrow.1.1",
-  text = [[
-You found an Arrow!
-]]
-}
---------------------
 
 dialog{
-  id = "_treasure.arrow.1.1",
+  id = "_treasure.wooden_key.1",
+  icon = "30",
   text = [[
-Use the Bow with
-the Arrows to defeat
-distant monsters.
+You found the
+Wooden Key!$0
+
+Find the correct
+lock to use it!
 ]]
 }
------------------------
 
--- 5 Flèches
 dialog{
-  id = "_treasure.arrow.2",
-  icon = 83,
-  next = "_treasure.arrow.1.1",
+  id = "_treasure.world_map.1",
+  icon = "50",
   text = [[
-You found 5 Arrows!
+You found the
+World Map!$0
+
+You can view it
+in the Map Menu.
 ]]
 }
---------------------
 
--- 10 Flèches
-dialog{
-  id = "_treasure.arrow.3",
-  icon = 83,
-  next = "_treasure.arrow.1.1",
-  text = [[
-You found 10 Arrows!
-]]
-}
---------------------
-
--- 1 Coeur
-dialog{
-  id = "_treasure.heart.1",
-  icon = 84,
-  text = [[
-You found a Heart!
-]]
-}
---------------------
-
--- Petite bouteille de magie
-dialog{
-  id = "_treasure.magic_flask.1",
-  icon = 85,
-  text = [[
-You found a
-Little Magic Flask!
-]]
-}
---------------------
-
--- Grande bouteille de magie
-dialog{
-  id = "_treasure.magic_flask.2",
-  icon = 86,
-  text = [[
-You found a
-Big Magic Flask!
-]]
-}
---------------------
-
--- 1 rubis vert
-dialog{
-  id = "_treasure.rupee.1",
-  icon = 90,
-  text = [[
-You found a Rupee!
-]]
-}
---------------------
-
--- 1 rubis bleu
-dialog{
-  id = "_treasure.rupee.2",
-  icon = 91,
-  text = [[
-You found a Blue
-Rupee. It's worth
-5 Rupees!
-]]
-}
---------------------
-
--- 1 rubis rouge
-dialog{
-  id = "_treasure.rupee.3",
-  icon = 92,
-  text = [[
-You found a Red
-Rupee! It's worth
-20 Rupees!
-]]
-}
---------------------
-
--- 50 rubis
--- Remarque : clin d'oeil à Link's Awakening
-dialog{
-  id = "_treasure.rupee.4",
-  icon = 90,
-  text = [[
-You found 50 Rupees!
-Awesome!
-]]
-}
---------------------
-
--- 100 rubis
--- Remarque : clin d'oeil à Link's Awakening
-dialog{
-  id = "_treasure.rupee.5",
-  icon = 90,
-  text = [[
-You found 100
-Rupees!
-Fantastic!
-]]
-}
---------------------
-
--- 200 rubis
--- Remarque : clin d'oeil à Link's Awakening
-dialog{
-  id = "_treasure.rupee.6",
-  icon = 90,
-  text = [[
-You found 200
-Rupees!
-You're ecstatic!
-]]
-}
---------------------
-
--- Zelda
 dialog{
   id = "_treasure.zelda.1",
   text = [[
@@ -2047,129 +1937,7 @@ forgot her in your
 chest!
 ]]
 }
------------------------
 
-dialog{
-  id = "_treasure.poivron.1",
-  icon = 40,
-  text = [[
-You got a pepper!
-How about cooking
-a pizza?
-]]
-}
---------------------
-
-dialog{
-  id = "_treasure.balai.1",
-  icon = 41,
-  text = [[
-You get the broom!
-
-
-Mère Denis will be
-pleased with this ;)
-]]
-}
---------------------
-
-dialog{
-  id = "_treasure.cuillere.1",
-  icon = 42,
-  text = [[
-A spoon! Eat soup
-and you'll grow big!
-]]
-}
---------------------
-
-dialog{
-  id = "_treasure.tapisserie.1",
-  icon = 43,
-  text = [[
-What a magnificient
-tapestry!
-]]
-}
---------------------
-
-dialog{
-  id = "_treasure.roc_magma.1",
-  icon = 44,
-  text = [[
-A Magma Rock!
-Whoa, it's hot!
-]]
-}
---------------------
-
-dialog{
-  id = "_treasure.sac_riz.1",
-  icon = 45,
-  text = [[
-You got rice.
-But basmati rice,
-doh :(
-]]
-}
---------------------
-
-dialog{
-  id = "_treasure.sac_olive.1",
-  icon = 46,
-  text = [[
-We give you a bag of
-olives, don't you
-like it?
-Too bad for you!
-]]
-}
---------------------
-
-dialog{
-  id = "_treasure.bocal_epice.1",
-  icon = 47,
-  text = [[
-You got a spice jar,
-but what's in it?
-]]
-}
---------------------
-
-dialog{
-  id = "_treasure.hache.1",
-  icon = 48,
-  text = [[
-The axe, a wonderful
-tool, that cuts
-everything...
-or not.
-]]
-}
---------------------
-
-dialog{
-  id = "_treasure.parfum.1",
-  icon = 49,
-  text = [[
-We give you:
-Fragrance Kipu de
-Cacaco Charnel,
-get rid of it ASAP
-before you die of
-asphyxia!
-]]
-}
------------------------
-
--- ---------------
--- Autres messages
--- ---------------
--- 
--- Autres messages divers affichés par le moteur de jeu
--- Affiché à la fin des dialogues expliquant
--- que le joueur a obtenu un objet qui consomme
--- de l'énergie magique (même message que dans ALTTP)
 dialog{
   id = "_warning_magic",
   text = [[
@@ -2177,331 +1945,6 @@ Keep an eye on your
 Magic Meter!
 ]]
 }
------------------------
-
--- Lorsqu'on ouvre un coffre vide
-dialog{
-  id = "_empty_chest",
-  text = [[
-This chest is empty!
-Not your lucky day
-it seems!
-]]
-}
------------------------
-
--- Lorsqu'on regarde une porte verrouillé ou un bloc verrouillé
--- et qu'on ne possède pas de Petite Clé
-dialog{
-  id = "_small_key_required",
-  icon = 72,
-  text = [[
-Locked!
-]]
-}
---------------------
-
--- Lorsqu'on regarde le grand coffre ou une porte verrouillée nécessitant la Grande Clé
--- et qu'on ne possède pas celle-ci
-dialog{
-  id = "_big_key_required",
-  icon = 73,
-  text = [[
-Locked, you need the
-Big Key to open it!
-]]
-}
---------------------
-
--- Lorsqu'on regarde la porte du boss sans avoir la Clé du Maître
-dialog{
-  id = "_boss_key_required",
-  icon = 74,
-  text = [[
-This door leads
-to Ganon!
-
-Don't even try to
-open it whithout
-the Master Key!
-]]
-}
---------------------
-
--- Lorsqu'on tente de soulever un buisson
--- au lieu de le couper avec l'épée
-dialog{
-  id = "_cannot_lift_should_cut",
-  skip = "all",
-  text = [[
-Maybe you need
-something to cut down
-this bush...
-]]
-}
------------------------
-
--- Lorsqu'on tente de soulever une pierre
--- sans avoir de bracelet de force
-dialog{
-  id = "_cannot_lift_too_heavy",
-  skip = "all",
-  text = [[
-You're not strong
-enough for this!
-]]
-}
------------------------
-
--- Lorsqu'on tente de soulever une pierre vraiment lourde
--- en ayant seulement la poigne de fer
-dialog{
-  id = "_cannot_lift_still_too_heavy",
-  text = [[
-You're REALLY not
-strong enough for this!
-]]
-}
------------------------
-
--- Lorsqu'on regarde un objet vendu dans un magasin
--- (message affiché après avoir lu la description de l'objet)
-dialog{
-  id = "_shop.question",
-  question = true,
-  text = [[
-Cost: $v rupees.
-Buy
-No way
-]]
-}
------------------------
-
--- Lorsqu'on veut acheter un objet dans un magasin
--- mais qu'on n'a pas assez de Rubis
-dialog{
-  id = "_shop.not_enough_money",
-  text = [[
-Dude, you're short on
-Rupees!
-]]
-}
------------------------
-
--- Lorsqu'on veut acheter un objet dans un magasin
--- mais qu'on a déjà le maximum de la quantité possible
--- (pour des Bombes, des Flèches, etc.)
-dialog{
-  id = "_shop.amount_full",
-  text = [[
-You can't get any more!
-]]
-}
------------------------
-
--- Lorsqu'on regarde un interrupteur de cristal
-dialog{
-  id = "_crystal",
-  text = [[
-It's a crystal switch.
-Hit the switch with
-something...
-]]
-}
------------------------
-
-dialog{
-  id = "found_piece_of_heart.first",
-  icon = 75,
-  text = [[
-Don't even THINK
-about it: you need
-3 more of them to
-have a new Heart.
-]]
-}
---------------------
-
-dialog{
-  id = "found_piece_of_heart.second",
-  icon = 76,
-  text = [[
-Just two more!
-]]
-}
---------------------
-
-dialog{
-  id = "found_piece_of_heart.third",
-  icon = 77,
-  text = [[
-Just one more!
-Get ready for
-the party!
-]]
-}
---------------------
-
-dialog{
-  id = "found_piece_of_heart.fourth",
-  icon = 78,
-  text = [[
-You found 4 Pieces
-of Heart. You gain a
-new Heart!
-]]
-}
---------------------
-
--- Lorsqu'on trouve une Fée en ayant au moins un Flacon (même dialogue que dans ALTTP)
-dialog{
-  id = "found_fairy",
-  icon = 81,
-  skip = "all",
-  next = "found_fairy.1",
-  text = [[
-You found a Fairy,
-that's cool!
-]]
-}
---------------------
-
-dialog{
-  id = "found_fairy.1",
-  icon = -1,
-  skip = "none",
-  question = true,
-  text = [[
-You found a fairy!
-Recover Hearts now
-Keep her in a Bottle
-]]
-}
---------------------
-
--- Lorsqu'on veut conserver une Fée mais qu'on n'a pas de Flacon vide
-dialog{
-  id = "found_fairy.no_empty_bottle",
-  text = [[
-You don't have a
-Magic Bottle!
-]]
-}
------------------------
-
--- Lorsqu'on trouve de l'eau et qu'on a un Flacon vide
-dialog{
-  id = "found_water",
-  icon = 8,
-  question = true,
-  text = [[
-Do you want to fill
-your Magic Bottle
-
-with water?
-Yes
-No
-]]
-}
---------------------
-
--- Lorsqu'on trouve de l'eau mais qu'on n'a aucun Flacon
-dialog{
-  id = "found_water.no_bottle",
-  text = [[
-You found water,
-but you don't have
-a Magic Bottle
-to store it...
-]]
-}
------------------------
-
--- Lorsqu'on trouve de l'eau et qu'on a au moins un Flacon, mais pas de Flacon vide
-dialog{
-  id = "found_water.no_empty_bottle",
-  icon = 8,
-  text = [[
-You found water,
-but you need an
-empty Magic Bottle
-to store it...
-]]
-}
---------------------
-
--- Utiliser un Flacon contenant de l'eau
-dialog{
-  id = "use_bottle_with_water",
-  icon = 8,
-  question = true,
-  text = [[
-Your Magic Bottle is
-filled with water.
-
-Empty it?
-Yes
-No
-]]
-}
---------------------
-
--- Utiliser une Pomme
-dialog{
-  id = "use_apples",
-  icon = 16,
-  question = true,
-  text = [[
-Eat an apple
-to recover
-one Heart.
-Eat one now?
-Yes
-No
-]]
-}
---------------------
-
--- Utiliser un Pain au Chocolat
-dialog{
-  id = "use_pains_au_chocolat",
-  icon = 17,
-  question = true,
-  text = [[
-A Chocolate
-Croissant recovers
-three Hearts.
-Eat one now?
-Yes
-No
-]]
-}
---------------------
-
--- Utiliser un Croissant
-dialog{
-  id = "use_croissants",
-  icon = 18,
-  question = true,
-  text = [[
-A Croissant
-recovers 7 Hearts.
-
-Eat one now?
-Yes
-No
-]]
-}
---------------------
-
-dialog{
-  id = "torch.need_lamp",
-  text = [[
-You must find a way
-to light this torch.
-]]
-}
------------------------
 
 dialog{
   id = "caverne_fragments.sign",
@@ -2511,36 +1954,6 @@ deserves the chest.$0$0
 Or maybe not.
 ]]
 }
------------------------
-
-dialog{
-  id = "maison_boulet.boulet",
-  text = [[
-XD lol! Zelda xd
-:-) lol xd :D big 
-kiss u sux lol :D!
-]]
-}
------------------------
-
-dialog{
-  id = "maison_boulet.fakechest",
-  text = [[
-lololol!
-You're so unlucky!!
-XD
-]]
-}
------------------------
-
-dialog{
-  id = "maison_pots.sign",
-  text = [[
-You really want to
-break them all?
-]]
-}
------------------------
 
 dialog{
   id = "caverne_maudite.pancarte",
@@ -2551,51 +1964,343 @@ disbelief...
 Free your mind $v.
 ]]
 }
------------------------
 
--- =========================================
--- BUREAU DES OBJETS TROUVES
--- =========================================
 dialog{
-  id = "crazy_house.title",
+  id = "crazy_house.accueil_bal_eo_1-6-8-10",
   text = [[
-        Level 1        
-     Lost and Found    
-        Office         
+At counter 22, you
+should find tapestries
+and brooms. To reach
+it, go to the second
+floor, right wing. Use
+the stairs behind me.
 ]]
 }
------------------------
 
 dialog{
-  id = "crazy_house.welcome_message",
+  id = "crazy_house.accueil_bal_eo_5-9",
+  text = [[
+I think I JUST told you
+counter 11 can be found
+right behind me!
+]]
+}
+
+dialog{
+  id = "crazy_house.accueil_bal_eq_2",
+  text = [[
+Counter 82 is on the
+second floor, right
+wing.
+]]
+}
+
+dialog{
+  id = "crazy_house.accueil_bal_eq_3",
+  text = [[
+Counter 45?
+Hmmm, where was it
+last time...? I think
+on the ground floor,
+left wing. If no one
+moved it...
+]]
+}
+
+dialog{
+  id = "crazy_house.accueil_bal_eq_4",
+  text = [[
+Counter 32 is on the
+third floor, right
+wing.
+]]
+}
+
+dialog{
+  id = "crazy_house.accueil_bal_eq_7",
+  text = [[
+Some bags of rice?
+Maybe counter 36 on the
+third floor.
+]]
+}
+
+dialog{
+  id = "crazy_house.accueil_ech_eo_5-7",
+  text = [[
+Counter 12... This is
+the right floor, but
+it's in the right wing.
+You have to go through
+the second floor once
+again.
+]]
+}
+
+dialog{
+  id = "crazy_house.accueil_ech_eq_0",
+  text = [[
+Hello Sir, have you
+lost something?
+
+What are you looking
+for?
+$0Gloves?
+Wait here,
+I'll check...
+
+Hmmm I'm not sure,
+maybe you should go to
+counter 21.
+Go upstairs and you'll
+find it on the second
+floor.
+]]
+}
+
+dialog{
+  id = "crazy_house.accueil_ech_eq_1",
+  text = [[
+Use the stairs behind
+me to find counter 21.
+]]
+}
+
+dialog{
+  id = "crazy_house.accueil_ech_eq_10",
+  text = [[
+To find counter 33, you
+you have to go up the
+third floor, in the
+left wing.
+]]
+}
+
+dialog{
+  id = "crazy_house.accueil_ech_eq_11",
+  text = [[
+You don't know what to
+do with this key?
+It unlocks a room
+on the third floor I
+think, in the left
+wing...
+... if I remember
+correctly.
+]]
+}
+
+dialog{
+  id = "crazy_house.accueil_ech_eq_2",
+  text = [[
+Yes? Uh, the counter
+clerk is a fool?
+Hmmm, maybe you should
+check counter 41. It's
+here on the ground
+floor, but you have to
+reach it by crossing
+the second floor.
+
+Use the stairs behind
+me and ask people.
+]]
+}
+
+dialog{
+  id = "crazy_house.accueil_ech_eq_3",
+  text = [[
+Counter 41 is on the
+ground floor, first
+use the stairs behind
+me and ask people
+around.
+]]
+}
+
+dialog{
+  id = "crazy_house.accueil_ech_eq_4",
+  text = [[
+Counter 33? It's on the
+third floor, left
+wing.
+]]
+}
+
+dialog{
+  id = "crazy_house.accueil_ech_eq_6",
+  text = [[
+Counter 32 is on the
+third floor of the
+right wing.
+You have to use the
+stairs on the second
+floor, near counter 82.
+]]
+}
+
+dialog{
+  id = "crazy_house.accueil_ech_eq_8",
+  text = [[
+Counter 22? It's
+on the second floor
+in the right wing.
+]]
+}
+
+dialog{
+  id = "crazy_house.accueil_ech_eq_9",
+  text = [[
+Counter 12 is on this
+floor, but in the
+right wing.
+Go through the second
+floor to go around.
+]]
+}
+
+dialog{
+  id = "crazy_house.accueil_epi_eo_1-7",
+  text = [[
+If you're looking for
+peppers, check counter
+84.
+You'll find it on the
+second floor, left wing.
+]]
+}
+
+dialog{
+  id = "crazy_house.accueil_epi_eo_2-6",
+  text = [[
+Counter 11? Just behind
+me, Sir.
+
+(Oh god, he has no
+memory!)
+]]
+}
+
+dialog{
+  id = "crazy_house.accueil_epi_eo_3-5",
+  text = [[
+To find counter 22, go
+to the second floor in
+the right wing.
+Use the stairs behind
+me.
+]]
+}
+
+dialog{
+  id = "crazy_house.accueil_epi_eo_4-9",
+  text = [[
+Some bags of rice?
+Let's see... counter 36
+on the third floor,
+right wing. Use the
+stairs on the second
+floor, right wing.
+]]
+}
+
+dialog{
+  id = "crazy_house.accueil_epi_eo_8-10",
+  text = [[
+An old man? I don't
+know what you're
+talking about, sorry.
+]]
+}
+
+dialog{
+  id = "crazy_house.accueil_fini",
+  text = [[
+You found your gloves
+dear Sir?
+Perfect.
+The Lost and Found
+Office was honored to
+serve you and we hope
+you'll come to visit us
+again soon.
+Have a nice day!
+]]
+}
+
+dialog{
+  id = "crazy_house.alcoholic_man",
   skip = "current",
   text = [[
-Welcome to the Lost and
-Found Office.
-
-Also known as... 3T:
-Things To Trade!
-
-You'll need pen and
-paper...
-
-Left: Reception,
-counters 11, 21
-
-Right:
-counters 12, 22
+Burp! I don't even...
+... rememburps!...
+how I came... burp!
+... back here! Burps!
 ]]
 }
------------------------
 
 dialog{
-  id = "crazy_house.mario_message_1",
+  id = "crazy_house.apothicaire",
+  question = "1",
   skip = "current",
   text = [[
-It's-a me, Mario!
+Greetings, young lad.
+I sell bags of
+rice cheap.
+20 Rupees a bag.
+
+
+We have a deal?
+Of course!
+Noo, foolish thief!
 ]]
 }
------------------------
+
+dialog{
+  id = "crazy_house.apothicaire_non",
+  skip = "current",
+  text = [[
+That's not really kind
+of you...
+]]
+}
+
+dialog{
+  id = "crazy_house.apothicaire_oui",
+  skip = "current",
+  text = [[
+Wow, you got a good
+deal!
+]]
+}
+
+dialog{
+  id = "crazy_house.apothicaire_rubis",
+  skip = "current",
+  text = [[
+You're short on Rupees,
+young lad. I'll sell a
+bag of rice for
+twenty Rupees.
+]]
+}
+
+dialog{
+  id = "crazy_house.chemin_de_dieu",
+  skip = "current",
+  text = [[
+The Path of God.
+It's a leap of faith!
+You must believe, boy!
+]]
+}
+
+dialog{
+  id = "crazy_house.depot_ici",
+  text = [[
+   - Storage Room -    
+]]
+}
 
 dialog{
   id = "crazy_house.directionsAccueil",
@@ -2605,7 +2310,6 @@ dialog{
  Please stand in line  
 ]]
 }
------------------------
 
 dialog{
   id = "crazy_house.directions_1F",
@@ -2616,7 +2320,6 @@ Right:
 counters 45, 47, 49, 84
 ]]
 }
------------------------
 
 dialog{
   id = "crazy_house.directions_1F_se",
@@ -2630,7 +2333,6 @@ counters 41, 43, 82,
 third floor
 ]]
 }
------------------------
 
 dialog{
   id = "crazy_house.directions_1F_sw",
@@ -2639,7 +2341,6 @@ dialog{
 Warp to the right wing
 ]]
 }
------------------------
 
 dialog{
   id = "crazy_house.directions_2F",
@@ -2653,31 +2354,6 @@ Stairs:
 counter 11, reception
 ]]
 }
------------------------
-
-dialog{
-  id = "crazy_house.directions_2F_no",
-  skip = "current",
-  text = [[
-Stairs:
-counters 49, 47, 45
-
-Right:
-counters 84, 33
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.directions_2F_ne",
-  skip = "current",
-  text = [[
-Warp to
-counters 11, 21 and
-the reception.
-]]
-}
------------------------
 
 dialog{
   id = "crazy_house.directions_2F_e",
@@ -2690,7 +2366,28 @@ Right:
 counters 41, 43, 82
 ]]
 }
------------------------
+
+dialog{
+  id = "crazy_house.directions_2F_ne",
+  skip = "current",
+  text = [[
+Warp to
+counters 11, 21 and
+the reception.
+]]
+}
+
+dialog{
+  id = "crazy_house.directions_2F_no",
+  skip = "current",
+  text = [[
+Stairs:
+counters 49, 47, 45
+
+Right:
+counters 84, 33
+]]
+}
 
 dialog{
   id = "crazy_house.directions_3F",
@@ -2709,7 +2406,23 @@ This sign is here to
 bother you. Thank you.
 ]]
 }
------------------------
+
+dialog{
+  id = "crazy_house.directions_3FB",
+  skip = "current",
+  text = [[
+Up: counter 33
+]]
+}
+
+dialog{
+  id = "crazy_house.directions_3FC",
+  skip = "current",
+  text = [[
+Stairs to
+counters 84, 49, 47, 45
+]]
+}
 
 dialog{
   id = "crazy_house.directions_3F_3",
@@ -2720,26 +2433,6 @@ bother you again.
 Thank you.
 ]]
 }
------------------------
-
-dialog{
-  id = "crazy_house.directions_3FB",
-  skip = "current",
-  text = [[
-Up: counter 33
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.directions_3FC",
-  skip = "current",
-  text = [[
-Stairs to
-counters 84, 49, 47, 45
-]]
-}
------------------------
 
 dialog{
   id = "crazy_house.giga_bouton_trop_leger",
@@ -2753,37 +2446,824 @@ Super-Colliding
 Super Button.
 ]]
 }
------------------------
 
 dialog{
-  id = "crazy_house.alcoholic_man",
+  id = "crazy_house.guichet_11",
   skip = "current",
   text = [[
-Burp! I don't even...
-... rememburps!...
-how I came... burp!
-... back here! Burps!
+     - Counter 11 -
 ]]
 }
------------------------
 
 dialog{
-  id = "crazy_house.infinite_greetings",
+  id = "crazy_house.guichet_11_bal_eq_9",
+  question = "1",
   skip = "current",
   text = [[
-You must activate the
-1500 Megawatt Aperture
-Science Heavy Duty
-Super-Colliding Super
-Button to get across
-the neverending
-corridor. Exactly what
-you forgot to do!
-
-BWAH HA HA HA HA!
+You have some
+tapestries? I'll trade
+an axe for a tapestry.
+What you think?
+OK!
+No way!
 ]]
 }
------------------------
+
+dialog{
+  id = "crazy_house.guichet_11_bal_err",
+  text = [[
+What? You wanted an
+axe?
+
+But I never had any!
+Take this or go away
+Sir!
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_11_ech_eq_9",
+  skip = "current",
+  text = [[
+Yes, we found some
+axes, but each one of
+them must be traded
+for a tapestry.
+Where can you find
+tapestries?
+Counter 22 has some,
+I think. He's quite
+crazy but...
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_11_ech_eq_9_ht",
+  question = "1",
+  skip = "current",
+  text = [[
+You have some
+tapestries? I'll trade
+an axe for a tapestry.
+What you think?
+OK!
+No way!
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_11_ech_ne_9",
+  skip = "current",
+  text = [[
+What is this about?
+What did you lose?
+But Sir, you have to
+ask the receptionist
+first.
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_12A_ech_eq_5",
+  skip = "current",
+  text = [[
+My colleague is on
+lunch break. If you are
+looking for something
+specific, perhaps they
+will have what you want
+at counter 32.
+Where is it?
+Go and ask the
+receptionist!
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_12A_ech_ne_5",
+  skip = "current",
+  text = [[
+This counter is closed
+Sir.
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_12B_aw",
+  skip = "current",
+  text = [[
+You know the rumor? A
+fragile wall is hidden
+behind a statue. But
+that's only a rumor.
+Nobody ever found a
+treasure in this
+public building...
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_12B_ech_eq_3",
+  skip = "current",
+  text = [[
+How can I help you?
+Counter 41? Logically
+there is a staircase
+that allows access to
+the second floor to
+find the 41 but it's
+locked. Sorry, Sir.
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_12B_ech_eq_7",
+  question = "1",
+  skip = "current",
+  text = [[
+A perfume? Yes, we have
+some, but I have to ask
+you for something.
+I need a spice jar and
+a broom. I'll trade
+them for some perfume.
+We have a deal?
+Yeah, yeah...
+Naah, you kcus!
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_12B_ech_eq_7_no",
+  skip = "current",
+  text = [[
+Kcus? What's this kcus?
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_12B_ech_eq_7_ok",
+  skip = "current",
+  text = [[
+Thanks a lot, here is
+a fragrance Cacaco
+Charnel.
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_12B_ech_eq_7_un",
+  skip = "current",
+  text = [[
+You have nothing!
+I'm sure that you'll
+find them.
+Keep hope.
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_12B_ech_eq_7_un_balai",
+  skip = "current",
+  text = [[
+But you don't have a
+broom! I'm sure that
+you'll find it..
+Keep looking.
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_12B_ech_eq_7_un_bocal",
+  skip = "current",
+  text = [[
+But you don't have the
+spice jar! I'm sure
+that you'll find it.
+Keep looking.
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_12_sign",
+  skip = "current",
+  text = [[
+Right: counter 12
+Left: reception
+
+Top right:
+to counter 22 (locked
+door)
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_21_ech_eq_1",
+  text = [[
+What? Your teeth hurt?
+Uh, I know what you're
+talking about. In my
+childhood, I bought
+candies with the money
+my parents gave me.
+I was always at the
+dentist with cavities.
+
+It hurts just
+thinking about it...
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_21_ech_ne_1",
+  skip = "current",
+  text = [[
+Ah good old times,
+I remember...
+my first love...
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_21_ici",
+  skip = "current",
+  text = [[
+     - Counter 21 -    
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_22A",
+  next = "crazy_house.guichet_22_question",
+  skip = "current",
+  text = [[
+Welcome to counter 22,
+the best counter in the
+whole world!
+Here, you can find
+anything you want:
+we can trade a broom
+for a magma rock.
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_22B",
+  next = "crazy_house.guichet_22_question",
+  skip = "current",
+  text = [[
+Welcome to counter 22,
+the best counter in the
+whole world!
+Here, you can find
+anything you want:
+we can trade a
+tapestry for a bag of
+rice.
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_22_question",
+  question = "1",
+  text = [[
+We have a deal?
+Of course!
+Errrr......... No!
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_22_rm_ok",
+  skip = "current",
+  text = [[
+You're welcome. Here is
+your broom.
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_22_rm_un",
+  skip = "current",
+  text = [[
+But you don't have a
+magma rock... What a
+shame! Come back later.
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_22_sr_ok",
+  skip = "current",
+  text = [[
+Here is a magnificient
+tapestry!
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_22_sr_un",
+  skip = "current",
+  text = [[
+Sorry, but you don't
+have a bag of rice.
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_31",
+  skip = "all",
+  text = [[
+I'm sure my boss wants
+to fire me! I sense he
+is angry with me!
+He'll find something
+wrong with my work, but
+I do the best I can!
+The world is against
+me!...
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_31_ici",
+  skip = "current",
+  text = [[
+     - Counter 31 -    
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_32_ech_le_6",
+  skip = "current",
+  text = [[
+Some perfume? Sorry,
+we only have spoons.
+
+Counter 12? If the
+employee was on break,
+she is certainly back
+now, you should go
+back there.
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_32_ech_ne_6",
+  question = "1",
+  skip = "current",
+  text = [[
+Here at counter 32,
+a spoon can be traded
+for an axe, the deal
+is really promising.
+
+
+What do you think?
+Why not?
+Noooooooooooooo!!
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_32_ech_ne_6_no",
+  text = [[
+No? What a shame,
+you're losing something
+there!
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_32_ech_ne_6_un",
+  skip = "current",
+  text = [[
+Sorry, but you don't
+have an axe to trade.
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_32_ici",
+  skip = "current",
+  text = [[
+     - Counter 32 -    
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_33_ech_eq_3",
+  skip = "current",
+  text = [[
+I'm sorry, this is
+counter 33, not 41.
+
+The warp on your left
+leads to counter 22.
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_33_ech_ge_4",
+  skip = "current",
+  text = [[
+What? The storage room
+key? I'm sorry! I won't
+give the key to anyone!
+If you give me a nice
+perfume, I would MAYBE
+let you borrow it.
+I think someone
+managed to find one.
+
+Try counter 12, they
+will perhaps give you
+more information.
+Where's this counter?
+I have no idea, ask
+the receptionist.
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_33_ech_le_2",
+  skip = "current",
+  text = [[
+Welcome to counter 33.
+I'm in charge of the
+storage room keys.
+But customers are NOT
+allowed to enter.
+By the way, you're not
+supposed to know what I
+just said. Why did I
+tell you?
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_33_parfum",
+  skip = "current",
+  text = [[
+Wow! You found the
+perfume?!
+
+I never thought someone
+could do this!
+But I'm a man of my word
+word, I entrust you with
+the key leading to the
+storage room.
+DO NOT make a mess
+inside, will ya?
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_36",
+  question = "1",
+  skip = "current",
+  text = [[
+Welcome to counter 36,
+I'm Bill Board, I sell
+bags of rice:
+50 rupees for 3 bags.
+
+
+Interested?
+Oh yeah!
+Er, no...
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_36_un",
+  skip = "current",
+  text = [[
+Sorry, you need at
+least 50 rupees.
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_41_ech_eq_3",
+  skip = "current",
+  text = [[
+Hello, you're looking
+for gloves?
+Wait a minute...
+Hmm we have some, they
+have been stored in the
+storage room.
+But I don't have the
+key, go and ask at
+counter 33, he's the
+one in charge of all
+the keys.
+
+You'll find him on the
+third floor, left
+wing.
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_41_ech_ne_3",
+  skip = "current",
+  text = [[
+Sorry, I'm taking a
+break, and I need it
+badly.
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_41_ici",
+  skip = "current",
+  text = [[
+     - Counter 41 -    
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_43",
+  skip = "all",
+  text = [[
+Did you know? His
+mother flirted with the
+postman!
+I swear!
+Poor boy, what a shock
+for him, it's
+unbelievable what
+people can do
+sometimes...
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_43_ici",
+  skip = "current",
+  text = [[
+     - Counter 43 -
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_43f",
+  skip = "all",
+  text = [[
+Uh... what was I
+saying?...
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_43n",
+  skip = "all",
+  text = [[
+WHAT?!! Don't you see
+I'm busy at the moment?
+
+How rude are people
+nowadays!
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_45",
+  skip = "current",
+  text = [[
+     - Counter 45 -
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_45_ech_eq_3",
+  skip = "current",
+  text = [[
+Sir? Counter 41?
+This is 45.
+
+Wait, I'll ask my
+colleague...
+....
+....
+....
+
+Hello? Maurice?
+This is Josiane.
+Tell me you're at 41?
+OK, where are you?
+OK... Thanks, there's
+a customer for you.
+See ya...
+
+
+So... This is the wrong
+place, you have to go
+to counter 12, near the
+entrance of the
+building.
+Have a nice day, Sir.
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_45_ech_ne_3",
+  question = "1",
+  skip = "current",
+  text = [[
+Sir, are you interested
+in trading some sacks
+of olives?
+I'd like to trade a
+sack of olives for a
+spoon.
+Interested?
+Hmmm...
+Hmmm...
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_45_ech_ok",
+  skip = "current",
+  text = [[
+Great, here's your sack
+of olives.
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_45_ech_un",
+  skip = "current",
+  text = [[
+What a shame, you don't
+have a spoon.
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_47",
+  skip = "current",
+  text = [[
+     - Counter 47 -
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_47_ech_eq_3",
+  skip = "current",
+  text = [[
+Hello, you want
+counter 41?
+I'm sorry, this is 47.
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_47_ech_ne_3",
+  skip = "current",
+  text = [[
+Want to register a
+galley? They've sent
+you to the wrong place,
+you want the
+harbourmaster's office
+down by the port!
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_49",
+  skip = "current",
+  text = [[
+I was relegated to the
+basement, all alone...
+
+Boo hoo hoo!
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_49_ici",
+  skip = "current",
+  text = [[
+     - Counter 49 -
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_82",
+  question = "1",
+  skip = "current",
+  text = [[
+Hmmm... I get depressed
+because I need a sack
+of olives to feed my
+cat but nobody seems to
+have any...
+*sigh*
+By chance, you don't
+have a sack of olives?
+I'll trade your sack
+of olives for a magma
+rock.
+
+We have a deal?
+Of course!
+In your dreams...
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_82_ici",
+  skip = "current",
+  text = [[
+     - Counter 82 -
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_82_ok",
+  skip = "current",
+  text = [[
+Oh my gosh!
+You have a sack of
+olives, you rock!
+Here's your magma rock,
+you deserve it.
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_82_un",
+  skip = "current",
+  text = [[
+Sorry, you need a sack
+of olives to trade for
+this magma rock.
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_84_ech_eq_3",
+  skip = "current",
+  text = [[
+Excuse me? Counter 41?
+Sorry, this is 84.
+To find 41, you have
+to go to the
+ground floor.
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_84_ech_ne_3_hh",
+  question = "1",
+  skip = "current",
+  text = [[
+An axe for a pepper.
+
+
+Deal?
+Yay!
+Oh no!!
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_84_ech_ne_3_nh",
+  skip = "current",
+  text = [[
+We have peppers here.
+We'll trade them for an
+axe if you want.
+I heard you can find an
+axe at counter 11.
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_84_ech_ne_3_un",
+  skip = "current",
+  text = [[
+He ho the green gnome!
+Don't try to swindle
+me!
+Bring an axe or you
+get NOTHING!
+]]
+}
+
+dialog{
+  id = "crazy_house.guichet_84_ici",
+  skip = "current",
+  text = [[
+     - Counter 84 -
+]]
+}
 
 dialog{
   id = "crazy_house.hint_part2",
@@ -2818,1400 +3298,32 @@ a tunnel crr...
 crr... crr... beeep!
 ]]
 }
------------------------
 
 dialog{
-  id = "crazy_house.chemin_de_dieu",
+  id = "crazy_house.infinite_greetings",
   skip = "current",
   text = [[
-The Path of God.
-It's a leap of faith!
-You must believe, boy!
-]]
-}
------------------------
-
--- ==============================================
--- AGENT EN GREVE
--- ==============================================
-dialog{
-  id = "crazy_house.public_agent",
-  skip = "all",
-  text = [[
-What? You want to go
-through? Don't you
-see I'm on strike?
-God damnit! You people
-in the private sector,
-you don't understand
-our demands but we
-still let you judge us!
-Go away!
-]]
-}
------------------------
-
--- ==============================================
--- ACCUEIL
--- ==============================================
-dialog{
-  id = "crazy_house.accueil_ech_eq_0",
-  text = [[
-Hello Sir, have you
-lost something?
-
-What are you looking
-for?
-$0Gloves?
-Wait here,
-I'll check...
-
-Hmmm I'm not sure,
-maybe you should go to
-counter 21.
-Go upstairs and you'll
-find it on the second
-floor.
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.accueil_ech_eq_1",
-  text = [[
-Use the stairs behind
-me to find counter 21.
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.accueil_ech_eq_2",
-  text = [[
-Yes? Uh, the counter
-clerk is a fool?
-Hmmm, maybe you should
-check counter 41. It's
-here on the ground
-floor, but you have to
-reach it by crossing
-the second floor.
-
-Use the stairs behind
-me and ask people.
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.accueil_ech_eq_3",
-  text = [[
-Counter 41 is on the
-ground floor, first
-use the stairs behind
-me and ask people
-around.
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.accueil_ech_eq_4",
-  text = [[
-Counter 33? It's on the
-third floor, left
-wing.
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.accueil_ech_eo_5-7",
-  text = [[
-Counter 12... This is
-the right floor, but
-it's in the right wing.
-You have to go through
-the second floor once
-again.
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.accueil_ech_eq_6",
-  text = [[
-Counter 32 is on the
-third floor of the
-right wing.
-You have to use the
-stairs on the second
-floor, near counter 82.
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.accueil_ech_eq_8",
-  text = [[
-Counter 22? It's
-on the second floor
-in the right wing.
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.accueil_ech_eq_9",
-  text = [[
-Counter 12 is on this
-floor, but in the
-right wing.
-Go through the second
-floor to go around.
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.accueil_ech_eq_10",
-  text = [[
-To find counter 33, you
-you have to go up the
-third floor, in the
-left wing.
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.accueil_ech_eq_11",
-  text = [[
-You don't know what to
-do with this key?
-It unlocks a room
-on the third floor I
-think, in the left
-wing...
-... if I remember
-correctly.
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.accueil_epi_eo_1-7",
-  text = [[
-If you're looking for
-peppers, check counter
-84.
-You'll find it on the
-second floor, left wing.
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.accueil_epi_eo_2-6",
-  text = [[
-Counter 11? Just behind
-me, Sir.
-
-(Oh god, he has no
-memory!)
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.accueil_epi_eo_3-5",
-  text = [[
-To find counter 22, go
-to the second floor in
-the right wing.
-Use the stairs behind
-me.
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.accueil_epi_eo_4-9",
-  text = [[
-Some bags of rice?
-Let's see... counter 36
-on the third floor,
-right wing. Use the
-stairs on the second
-floor, right wing.
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.accueil_epi_eo_8-10",
-  text = [[
-An old man? I don't
-know what you're
-talking about, sorry.
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.accueil_bal_eo_1-6-8-10",
-  text = [[
-At counter 22, you
-should find tapestries
-and brooms. To reach
-it, go to the second
-floor, right wing. Use
-the stairs behind me.
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.accueil_bal_eq_2",
-  text = [[
-Counter 82 is on the
-second floor, right
-wing.
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.accueil_bal_eq_3",
-  text = [[
-Counter 45?
-Hmmm, where was it
-last time...? I think
-on the ground floor,
-left wing. If no one
-moved it...
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.accueil_bal_eq_4",
-  text = [[
-Counter 32 is on the
-third floor, right
-wing.
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.accueil_bal_eo_5-9",
-  text = [[
-I think I JUST told you
-counter 11 can be found
-right behind me!
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.accueil_bal_eq_7",
-  text = [[
-Some bags of rice?
-Maybe counter 36 on the
-third floor.
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.accueil_fini",
-  text = [[
-You found your gloves
-dear Sir?
-Perfect.
-The Lost and Found
-Office was honored to
-serve you and we hope
-you'll come to visit us
-again soon.
-Have a nice day!
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.depot_ici",
-  text = [[
-   - Storage Room -    
-]]
-}
------------------------
-
--- ==============================================
--- counter 11
--- ==============================================
-dialog{
-  id = "crazy_house.guichet_11",
-  skip = "current",
-  text = [[
-     - Counter 11 -
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.guichet_11_ech_ne_9",
-  skip = "current",
-  text = [[
-What is this about?
-What did you lose?
-But Sir, you have to
-ask the receptionist
-first.
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.guichet_11_ech_eq_9",
-  skip = "current",
-  text = [[
-Yes, we found some
-axes, but each one of
-them must be traded
-for a tapestry.
-Where can you find
-tapestries?
-Counter 22 has some,
-I think. He's quite
-crazy but...
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.guichet_11_ech_eq_9_ht",
-  skip = "current",
-  question = true,
-  text = [[
-You have some
-tapestries? I'll trade
-an axe for a tapestry.
-What you think?
-OK!
-No way!
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.guichet_11_bal_eq_9",
-  skip = "current",
-  question = true,
-  text = [[
-You have some
-tapestries? I'll trade
-an axe for a tapestry.
-What you think?
-OK!
-No way!
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.guichet_11_bal_err",
-  text = [[
-What? You wanted an
-axe?
-
-But I never had any!
-Take this or go away
-Sir!
-]]
-}
------------------------
-
--- ==============================================
--- GUICHET 12A
--- ==============================================
--- 
-dialog{
-  id = "crazy_house.guichet_12_sign",
-  skip = "current",
-  text = [[
-Right: counter 12
-Left: reception
-
-Top right:
-to counter 22 (locked
-door)
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.guichet_12A_ech_ne_5",
-  skip = "current",
-  text = [[
-This counter is closed
-Sir.
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.guichet_12A_ech_eq_5",
-  skip = "current",
-  text = [[
-My colleague is on
-lunch break. If you are
-looking for something
-specific, perhaps they
-will have what you want
-at counter 32.
-Where is it?
-Go and ask the
-receptionist!
-]]
-}
------------------------
-
--- ==============================================
--- GUICHET 12B
--- ==============================================
-dialog{
-  id = "crazy_house.guichet_12B_ech_eq_3",
-  skip = "current",
-  text = [[
-How can I help you?
-Counter 41? Logically
-there is a staircase
-that allows access to
-the second floor to
-find the 41 but it's
-locked. Sorry, Sir.
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.guichet_12B_ech_eq_7",
-  skip = "current",
-  question = true,
-  text = [[
-A perfume? Yes, we have
-some, but I have to ask
-you for something.
-I need a spice jar and
-a broom. I'll trade
-them for some perfume.
-We have a deal?
-Yeah, yeah...
-Naah, you kcus!
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.guichet_12B_ech_eq_7_un",
-  skip = "current",
-  text = [[
-You have nothing!
-I'm sure that you'll
-find them.
-Keep hope.
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.guichet_12B_ech_eq_7_un_balai",
-  skip = "current",
-  text = [[
-But you don't have a
-broom! I'm sure that
-you'll find it..
-Keep looking.
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.guichet_12B_ech_eq_7_un_bocal",
-  skip = "current",
-  text = [[
-But you don't have the
-spice jar! I'm sure
-that you'll find it.
-Keep looking.
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.guichet_12B_ech_eq_7_ok",
-  skip = "current",
-  text = [[
-Thanks a lot, here is
-a fragrance Cacaco
-Charnel.
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.guichet_12B_ech_eq_7_no",
-  skip = "current",
-  text = [[
-Kcus? What's this kcus?
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.guichet_12B_aw",
-  skip = "current",
-  text = [[
-You know the rumor? A
-fragile wall is hidden
-behind a statue. But
-that's only a rumor.
-Nobody ever found a
-treasure in this
-public building...
-]]
-}
------------------------
-
--- ==============================================
--- GUICHET 21
--- ==============================================
-dialog{
-  id = "crazy_house.guichet_21_ici",
-  skip = "current",
-  text = [[
-     - Counter 21 -    
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.guichet_21_ech_ne_1",
-  skip = "current",
-  text = [[
-Ah good old times,
-I remember...
-my first love...
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.guichet_21_ech_eq_1",
-  text = [[
-What? Your teeth hurt?
-Uh, I know what you're
-talking about. In my
-childhood, I bought
-candies with the money
-my parents gave me.
-I was always at the
-dentist with cavities.
-
-It hurts just
-thinking about it...
-]]
-}
------------------------
-
--- ==============================================
--- GUICHET 22
--- ==============================================
-dialog{
-  id = "crazy_house.guichet_22A",
-  skip = "current",
-  next = "crazy_house.guichet_22_question",
-  text = [[
-Welcome to counter 22,
-the best counter in the
-whole world!
-Here, you can find
-anything you want:
-we can trade a broom
-for a magma rock.
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.guichet_22B",
-  skip = "current",
-  next = "crazy_house.guichet_22_question",
-  text = [[
-Welcome to counter 22,
-the best counter in the
-whole world!
-Here, you can find
-anything you want:
-we can trade a
-tapestry for a bag of
-rice.
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.guichet_22_question",
-  question = true,
-  text = [[
-We have a deal?
-Of course!
-Errrr......... No!
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.guichet_22_rm_un",
-  skip = "current",
-  text = [[
-But you don't have a
-magma rock... What a
-shame! Come back later.
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.guichet_22_rm_ok",
-  skip = "current",
-  text = [[
-You're welcome. Here is
-your broom.
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.guichet_22_sr_un",
-  skip = "current",
-  text = [[
-Sorry, but you don't
-have a bag of rice.
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.guichet_22_sr_ok",
-  skip = "current",
-  text = [[
-Here is a magnificient
-tapestry!
-]]
-}
------------------------
-
--- ==============================================
--- GUICHET 31
--- ==============================================
-dialog{
-  id = "crazy_house.guichet_31_ici",
-  skip = "current",
-  text = [[
-     - Counter 31 -    
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.guichet_31",
-  skip = "all",
-  text = [[
-I'm sure my boss wants
-to fire me! I sense he
-is angry with me!
-He'll find something
-wrong with my work, but
-I do the best I can!
-The world is against
-me!...
-]]
-}
------------------------
-
--- ==============================================
--- GUICHET 32
--- ==============================================
-dialog{
-  id = "crazy_house.guichet_32_ici",
-  skip = "current",
-  text = [[
-     - Counter 32 -    
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.guichet_32_ech_le_6",
-  skip = "current",
-  text = [[
-Some perfume? Sorry,
-we only have spoons.
-
-Counter 12? If the
-employee was on break,
-she is certainly back
-now, you should go
-back there.
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.guichet_32_ech_ne_6",
-  skip = "current",
-  question = true,
-  text = [[
-Here at counter 32,
-a spoon can be traded
-for an axe, the deal
-is really promising.
-
-
-What do you think?
-Why not?
-Noooooooooooooo!!
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.guichet_32_ech_ne_6_un",
-  skip = "current",
-  text = [[
-Sorry, but you don't
-have an axe to trade.
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.guichet_32_ech_ne_6_no",
-  text = [[
-No? What a shame,
-you're losing something
-there!
-]]
-}
------------------------
-
--- ==============================================
--- GUICHET 33
--- ==============================================
-dialog{
-  id = "crazy_house.guichet_33_ech_le_2",
-  skip = "current",
-  text = [[
-Welcome to counter 33.
-I'm in charge of the
-storage room keys.
-But customers are NOT
-allowed to enter.
-By the way, you're not
-supposed to know what I
-just said. Why did I
-tell you?
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.guichet_33_ech_eq_3",
-  skip = "current",
-  text = [[
-I'm sorry, this is
-counter 33, not 41.
-
-The warp on your left
-leads to counter 22.
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.guichet_33_ech_ge_4",
-  skip = "current",
-  text = [[
-What? The storage room
-key? I'm sorry! I won't
-give the key to anyone!
-If you give me a nice
-perfume, I would MAYBE
-let you borrow it.
-I think someone
-managed to find one.
-
-Try counter 12, they
-will perhaps give you
-more information.
-Where's this counter?
-I have no idea, ask
-the receptionist.
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.guichet_33_parfum",
-  skip = "current",
-  text = [[
-Wow! You found the
-perfume?!
-
-I never thought someone
-could do this!
-But I'm a man of my word
-word, I entrust you with
-the key leading to the
-storage room.
-DO NOT make a mess
-inside, will ya?
-]]
-}
------------------------
-
--- ==============================================
--- GUICHET 36
--- ==============================================
-dialog{
-  id = "crazy_house.guichet_36",
-  skip = "current",
-  question = true,
-  text = [[
-Welcome to counter 36,
-I'm Bill Board, I sell
-bags of rice:
-50 rupees for 3 bags.
-
-
-Interested?
-Oh yeah!
-Er, no...
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.guichet_36_un",
-  skip = "current",
-  text = [[
-Sorry, you need at
-least 50 rupees.
-]]
-}
------------------------
-
--- ==============================================
--- GUICHET 41
--- ==============================================
-dialog{
-  id = "crazy_house.guichet_41_ici",
-  skip = "current",
-  text = [[
-     - Counter 41 -    
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.guichet_41_ech_ne_3",
-  skip = "current",
-  text = [[
-Sorry, I'm taking a
-break, and I need it
-badly.
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.guichet_41_ech_eq_3",
-  skip = "current",
-  text = [[
-Hello, you're looking
-for gloves?
-Wait a minute...
-Hmm we have some, they
-have been stored in the
-storage room.
-But I don't have the
-key, go and ask at
-counter 33, he's the
-one in charge of all
-the keys.
-
-You'll find him on the
-third floor, left
-wing.
-]]
-}
------------------------
-
--- ==============================================
--- GUICHET 43
--- ==============================================
-dialog{
-  id = "crazy_house.guichet_43_ici",
-  skip = "current",
-  text = [[
-     - Counter 43 -
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.guichet_43",
-  skip = "all",
-  text = [[
-Did you know? His
-mother flirted with the
-postman!
-I swear!
-Poor boy, what a shock
-for him, it's
-unbelievable what
-people can do
-sometimes...
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.guichet_43n",
-  skip = "all",
-  text = [[
-WHAT?!! Don't you see
-I'm busy at the moment?
-
-How rude are people
-nowadays!
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.guichet_43f",
-  skip = "all",
-  text = [[
-Uh... what was I
-saying?...
-]]
-}
------------------------
-
--- ==============================================
--- GUICHET 45
--- ==============================================
-dialog{
-  id = "crazy_house.guichet_45",
-  skip = "current",
-  text = [[
-     - Counter 45 -
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.guichet_45_ech_eq_3",
-  skip = "current",
-  text = [[
-Sir? Counter 41?
-This is 45.
-
-Wait, I'll ask my
-colleague...
-....
-....
-....
-
-Hello? Maurice?
-This is Josiane.
-Tell me you're at 41?
-OK, where are you?
-OK... Thanks, there's
-a customer for you.
-See ya...
-
-
-So... This is the wrong
-place, you have to go
-to counter 12, near the
-entrance of the
-building.
-Have a nice day, Sir.
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.guichet_45_ech_ne_3",
-  skip = "current",
-  question = true,
-  text = [[
-Sir, are you interested
-in trading some sacks
-of olives?
-I'd like to trade a
-sack of olives for a
-spoon.
-Interested?
-Hmmm...
-Hmmm...
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.guichet_45_ech_un",
-  skip = "current",
-  text = [[
-What a shame, you don't
-have a spoon.
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.guichet_45_ech_ok",
-  skip = "current",
-  text = [[
-Great, here's your sack
-of olives.
-]]
-}
------------------------
-
--- ==============================================
--- GUICHET 47
--- ==============================================
-dialog{
-  id = "crazy_house.guichet_47",
-  skip = "current",
-  text = [[
-     - Counter 47 -
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.guichet_47_ech_ne_3",
-  skip = "current",
-  text = [[
-Want to register a
-galley? They've sent
-you to the wrong place,
-you want the
-harbourmaster's office
-down by the port!
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.guichet_47_ech_eq_3",
-  skip = "current",
-  text = [[
-Hello, you want
-counter 41?
-I'm sorry, this is 47.
-]]
-}
------------------------
-
--- ==============================================
--- GUICHET 49
--- ==============================================
-dialog{
-  id = "crazy_house.guichet_49_ici",
-  skip = "current",
-  text = [[
-     - Counter 49 -
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.guichet_49",
-  skip = "current",
-  text = [[
-I was relegated to the
-basement, all alone...
-
-Boo hoo hoo!
-]]
-}
------------------------
-
--- ==============================================
--- GUICHET 82
--- ==============================================
-dialog{
-  id = "crazy_house.guichet_82_ici",
-  skip = "current",
-  text = [[
-     - Counter 82 -
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.guichet_82",
-  skip = "current",
-  question = true,
-  text = [[
-Hmmm... I get depressed
-because I need a sack
-of olives to feed my
-cat but nobody seems to
-have any...
-*sigh*
-By chance, you don't
-have a sack of olives?
-I'll trade your sack
-of olives for a magma
-rock.
-
-We have a deal?
-Of course!
-In your dreams...
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.guichet_82_un",
-  skip = "current",
-  text = [[
-Sorry, you need a sack
-of olives to trade for
-this magma rock.
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.guichet_82_ok",
-  skip = "current",
-  text = [[
-Oh my gosh!
-You have a sack of
-olives, you rock!
-Here's your magma rock,
-you deserve it.
-]]
-}
------------------------
-
--- ==============================================
--- GUICHET 84
--- ==============================================
-dialog{
-  id = "crazy_house.guichet_84_ici",
-  skip = "current",
-  text = [[
-     - Counter 84 -
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.guichet_84_ech_eq_3",
-  skip = "current",
-  text = [[
-Excuse me? Counter 41?
-Sorry, this is 84.
-To find 41, you have
-to go to the
-ground floor.
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.guichet_84_ech_ne_3_nh",
-  skip = "current",
-  text = [[
-We have peppers here.
-We'll trade them for an
-axe if you want.
-I heard you can find an
-axe at counter 11.
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.guichet_84_ech_ne_3_hh",
-  skip = "current",
-  question = true,
-  text = [[
-An axe for a pepper.
-
-
-Deal?
-Yay!
-Oh no!!
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.guichet_84_ech_ne_3_un",
-  skip = "current",
-  text = [[
-He ho the green gnome!
-Don't try to swindle
-me!
-Bring an axe or you
-get NOTHING!
-]]
-}
------------------------
-
--- ==============================================
--- VIEILLARD
--- ==============================================
-dialog{
-  id = "crazy_house.vieillard",
-  skip = "current",
-  next = "crazy_house.vieillard_ronfl",
-  text = [[
-Snort... ZZZ... Huh?
-By chance, are you
-looking for a spice
-jar? Hehe, I can read
-your mind.
-
-Bring me a pepper and
-maybe I'll help you...
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.vieillard_poivron",
-  skip = "current",
-  next = "crazy_house.vieillard_ronfl",
-  text = [[
-But... What's this?
-I never asked for a
-pepper!
-I want a bag of rice!
-
-
-Ah youth, they never
-listen!
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.vieillard_riz_quantite",
-  skip = "current",
-  next = "crazy_house.vieillard_ronfl",
-  text = [[
-ZZZ... Huh?...
-But you don't have
-a bag of rice!
-Go away! I want some!
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.vieillard_riz_ok",
-  skip = "current",
-  text = [[
-ZZZ....
-Oh Jacqueline...
-Snort... AH!!
-Why did you awake me?
-I was having a
-wonderful dream...
-You found some rice?
-That's it! Now here's
-my precious spice jar.
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.vieillard_ronfl",
-  text = [[
-Snort... ZZZ...
-]]
-}
------------------------
+You must activate the
+1500 Megawatt Aperture
+Science Heavy Duty
+Super-Colliding Super
+Button to get across
+the neverending
+corridor. Exactly what
+you forgot to do!
 
--- ==============================================
--- APOTHICAIRE
--- ==============================================
-dialog{
-  id = "crazy_house.apothicaire",
-  skip = "current",
-  question = true,
-  text = [[
-Greetings, young lad.
-I sell bags of
-rice cheap.
-20 Rupees a bag.
-
-
-We have a deal?
-Of course!
-Noo, foolish thief!
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.apothicaire_non",
-  skip = "current",
-  text = [[
-That's not really kind
-of you...
-]]
-}
------------------------
-
-dialog{
-  id = "crazy_house.apothicaire_rubis",
-  skip = "current",
-  text = [[
-You're short on Rupees,
-young lad. I'll sell a
-bag of rice for
-twenty Rupees.
+BWAH HA HA HA HA!
 ]]
 }
------------------------
 
 dialog{
-  id = "crazy_house.apothicaire_oui",
+  id = "crazy_house.mario_message_1",
   skip = "current",
   text = [[
-Wow, you got a good
-deal!
+It's-a me, Mario!
 ]]
 }
------------------------
 
--- ==============================================
--- AUTRES PNJ
--- ==============================================
 dialog{
   id = "crazy_house.pnja",
   skip = "current",
@@ -4227,7 +3339,6 @@ A real pension I'd say!
 It's a scam!
 ]]
 }
------------------------
 
 dialog{
   id = "crazy_house.pnjb",
@@ -4243,7 +3354,6 @@ They don't know what
 they're missing.
 ]]
 }
------------------------
 
 dialog{
   id = "crazy_house.pnjc",
@@ -4256,7 +3366,6 @@ the building, about
 this is real slavery.
 ]]
 }
------------------------
 
 dialog{
   id = "crazy_house.pnjd",
@@ -4281,7 +3390,6 @@ Maybe you could try
 using some heavy stuff.
 ]]
 }
------------------------
 
 dialog{
   id = "crazy_house.pnje",
@@ -4300,9 +3408,492 @@ What a bunch of
 incompetents!
 ]]
 }
------------------------
 
--- ==============================================
+dialog{
+  id = "crazy_house.public_agent",
+  skip = "all",
+  text = [[
+What? You want to go
+through? Don't you
+see I'm on strike?
+God damnit! You people
+in the private sector,
+you don't understand
+our demands but we
+still let you judge us!
+Go away!
+]]
+}
+
+dialog{
+  id = "crazy_house.title",
+  text = [[
+        Level 1        
+     Lost and Found    
+        Office         
+]]
+}
+
+dialog{
+  id = "crazy_house.vieillard",
+  next = "crazy_house.vieillard_ronfl",
+  skip = "current",
+  text = [[
+Snort... ZZZ... Huh?
+By chance, are you
+looking for a spice
+jar? Hehe, I can read
+your mind.
+
+Bring me a pepper and
+maybe I'll help you...
+]]
+}
+
+dialog{
+  id = "crazy_house.vieillard_poivron",
+  next = "crazy_house.vieillard_ronfl",
+  skip = "current",
+  text = [[
+But... What's this?
+I never asked for a
+pepper!
+I want a bag of rice!
+
+
+Ah youth, they never
+listen!
+]]
+}
+
+dialog{
+  id = "crazy_house.vieillard_riz_ok",
+  skip = "current",
+  text = [[
+ZZZ....
+Oh Jacqueline...
+Snort... AH!!
+Why did you awake me?
+I was having a
+wonderful dream...
+You found some rice?
+That's it! Now here's
+my precious spice jar.
+]]
+}
+
+dialog{
+  id = "crazy_house.vieillard_riz_quantite",
+  next = "crazy_house.vieillard_ronfl",
+  skip = "current",
+  text = [[
+ZZZ... Huh?...
+But you don't have
+a bag of rice!
+Go away! I want some!
+]]
+}
+
+dialog{
+  id = "crazy_house.vieillard_ronfl",
+  text = [[
+Snort... ZZZ...
+]]
+}
+
+dialog{
+  id = "crazy_house.welcome_message",
+  skip = "current",
+  text = [[
+Welcome to the Lost and
+Found Office.
+
+Also known as... 3T:
+Things To Trade!
+
+You'll need pen and
+paper...
+
+Left: Reception,
+counters 11, 21
+
+Right:
+counters 12, 22
+]]
+}
+
+dialog{
+  id = "desert.east_house.back_from_dead",
+  text = [[
+What? You went to
+the Cursed Cave?
+
+The youth today is
+really reckless!
+
+We should have more
+warnings on the
+dangers of the cave.
+I told you so: you
+mustn't go there.
+
+You're not following
+the game! If you wanna
+see Ganon, nothing
+could be simpler. Take
+the key in my room.
+
+You could have said it
+right away instead of
+going on adventures.
+]]
+}
+
+dialog{
+  id = "desert.east_house.bone_key",
+  text = [[
+This key opens
+Ganon's hideout.
+]]
+}
+
+dialog{
+  id = "desert.east_house.first_time",
+  text = [[
+To the North is the
+Cursed Cave.
+
+Nobody has ever come
+back. Don't go there!
+]]
+}
+
+dialog{
+  id = "desert.small_house",
+  text = [[
+If you try to kill
+yourself, a good way to
+do this is to go to the
+Cursed Cave, to the
+North.
+
+Pain and death are
+guaranteed.
+]]
+}
+
+dialog{
+  id = "desert.west_house",
+  text = [[
+Many adventurers have
+dared enter the Cursed
+Cave.
+We have never heard
+from them again...
+
+These days, access
+is barred to protect
+curious people.
+]]
+}
+
+dialog{
+  id = "dungeon_1.2f_sw_water_removed",
+  text = [[
+Far away... a noise...
+]]
+}
+
+dialog{
+  id = "dungeon_1.after_map_treasure",
+  text = [[
+And cry when you see
+the size of the
+dungeon!
+]]
+}
+
+dialog{
+  id = "dungeon_1.big_code",
+  text = [[
+3-1-4-2-3-2-1-1-4-3-2-2
+1-3-2-3-3-1-4-4-2-1-2-3
+3-2-1-1-3-4-2-2-1-3-4-1
+]]
+}
+
+dialog{
+  id = "dungeon_1.big_code_completed",
+  text = [[
+I told you so!
+]]
+}
+
+dialog{
+  id = "dungeon_1.big_code_ok",
+  text = [[
+Beginning of the code
+detected.
+Access: authorized.
+But if you want some
+advice, if you enter
+the rest of the code,
+nothing will happen.
+]]
+}
+
+dialog{
+  id = "dungeon_1.boss_hint_stone",
+  text = [[
+Congratulations $v.
+But our princess is in
+another castle.
+]]
+}
+
+dialog{
+  id = "dungeon_1.danger_north_sign",
+  text = [[
+North: hazard
+Do not enter please.
+]]
+}
+
+dialog{
+  id = "dungeon_1.danger_south_sign",
+  text = [[
+South: hazard
+Enter at your own risk.
+]]
+}
+
+dialog{
+  id = "dungeon_1.danger_west_sign",
+  text = [[
+West: hazard
+It would be a bad idea
+to go there.
+]]
+}
+
+dialog{
+  id = "dungeon_1.ganon",
+  text = [[
+Princess Zelda?
+No, she's not here.
+
+You went with her, we
+all saw you.
+
+Moreover, no one
+expected she would
+end the evening
+at your place
+yesterday!
+
+But she did!
+
+
+We must believe she
+finds you charming...
+
+You thought I kidnapped
+her? Ha ha ha ha ha!
+
+In short, she isn't
+here. Did you look
+everywhere in your
+home?
+
+
+You should take a
+look around your
+house from time to
+time. Meanwhile, I'm
+not against a little
+deathmatch.
+En guard!
+]]
+}
+
+dialog{
+  id = "dungeon_1.lizarmen_sign",
+  text = [[
+In tribute to the worst
+mini-boss of Zelda
+fangame history.
+]]
+}
+
+dialog{
+  id = "dungeon_1.small_key_danger_east",
+  text = [[
+But don't go to East,
+it's surely dangerous.
+]]
+}
+
+dialog{
+  id = "dungeon_1.stupid_run_sign",
+  text = [[
+On your right: 
+tribute to a really
+stupid test.
+]]
+}
+
+dialog{
+  id = "dungeon_1.welcome",
+  text = [[
+        Level 2       
+ Temple of Stupidities 
+]]
+}
+
+dialog{
+  id = "found_fairy",
+  icon = "81",
+  next = "found_fairy.1",
+  skip = "all",
+  text = [[
+You found a Fairy,
+that's cool!
+]]
+}
+
+dialog{
+  id = "found_fairy.1",
+  icon = "-1",
+  question = "1",
+  skip = "none",
+  text = [[
+You found a fairy!
+Recover Hearts now
+Keep her in a Bottle
+]]
+}
+
+dialog{
+  id = "found_fairy.no_empty_bottle",
+  text = [[
+You don't have a
+Magic Bottle!
+]]
+}
+
+dialog{
+  id = "found_piece_of_heart.first",
+  icon = "75",
+  text = [[
+Don't even THINK
+about it: you need
+3 more of them to
+have a new Heart.
+]]
+}
+
+dialog{
+  id = "found_piece_of_heart.fourth",
+  icon = "78",
+  text = [[
+You found 4 Pieces
+of Heart. You gain a
+new Heart!
+]]
+}
+
+dialog{
+  id = "found_piece_of_heart.second",
+  icon = "76",
+  text = [[
+Just two more!
+]]
+}
+
+dialog{
+  id = "found_piece_of_heart.third",
+  icon = "77",
+  text = [[
+Just one more!
+Get ready for
+the party!
+]]
+}
+
+dialog{
+  id = "found_water",
+  icon = "8",
+  question = "1",
+  text = [[
+Do you want to fill
+your Magic Bottle
+
+with water?
+Yes
+No
+]]
+}
+
+dialog{
+  id = "found_water.no_bottle",
+  text = [[
+You found water,
+but you don't have
+a Magic Bottle
+to store it...
+]]
+}
+
+dialog{
+  id = "found_water.no_empty_bottle",
+  icon = "8",
+  text = [[
+You found water,
+but you need an
+empty Magic Bottle
+to store it...
+]]
+}
+
+dialog{
+  id = "freaking_cave_indic1",
+  text = [[
+Feeling harassed?
+
+Run!
+]]
+}
+
+dialog{
+  id = "freaking_cave_indic2",
+  text = [[
+Sorry, we didn't have
+enough Rupees to buy a
+new chest.
+]]
+}
+
+dialog{
+  id = "freaking_cave_teleporter",
+  text = [[
+A mysterious power
+prevents you from using
+the teleporter.
+]]
+}
+
+dialog{
+  id = "geek_house.geek",
+  text = [[
+
+           ...
+
+I interact socially
+through my sheets
+pasted on the walls.
+]]
+}
+
 dialog{
   id = "geek_house.sign_a",
   text = [[
@@ -4311,7 +3902,6 @@ Iteration and Learning
 the Game of Tetris.
 ]]
 }
------------------------
 
 dialog{
   id = "geek_house.sign_b",
@@ -4326,7 +3916,6 @@ case 5: break;
 cases for this sign. */
 ]]
 }
------------------------
 
 dialog{
   id = "geek_house.sign_c",
@@ -4336,7 +3925,6 @@ Schrödinger's cat.
 Dead and alive.
 ]]
 }
------------------------
 
 dialog{
   id = "geek_house.sign_d",
@@ -4344,7 +3932,6 @@ dialog{
 There is no spoon.
 ]]
 }
------------------------
 
 dialog{
   id = "geek_house.sign_e",
@@ -4352,7 +3939,6 @@ dialog{
 42
 ]]
 }
------------------------
 
 dialog{
   id = "geek_house.sign_f",
@@ -4360,7 +3946,6 @@ dialog{
 The cake is a lie.
 ]]
 }
------------------------
 
 dialog{
   id = "geek_house.sign_g",
@@ -4369,7 +3954,6 @@ I have a bad feeling
 about this.
 ]]
 }
------------------------
 
 dialog{
   id = "geek_house.sign_h",
@@ -4377,7 +3961,6 @@ dialog{
 TODO
 ]]
 }
------------------------
 
 dialog{
   id = "geek_house.sign_i",
@@ -4389,7 +3972,6 @@ What the hell
 is a gigawatt?
 ]]
 }
------------------------
 
 dialog{
   id = "geek_house.sign_j",
@@ -4398,7 +3980,163 @@ Chuck Norris finished
 Zelda unarmed.
 ]]
 }
------------------------
+
+dialog{
+  id = "link_cave.angry_zelda",
+  text = [[
+You!!! You locked me
+here then forgot me!
+
+You let me rot in
+the cellar!
+
+You and your buddies
+are just alcoholics!
+
+This is not funny at
+all!!!
+
+This time, I'm tired of
+your antics!
+I'll get angry!!!
+HAAAAAAAAAAAAAAAAAA!!!
+]]
+}
+
+dialog{
+  id = "link_house.intro",
+  text = [[
+$1Ancient legends tell
+that long ago there was
+a beautiful land
+named Hyrule.$0$0
+This kingdom flourished
+under the blessing of
+three goddesses.
+
+
+After creation of the
+world, these three
+goddesses left a
+symbol of their
+passage in the form of
+the Triforce.$0$0
+Seven wise men sealed
+the Triforce in the
+Golden Earth.
+This text is written
+very slowly and you
+can't pass it.$0$0
+It's also punctuated
+with boring pauses.$0$0
+
+You really want to
+start playing, but
+this uninteresting text
+scrolls on in a solemn
+tone and in an ambiance
+of legend,
+so you're stuck
+dealing with it.
+
+$3OK, I abbreviate.
+
+
+It's the morning. You
+wake up near your bed
+and your head is
+killing you.
+
+
+You don't remember
+yesterday and you don't
+have your equipment!
+Oh I forgot: Princess
+Zelda disappeared.
+
+Your turn!
+]]
+}
+
+dialog{
+  id = "maison_boulet.boulet",
+  text = [[
+XD lol! Zelda xd
+:-) lol xd :D big 
+kiss u sux lol :D!
+]]
+}
+
+dialog{
+  id = "maison_boulet.fakechest",
+  text = [[
+lololol!
+You're so unlucky!!
+XD
+]]
+}
+
+dialog{
+  id = "maison_pots.sign",
+  text = [[
+You really want to
+break them all?
+]]
+}
+
+dialog{
+  id = "outside_fields_NE.cursed_cave_sign",
+  text = [[
+    - Cursed Cave -    
+   Entrance sealed up  
+   for your security   
+]]
+}
+
+dialog{
+  id = "outside_fields_NE.indic",
+  text = [[
+West: Castle
+
+
+North:
+Sandpit Desert
+Mount Typython
+South: Pub
+
+
+East: a little bit
+difficult to explain.
+Go and see yourself.
+]]
+}
+
+dialog{
+  id = "outside_fields_NE.south_sign",
+  text = [[
+South:
+Triforcizzle Marsh
+
+West:
+Village
+
+North:
+Sandpit Desert
+Mount Typython
+]]
+}
+
+dialog{
+  id = "outside_fields_NE.tipiton_sign",
+  text = [[
+Top of Mount Typython
+
+
+Altitude:
+Not really high,
+actually...
+]]
+}
 
 dialog{
   id = "outside_fields_NE_girly_sign",
@@ -4407,35 +4145,294 @@ We respect gender
 equality too!
 ]]
 }
------------------------
 
 dialog{
-  id = "outside_fields_SO_endofgame1",
+  id = "outside_fields_NO.castle_guard",
   text = [[
-Warp to the end of the
-game.
-
--- out of order --
+Sorry, we lost the key.
+We can't open it for
+you.
 ]]
 }
------------------------
 
 dialog{
-  id = "outside_fields_SO_sh",
+  id = "outside_fields_NO.drunk",
   text = [[
-Hidden sign!
+You don't remember your
+party last night?
+
+Me neither...
+
+
+It happens all the
+time.
 ]]
 }
------------------------
 
 dialog{
-  id = "outside_fields_SO_mailbox",
+  id = "outside_fields_NO.guy_a",
   text = [[
-This is a really boring
-mailbox...
+Did you lose something?
+
+
+Did you take a look
+around the Lost and
+Found Office?
 ]]
 }
------------------------
+
+dialog{
+  id = "outside_fields_NO.lady_b",
+  text = [[
+You lost Zelda?
+...
+
+**Unworthy husband...**
+
+
+No, I don't know where
+she is.
+]]
+}
+
+dialog{
+  id = "outside_fields_NO.lawn_master",
+  text = [[
+I'll give you 100
+Rupees if you mow the
+lawn.
+]]
+}
+
+dialog{
+  id = "outside_fields_NO_goa",
+  text = [[
+Find the secret of the
+golden lol.
+]]
+}
+
+dialog{
+  id = "outside_fields_NO_indic",
+  text = [[
+West: Castle
+East: Sandpit Desert
+Mount Typython
+South East:
+Lost and Found Office
+and maybe more.
+Under your feet:
+Green grass
+
+Above:
+Nothing or nothing
+that you can see.
+]]
+}
+
+dialog{
+  id = "outside_fields_SE.temple_door_closed",
+  text = [[
+It's locked...
+]]
+}
+
+dialog{
+  id = "outside_fields_SE.west_sign",
+  text = [[
+South-East:
+Triforcizzle Marsh
+
+West:
+Lost and Found Office
+
+North: 
+Village
+
+North-East: 
+Sandpit Desert
+Mount Typython
+]]
+}
+
+dialog{
+  id = "outside_fields_SE.yoda_finished",
+  skip = "all",
+  text = [[
+Through the
+Triforcizzle things
+you will see.
+Other places.
+The future... the past.
+Old friends long gone.
+]]
+}
+
+dialog{
+  id = "outside_fields_SE.yoda_give_sword",
+  text = [[
+Strong I am with the
+Triforcizzle, but not
+that strong.
+Twilight is upon me
+and soon, night must
+fall.
+No more training do you
+require.
+
+That is the way of
+things. The way of the
+Triforcizzle.
+]]
+}
+
+dialog{
+  id = "outside_fields_SE.yoda_quote_1",
+  skip = "all",
+  text = [[
+No. Try not. Jump or
+jump not. There is no
+try.
+]]
+}
+
+dialog{
+  id = "outside_fields_SE.yoda_quote_10",
+  skip = "all",
+  text = [[
+Good relationship I
+maintain with Cookies.
+]]
+}
+
+dialog{
+  id = "outside_fields_SE.yoda_quote_11",
+  skip = "all",
+  text = [[
+Hard to see, the Dark
+Side is.
+]]
+}
+
+dialog{
+  id = "outside_fields_SE.yoda_quote_2",
+  skip = "all",
+  text = [[
+Link, use the
+Triforcizzle.
+]]
+}
+
+dialog{
+  id = "outside_fields_SE.yoda_quote_3",
+  skip = "all",
+  text = [[
+Always in motion is the
+future.
+]]
+}
+
+dialog{
+  id = "outside_fields_SE.yoda_quote_4",
+  skip = "all",
+  text = [[
+When 900 years you
+reach, look as good,
+you will not.
+]]
+}
+
+dialog{
+  id = "outside_fields_SE.yoda_quote_5",
+  skip = "all",
+  text = [[
+Fear the dark side of
+the Triforcizzle, you
+must.
+]]
+}
+
+dialog{
+  id = "outside_fields_SE.yoda_quote_6",
+  skip = "all",
+  text = [[
+Always two there are.
+No more, no less.
+]]
+}
+
+dialog{
+  id = "outside_fields_SE.yoda_quote_7",
+  skip = "all",
+  text = [[
+Lead you to Zelda I
+can. But now, we're
+going to eat.
+]]
+}
+
+dialog{
+  id = "outside_fields_SE.yoda_quote_8",
+  skip = "all",
+  text = [[
+Ready you must be.
+How can you know?
+]]
+}
+
+dialog{
+  id = "outside_fields_SE.yoda_quote_9",
+  skip = "all",
+  text = [[
+May the Triforcizzle be
+with you.
+]]
+}
+
+dialog{
+  id = "outside_fields_SO.attente_a",
+  text = [[
+    LOST AND FOUND     
+        OFFICE         
+
+From this point, one
+day of waiting.
+]]
+}
+
+dialog{
+  id = "outside_fields_SO.attente_b",
+  text = [[
+    LOST AND FOUND     
+        OFFICE         
+
+From this point,
+a twelve-hour wait.
+]]
+}
+
+dialog{
+  id = "outside_fields_SO.attente_c",
+  text = [[
+    LOST AND FOUND     
+        OFFICE         
+
+From this point,
+a six-hour wait.
+]]
+}
+
+dialog{
+  id = "outside_fields_SO.attente_d",
+  text = [[
+    LOST AND FOUND     
+        OFFICE         
+
+You're almost there!
+You just have to line
+up inside.
+]]
+}
 
 dialog{
   id = "outside_fields_SO.chest_link_house",
@@ -4448,25 +4445,36 @@ would find a treasure
 just behind your house?
 ]]
 }
------------------------
 
 dialog{
-  id = "outside_fields_SO.guard_nok",
+  id = "outside_fields_SO.forest_monkey_end",
   text = [[
-No freeloaders!
-Go stand in line like
-everyone else.
+Ook! Ook! Ook!
 ]]
 }
------------------------
 
 dialog{
-  id = "outside_fields_SO.guard_ok",
+  id = "outside_fields_SO.forest_monkey_give_boots",
+  next = "outside_fields_SO.forest_monkey_end",
   text = [[
-Have a nice day.
+Ook! Great, an apple
+pie!!!
+Here are your boots.
+...
+
+
+Laces are missing?
+
+
+Well...
+
+
+I was hungry!!!
+
+
+You had to move faster!
 ]]
 }
------------------------
 
 dialog{
   id = "outside_fields_SO.forest_monkey_start",
@@ -4497,485 +4505,47 @@ Bring me an apple pie
 and we'll trade.
 ]]
 }
------------------------
 
 dialog{
-  id = "outside_fields_SO.forest_monkey_give_boots",
-  next = "outside_fields_SO.forest_monkey_end",
+  id = "outside_fields_SO.guard_nok",
   text = [[
-Ook! Great, an apple
-pie!!!
-Here are your boots.
-...
-
-
-Laces are missing?
-
-
-Well...
-
-
-I was hungry!!!
-
-
-You had to move faster!
+No freeloaders!
+Go stand in line like
+everyone else.
 ]]
 }
------------------------
 
 dialog{
-  id = "outside_fields_SO.forest_monkey_end",
+  id = "outside_fields_SO.guard_ok",
   text = [[
-Ook! Ook! Ook!
+Have a nice day.
 ]]
 }
------------------------
 
 dialog{
-  id = "outside_fields_SE.temple_door_closed",
+  id = "outside_fields_SO_endofgame1",
   text = [[
-It's locked...
+Warp to the end of the
+game.
+
+-- out of order --
 ]]
 }
------------------------
 
 dialog{
-  id = "outside_fields_SE.yoda_quote_1",
-  skip = "all",
+  id = "outside_fields_SO_mailbox",
   text = [[
-No. Try not. Jump or
-jump not. There is no
-try.
+This is a really boring
+mailbox...
 ]]
 }
------------------------
 
 dialog{
-  id = "outside_fields_SE.yoda_quote_2",
-  skip = "all",
+  id = "outside_fields_SO_sh",
   text = [[
-Link, use the
-Triforcizzle.
+Hidden sign!
 ]]
 }
------------------------
-
-dialog{
-  id = "outside_fields_SE.yoda_quote_3",
-  skip = "all",
-  text = [[
-Always in motion is the
-future.
-]]
-}
------------------------
-
-dialog{
-  id = "outside_fields_SE.yoda_quote_4",
-  skip = "all",
-  text = [[
-When 900 years you
-reach, look as good,
-you will not.
-]]
-}
------------------------
-
-dialog{
-  id = "outside_fields_SE.yoda_quote_5",
-  skip = "all",
-  text = [[
-Fear the dark side of
-the Triforcizzle, you
-must.
-]]
-}
------------------------
-
-dialog{
-  id = "outside_fields_SE.yoda_quote_6",
-  skip = "all",
-  text = [[
-Always two there are.
-No more, no less.
-]]
-}
------------------------
-
-dialog{
-  id = "outside_fields_SE.yoda_quote_7",
-  skip = "all",
-  text = [[
-Lead you to Zelda I
-can. But now, we're
-going to eat.
-]]
-}
------------------------
-
-dialog{
-  id = "outside_fields_SE.yoda_quote_8",
-  skip = "all",
-  text = [[
-Ready you must be.
-How can you know?
-]]
-}
------------------------
-
-dialog{
-  id = "outside_fields_SE.yoda_quote_9",
-  skip = "all",
-  text = [[
-May the Triforcizzle be
-with you.
-]]
-}
------------------------
-
-dialog{
-  id = "outside_fields_SE.yoda_quote_10",
-  skip = "all",
-  text = [[
-Good relationship I
-maintain with Cookies.
-]]
-}
------------------------
-
-dialog{
-  id = "outside_fields_SE.yoda_quote_11",
-  skip = "all",
-  text = [[
-Hard to see, the Dark
-Side is.
-]]
-}
------------------------
-
-dialog{
-  id = "outside_fields_SE.yoda_give_sword",
-  text = [[
-Strong I am with the
-Triforcizzle, but not
-that strong.
-Twilight is upon me
-and soon, night must
-fall.
-No more training do you
-require.
-
-That is the way of
-things. The way of the
-Triforcizzle.
-]]
-}
------------------------
-
-dialog{
-  id = "outside_fields_SE.yoda_finished",
-  skip = "all",
-  text = [[
-Through the
-Triforcizzle things
-you will see.
-Other places.
-The future... the past.
-Old friends long gone.
-]]
-}
------------------------
-
-dialog{
-  id = "outside_fields_SE.west_sign",
-  text = [[
-South-East:
-Triforcizzle Marsh
-
-West:
-Lost and Found Office
-
-North: 
-Village
-
-North-East: 
-Sandpit Desert
-Mount Typython
-]]
-}
------------------------
-
-dialog{
-  id = "outside_fields_NO_indic",
-  text = [[
-West: Castle
-East: Sandpit Desert
-Mount Typython
-South East:
-Lost and Found Office
-and maybe more.
-Under your feet:
-Green grass
-
-Above:
-Nothing or nothing
-that you can see.
-]]
-}
------------------------
-
-dialog{
-  id = "outside_fields_NO_goa",
-  text = [[
-Find the secret of the
-golden lol.
-]]
-}
------------------------
-
-dialog{
-  id = "outside_fields_NO.lawn_master",
-  text = [[
-I'll give you 100
-Rupees if you mow the
-lawn.
-]]
-}
------------------------
-
-dialog{
-  id = "outside_fields_NO.drunk",
-  text = [[
-You don't remember your
-party last night?
-
-Me neither...
-
-
-It happens all the
-time.
-]]
-}
------------------------
-
-dialog{
-  id = "outside_fields_NO.lady_b",
-  text = [[
-You lost Zelda?
-...
-
-**Unworthy husband...**
-
-
-No, I don't know where
-she is.
-]]
-}
------------------------
-
-dialog{
-  id = "outside_fields_NO.guy_a",
-  text = [[
-Did you lose something?
-
-
-Did you take a look
-around the Lost and
-Found Office?
-]]
-}
------------------------
-
-dialog{
-  id = "outside_fields_NO.castle_guard",
-  text = [[
-Sorry, we lost the key.
-We can't open it for
-you.
-]]
-}
------------------------
-
-dialog{
-  id = "outside_fields_NE.cursed_cave_sign",
-  text = [[
-    - Cursed Cave -    
-   Entrance sealed up  
-   for your security   
-]]
-}
------------------------
-
-dialog{
-  id = "outside_fields_NE.tipiton_sign",
-  text = [[
-Top of Mount Typython
-
-
-Altitude:
-Not really high,
-actually...
-]]
-}
------------------------
-
-dialog{
-  id = "outside_fields_NE.indic",
-  text = [[
-West: Castle
-
-
-North:
-Sandpit Desert
-Mount Typython
-South: Pub
-
-
-East: a little bit
-difficult to explain.
-Go and see yourself.
-]]
-}
------------------------
-
-dialog{
-  id = "outside_fields_NE.south_sign",
-  text = [[
-South:
-Triforcizzle Marsh
-
-West:
-Village
-
-North:
-Sandpit Desert
-Mount Typython
-]]
-}
------------------------
-
-dialog{
-  id = "geek_house.geek",
-  text = [[
-
-           ...
-
-I interact socially
-through my sheets
-pasted on the walls.
-]]
-}
------------------------
-
-dialog{
-  id = "outside_fields_SO.attente_a",
-  text = [[
-    LOST AND FOUND     
-        OFFICE         
-
-From this point, one
-day of waiting.
-]]
-}
------------------------
-
-dialog{
-  id = "outside_fields_SO.attente_b",
-  text = [[
-    LOST AND FOUND     
-        OFFICE         
-
-From this point,
-a twelve-hour wait.
-]]
-}
------------------------
-
-dialog{
-  id = "outside_fields_SO.attente_c",
-  text = [[
-    LOST AND FOUND     
-        OFFICE         
-
-From this point,
-a six-hour wait.
-]]
-}
------------------------
-
-dialog{
-  id = "outside_fields_SO.attente_d",
-  text = [[
-    LOST AND FOUND     
-        OFFICE         
-
-You're almost there!
-You just have to line
-up inside.
-]]
-}
------------------------
-
-dialog{
-  id = "freaking_cave_indic1",
-  text = [[
-Feeling harassed?
-
-Run!
-]]
-}
------------------------
-
-dialog{
-  id = "freaking_cave_indic2",
-  text = [[
-Sorry, we didn't have
-enough Rupees to buy a
-new chest.
-]]
-}
------------------------
-
-dialog{
-  id = "freaking_cave_teleporter",
-  text = [[
-A mysterious power
-prevents you from using
-the teleporter.
-]]
-}
------------------------
-
-dialog{
-  id = "shop.red_rupee",
-  next = "_unknown",
-  text = [[
-A red Rupee.
-Extremely rare!
-]]
-}
------------------------
-
-dialog{
-  id = "shop.heart_container",
-  next = "_unknown",
-  text = [[
-A Heart Container.
-Pretty common.
-]]
-}
------------------------
-
-dialog{
-  id = "shop.huge_rupee_bag",
-  next = "_unknown",
-  text = [[
-A Huge Rupee Bag.
-Allows to carry up
-to 999 Rupees!
-]]
-}
------------------------
 
 dialog{
   id = "shop.apple_pie",
@@ -4986,7 +4556,84 @@ fresh, but don't give a
 fuck, buy it please.
 ]]
 }
------------------------
+
+dialog{
+  id = "shop.heart_container",
+  next = "_unknown",
+  text = [[
+A Heart Container.
+Pretty common.
+]]
+}
+
+dialog{
+  id = "shop.huge_rupee_bag",
+  next = "_unknown",
+  text = [[
+A Huge Rupee Bag.
+Allows to carry up
+to 999 Rupees!
+]]
+}
+
+dialog{
+  id = "shop.lady_a",
+  text = [[
+Zelda?
+No, I didn't see her.
+]]
+}
+
+dialog{
+  id = "shop.last_night_guy",
+  text = [[
+Hey bro!
+Everything OK after
+last night?
+How's your head?
+A bad hangover?
+]]
+}
+
+dialog{
+  id = "shop.near_wizard",
+  skip = "all",
+  text = [[
+This guy irritates me!
+This fan of witchcaft
+has been boring me with
+his stories for the
+past two hours!
+In addition, he is
+super sensitive!
+]]
+}
+
+dialog{
+  id = "shop.pub_woman",
+  text = [[
+Sorry, I've got no
+booze for you!
+]]
+}
+
+dialog{
+  id = "shop.red_rupee",
+  next = "_unknown",
+  text = [[
+A red Rupee.
+Extremely rare!
+]]
+}
+
+dialog{
+  id = "shop.salesman",
+  text = [[
+Choose what you want to
+buy... I don't have
+all day!
+]]
+}
 
 dialog{
   id = "shop.wizard",
@@ -5011,165 +4658,6 @@ It's incredible to have
 so many prejudices!
 ]]
 }
------------------------
-
-dialog{
-  id = "shop.near_wizard",
-  skip = "all",
-  text = [[
-This guy irritates me!
-This fan of witchcaft
-has been boring me with
-his stories for the
-past two hours!
-In addition, he is
-super sensitive!
-]]
-}
------------------------
-
-dialog{
-  id = "shop.last_night_guy",
-  text = [[
-Hey bro!
-Everything OK after
-last night?
-How's your head?
-A bad hangover?
-]]
-}
------------------------
-
-dialog{
-  id = "shop.pub_woman",
-  text = [[
-Sorry, I've got no
-booze for you!
-]]
-}
------------------------
-
-dialog{
-  id = "shop.lady_a",
-  text = [[
-Zelda?
-No, I didn't see her.
-]]
-}
------------------------
-
-dialog{
-  id = "shop.salesman",
-  text = [[
-Choose what you want to
-buy... I don't have
-all day!
-]]
-}
------------------------
-
-dialog{
-  id = "desert.east_house.first_time",
-  text = [[
-To the North is the
-Cursed Cave.
-
-Nobody has ever come
-back. Don't go there!
-]]
-}
------------------------
-
-dialog{
-  id = "desert.east_house.back_from_dead",
-  text = [[
-What? You went to
-the Cursed Cave?
-
-The youth today is
-really reckless!
-
-We should have more
-warnings on the
-dangers of the cave.
-I told you so: you
-mustn't go there.
-
-You're not following
-the game! If you wanna
-see Ganon, nothing
-could be simpler. Take
-the key in my room.
-
-You could have said it
-right away instead of
-going on adventures.
-]]
-}
------------------------
-
-dialog{
-  id = "desert.east_house.bone_key",
-  text = [[
-This key opens
-Ganon's hideout.
-]]
-}
------------------------
-
-dialog{
-  id = "desert.west_house",
-  text = [[
-Many adventurers have
-dared enter the Cursed
-Cave.
-We have never heard
-from them again...
-
-These days, access
-is barred to protect
-curious people.
-]]
-}
------------------------
-
-dialog{
-  id = "desert.small_house",
-  text = [[
-If you try to kill
-yourself, a good way to
-do this is to go to the
-Cursed Cave, to the
-North.
-
-Pain and death are
-guaranteed.
-]]
-}
------------------------
-
-dialog{
-  id = "link_cave.angry_zelda",
-  text = [[
-You!!! You locked me
-here then forgot me!
-
-You let me rot in
-the cellar!
-
-You and your buddies
-are just alcoholics!
-
-This is not funny at
-all!!!
-
-This time, I'm tired of
-your antics!
-I'll get angry!!!
-HAAAAAAAAAAAAAAAAAA!!!
-]]
-}
------------------------
 
 dialog{
   id = "the_end.credits",
@@ -5245,63 +4733,77 @@ reaching the end!
  www.solarus-games.org
 ]]
 }
------------------------
 
 dialog{
-  id = "link_house.intro",
+  id = "torch.need_lamp",
   text = [[
-$1Ancient legends tell
-that long ago there was
-a beautiful land
-named Hyrule.$0$0
-This kingdom flourished
-under the blessing of
-three goddesses.
-
-
-After creation of the
-world, these three
-goddesses left a
-symbol of their
-passage in the form of
-the Triforce.$0$0
-Seven wise men sealed
-the Triforce in the
-Golden Earth.
-This text is written
-very slowly and you
-can't pass it.$0$0
-It's also punctuated
-with boring pauses.$0$0
-
-You really want to
-start playing, but
-this uninteresting text
-scrolls on in a solemn
-tone and in an ambiance
-of legend,
-so you're stuck
-dealing with it.
-
-$3OK, I abbreviate.
-
-
-It's the morning. You
-wake up near your bed
-and your head is
-killing you.
-
-
-You don't remember
-yesterday and you don't
-have your equipment!
-Oh I forgot: Princess
-Zelda disappeared.
-
-Your turn!
+You must find a way
+to light this torch.
 ]]
 }
------------------------
+
+dialog{
+  id = "use_apples",
+  icon = "16",
+  question = "1",
+  text = [[
+Eat an apple
+to recover
+one Heart.
+Eat one now?
+Yes
+No
+]]
+}
+
+dialog{
+  id = "use_bottle_with_water",
+  icon = "8",
+  question = "1",
+  text = [[
+Your Magic Bottle is
+filled with water.
+
+Empty it?
+Yes
+No
+]]
+}
+
+dialog{
+  id = "use_croissants",
+  icon = "18",
+  question = "1",
+  text = [[
+A Croissant
+recovers 7 Hearts.
+
+Eat one now?
+Yes
+No
+]]
+}
+
+dialog{
+  id = "use_pains_au_chocolat",
+  icon = "17",
+  question = "1",
+  text = [[
+A Chocolate
+Croissant recovers
+three Hearts.
+Eat one now?
+Yes
+No
+]]
+}
+
+dialog{
+  id = "water_house.after",
+  text = [[
+Long live water!
+]]
+}
 
 dialog{
   id = "water_house.give_bottle",
@@ -5314,170 +4816,4 @@ water bottle. It can't
 be bad for you!
 ]]
 }
------------------------
-
-dialog{
-  id = "water_house.after",
-  text = [[
-Long live water!
-]]
-}
------------------------
-
-dialog{
-  id = "dungeon_1.welcome",
-  text = [[
-        Level 2       
- Temple of Stupidities 
-]]
-}
------------------------
-
-dialog{
-  id = "dungeon_1.lizarmen_sign",
-  text = [[
-In tribute to the worst
-mini-boss of Zelda
-fangame history.
-]]
-}
------------------------
-
-dialog{
-  id = "dungeon_1.big_code",
-  text = [[
-3-1-4-2-3-2-1-1-4-3-2-2
-1-3-2-3-3-1-4-4-2-1-2-3
-3-2-1-1-3-4-2-2-1-3-4-1
-]]
-}
------------------------
-
-dialog{
-  id = "dungeon_1.big_code_ok",
-  text = [[
-Beginning of the code
-detected.
-Access: authorized.
-But if you want some
-advice, if you enter
-the rest of the code,
-nothing will happen.
-]]
-}
------------------------
-
-dialog{
-  id = "dungeon_1.big_code_completed",
-  text = [[
-I told you so!
-]]
-}
------------------------
-
-dialog{
-  id = "dungeon_1.danger_north_sign",
-  text = [[
-North: hazard
-Do not enter please.
-]]
-}
------------------------
-
-dialog{
-  id = "dungeon_1.danger_west_sign",
-  text = [[
-West: hazard
-It would be a bad idea
-to go there.
-]]
-}
------------------------
-
-dialog{
-  id = "dungeon_1.danger_south_sign",
-  text = [[
-South: hazard
-Enter at your own risk.
-]]
-}
------------------------
-
-dialog{
-  id = "dungeon_1.small_key_danger_east",
-  text = [[
-But don't go to East,
-it's surely dangerous.
-]]
-}
------------------------
-
-dialog{
-  id = "dungeon_1.stupid_run_sign",
-  text = [[
-On your right: 
-tribute to a really
-stupid test.
-]]
-}
------------------------
-
-dialog{
-  id = "dungeon_1.2f_sw_water_removed",
-  text = [[
-Far away... a noise...
-]]
-}
------------------------
-
-dialog{
-  id = "dungeon_1.boss_hint_stone",
-  text = [[
-Congratulations $v.
-But our princess is in
-another castle.
-]]
-}
------------------------
-
-dialog{
-  id = "dungeon_1.ganon",
-  text = [[
-Princess Zelda?
-No, she's not here.
-
-You went with her, we
-all saw you.
-
-Moreover, no one
-expected she would
-end the evening
-at your place
-yesterday!
-
-But she did!
-
-
-We must believe she
-finds you charming...
-
-You thought I kidnapped
-her? Ha ha ha ha ha!
-
-In short, she isn't
-here. Did you look
-everywhere in your
-home?
-
-
-You should take a
-look around your
-house from time to
-time. Meanwhile, I'm
-not against a little
-deathmatch.
-En guard!
-]]
-}
------------------------
 
