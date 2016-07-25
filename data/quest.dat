@@ -7,8 +7,8 @@ quest{
 A parodic game that the Solarus tream released on April 1st, 2011.
 Though it is a big April 1st joke, it is also a real, full game with two huge dungeons. ]],
   author = "Christopho",
-  quest_version = "1.10.3",
-  release_date = "20151220",
+  quest_version = "1.11.0",
+  release_date = "",
   website = "http://www.solarus-games.org",
   normal_quest_size = "320x240",
   min_quest_size = "320x200",
