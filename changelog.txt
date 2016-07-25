@@ -1,3 +1,8 @@
+zsxd 1.11.0 (in progress)
+
+* Upgrade to Solarus 1.5.0.
+* Fix typo in French dialogs.
+
 zsxd 1.10.3 (2015-12-20)
 
 * Fix game-over stopped sometimes using a workaround.
