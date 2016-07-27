@@ -4,7 +4,8 @@ properties{
   width = 1024,
   height = 1024,
   world = "outside_world",
-  num_layers = 3,
+  min_layer = 0,
+  max_layer = 2,
   tileset = "1",
   music = "overworld",
 }
@@ -8459,7 +8460,6 @@ enemy{
   name = "enemy",
   direction = 3,
   breed = "tentacle",
-  rank = 0,
   treasure_name = "random",
   treasure_variant = 1,
 }
@@ -8471,7 +8471,6 @@ enemy{
   name = "enemy_2",
   direction = 3,
   breed = "tentacle",
-  rank = 0,
   treasure_name = "random",
   treasure_variant = 1,
 }
@@ -8483,7 +8482,6 @@ enemy{
   name = "enemy_4",
   direction = 3,
   breed = "tentacle",
-  rank = 0,
   treasure_name = "random",
   treasure_variant = 1,
 }
@@ -8495,7 +8493,6 @@ enemy{
   name = "enemy_5",
   direction = 3,
   breed = "tentacle",
-  rank = 0,
   treasure_name = "random",
   treasure_variant = 1,
 }
@@ -8507,7 +8504,6 @@ enemy{
   name = "enemy_3",
   direction = 3,
   breed = "tentacle",
-  rank = 0,
   treasure_name = "random",
   treasure_variant = 1,
 }
@@ -8519,7 +8515,6 @@ enemy{
   name = "enemy_6",
   direction = 3,
   breed = "tentacle",
-  rank = 0,
   treasure_name = "random",
   treasure_variant = 1,
 }
@@ -8531,7 +8526,6 @@ enemy{
   name = "enemy_8",
   direction = 3,
   breed = "tentacle",
-  rank = 0,
   treasure_name = "random",
   treasure_variant = 1,
 }
@@ -8543,7 +8537,6 @@ enemy{
   name = "enemy_9",
   direction = 3,
   breed = "tentacle",
-  rank = 0,
   treasure_name = "random",
   treasure_variant = 1,
 }
@@ -8555,7 +8548,6 @@ enemy{
   name = "enemy_10",
   direction = 3,
   breed = "tentacle",
-  rank = 0,
   treasure_name = "random",
   treasure_variant = 1,
 }
@@ -8567,7 +8559,6 @@ enemy{
   name = "enemy_11",
   direction = 3,
   breed = "tentacle",
-  rank = 0,
   treasure_name = "random",
   treasure_variant = 1,
 }
@@ -8579,7 +8570,6 @@ enemy{
   name = "enemy_12",
   direction = 3,
   breed = "tentacle",
-  rank = 0,
   treasure_name = "random",
   treasure_variant = 1,
 }
@@ -8591,7 +8581,6 @@ enemy{
   name = "enemy_13",
   direction = 3,
   breed = "tentacle",
-  rank = 0,
   treasure_name = "random",
   treasure_variant = 1,
 }

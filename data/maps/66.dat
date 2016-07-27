@@ -5,7 +5,8 @@ properties{
   height = 912,
   world = "dungeon_1",
   floor = 1,
-  num_layers = 3,
+  min_layer = 0,
+  max_layer = 2,
   tileset = "8",
   music = "same",
 }
@@ -9788,7 +9789,6 @@ enemy{
   name = "enemy_2",
   direction = 3,
   breed = "creeper",
-  rank = 0,
   treasure_name = "random",
   treasure_variant = 1,
 }
@@ -9800,7 +9800,6 @@ enemy{
   name = "enemy_4",
   direction = 3,
   breed = "creeper",
-  rank = 0,
   treasure_name = "random",
   treasure_variant = 1,
 }
@@ -9812,7 +9811,6 @@ enemy{
   name = "enemy_6",
   direction = 3,
   breed = "creeper",
-  rank = 0,
   treasure_name = "random",
   treasure_variant = 1,
 }
@@ -9824,7 +9822,6 @@ enemy{
   name = "enemy_8",
   direction = 3,
   breed = "creeper",
-  rank = 0,
   treasure_name = "random",
   treasure_variant = 1,
 }
@@ -9836,7 +9833,6 @@ enemy{
   name = "enemy_10",
   direction = 3,
   breed = "creeper",
-  rank = 0,
   treasure_name = "random",
   treasure_variant = 1,
 }
@@ -9848,7 +9844,6 @@ enemy{
   name = "enemy_12",
   direction = 3,
   breed = "creeper",
-  rank = 0,
   treasure_name = "random",
   treasure_variant = 1,
 }
@@ -9860,7 +9855,6 @@ enemy{
   name = "enemy_14",
   direction = 3,
   breed = "creeper",
-  rank = 0,
   treasure_name = "random",
   treasure_variant = 1,
 }
@@ -9872,7 +9866,6 @@ enemy{
   name = "enemy_18",
   direction = 3,
   breed = "creeper",
-  rank = 0,
   treasure_name = "random",
   treasure_variant = 1,
 }
@@ -9884,7 +9877,6 @@ enemy{
   name = "enemy_16",
   direction = 3,
   breed = "creeper",
-  rank = 0,
   treasure_name = "random",
   treasure_variant = 1,
 }
@@ -9896,7 +9888,6 @@ enemy{
   name = "enemy",
   direction = 3,
   breed = "creeper",
-  rank = 0,
   treasure_name = "random",
   treasure_variant = 1,
 }
@@ -10829,7 +10820,6 @@ enemy{
   name = "fight_enemy_4",
   direction = 3,
   breed = "globul",
-  rank = 0,
   treasure_name = "random",
   treasure_variant = 1,
 }
@@ -10841,7 +10831,6 @@ enemy{
   name = "fight_enemy_3",
   direction = 3,
   breed = "globul",
-  rank = 0,
   treasure_name = "random",
   treasure_variant = 1,
 }
@@ -10853,7 +10842,6 @@ enemy{
   name = "fight_enemy_2",
   direction = 3,
   breed = "globul",
-  rank = 0,
   treasure_name = "random",
   treasure_variant = 1,
 }
@@ -10865,7 +10853,6 @@ enemy{
   name = "fight_enemy_1",
   direction = 3,
   breed = "globul",
-  rank = 0,
   treasure_name = "random",
   treasure_variant = 1,
 }

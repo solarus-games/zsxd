@@ -320,6 +320,6 @@ local function storage_room_chest_empty()
 end
 
 for chest in map:get_entities("storage_room_empty_chest") do
-  chest.on_empty = storage_room_chest_empty
+  chest.on_opened = storage_room_chest_empty
 end
 

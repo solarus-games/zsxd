@@ -5,7 +5,8 @@ properties{
   height = 912,
   world = "dungeon_2",
   floor = 1,
-  num_layers = 3,
+  min_layer = 0,
+  max_layer = 2,
   tileset = "0",
   music = "same",
 }
@@ -9577,7 +9578,6 @@ enemy{
   name = "globul_a",
   direction = 3,
   breed = "globul",
-  rank = 0,
   treasure_name = "random",
   treasure_variant = 1,
 }

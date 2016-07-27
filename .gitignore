@@ -6,11 +6,8 @@ CMakeFiles/
 Makefile
 install_manifest.txt
 cmake_install.cmake
-*.luac
 data.solarus
 /zsxd
 error.txt
-stdout.txt
-stderr.txt
 .directory
 

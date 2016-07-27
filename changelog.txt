@@ -1,8 +1,18 @@
-zsdx 1.10.2 (in progress)
+zsxd 1.11.0 (2016-07-27)
+
+* Upgrade to Solarus 1.5.0.
+* Fix typo in French dialogs.
+
+zsxd 1.10.3 (2015-12-20)
+
+* Fix game-over stopped sometimes using a workaround.
+* Fix dialog cursor drawn at wrong position after successive questions.
+
+zsxd 1.10.2 (2015-11-22)
 
 * Upgrade to Solarus 1.4.5.
-* Make fairies play a sound when restoring life even when already full (#101).
-* Fix dialog cursor drawn at wrong position after successive questions (#105).
+* Make fairies play a sound when restoring life even when already full.
+* Fix dialog cursor drawn at wrong position after successive questions.
 
 zsxd 1.10.1 (2015-05-09)
 
@@ -24,7 +34,7 @@ zsxd 1.8.0 (2014-05-06)
 
 * Use solarus 1.2.0.
 * Spanish translation (beta). Thanks Xexio!
-* Replace fixed8.fon by a TTF font due to an SDL2 regression (#59).
+* Replace fixed8.fon by a TTF font due to an SDL2 regression.
 * Switch fullscreen also with F11.
 * Make streams non-blocking in the crazy house.
 * Fix a typo in French dialogs.

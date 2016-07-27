@@ -5,7 +5,8 @@ properties{
   height = 1136,
   world = "dungeon_1",
   floor = 1,
-  num_layers = 3,
+  min_layer = 0,
+  max_layer = 2,
   tileset = "8",
   music = "same",
 }
@@ -8296,7 +8297,6 @@ enemy{
   name = "enemy",
   direction = 3,
   breed = "bubble",
-  rank = 0,
   treasure_name = "random",
   treasure_variant = 1,
 }
@@ -8308,7 +8308,6 @@ enemy{
   name = "enemy_2",
   direction = 3,
   breed = "bubble",
-  rank = 0,
   treasure_name = "random",
   treasure_variant = 1,
 }
@@ -8320,7 +8319,6 @@ enemy{
   name = "enemy_3",
   direction = 3,
   breed = "bubble",
-  rank = 0,
   treasure_name = "random",
   treasure_variant = 1,
 }
@@ -8332,7 +8330,6 @@ enemy{
   name = "fight_room_enemy_3",
   direction = 3,
   breed = "bee_guard",
-  rank = 0,
   treasure_name = "heart",
   treasure_variant = 1,
 }
@@ -8344,7 +8341,6 @@ enemy{
   name = "fight_room_enemy_4",
   direction = 3,
   breed = "mandible",
-  rank = 0,
   treasure_name = "heart",
   treasure_variant = 1,
 }
@@ -8356,7 +8352,6 @@ enemy{
   name = "fight_room_enemy_1",
   direction = 3,
   breed = "blue_bullblin",
-  rank = 0,
   treasure_name = "heart",
   treasure_variant = 1,
 }
@@ -12814,7 +12809,6 @@ enemy{
   name = "boss",
   direction = 3,
   breed = "ganon",
-  rank = 2,
   savegame_variable = "b306",
   treasure_variant = 1,
 }
