@@ -1,4 +1,4 @@
-zsxd 1.11.0 (in progress)
+zsxd 1.11.0 (2016-07-27)
 
 * Upgrade to Solarus 1.5.0.
 * Fix typo in French dialogs.
