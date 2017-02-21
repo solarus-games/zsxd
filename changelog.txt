@@ -1,3 +1,7 @@
+Zelda Mystery of Solarus XD 1.12.0 (in progress)
+
+* Upgrade to Solarus 1.6.
+
 Zelda Mystery of Solarus XD 1.11.1 (in progress)
 
 * Fix font size in the options pause menu (#44).
