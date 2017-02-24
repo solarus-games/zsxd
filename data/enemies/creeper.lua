@@ -104,7 +104,7 @@ function enemy:go_random()
 end
 
 function enemy:go_hero()
-  
+
   local movement = sol.movement.create("target")
   movement:set_speed(40)
   movement:start(self)

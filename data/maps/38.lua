@@ -17,15 +17,15 @@ function map:on_started(destination_point)
 
   -- Few light inside the cave at start
   if not game:get_value("b90") then
-    self:set_light(1)         
+    self:set_light(1)
     torch1:set_animation("lit")
     torch2:set_animation("lit")
-  else        
+  else
     self:set_light(0)
     torch1:set_animation("unlit")
     torch2:set_animation("unlit")
     sensor_light_off:set_enabled(false)
-  end        
+  end
 
   torch2:set_animation("lit")
 end

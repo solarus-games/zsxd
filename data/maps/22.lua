@@ -155,7 +155,7 @@ GC22B.on_interaction = guichet_22B
 Vieillard.on_interaction = vieillard
 GC21.on_interaction = guichet_21
 
--- Mécanisme du coffre farceur dans la salle aux trois portes        
+-- Mécanisme du coffre farceur dans la salle aux trois portes
 function prankster_sensor_top:on_activated()
   prankster_chest:set_position(440, 509)
 end

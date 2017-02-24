@@ -11,7 +11,7 @@ function map:on_started(destination_point)
 
   -- No light inside the cave at start
   light_manager.enable_light_features(map)
-  map:set_light(0)         
+  map:set_light(0)
   -- Let the trap door opened
   map:set_doors_open("trap_door")
   -- Disable ennemies
@@ -21,7 +21,7 @@ end
 
 function sensor_close_trap_door:on_activated()
 
-  -- Closing trap door        
+  -- Closing trap door
   map:close_doors("trap_door")
   sensor_close_trap_door:set_enabled(false)
 end
@@ -34,7 +34,7 @@ end
 
 function make_appear_c2:on_activated()
   ennemy_2:set_enabled(true)
-  make_appear_c2:set_enabled(false)        
+  make_appear_c2:set_enabled(false)
 end
 
 function make_appear_c3:on_activated()

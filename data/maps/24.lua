@@ -10,7 +10,7 @@ local dialogue_trop_leger_fait = false
 
 function map:on_started(destination_point)
 
-  -- Desactivation des sensors pour la porte du couloir sans fin        
+  -- Desactivation des sensors pour la porte du couloir sans fin
   bowser_leave:set_enabled(false)
   bowser_exit:set_enabled(false)
 
@@ -77,7 +77,7 @@ local function guichet_33()
   local small_key_obtained = game:get_value("b123")
   local branche1410 = game:get_value("i1410") or 0
   if branche1410 == 3
-      and not small_key_obtained then        
+      and not small_key_obtained then
     game:start_dialog("crazy_house.guichet_33_ech_eq_3")
   elseif branche1410 >= 4
       and not small_key_obtained then
@@ -201,7 +201,7 @@ function Apothicaire:on_interaction()
   apothicaire()
 end
 
--- Link approche de la porte qui annonce le couloir sans fin        
+-- Link approche de la porte qui annonce le couloir sans fin
 function bowser_message:on_activated()
 
   if not game:get_value("b126") then
@@ -227,7 +227,7 @@ function bowser_message:on_activated()
       map:open_doors("bowser_door")
     end
     bowser_leave:set_enabled(true)
-  end        
+  end
 end
 
 -- Fermeture de la porte derrière Link après être entré
@@ -285,7 +285,7 @@ function GBS:on_moved()
     if x == 1664 and y == 797 then
       giga_bouton_pushed = true
       giga_bouton:set_activated(true)
-      infinite_corridor:set_enabled(false)        
+      infinite_corridor:set_enabled(false)
       game:set_value("b126", true)
       map:move_camera(888, 792, 250, function()
         sol.audio.play_sound("secret")

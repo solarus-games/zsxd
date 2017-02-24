@@ -14,7 +14,7 @@ local function switch_activated(switch)
 
   local switch_index = switch:get_name():match("^switch_([1-4])$")
   if switch_index ~= nil and next_switch_index <= #switches_good_order then
- 
+
     switch_index = tonumber(switch_index)
     if switch_index == switches_good_order[next_switch_index] then
       next_switch_index = next_switch_index + 1

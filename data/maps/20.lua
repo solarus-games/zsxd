@@ -25,7 +25,7 @@ end
 
 function map:on_opening_transition_finished(destination_point)
 
-  -- Affichage du nom du donjon quand on entre  
+  -- Affichage du nom du donjon quand on entre
   if destination_point == start_position then
     game:start_dialog("crazy_house.title")
   end
