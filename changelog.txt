@@ -1,6 +1,8 @@
 Zelda Mystery of Solarus XD 1.12.0 (in progress)
 
 * Upgrade to Solarus 1.6.
+* Add the Solarus team logo.
+* Change the sound of the Solarus logo.
 
 Zelda Mystery of Solarus XD 1.11.1 (in progress)
 
