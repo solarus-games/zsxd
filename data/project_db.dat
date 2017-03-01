@@ -227,6 +227,7 @@ sound{ id = "chest_open", description = "chest_open" }
 sound{ id = "creeper", description = "creeper" }
 sound{ id = "cursor", description = "cursor" }
 sound{ id = "danger", description = "danger" }
+sound{ id = "diarandor/solarus_logo", description = "Solarus logo" }
 sound{ id = "door_closed", description = "door_closed" }
 sound{ id = "door_open", description = "door_open" }
 sound{ id = "door_unlocked", description = "door_unlocked" }
@@ -282,8 +283,11 @@ sound{ id = "sm64_memario", description = "sm64_memario" }
 sound{ id = "smb_1up", description = "smb_1up" }
 sound{ id = "smb_coin", description = "smb_coin" }
 sound{ id = "smb_powerup", description = "smb_powerup" }
-sound{ id = "solarus_logo", description = "Solarus logo" }
 sound{ id = "splash", description = "splash" }
+sound{ id = "stairs_down_end", description = "stairs_down_end" }
+sound{ id = "stairs_down_start", description = "stairs_down_start" }
+sound{ id = "stairs_up_end", description = "stairs_up_end" }
+sound{ id = "stairs_up_start", description = "stairs_up_start" }
 sound{ id = "stone", description = "stone" }
 sound{ id = "switch", description = "switch" }
 sound{ id = "sword1", description = "sword1" }
@@ -310,6 +314,7 @@ sound{ id = "water_fill", description = "water_fill" }
 sound{ id = "water_fill_begin", description = "water_fill_begin" }
 sound{ id = "world_warp", description = "world_warp" }
 sound{ id = "wrong", description = "wrong" }
+sound{ id = "zonzifleur/solarus_team_logo", description = "Solarus Team logo" }
 sound{ id = "zora", description = "zora" }
 
 item{ id = "apple_pie", description = "Apple pie (x1)" }
