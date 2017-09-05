@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Zelda: Mystery of Solarus XD
+GenericName=Zelda fangame for the Solarus engine
+Comment=Zelda: Mystery of Solarus XD (Parodic Zelda game)
+Exec=zsxd
+Terminal=false
+Type=Application
+Icon=zsxd
+Categories=Game;AdventureGame;
