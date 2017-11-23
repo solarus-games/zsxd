@@ -4,7 +4,7 @@ return function(game)
   local map_builder = require("menus/pause_map")
   local quest_status_builder = require("menus/pause_quest_status")
   local options_builder = require("menus/pause_options")
-  local joy_avoid_repeat = {-2, -2}
+  local last_joy_axis_move = { 0, 0 }
   
   function game:start_pause_menu()
 
@@ -37,10 +37,11 @@ return function(game)
   end
 
   function game:on_joypad_axis_moved(axis, state)
-    
-    local handled = joy_avoid_repeat[axis % 2] == state
-    joy_avoid_repeat[axis % 2] = state
-        
+
+    -- Avoid move repetition
+    local handled = last_joy_axis_move[axis % 2] == state
+    last_joy_axis_move[axis % 2] = state
+
     return handled
   end
   
