@@ -96,7 +96,7 @@ text{ key = "selection_menu.options.video_mode", value = "Video mode" }
 text{ key = "selection_menu.phase.choose_mode", value = "Choose a game mode" }
 text{ key = "selection_menu.phase.choose_name", value = "What's your name?" }
 text{ key = "selection_menu.phase.confirm_erase", value = "Are you sure?" }
-text{ key = "selection_menu.phase.erase_file", value = "Select File to Erase" }
+text{ key = "selection_menu.phase.erase_file", value = "Select file to Erase" }
 text{ key = "selection_menu.phase.options", value = "Hit Space to change" }
 text{ key = "selection_menu.phase.options.changing", value = "<  >: choose, Space: validate" }
 text{ key = "selection_menu.phase.select_file", value = "Select a file" }
