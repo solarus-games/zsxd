@@ -3757,7 +3757,7 @@ dialog{
   skip = "all",
   text = [[
 You found a Fairy,
-that's cool!
+that's pretty cool!
 ]],
 }
 
@@ -3767,7 +3767,7 @@ dialog{
   question = "1",
   skip = "none",
   text = [[
-You found a fairy!
+You found a Fairy!
 Recover Hearts now
 Keep her in a Bottle
 ]],
