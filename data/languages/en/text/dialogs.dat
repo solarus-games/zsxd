@@ -4,7 +4,7 @@ dialog{
   text = [[
 Locked, you need the
 Big Key to open it!
-]]
+]],
 }
 
 dialog{
@@ -17,7 +17,7 @@ to Ganon!
 Don't even try to
 open it whithout
 the Master Key!
-]]
+]],
 }
 
 dialog{
@@ -27,7 +27,7 @@ dialog{
 Maybe you need
 something to cut down
 this bush...
-]]
+]],
 }
 
 dialog{
@@ -35,7 +35,7 @@ dialog{
   text = [[
 You're REALLY not
 strong enough for this!
-]]
+]],
 }
 
 dialog{
@@ -44,7 +44,7 @@ dialog{
   text = [[
 You're not strong
 enough for this!
-]]
+]],
 }
 
 dialog{
@@ -53,7 +53,7 @@ dialog{
 It's a crystal switch.
 Hit the switch with
 something...
-]]
+]],
 }
 
 dialog{
@@ -62,7 +62,7 @@ dialog{
 This chest is empty!
 Not your lucky day
 it seems!
-]]
+]],
 }
 
 dialog{
@@ -72,7 +72,7 @@ dialog{
   text = [[
 This Apple Pie looks
 really horrible...
-]]
+]],
 }
 
 dialog{
@@ -83,7 +83,7 @@ dialog{
 Eat Apples to
 restore some of
 your Hearts.
-]]
+]],
 }
 
 dialog{
@@ -94,7 +94,7 @@ dialog{
 An old broom, nobody
 will agree to buy
 it!
-]]
+]],
 }
 
 dialog{
@@ -105,7 +105,7 @@ dialog{
 Spice jars: thyme,
 rosemary, and
 coriander.
-]]
+]],
 }
 
 dialog{
@@ -116,7 +116,7 @@ dialog{
 Use Bombs against
 enemies or to blow
 up obstacles.
-]]
+]],
 }
 
 dialog{
@@ -126,7 +126,7 @@ dialog{
   text = [[
 The Bone Key, where
 do you use it?
-]]
+]],
 }
 
 dialog{
@@ -139,7 +139,7 @@ to immobilize
 enemies or to catch
 objects in
 remote locations.
-]]
+]],
 }
 
 dialog{
@@ -150,7 +150,7 @@ dialog{
 The Magic Bottle
 can hold various
 things...
-]]
+]],
 }
 
 dialog{
@@ -163,7 +163,7 @@ filled with water.
 
 You'd better empty
 it.
-]]
+]],
 }
 
 dialog{
@@ -174,7 +174,7 @@ dialog{
 Drink a Red Potion
 to refill all
 your Hearts.
-]]
+]],
 }
 
 dialog{
@@ -185,7 +185,7 @@ dialog{
 Drink a Green Potion
 to replenish
 your Magic.
-]]
+]],
 }
 
 dialog{
@@ -196,7 +196,7 @@ dialog{
 Drink a Blue Potion
 to recover
 Hearts and Magic!
-]]
+]],
 }
 
 dialog{
@@ -207,7 +207,7 @@ dialog{
 This Fairy will
 help you when your
 Hearts are low.
-]]
+]],
 }
 
 dialog{
@@ -218,7 +218,7 @@ dialog{
 The Magic Bottle
 can hold various
 things...
-]]
+]],
 }
 
 dialog{
@@ -231,7 +231,7 @@ filled with water.
 
 You'd better empty
 it.
-]]
+]],
 }
 
 dialog{
@@ -242,7 +242,7 @@ dialog{
 Drink a Red Potion
 to refill all
 your Hearts.
-]]
+]],
 }
 
 dialog{
@@ -253,7 +253,7 @@ dialog{
 Drink a Green Potion
 to replenish
 your Magic.
-]]
+]],
 }
 
 dialog{
@@ -264,7 +264,7 @@ dialog{
 Drink a Blue Potion
 to recover
 Hearts and Magic!
-]]
+]],
 }
 
 dialog{
@@ -275,7 +275,7 @@ dialog{
 This Fairy will help
 you when your Hearts
 are low.
-]]
+]],
 }
 
 dialog{
@@ -286,7 +286,7 @@ dialog{
 The Magic Bottle
 can hold various
 things...
-]]
+]],
 }
 
 dialog{
@@ -299,7 +299,7 @@ filled with water.
 
 You'd better empty
 it.
-]]
+]],
 }
 
 dialog{
@@ -310,7 +310,7 @@ dialog{
 Drink a Red Potion
 to refill all
 your Hearts.
-]]
+]],
 }
 
 dialog{
@@ -321,7 +321,7 @@ dialog{
 Drink a Green Potion
 to replenish
 your Magic.
-]]
+]],
 }
 
 dialog{
@@ -332,7 +332,7 @@ dialog{
 Drink a Blue Potion
 to recover
 Hearts and Magic!
-]]
+]],
 }
 
 dialog{
@@ -343,7 +343,7 @@ dialog{
 This Fairy will help
 you when your Hearts
 are low.
-]]
+]],
 }
 
 dialog{
@@ -354,7 +354,7 @@ dialog{
 The Magic Bottle
 can hold various
 things...
-]]
+]],
 }
 
 dialog{
@@ -367,7 +367,7 @@ filled with water.
 
 You'd better empty
 it.
-]]
+]],
 }
 
 dialog{
@@ -378,7 +378,7 @@ dialog{
 Drink a Red Potion
 to refill all
 your Hearts.
-]]
+]],
 }
 
 dialog{
@@ -389,7 +389,7 @@ dialog{
 Drink a Green Potion
 to replenish
 your Magic.
-]]
+]],
 }
 
 dialog{
@@ -400,7 +400,7 @@ dialog{
 Drink a Blue Potion
 to recover
 Hearts and Magic!
-]]
+]],
 }
 
 dialog{
@@ -411,7 +411,7 @@ dialog{
 This Fairy will help
 you when your Hearts
 are low.
-]]
+]],
 }
 
 dialog{
@@ -421,7 +421,7 @@ dialog{
   text = [[
 You are out of
 Arrows!
-]]
+]],
 }
 
 dialog{
@@ -431,7 +431,7 @@ dialog{
   text = [[
 OK, you still
 have arrows.
-]]
+]],
 }
 
 dialog{
@@ -443,7 +443,7 @@ dialog{
 Create blocks and
 use the Hookshot to
 climb onto them.
-]]
+]],
 }
 
 dialog{
@@ -454,7 +454,7 @@ dialog{
 The Earth Key,
 unlocks the entry to
 the village cavern.
-]]
+]],
 }
 
 dialog{
@@ -465,7 +465,7 @@ dialog{
 Eat a Croissant
 to recover seven
 Hearts.
-]]
+]],
 }
 
 dialog{
@@ -476,7 +476,7 @@ dialog{
 Nice silver spoons,
 don't take them with
 you, you thief!
-]]
+]],
 }
 
 dialog{
@@ -487,7 +487,7 @@ dialog{
 Use Roc's Feather
 to jump and get
 across obstacles.
-]]
+]],
 }
 
 dialog{
@@ -499,7 +499,7 @@ Find all three
 Fire Stones and
 take them
 to Inferno.
-]]
+]],
 }
 
 dialog{
@@ -510,7 +510,7 @@ dialog{
 With the Flippers,
 you can swim
 in deep waters.
-]]
+]],
 }
 
 dialog{
@@ -521,7 +521,7 @@ dialog{
 With this, you can
 lift many things.
 I think...
-]]
+]],
 }
 
 dialog{
@@ -532,7 +532,7 @@ dialog{
 Lift black rocks
 with the
 Golden Glove.
-]]
+]],
 }
 
 dialog{
@@ -544,7 +544,7 @@ Wonderfully sharp,
 this axe is
 guaranteed to last
 twenty years!
-]]
+]],
 }
 
 dialog{
@@ -555,7 +555,7 @@ dialog{
 Hoist yourself to
 unreachable places
 with the hookshot.
-]]
+]],
 }
 
 dialog{
@@ -567,7 +567,7 @@ The Ice Key.
 You have to find
 a frozen place
 to use it!
-]]
+]],
 }
 
 dialog{
@@ -578,7 +578,7 @@ dialog{
 The Iron Key.
 Use it only with
 the right lock!
-]]
+]],
 }
 
 dialog{
@@ -592,7 +592,7 @@ ignite torches with
 the Lamp. But keep
 an eye on your
 Magic Meter!
-]]
+]],
 }
 
 dialog{
@@ -604,7 +604,7 @@ The Magic Cape
 warns you if
 you are near a
 fragile wall...
-]]
+]],
 }
 
 dialog{
@@ -615,7 +615,7 @@ dialog{
 The Mystic Mirror
 has mysterious
 powers...
-]]
+]],
 }
 
 dialog{
@@ -626,7 +626,7 @@ dialog{
 Eat a Chocolate
 Croissant to recover
 three Hearts.
-]]
+]],
 }
 
 dialog{
@@ -639,7 +639,7 @@ acclaimed fragrance,
 this Kipu will make
 girls fall all over
 you!
-]]
+]],
 }
 
 dialog{
@@ -649,7 +649,7 @@ dialog{
   text = [[
 The Pegasus Shoes
 do weird things.
-]]
+]],
 }
 
 dialog{
@@ -661,7 +661,7 @@ These peppers are a
 a real treasure
 for people who like
 spicy food.
-]]
+]],
 }
 
 dialog{
@@ -671,7 +671,7 @@ dialog{
   text = [[
 Magma rock of the
 Goron mines.
-]]
+]],
 }
 
 dialog{
@@ -682,7 +682,7 @@ dialog{
 The Rock Key. But
 where is the
 lock?
-]]
+]],
 }
 
 dialog{
@@ -692,7 +692,7 @@ dialog{
   text = [[
 Sacks of olives,
 cats love them.
-]]
+]],
 }
 
 dialog{
@@ -703,7 +703,7 @@ dialog{
 Bags of basmati
 rice. Low price,
 store brand.
-]]
+]],
 }
 
 dialog{
@@ -714,7 +714,7 @@ dialog{
 The Stone Key.
 Need to find
 the lock now!
-]]
+]],
 }
 
 dialog{
@@ -726,7 +726,7 @@ An old tapestry of
 the 18th century.
 Nobody makes them
 like this now.
-]]
+]],
 }
 
 dialog{
@@ -737,14 +737,14 @@ dialog{
 The Wooden Key.
 But there is only
 one lock for it...
-]]
+]],
 }
 
 dialog{
   id = "_shop.amount_full",
   text = [[
 You can't get any more!
-]]
+]],
 }
 
 dialog{
@@ -752,7 +752,7 @@ dialog{
   text = [[
 Dude, you're short on
 Rupees!
-]]
+]],
 }
 
 dialog{
@@ -762,7 +762,7 @@ dialog{
 Cost: $v rupees.
 Buy
 No way
-]]
+]],
 }
 
 dialog{
@@ -770,7 +770,7 @@ dialog{
   icon = "72",
   text = [[
 Locked!
-]]
+]],
 }
 
 dialog{
@@ -780,7 +780,7 @@ dialog{
 You found 3 Apples!$0
 Eat them later
 to recover Hearts.
-]]
+]],
 }
 
 dialog{
@@ -793,7 +793,7 @@ Apple Pie!
 It's moldy, but you
 don't really care,
 do you?
-]]
+]],
 }
 
 dialog{
@@ -802,7 +802,7 @@ dialog{
   next = "_treasure.arrow.1.1",
   text = [[
 You found an Arrow!
-]]
+]],
 }
 
 dialog{
@@ -811,7 +811,7 @@ dialog{
 Use the Bow with
 the Arrows to defeat
 distant monsters.
-]]
+]],
 }
 
 dialog{
@@ -820,7 +820,7 @@ dialog{
   next = "_treasure.arrow.1.1",
   text = [[
 You found 5 Arrows!
-]]
+]],
 }
 
 dialog{
@@ -829,7 +829,7 @@ dialog{
   next = "_treasure.arrow.1.1",
   text = [[
 You found 10 Arrows!
-]]
+]],
 }
 
 dialog{
@@ -841,7 +841,7 @@ You get the broom!
 
 Mère Denis will be
 pleased with this ;)
-]]
+]],
 }
 
 dialog{
@@ -854,7 +854,7 @@ special doors and
 big chests!
 Now all you need is
 to find them!
-]]
+]],
 }
 
 dialog{
@@ -863,7 +863,7 @@ dialog{
   text = [[
 You got a spice jar,
 but what's in it?
-]]
+]],
 }
 
 dialog{
@@ -872,7 +872,7 @@ dialog{
   next = "_treasure.bomb.1.1",
   text = [[
 You found a Bomb!$0
-]]
+]],
 }
 
 dialog{
@@ -881,7 +881,7 @@ dialog{
 Use a Bomb to blow
 up an enemy or an
 obstacle.
-]]
+]],
 }
 
 dialog{
@@ -890,7 +890,7 @@ dialog{
   next = "_treasure.bomb.1.1",
   text = [[
 You found 3 Bombs!$0
-]]
+]],
 }
 
 dialog{
@@ -899,7 +899,7 @@ dialog{
   next = "_treasure.bomb.1.1",
   text = [[
 You found 8 Bombs!
-]]
+]],
 }
 
 dialog{
@@ -912,7 +912,7 @@ can store 10 bombs.
 Tic Tac $1
 pschhhhhhhhhhhhht $0 $3
 Ka-BOOOM!
-]]
+]],
 }
 
 dialog{
@@ -925,7 +925,7 @@ Big Bomb Bag!$0
 Awesome!
 Now you can store
 11 Bombs!
-]]
+]],
 }
 
 dialog{
@@ -938,7 +938,7 @@ Huge Bomb Bag!$0
 It's really cool!
 Now you can store
 12 Bombs!
-]]
+]],
 }
 
 dialog{
@@ -950,7 +950,7 @@ Bone Key!$0
 
 You can now enter
 the Lair of Ganon!
-]]
+]],
 }
 
 dialog{
@@ -968,7 +968,7 @@ techniques to use
 it, it's up to you
 to discover them
 all!
-]]
+]],
 }
 
 dialog{
@@ -980,7 +980,7 @@ Key! At last you can
 meet with Ganon,
 master of this
 place!
-]]
+]],
 }
 
 dialog{
@@ -990,7 +990,7 @@ dialog{
 You found a Magic
 Bottle!$0 It might be
 useful someday!
-]]
+]],
 }
 
 dialog{
@@ -998,7 +998,7 @@ dialog{
   icon = "8",
   text = [[
 You found Water!
-]]
+]],
 }
 
 dialog{
@@ -1011,7 +1011,7 @@ Red Potion !$0
 Drink it
 to refill
 all your Hearts.
-]]
+]],
 }
 
 dialog{
@@ -1024,7 +1024,7 @@ Green Potion!$0
 Drink it
 to replenish
 your Magic.
-]]
+]],
 }
 
 dialog{
@@ -1037,7 +1037,7 @@ Blue Potion!$0
 Drink it
 to recover
 Hearts and Magic!
-]]
+]],
 }
 
 dialog{
@@ -1051,7 +1051,7 @@ in danger.
 Also you can use her
 at any time to
 recover Hearts.
-]]
+]],
 }
 
 dialog{
@@ -1061,7 +1061,7 @@ dialog{
 You found a Magic
 Bottle!$0 It might be
 useful someday!
-]]
+]],
 }
 
 dialog{
@@ -1069,7 +1069,7 @@ dialog{
   icon = "8",
   text = [[
 You found Water!
-]]
+]],
 }
 
 dialog{
@@ -1082,7 +1082,7 @@ Red Potion!$0
 Drink it
 to refill
 all your Hearts.
-]]
+]],
 }
 
 dialog{
@@ -1095,7 +1095,7 @@ Green Potion!$0
 Drink it
 to replenish
 your Magic.
-]]
+]],
 }
 
 dialog{
@@ -1108,7 +1108,7 @@ Blue Potion!$0
 Drink it
 to recover
 Hearts and Magic!
-]]
+]],
 }
 
 dialog{
@@ -1122,7 +1122,7 @@ in danger.
 Also you can use her
 at any time to
 recover Hearts.
-]]
+]],
 }
 
 dialog{
@@ -1132,7 +1132,7 @@ dialog{
 You found a Magic
 Bottle!$0 It might be
 useful someday!
-]]
+]],
 }
 
 dialog{
@@ -1140,7 +1140,7 @@ dialog{
   icon = "8",
   text = [[
 You found Water!
-]]
+]],
 }
 
 dialog{
@@ -1153,7 +1153,7 @@ Red Potion!$0
 Drink it
 to refill
 all your Hearts.
-]]
+]],
 }
 
 dialog{
@@ -1166,7 +1166,7 @@ Green Potion!$0
 Drink it
 to replenish
 your Magic.
-]]
+]],
 }
 
 dialog{
@@ -1179,7 +1179,7 @@ Blue Potion!$0
 Drink it
 to recover
 Hearts and Magic!
-]]
+]],
 }
 
 dialog{
@@ -1193,7 +1193,7 @@ in danger.
 Also you can use her
 at any time to
 recover Hearts.
-]]
+]],
 }
 
 dialog{
@@ -1203,7 +1203,7 @@ dialog{
 You found a Magic
 Bottle!$0 It might be
 useful someday !
-]]
+]],
 }
 
 dialog{
@@ -1211,7 +1211,7 @@ dialog{
   icon = "8",
   text = [[
 You found Water!
-]]
+]],
 }
 
 dialog{
@@ -1224,7 +1224,7 @@ Red Potion!$0
 Drink it
 to refill
 all your Hearts.
-]]
+]],
 }
 
 dialog{
@@ -1237,7 +1237,7 @@ Green Potion!$0
 Drink it
 to replenish
 your Magic.
-]]
+]],
 }
 
 dialog{
@@ -1250,7 +1250,7 @@ Blue Potion!$0
 Drink it
 to recover
 Hearts and Magic!
-]]
+]],
 }
 
 dialog{
@@ -1264,7 +1264,7 @@ in danger.
 Also you can use her
 at any time to
 recover Hearts.
-]]
+]],
 }
 
 dialog{
@@ -1274,7 +1274,7 @@ dialog{
 You found The Bow!$0
 Become the next
 Robin Hood!
-]]
+]],
 }
 
 dialog{
@@ -1284,7 +1284,7 @@ dialog{
 You found The Bow!$0
 Become the next
 Robin Hood!
-]]
+]],
 }
 
 dialog{
@@ -1298,7 +1298,7 @@ Cane of Somaria!$0
 Create blocks and
 use the Hookshot to
 climb onto them.
-]]
+]],
 }
 
 dialog{
@@ -1311,7 +1311,7 @@ Earth Key!$0
 You can now
 access the
 village cavern.
-]]
+]],
 }
 
 dialog{
@@ -1326,7 +1326,7 @@ chests, treasures
 and the Boss.
 That's what I
 call improvement!
-]]
+]],
 }
 
 dialog{
@@ -1339,7 +1339,7 @@ sooo delicious!
 Eat a Croissant
 to recover seven
 Hearts.
-]]
+]],
 }
 
 dialog{
@@ -1348,7 +1348,7 @@ dialog{
   text = [[
 A spoon! Eat soup
 and you'll grow big!
-]]
+]],
 }
 
 dialog{
@@ -1359,7 +1359,7 @@ You found the
 Feather!$0 Use it
 to jump and to clear
 obstacles!
-]]
+]],
 }
 
 dialog{
@@ -1368,7 +1368,7 @@ dialog{
   text = [[
 You found a
 Fire Stone!
-]]
+]],
 }
 
 dialog{
@@ -1380,7 +1380,7 @@ Flippers!$0
 
 Now you can swim
 in deep waters.
-]]
+]],
 }
 
 dialog{
@@ -1392,7 +1392,7 @@ Glove!$0
 
 Now you can lift
 heavy stuff, try it!
-]]
+]],
 }
 
 dialog{
@@ -1404,7 +1404,7 @@ Gold Glove!$0
 
 Now you can lift
 the Black Rocks!
-]]
+]],
 }
 
 dialog{
@@ -1415,7 +1415,7 @@ The axe, a wonderful
 tool, that cuts
 everything...
 or not.
-]]
+]],
 }
 
 dialog{
@@ -1423,7 +1423,7 @@ dialog{
   icon = "84",
   text = [[
 You found a Heart!
-]]
+]],
 }
 
 dialog{
@@ -1436,7 +1436,7 @@ Heart Container.
 You just gained
 a new Heart!
 It rooocks!
-]]
+]],
 }
 
 dialog{
@@ -1448,7 +1448,7 @@ Hookshot!$0 Freeze
 your enemies and
 climb to distant
 places!
-]]
+]],
 }
 
 dialog{
@@ -1461,7 +1461,7 @@ Ice Key!$0
 A frozen place
 this key
 unlocks...
-]]
+]],
 }
 
 dialog{
@@ -1473,7 +1473,7 @@ Iron Key!$0
 
 Now find the
 right door to open!
-]]
+]],
 }
 
 dialog{
@@ -1486,7 +1486,7 @@ Lamp!$0 It lights
 your way in the
 dark and allows you
 to ignite torches.
-]]
+]],
 }
 
 dialog{
@@ -1499,7 +1499,7 @@ Magic Cape!$0
 You'll be warned
 when you're near
 a fragile wall.
-]]
+]],
 }
 
 dialog{
@@ -1508,7 +1508,7 @@ dialog{
   text = [[
 You found a
 Little Magic Flask!
-]]
+]],
 }
 
 dialog{
@@ -1517,7 +1517,7 @@ dialog{
   text = [[
 You found a
 Big Magic Flask!
-]]
+]],
 }
 
 dialog{
@@ -1527,7 +1527,7 @@ dialog{
 You found the Map!
 Use it to discover
 your environment.
-]]
+]],
 }
 
 dialog{
@@ -1540,7 +1540,7 @@ It has unknown
 powers that you'll
 need to succeed in
 your quest...
-]]
+]],
 }
 
 dialog{
@@ -1553,7 +1553,7 @@ Chocolate Croissant!$0
 Eat a Chocolate
 Croissant to recover
 three Hearts.
-]]
+]],
 }
 
 dialog{
@@ -1566,7 +1566,7 @@ Cacaco Charnel,
 get rid of it ASAP
 before you die of
 asphyxia!
-]]
+]],
 }
 
 dialog{
@@ -1579,7 +1579,7 @@ without laces!
 They're tough to
 wear but you can
 run really fast!
-]]
+]],
 }
 
 dialog{
@@ -1588,7 +1588,7 @@ dialog{
   text = [[
 You found a
 Piece of Heart!
-]]
+]],
 }
 
 dialog{
@@ -1598,7 +1598,7 @@ dialog{
 You got a pepper!
 How about cooking
 a pizza?
-]]
+]],
 }
 
 dialog{
@@ -1611,7 +1611,7 @@ Big Quiver!$0
 You can hold 30
 Arrows instead of
 10!
-]]
+]],
 }
 
 dialog{
@@ -1624,7 +1624,7 @@ Huge Quiver!$0
 Awesome, you can
 carry 100 Arrows
 instead of 30!
-]]
+]],
 }
 
 dialog{
@@ -1633,7 +1633,7 @@ dialog{
   text = [[
 A Magma Rock!
 Whoa, it's hot!
-]]
+]],
 }
 
 dialog{
@@ -1642,7 +1642,7 @@ dialog{
   text = [[
 You found the
 Rock Key!$0
-]]
+]],
 }
 
 dialog{
@@ -1650,7 +1650,7 @@ dialog{
   icon = "90",
   text = [[
 You found a Rupee!
-]]
+]],
 }
 
 dialog{
@@ -1660,7 +1660,7 @@ dialog{
 You found a Blue
 Rupee. It's worth
 5 Rupees!
-]]
+]],
 }
 
 dialog{
@@ -1670,7 +1670,7 @@ dialog{
 You found a Red
 Rupee! It's worth
 20 Rupees!
-]]
+]],
 }
 
 dialog{
@@ -1679,7 +1679,7 @@ dialog{
   text = [[
 You found 50 Rupees!
 Awesome!
-]]
+]],
 }
 
 dialog{
@@ -1689,7 +1689,7 @@ dialog{
 You found 100
 Rupees!
 Fantastic!
-]]
+]],
 }
 
 dialog{
@@ -1699,7 +1699,7 @@ dialog{
 You found 200
 Rupees!
 You're ecstatic!
-]]
+]],
 }
 
 dialog{
@@ -1715,7 +1715,7 @@ You can now carry
 It's a shame the
 game is over, you
 could have used it!
-]]
+]],
 }
 
 dialog{
@@ -1727,7 +1727,7 @@ Huge Rupee Bag!$0
 
 Now you can carry
 999 Rupees!
-]]
+]],
 }
 
 dialog{
@@ -1738,7 +1738,7 @@ We give you a bag of
 olives, don't you
 like it?
 Too bad for you!
-]]
+]],
 }
 
 dialog{
@@ -1748,7 +1748,7 @@ dialog{
 You got rice.
 But basmati rice,
 doh :(
-]]
+]],
 }
 
 dialog{
@@ -1761,7 +1761,7 @@ Shield!$0
 Next time, don't
 leave it outside,
 will you?
-]]
+]],
 }
 
 dialog{
@@ -1774,7 +1774,7 @@ Now you're
 protected against
 fire attacks
 and fireballs!
-]]
+]],
 }
 
 dialog{
@@ -1786,7 +1786,7 @@ Mirror Shield!$0
 
 You can now reflect
 laser attacks!
-]]
+]],
 }
 
 dialog{
@@ -1799,7 +1799,7 @@ Key!
 You can use it to
 open a nearby
 locked door.
-]]
+]],
 }
 
 dialog{
@@ -1811,7 +1811,7 @@ Stone Key!$0
 
 But where's the
 lock?
-]]
+]],
 }
 
 dialog{
@@ -1826,7 +1826,7 @@ because your name
 is carved on it!
 But what is it
 doing here?
-]]
+]],
 }
 
 dialog{
@@ -1838,7 +1838,7 @@ Laser Sword!$0
 
 May the Triforcizzle
 be with you!
-]]
+]],
 }
 
 dialog{
@@ -1851,7 +1851,7 @@ Excalibur!$0
 It's a shame the
 game is over, you
 could have used it!
-]]
+]],
 }
 
 dialog{
@@ -1864,7 +1864,7 @@ Excalibur!$0
 It's a shame the
 game is over, you
 could have used it!
-]]
+]],
 }
 
 dialog{
@@ -1873,7 +1873,7 @@ dialog{
   text = [[
 What a magnificient
 tapestry!
-]]
+]],
 }
 
 dialog{
@@ -1886,7 +1886,7 @@ $0This armor
 protects you
 from the coldest
 temperatures...
-]]
+]],
 }
 
 dialog{
@@ -1899,7 +1899,7 @@ $0This armor
 reduces the damage
 that you take
 from enemies!
-]]
+]],
 }
 
 dialog{
@@ -1911,7 +1911,7 @@ Wooden Key!$0
 
 Find the correct
 lock to use it!
-]]
+]],
 }
 
 dialog{
@@ -1923,7 +1923,7 @@ World Map!$0
 
 You can view it
 in the Map Menu.
-]]
+]],
 }
 
 dialog{
@@ -1935,7 +1935,7 @@ Princess Zelda!
 It seems you just
 forgot her in your
 chest!
-]]
+]],
 }
 
 dialog{
@@ -1943,7 +1943,7 @@ dialog{
   text = [[
 Keep an eye on your
 Magic Meter!
-]]
+]],
 }
 
 dialog{
@@ -1952,7 +1952,7 @@ dialog{
 Only a true Hero
 deserves the chest.$0$0
 Or maybe not.
-]]
+]],
 }
 
 dialog{
@@ -1962,7 +1962,7 @@ You have to let it all
 go. Fear, doubt and
 disbelief...
 Free your mind $v.
-]]
+]],
 }
 
 dialog{
@@ -1974,7 +1974,7 @@ and brooms. To reach
 it, go to the second
 floor, right wing. Use
 the stairs behind me.
-]]
+]],
 }
 
 dialog{
@@ -1983,7 +1983,7 @@ dialog{
 I think I JUST told you
 counter 11 can be found
 right behind me!
-]]
+]],
 }
 
 dialog{
@@ -1992,7 +1992,7 @@ dialog{
 Counter 82 is on the
 second floor, right
 wing.
-]]
+]],
 }
 
 dialog{
@@ -2004,7 +2004,7 @@ last time...? I think
 on the ground floor,
 left wing. If no one
 moved it...
-]]
+]],
 }
 
 dialog{
@@ -2013,7 +2013,7 @@ dialog{
 Counter 32 is on the
 third floor, right
 wing.
-]]
+]],
 }
 
 dialog{
@@ -2022,7 +2022,7 @@ dialog{
 Some bags of rice?
 Maybe counter 36 on the
 third floor.
-]]
+]],
 }
 
 dialog{
@@ -2034,7 +2034,7 @@ it's in the right wing.
 You have to go through
 the second floor once
 again.
-]]
+]],
 }
 
 dialog{
@@ -2055,7 +2055,7 @@ counter 21.
 Go upstairs and you'll
 find it on the second
 floor.
-]]
+]],
 }
 
 dialog{
@@ -2063,7 +2063,7 @@ dialog{
   text = [[
 Use the stairs behind
 me to find counter 21.
-]]
+]],
 }
 
 dialog{
@@ -2073,7 +2073,7 @@ To find counter 33, you
 you have to go up the
 third floor, in the
 left wing.
-]]
+]],
 }
 
 dialog{
@@ -2087,7 +2087,7 @@ think, in the left
 wing...
 ... if I remember
 correctly.
-]]
+]],
 }
 
 dialog{
@@ -2104,7 +2104,7 @@ the second floor.
 
 Use the stairs behind
 me and ask people.
-]]
+]],
 }
 
 dialog{
@@ -2115,7 +2115,7 @@ ground floor, first
 use the stairs behind
 me and ask people
 around.
-]]
+]],
 }
 
 dialog{
@@ -2124,7 +2124,7 @@ dialog{
 Counter 33? It's on the
 third floor, left
 wing.
-]]
+]],
 }
 
 dialog{
@@ -2136,7 +2136,7 @@ right wing.
 You have to use the
 stairs on the second
 floor, near counter 82.
-]]
+]],
 }
 
 dialog{
@@ -2145,7 +2145,7 @@ dialog{
 Counter 22? It's
 on the second floor
 in the right wing.
-]]
+]],
 }
 
 dialog{
@@ -2156,7 +2156,7 @@ floor, but in the
 right wing.
 Go through the second
 floor to go around.
-]]
+]],
 }
 
 dialog{
@@ -2167,7 +2167,7 @@ peppers, check counter
 84.
 You'll find it on the
 second floor, left wing.
-]]
+]],
 }
 
 dialog{
@@ -2178,7 +2178,7 @@ me, Sir.
 
 (Oh god, he has no
 memory!)
-]]
+]],
 }
 
 dialog{
@@ -2189,7 +2189,7 @@ to the second floor in
 the right wing.
 Use the stairs behind
 me.
-]]
+]],
 }
 
 dialog{
@@ -2201,7 +2201,7 @@ on the third floor,
 right wing. Use the
 stairs on the second
 floor, right wing.
-]]
+]],
 }
 
 dialog{
@@ -2210,7 +2210,7 @@ dialog{
 An old man? I don't
 know what you're
 talking about, sorry.
-]]
+]],
 }
 
 dialog{
@@ -2225,7 +2225,7 @@ serve you and we hope
 you'll come to visit us
 again soon.
 Have a nice day!
-]]
+]],
 }
 
 dialog{
@@ -2236,7 +2236,7 @@ Burp! I don't even...
 ... rememburps!...
 how I came... burp!
 ... back here! Burps!
-]]
+]],
 }
 
 dialog{
@@ -2253,7 +2253,7 @@ rice cheap.
 We have a deal?
 Of course!
 Noo, foolish thief!
-]]
+]],
 }
 
 dialog{
@@ -2262,7 +2262,7 @@ dialog{
   text = [[
 That's not really kind
 of you...
-]]
+]],
 }
 
 dialog{
@@ -2271,7 +2271,7 @@ dialog{
   text = [[
 Wow, you got a good
 deal!
-]]
+]],
 }
 
 dialog{
@@ -2282,7 +2282,7 @@ You're short on Rupees,
 young lad. I'll sell a
 bag of rice for
 twenty Rupees.
-]]
+]],
 }
 
 dialog{
@@ -2292,14 +2292,14 @@ dialog{
 The Path of God.
 It's a leap of faith!
 You must believe, boy!
-]]
+]],
 }
 
 dialog{
   id = "crazy_house.depot_ici",
   text = [[
    - Storage Room -    
-]]
+]],
 }
 
 dialog{
@@ -2308,7 +2308,7 @@ dialog{
   text = [[
      - Reception -     
  Please stand in line  
-]]
+]],
 }
 
 dialog{
@@ -2318,7 +2318,7 @@ dialog{
 Down: counter 21
 Right:
 counters 45, 47, 49, 84
-]]
+]],
 }
 
 dialog{
@@ -2331,7 +2331,7 @@ counters 22, 12
 Left:
 counters 41, 43, 82,
 third floor
-]]
+]],
 }
 
 dialog{
@@ -2339,7 +2339,7 @@ dialog{
   skip = "current",
   text = [[
 Warp to the right wing
-]]
+]],
 }
 
 dialog{
@@ -2352,7 +2352,7 @@ Down: counter 21
 Right: counter 33
 Stairs:
 counter 11, reception
-]]
+]],
 }
 
 dialog{
@@ -2364,7 +2364,7 @@ Stairs: reception,
 counters 11 and 12
 Right:
 counters 41, 43, 82
-]]
+]],
 }
 
 dialog{
@@ -2374,7 +2374,7 @@ dialog{
 Warp to
 counters 11, 21 and
 the reception.
-]]
+]],
 }
 
 dialog{
@@ -2386,7 +2386,7 @@ counters 49, 47, 45
 
 Right:
 counters 84, 33
-]]
+]],
 }
 
 dialog{
@@ -2404,7 +2404,7 @@ Up: counter 82
 
 This sign is here to
 bother you. Thank you.
-]]
+]],
 }
 
 dialog{
@@ -2412,7 +2412,7 @@ dialog{
   skip = "current",
   text = [[
 Up: counter 33
-]]
+]],
 }
 
 dialog{
@@ -2421,7 +2421,7 @@ dialog{
   text = [[
 Stairs to
 counters 84, 49, 47, 45
-]]
+]],
 }
 
 dialog{
@@ -2431,7 +2431,7 @@ dialog{
 This sign is here to
 bother you again.
 Thank you.
-]]
+]],
 }
 
 dialog{
@@ -2444,7 +2444,7 @@ Megawatt Aperture
 Science Heavy Duty
 Super-Colliding
 Super Button.
-]]
+]],
 }
 
 dialog{
@@ -2452,7 +2452,7 @@ dialog{
   skip = "current",
   text = [[
      - Counter 11 -
-]]
+]],
 }
 
 dialog{
@@ -2466,7 +2466,7 @@ an axe for a tapestry.
 What you think?
 OK!
 No way!
-]]
+]],
 }
 
 dialog{
@@ -2478,7 +2478,7 @@ axe?
 But I never had any!
 Take this or go away
 Sir!
-]]
+]],
 }
 
 dialog{
@@ -2494,7 +2494,7 @@ tapestries?
 Counter 22 has some,
 I think. He's quite
 crazy but...
-]]
+]],
 }
 
 dialog{
@@ -2508,7 +2508,7 @@ an axe for a tapestry.
 What you think?
 OK!
 No way!
-]]
+]],
 }
 
 dialog{
@@ -2520,7 +2520,7 @@ What did you lose?
 But Sir, you have to
 ask the receptionist
 first.
-]]
+]],
 }
 
 dialog{
@@ -2536,7 +2536,7 @@ at counter 32.
 Where is it?
 Go and ask the
 receptionist!
-]]
+]],
 }
 
 dialog{
@@ -2545,7 +2545,7 @@ dialog{
   text = [[
 This counter is closed
 Sir.
-]]
+]],
 }
 
 dialog{
@@ -2559,7 +2559,7 @@ that's only a rumor.
 Nobody ever found a
 treasure in this
 public building...
-]]
+]],
 }
 
 dialog{
@@ -2573,7 +2573,7 @@ that allows access to
 the second floor to
 find the 41 but it's
 locked. Sorry, Sir.
-]]
+]],
 }
 
 dialog{
@@ -2590,7 +2590,7 @@ them for some perfume.
 We have a deal?
 Yeah, yeah...
 Naah, you kcus!
-]]
+]],
 }
 
 dialog{
@@ -2598,7 +2598,7 @@ dialog{
   skip = "current",
   text = [[
 Kcus? What's this kcus?
-]]
+]],
 }
 
 dialog{
@@ -2608,7 +2608,7 @@ dialog{
 Thanks a lot, here is
 a fragrance Cacaco
 Charnel.
-]]
+]],
 }
 
 dialog{
@@ -2619,7 +2619,7 @@ You have nothing!
 I'm sure that you'll
 find them.
 Keep hope.
-]]
+]],
 }
 
 dialog{
@@ -2630,7 +2630,7 @@ But you don't have a
 broom! I'm sure that
 you'll find it..
 Keep looking.
-]]
+]],
 }
 
 dialog{
@@ -2641,7 +2641,7 @@ But you don't have the
 spice jar! I'm sure
 that you'll find it.
 Keep looking.
-]]
+]],
 }
 
 dialog{
@@ -2654,7 +2654,7 @@ Left: reception
 Top right:
 to counter 22 (locked
 door)
-]]
+]],
 }
 
 dialog{
@@ -2671,7 +2671,7 @@ dentist with cavities.
 
 It hurts just
 thinking about it...
-]]
+]],
 }
 
 dialog{
@@ -2681,7 +2681,7 @@ dialog{
 Ah good old times,
 I remember...
 my first love...
-]]
+]],
 }
 
 dialog{
@@ -2689,7 +2689,7 @@ dialog{
   skip = "current",
   text = [[
      - Counter 21 -    
-]]
+]],
 }
 
 dialog{
@@ -2704,7 +2704,7 @@ Here, you can find
 anything you want:
 we can trade a broom
 for a magma rock.
-]]
+]],
 }
 
 dialog{
@@ -2720,7 +2720,7 @@ anything you want:
 we can trade a
 tapestry for a bag of
 rice.
-]]
+]],
 }
 
 dialog{
@@ -2730,7 +2730,7 @@ dialog{
 We have a deal?
 Of course!
 Errrr......... No!
-]]
+]],
 }
 
 dialog{
@@ -2739,7 +2739,7 @@ dialog{
   text = [[
 You're welcome. Here is
 your broom.
-]]
+]],
 }
 
 dialog{
@@ -2749,7 +2749,7 @@ dialog{
 But you don't have a
 magma rock... What a
 shame! Come back later.
-]]
+]],
 }
 
 dialog{
@@ -2758,7 +2758,7 @@ dialog{
   text = [[
 Here is a magnificient
 tapestry!
-]]
+]],
 }
 
 dialog{
@@ -2767,7 +2767,7 @@ dialog{
   text = [[
 Sorry, but you don't
 have a bag of rice.
-]]
+]],
 }
 
 dialog{
@@ -2782,7 +2782,7 @@ wrong with my work, but
 I do the best I can!
 The world is against
 me!...
-]]
+]],
 }
 
 dialog{
@@ -2790,7 +2790,7 @@ dialog{
   skip = "current",
   text = [[
      - Counter 31 -    
-]]
+]],
 }
 
 dialog{
@@ -2805,7 +2805,7 @@ employee was on break,
 she is certainly back
 now, you should go
 back there.
-]]
+]],
 }
 
 dialog{
@@ -2822,7 +2822,7 @@ is really promising.
 What do you think?
 Why not?
 Noooooooooooooo!!
-]]
+]],
 }
 
 dialog{
@@ -2831,7 +2831,7 @@ dialog{
 No? What a shame,
 you're losing something
 there!
-]]
+]],
 }
 
 dialog{
@@ -2840,7 +2840,7 @@ dialog{
   text = [[
 Sorry, but you don't
 have an axe to trade.
-]]
+]],
 }
 
 dialog{
@@ -2848,7 +2848,7 @@ dialog{
   skip = "current",
   text = [[
      - Counter 32 -    
-]]
+]],
 }
 
 dialog{
@@ -2860,7 +2860,7 @@ counter 33, not 41.
 
 The warp on your left
 leads to counter 22.
-]]
+]],
 }
 
 dialog{
@@ -2882,7 +2882,7 @@ more information.
 Where's this counter?
 I have no idea, ask
 the receptionist.
-]]
+]],
 }
 
 dialog{
@@ -2898,7 +2898,7 @@ By the way, you're not
 supposed to know what I
 just said. Why did I
 tell you?
-]]
+]],
 }
 
 dialog{
@@ -2916,7 +2916,7 @@ the key leading to the
 storage room.
 DO NOT make a mess
 inside, will ya?
-]]
+]],
 }
 
 dialog{
@@ -2933,7 +2933,7 @@ bags of rice:
 Interested?
 Oh yeah!
 Er, no...
-]]
+]],
 }
 
 dialog{
@@ -2942,7 +2942,7 @@ dialog{
   text = [[
 Sorry, you need at
 least 50 rupees.
-]]
+]],
 }
 
 dialog{
@@ -2964,7 +2964,7 @@ the keys.
 You'll find him on the
 third floor, left
 wing.
-]]
+]],
 }
 
 dialog{
@@ -2974,7 +2974,7 @@ dialog{
 Sorry, I'm taking a
 break, and I need it
 badly.
-]]
+]],
 }
 
 dialog{
@@ -2982,7 +2982,7 @@ dialog{
   skip = "current",
   text = [[
      - Counter 41 -    
-]]
+]],
 }
 
 dialog{
@@ -2998,7 +2998,7 @@ for him, it's
 unbelievable what
 people can do
 sometimes...
-]]
+]],
 }
 
 dialog{
@@ -3006,7 +3006,7 @@ dialog{
   skip = "current",
   text = [[
      - Counter 43 -
-]]
+]],
 }
 
 dialog{
@@ -3015,7 +3015,7 @@ dialog{
   text = [[
 Uh... what was I
 saying?...
-]]
+]],
 }
 
 dialog{
@@ -3027,7 +3027,7 @@ I'm busy at the moment?
 
 How rude are people
 nowadays!
-]]
+]],
 }
 
 dialog{
@@ -3035,7 +3035,7 @@ dialog{
   skip = "current",
   text = [[
      - Counter 45 -
-]]
+]],
 }
 
 dialog{
@@ -3066,7 +3066,7 @@ to counter 12, near the
 entrance of the
 building.
 Have a nice day, Sir.
-]]
+]],
 }
 
 dialog{
@@ -3083,7 +3083,7 @@ spoon.
 Interested?
 Hmmm...
 Hmmm...
-]]
+]],
 }
 
 dialog{
@@ -3092,7 +3092,7 @@ dialog{
   text = [[
 Great, here's your sack
 of olives.
-]]
+]],
 }
 
 dialog{
@@ -3101,7 +3101,7 @@ dialog{
   text = [[
 What a shame, you don't
 have a spoon.
-]]
+]],
 }
 
 dialog{
@@ -3109,7 +3109,7 @@ dialog{
   skip = "current",
   text = [[
      - Counter 47 -
-]]
+]],
 }
 
 dialog{
@@ -3119,7 +3119,7 @@ dialog{
 Hello, you want
 counter 41?
 I'm sorry, this is 47.
-]]
+]],
 }
 
 dialog{
@@ -3132,7 +3132,7 @@ you to the wrong place,
 you want the
 harbourmaster's office
 down by the port!
-]]
+]],
 }
 
 dialog{
@@ -3143,7 +3143,7 @@ I was relegated to the
 basement, all alone...
 
 Boo hoo hoo!
-]]
+]],
 }
 
 dialog{
@@ -3151,7 +3151,7 @@ dialog{
   skip = "current",
   text = [[
      - Counter 49 -
-]]
+]],
 }
 
 dialog{
@@ -3174,7 +3174,7 @@ rock.
 We have a deal?
 Of course!
 In your dreams...
-]]
+]],
 }
 
 dialog{
@@ -3182,7 +3182,7 @@ dialog{
   skip = "current",
   text = [[
      - Counter 82 -
-]]
+]],
 }
 
 dialog{
@@ -3194,7 +3194,7 @@ You have a sack of
 olives, you rock!
 Here's your magma rock,
 you deserve it.
-]]
+]],
 }
 
 dialog{
@@ -3204,7 +3204,7 @@ dialog{
 Sorry, you need a sack
 of olives to trade for
 this magma rock.
-]]
+]],
 }
 
 dialog{
@@ -3216,7 +3216,7 @@ Sorry, this is 84.
 To find 41, you have
 to go to the
 ground floor.
-]]
+]],
 }
 
 dialog{
@@ -3230,7 +3230,7 @@ An axe for a pepper.
 Deal?
 Yay!
 Oh no!!
-]]
+]],
 }
 
 dialog{
@@ -3242,7 +3242,7 @@ We'll trade them for an
 axe if you want.
 I heard you can find an
 axe at counter 11.
-]]
+]],
 }
 
 dialog{
@@ -3254,7 +3254,7 @@ Don't try to swindle
 me!
 Bring an axe or you
 get NOTHING!
-]]
+]],
 }
 
 dialog{
@@ -3262,7 +3262,7 @@ dialog{
   skip = "current",
   text = [[
      - Counter 84 -
-]]
+]],
 }
 
 dialog{
@@ -3296,7 +3296,7 @@ Herrr... wait,
 crr... I pass through
 a tunnel crr...
 crr... crr... beeep!
-]]
+]],
 }
 
 dialog{
@@ -3313,7 +3313,7 @@ corridor. Exactly what
 you forgot to do!
 
 BWAH HA HA HA HA!
-]]
+]],
 }
 
 dialog{
@@ -3321,7 +3321,7 @@ dialog{
   skip = "current",
   text = [[
 It's-a me, Mario!
-]]
+]],
 }
 
 dialog{
@@ -3337,7 +3337,7 @@ to justify their
 salary...
 A real pension I'd say!
 It's a scam!
-]]
+]],
 }
 
 dialog{
@@ -3352,7 +3352,7 @@ care. What a shame!
 
 They don't know what
 they're missing.
-]]
+]],
 }
 
 dialog{
@@ -3364,7 +3364,7 @@ in charge of cleaning
 the building, about
 14,000 square meters,
 this is real slavery.
-]]
+]],
 }
 
 dialog{
@@ -3388,7 +3388,7 @@ able to make it work
 by itself.
 Maybe you could try
 using some heavy stuff.
-]]
+]],
 }
 
 dialog{
@@ -3406,7 +3406,7 @@ makes you mad...
 
 What a bunch of
 incompetents!
-]]
+]],
 }
 
 dialog{
@@ -3422,7 +3422,7 @@ you don't understand
 our demands but we
 still let you judge us!
 Go away!
-]]
+]],
 }
 
 dialog{
@@ -3431,7 +3431,7 @@ dialog{
         Level 1        
      Lost and Found    
         Office         
-]]
+]],
 }
 
 dialog{
@@ -3447,7 +3447,7 @@ your mind.
 
 Bring me a pepper and
 maybe I'll help you...
-]]
+]],
 }
 
 dialog{
@@ -3463,7 +3463,7 @@ I want a bag of rice!
 
 Ah youth, they never
 listen!
-]]
+]],
 }
 
 dialog{
@@ -3479,7 +3479,7 @@ wonderful dream...
 You found some rice?
 That's it! Now here's
 my precious spice jar.
-]]
+]],
 }
 
 dialog{
@@ -3491,14 +3491,14 @@ ZZZ... Huh?...
 But you don't have
 a bag of rice!
 Go away! I want some!
-]]
+]],
 }
 
 dialog{
   id = "crazy_house.vieillard_ronfl",
   text = [[
 Snort... ZZZ...
-]]
+]],
 }
 
 dialog{
@@ -3519,7 +3519,7 @@ counters 11, 21
 
 Right:
 counters 12, 22
-]]
+]],
 }
 
 dialog{
@@ -3546,7 +3546,7 @@ the key in my room.
 You could have said it
 right away instead of
 going on adventures.
-]]
+]],
 }
 
 dialog{
@@ -3554,7 +3554,7 @@ dialog{
   text = [[
 This key opens
 Ganon's hideout.
-]]
+]],
 }
 
 dialog{
@@ -3565,7 +3565,7 @@ Cursed Cave.
 
 Nobody has ever come
 back. Don't go there!
-]]
+]],
 }
 
 dialog{
@@ -3579,7 +3579,7 @@ North.
 
 Pain and death are
 guaranteed.
-]]
+]],
 }
 
 dialog{
@@ -3594,14 +3594,14 @@ from them again...
 These days, access
 is barred to protect
 curious people.
-]]
+]],
 }
 
 dialog{
   id = "dungeon_1.2f_sw_water_removed",
   text = [[
 Far away... a noise...
-]]
+]],
 }
 
 dialog{
@@ -3610,7 +3610,7 @@ dialog{
 And cry when you see
 the size of the
 dungeon!
-]]
+]],
 }
 
 dialog{
@@ -3619,14 +3619,14 @@ dialog{
 3-1-4-2-3-2-1-1-4-3-2-2
 1-3-2-3-3-1-4-4-2-1-2-3
 3-2-1-1-3-4-2-2-1-3-4-1
-]]
+]],
 }
 
 dialog{
   id = "dungeon_1.big_code_completed",
   text = [[
 I told you so!
-]]
+]],
 }
 
 dialog{
@@ -3639,7 +3639,7 @@ But if you want some
 advice, if you enter
 the rest of the code,
 nothing will happen.
-]]
+]],
 }
 
 dialog{
@@ -3648,7 +3648,7 @@ dialog{
 Congratulations $v.
 But our princess is in
 another castle.
-]]
+]],
 }
 
 dialog{
@@ -3656,7 +3656,7 @@ dialog{
   text = [[
 North: hazard
 Do not enter please.
-]]
+]],
 }
 
 dialog{
@@ -3664,7 +3664,7 @@ dialog{
   text = [[
 South: hazard
 Enter at your own risk.
-]]
+]],
 }
 
 dialog{
@@ -3673,7 +3673,7 @@ dialog{
 West: hazard
 It would be a bad idea
 to go there.
-]]
+]],
 }
 
 dialog{
@@ -3713,7 +3713,7 @@ time. Meanwhile, I'm
 not against a little
 deathmatch.
 En guard!
-]]
+]],
 }
 
 dialog{
@@ -3722,7 +3722,7 @@ dialog{
 In tribute to the worst
 mini-boss of Zelda
 fangame history.
-]]
+]],
 }
 
 dialog{
@@ -3730,7 +3730,7 @@ dialog{
   text = [[
 But don't go to East,
 it's surely dangerous.
-]]
+]],
 }
 
 dialog{
@@ -3739,7 +3739,7 @@ dialog{
 On your right: 
 tribute to a really
 stupid test.
-]]
+]],
 }
 
 dialog{
@@ -3747,7 +3747,7 @@ dialog{
   text = [[
         Level 2       
  Temple of Stupidities 
-]]
+]],
 }
 
 dialog{
@@ -3758,7 +3758,7 @@ dialog{
   text = [[
 You found a Fairy,
 that's cool!
-]]
+]],
 }
 
 dialog{
@@ -3770,7 +3770,7 @@ dialog{
 You found a fairy!
 Recover Hearts now
 Keep her in a Bottle
-]]
+]],
 }
 
 dialog{
@@ -3778,7 +3778,7 @@ dialog{
   text = [[
 You don't have a
 Magic Bottle!
-]]
+]],
 }
 
 dialog{
@@ -3789,7 +3789,7 @@ Don't even THINK
 about it: you need
 3 more of them to
 have a new Heart.
-]]
+]],
 }
 
 dialog{
@@ -3799,7 +3799,7 @@ dialog{
 You found 4 Pieces
 of Heart. You gain a
 new Heart!
-]]
+]],
 }
 
 dialog{
@@ -3807,7 +3807,7 @@ dialog{
   icon = "76",
   text = [[
 Just two more!
-]]
+]],
 }
 
 dialog{
@@ -3817,7 +3817,7 @@ dialog{
 Just one more!
 Get ready for
 the party!
-]]
+]],
 }
 
 dialog{
@@ -3831,7 +3831,7 @@ your Magic Bottle
 with water?
 Yes
 No
-]]
+]],
 }
 
 dialog{
@@ -3841,7 +3841,7 @@ You found water,
 but you don't have
 a Magic Bottle
 to store it...
-]]
+]],
 }
 
 dialog{
@@ -3852,7 +3852,7 @@ You found water,
 but you need an
 empty Magic Bottle
 to store it...
-]]
+]],
 }
 
 dialog{
@@ -3861,7 +3861,7 @@ dialog{
 Feeling harassed?
 
 Run!
-]]
+]],
 }
 
 dialog{
@@ -3870,7 +3870,7 @@ dialog{
 Sorry, we didn't have
 enough Rupees to buy a
 new chest.
-]]
+]],
 }
 
 dialog{
@@ -3879,7 +3879,7 @@ dialog{
 A mysterious power
 prevents you from using
 the teleporter.
-]]
+]],
 }
 
 dialog{
@@ -3891,7 +3891,7 @@ dialog{
 I interact socially
 through my sheets
 pasted on the walls.
-]]
+]],
 }
 
 dialog{
@@ -3900,7 +3900,7 @@ dialog{
 Optimistic Policy
 Iteration and Learning
 the Game of Tetris.
-]]
+]],
 }
 
 dialog{
@@ -3914,7 +3914,7 @@ case 4: break;
 case 5: break;
 /* I have to define the
 cases for this sign. */
-]]
+]],
 }
 
 dialog{
@@ -3923,28 +3923,28 @@ dialog{
         WANTED!
 Schrödinger's cat.
 Dead and alive.
-]]
+]],
 }
 
 dialog{
   id = "geek_house.sign_d",
   text = [[
 There is no spoon.
-]]
+]],
 }
 
 dialog{
   id = "geek_house.sign_e",
   text = [[
 42
-]]
+]],
 }
 
 dialog{
   id = "geek_house.sign_f",
   text = [[
 The cake is a lie.
-]]
+]],
 }
 
 dialog{
@@ -3952,14 +3952,14 @@ dialog{
   text = [[
 I have a bad feeling
 about this.
-]]
+]],
 }
 
 dialog{
   id = "geek_house.sign_h",
   text = [[
 TODO
-]]
+]],
 }
 
 dialog{
@@ -3970,7 +3970,7 @@ dialog{
 Great Scott!!!
 What the hell
 is a gigawatt?
-]]
+]],
 }
 
 dialog{
@@ -3978,7 +3978,7 @@ dialog{
   text = [[
 Chuck Norris finished
 Zelda unarmed.
-]]
+]],
 }
 
 dialog{
@@ -4000,7 +4000,7 @@ This time, I'm tired of
 your antics!
 I'll get angry!!!
 HAAAAAAAAAAAAAAAAAA!!!
-]]
+]],
 }
 
 dialog{
@@ -4055,7 +4055,7 @@ Oh I forgot: Princess
 Zelda disappeared.
 
 Your turn!
-]]
+]],
 }
 
 dialog{
@@ -4064,7 +4064,7 @@ dialog{
 XD lol! Zelda xd
 :-) lol xd :D big 
 kiss u sux lol :D!
-]]
+]],
 }
 
 dialog{
@@ -4073,7 +4073,7 @@ dialog{
 lololol!
 You're so unlucky!!
 XD
-]]
+]],
 }
 
 dialog{
@@ -4081,7 +4081,7 @@ dialog{
   text = [[
 You really want to
 break them all?
-]]
+]],
 }
 
 dialog{
@@ -4090,7 +4090,7 @@ dialog{
     - Cursed Cave -    
    Entrance sealed up  
    for your security   
-]]
+]],
 }
 
 dialog{
@@ -4108,7 +4108,7 @@ South: Pub
 East: a little bit
 difficult to explain.
 Go and see yourself.
-]]
+]],
 }
 
 dialog{
@@ -4123,7 +4123,7 @@ Village
 North:
 Sandpit Desert
 Mount Typython
-]]
+]],
 }
 
 dialog{
@@ -4135,7 +4135,7 @@ Top of Mount Typython
 Altitude:
 Not really high,
 actually...
-]]
+]],
 }
 
 dialog{
@@ -4143,7 +4143,7 @@ dialog{
   text = [[
 We respect gender
 equality too!
-]]
+]],
 }
 
 dialog{
@@ -4152,7 +4152,7 @@ dialog{
 Sorry, we lost the key.
 We can't open it for
 you.
-]]
+]],
 }
 
 dialog{
@@ -4166,7 +4166,7 @@ Me neither...
 
 It happens all the
 time.
-]]
+]],
 }
 
 dialog{
@@ -4178,7 +4178,7 @@ Did you lose something?
 Did you take a look
 around the Lost and
 Found Office?
-]]
+]],
 }
 
 dialog{
@@ -4192,7 +4192,7 @@ You lost Zelda?
 
 No, I don't know where
 she is.
-]]
+]],
 }
 
 dialog{
@@ -4201,7 +4201,7 @@ dialog{
 I'll give you 100
 Rupees if you mow the
 lawn.
-]]
+]],
 }
 
 dialog{
@@ -4209,7 +4209,7 @@ dialog{
   text = [[
 Find the secret of the
 golden lol.
-]]
+]],
 }
 
 dialog{
@@ -4227,14 +4227,14 @@ Green grass
 Above:
 Nothing or nothing
 that you can see.
-]]
+]],
 }
 
 dialog{
   id = "outside_fields_SE.temple_door_closed",
   text = [[
 It's locked...
-]]
+]],
 }
 
 dialog{
@@ -4252,7 +4252,7 @@ Village
 North-East: 
 Sandpit Desert
 Mount Typython
-]]
+]],
 }
 
 dialog{
@@ -4265,7 +4265,7 @@ you will see.
 Other places.
 The future... the past.
 Old friends long gone.
-]]
+]],
 }
 
 dialog{
@@ -4283,7 +4283,7 @@ require.
 That is the way of
 things. The way of the
 Triforcizzle.
-]]
+]],
 }
 
 dialog{
@@ -4293,7 +4293,7 @@ dialog{
 No. Try not. Jump or
 jump not. There is no
 try.
-]]
+]],
 }
 
 dialog{
@@ -4302,7 +4302,7 @@ dialog{
   text = [[
 Good relationship I
 maintain with Cookies.
-]]
+]],
 }
 
 dialog{
@@ -4311,7 +4311,7 @@ dialog{
   text = [[
 Hard to see, the Dark
 Side is.
-]]
+]],
 }
 
 dialog{
@@ -4320,7 +4320,7 @@ dialog{
   text = [[
 Link, use the
 Triforcizzle.
-]]
+]],
 }
 
 dialog{
@@ -4329,7 +4329,7 @@ dialog{
   text = [[
 Always in motion is the
 future.
-]]
+]],
 }
 
 dialog{
@@ -4339,7 +4339,7 @@ dialog{
 When 900 years you
 reach, look as good,
 you will not.
-]]
+]],
 }
 
 dialog{
@@ -4349,7 +4349,7 @@ dialog{
 Fear the dark side of
 the Triforcizzle, you
 must.
-]]
+]],
 }
 
 dialog{
@@ -4358,7 +4358,7 @@ dialog{
   text = [[
 Always two there are.
 No more, no less.
-]]
+]],
 }
 
 dialog{
@@ -4368,7 +4368,7 @@ dialog{
 Lead you to Zelda I
 can. But now, we're
 going to eat.
-]]
+]],
 }
 
 dialog{
@@ -4377,7 +4377,7 @@ dialog{
   text = [[
 Ready you must be.
 How can you know?
-]]
+]],
 }
 
 dialog{
@@ -4386,7 +4386,7 @@ dialog{
   text = [[
 May the Triforcizzle be
 with you.
-]]
+]],
 }
 
 dialog{
@@ -4397,7 +4397,7 @@ dialog{
 
 From this point, one
 day of waiting.
-]]
+]],
 }
 
 dialog{
@@ -4408,7 +4408,7 @@ dialog{
 
 From this point,
 a twelve-hour wait.
-]]
+]],
 }
 
 dialog{
@@ -4419,7 +4419,7 @@ dialog{
 
 From this point,
 a six-hour wait.
-]]
+]],
 }
 
 dialog{
@@ -4431,7 +4431,7 @@ dialog{
 You're almost there!
 You just have to line
 up inside.
-]]
+]],
 }
 
 dialog{
@@ -4443,14 +4443,14 @@ It's empty!
 You REALLY thought you
 would find a treasure
 just behind your house?
-]]
+]],
 }
 
 dialog{
   id = "outside_fields_SO.forest_monkey_end",
   text = [[
 Ook! Ook! Ook!
-]]
+]],
 }
 
 dialog{
@@ -4473,7 +4473,7 @@ I was hungry!!!
 
 
 You had to move faster!
-]]
+]],
 }
 
 dialog{
@@ -4503,7 +4503,7 @@ I'm hungry!!!
 
 Bring me an apple pie
 and we'll trade.
-]]
+]],
 }
 
 dialog{
@@ -4512,14 +4512,14 @@ dialog{
 No freeloaders!
 Go stand in line like
 everyone else.
-]]
+]],
 }
 
 dialog{
   id = "outside_fields_SO.guard_ok",
   text = [[
 Have a nice day.
-]]
+]],
 }
 
 dialog{
@@ -4529,7 +4529,7 @@ Warp to the end of the
 game.
 
 -- out of order --
-]]
+]],
 }
 
 dialog{
@@ -4537,14 +4537,14 @@ dialog{
   text = [[
 This is a really boring
 mailbox...
-]]
+]],
 }
 
 dialog{
   id = "outside_fields_SO_sh",
   text = [[
 Hidden sign!
-]]
+]],
 }
 
 dialog{
@@ -4554,7 +4554,7 @@ dialog{
 An apple pie. Not very
 fresh, but don't give a
 fuck, buy it please.
-]]
+]],
 }
 
 dialog{
@@ -4563,7 +4563,7 @@ dialog{
   text = [[
 A Heart Container.
 Pretty common.
-]]
+]],
 }
 
 dialog{
@@ -4573,7 +4573,7 @@ dialog{
 A Huge Rupee Bag.
 Allows to carry up
 to 999 Rupees!
-]]
+]],
 }
 
 dialog{
@@ -4581,7 +4581,7 @@ dialog{
   text = [[
 Zelda?
 No, I didn't see her.
-]]
+]],
 }
 
 dialog{
@@ -4592,7 +4592,7 @@ Everything OK after
 last night?
 How's your head?
 A bad hangover?
-]]
+]],
 }
 
 dialog{
@@ -4606,7 +4606,7 @@ his stories for the
 past two hours!
 In addition, he is
 super sensitive!
-]]
+]],
 }
 
 dialog{
@@ -4614,7 +4614,7 @@ dialog{
   text = [[
 Sorry, I've got no
 booze for you!
-]]
+]],
 }
 
 dialog{
@@ -4623,7 +4623,7 @@ dialog{
   text = [[
 A red Rupee.
 Extremely rare!
-]]
+]],
 }
 
 dialog{
@@ -4632,7 +4632,7 @@ dialog{
 Choose what you want to
 buy... I don't have
 all day!
-]]
+]],
 }
 
 dialog{
@@ -4656,7 +4656,7 @@ like everyone else!
 
 It's incredible to have
 so many prejudices!
-]]
+]],
 }
 
 dialog{
@@ -4731,7 +4731,7 @@ reaching the end!
 
 
  www.solarus-games.org
-]]
+]],
 }
 
 dialog{
@@ -4739,7 +4739,7 @@ dialog{
   text = [[
 You must find a way
 to light this torch.
-]]
+]],
 }
 
 dialog{
@@ -4753,7 +4753,7 @@ one Heart.
 Eat one now?
 Yes
 No
-]]
+]],
 }
 
 dialog{
@@ -4767,7 +4767,7 @@ filled with water.
 Empty it?
 Yes
 No
-]]
+]],
 }
 
 dialog{
@@ -4781,7 +4781,7 @@ recovers 7 Hearts.
 Eat one now?
 Yes
 No
-]]
+]],
 }
 
 dialog{
@@ -4795,14 +4795,14 @@ three Hearts.
 Eat one now?
 Yes
 No
-]]
+]],
 }
 
 dialog{
   id = "water_house.after",
   text = [[
 Long live water!
-]]
+]],
 }
 
 dialog{
@@ -4814,6 +4814,6 @@ I do love it.
 So take it, it's a
 water bottle. It can't
 be bad for you!
-]]
+]],
 }
 
