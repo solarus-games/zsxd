@@ -1769,7 +1769,7 @@ dialog{
   icon = "64",
   text = [[
 You found the
-Fire Shield !$0
+Fire Shield!$0
 Now you're
 protected against
 fire attacks
